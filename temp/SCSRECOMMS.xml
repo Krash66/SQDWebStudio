@@ -1,0 +1,221 @@
+<record id="SRECOMMS">
+<atom name="NAME" type="str">SRECOMMS</atom>
+<fld id="SRECOMMS">
+<atom name="NAME" type="str">SRECOMMS</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">116</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="ID" type="int">0</atom>
+<fld id="ORIGIN">
+<atom name="NAME" type="str">ORIGIN</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">1</atom>
+</fld>
+<fld id="APPLMNEM">
+<atom name="NAME" type="str">APPLMNEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">2</atom>
+</fld>
+<fld id="CURR_DATE">
+<atom name="NAME" type="str">CURR_DATE</atom>
+<atom name="POSITION" type="int">8</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">3</atom>
+</fld>
+<fld id="REC_TYP">
+<atom name="NAME" type="str">REC_TYP</atom>
+<atom name="POSITION" type="int">16</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">4</atom>
+</fld>
+<fld id="CONCAT_KEY">
+<atom name="NAME" type="str">CONCAT_KEY</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">16</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">5</atom>
+</fld>
+<fld id="RSRVD_DATA">
+<atom name="NAME" type="str">RSRVD_DATA</atom>
+<atom name="POSITION" type="int">36</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">6</atom>
+</fld>
+<fld id="LAST_UPDT_DATE">
+<atom name="NAME" type="str">LAST_UPDT_DATE</atom>
+<atom name="POSITION" type="int">38</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">7</atom>
+</fld>
+<fld id="LAST_UPDT_TIME">
+<atom name="NAME" type="str">LAST_UPDT_TIME</atom>
+<atom name="POSITION" type="int">46</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">8</atom>
+</fld>
+<fld id="COMM_TYPE">
+<atom name="NAME" type="str">COMM_TYPE</atom>
+<atom name="POSITION" type="int">52</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">9</atom>
+</fld>
+<fld id="COMM_AMT">
+<atom name="NAME" type="str">COMM_AMT</atom>
+<atom name="POSITION" type="int">56</atom>
+<atom name="PRECISION" type="int">15</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">10</atom>
+</fld>
+<fld id="COMM_CODE">
+<atom name="NAME" type="str">COMM_CODE</atom>
+<atom name="POSITION" type="int">64</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">11</atom>
+</fld>
+<fld id="COMM_ORIDE_IND">
+<atom name="NAME" type="str">COMM_ORIDE_IND</atom>
+<atom name="POSITION" type="int">65</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">12</atom>
+</fld>
+<fld id="COMM_DR_ACCT_NO">
+<atom name="NAME" type="str">COMM_DR_ACCT_NO</atom>
+<atom name="POSITION" type="int">66</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">13</atom>
+</fld>
+<fld id="COMM_CHRG_CURR_TYPE_CODE">
+<atom name="NAME" type="str">COMM_CHRG_CURR_TYPE_CODE</atom>
+<atom name="POSITION" type="int">76</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">14</atom>
+</fld>
+<fld id="TXBLE_CODE">
+<atom name="NAME" type="str">TXBLE_CODE</atom>
+<atom name="POSITION" type="int">77</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">15</atom>
+</fld>
+<fld id="TAX_RATE">
+<atom name="NAME" type="str">TAX_RATE</atom>
+<atom name="POSITION" type="int">78</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">16</atom>
+</fld>
+<fld id="ENTRY_TYPE">
+<atom name="NAME" type="str">ENTRY_TYPE</atom>
+<atom name="POSITION" type="int">82</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">17</atom>
+</fld>
+<fld id="CORR_PYMT_CHRG_TYPE">
+<atom name="NAME" type="str">CORR_PYMT_CHRG_TYPE</atom>
+<atom name="POSITION" type="int">85</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">18</atom>
+</fld>
+<fld id="PRICE_CURR_CODE">
+<atom name="NAME" type="str">PRICE_CURR_CODE</atom>
+<atom name="POSITION" type="int">86</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">19</atom>
+</fld>
+<fld id="ACCT_BILLG_STTS">
+<atom name="NAME" type="str">ACCT_BILLG_STTS</atom>
+<atom name="POSITION" type="int">90</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">20</atom>
+</fld>
+<fld id="CHRG_AMT">
+<atom name="NAME" type="str">CHRG_AMT</atom>
+<atom name="POSITION" type="int">91</atom>
+<atom name="PRECISION" type="int">15</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="ID" type="int">21</atom>
+</fld>
+</fld>
+</record>

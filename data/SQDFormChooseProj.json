@@ -1,0 +1,28 @@
+[
+	{type: "settings", position: "label-left", labelWidth: 120, inputWidth: 320},
+	{type: "fieldset", label: "Choose Project", inputWidth: "auto", list:[
+			{
+			id:"SelectProj", 
+			type: "select", 
+			label: "Project",
+			required: true,
+			validate: "NotEmpty", 
+			options:[
+				{text: "Proj_1", value: "Proj_1"}
+			]}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{
+			name: "DoChoose", 
+			type: "button", 
+			value: "Proceed"
+			},
+			{type: "newcolumn"},
+			{
+			name: "DoExit", 
+			type: "button", 
+			value: "Exit"
+			}
+		]}
+]
+  

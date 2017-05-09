@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <item id="new_Proj" text="New Project" img="Project.gif"/>
+  <item id="new_Env" text="New Environment" img="85.gif"/>
+  <item id="new_Conn" text="New Connection" img="15.gif"/>
+  <item id="new_COBOL" text="New COBOL" img="desc.gif" />
+  <item id="new_DBD" text="New COBOL w/DBD" img="desc.gif" />
+  <item id="new_DTD" text="New XML DTD" img="desc.gif" />
+  <item id="new_db2" text="New DB2" img="desc.gif" />
+  <item id="new_mssql" text="New MSSQL" img="desc.gif" />
+  <item id="new_ora" text="New Oracle" img="desc.gif" />
+  <item id="new_udb" text="New ISO SQL" img="desc.gif" />
+  <item id="sep1" type="separator"/>
+  <item id="new_Sel" text="New Subset" img="DescSel.gif" />
+  <item id="new_Var" text="New Variable" img="var.gif" />
+  <item id="new_Sys" text="New System" img="1.gif" />
+  <item id="new_CDCEng" text="New CDC Engine" img="gear_CDC1.gif"/>
+  <item id="new_ETLEng" text="New ETL Engine" img="gear.gif"/>
+  <item id="new_SDS" text="New Source Datastore" img="SDS.gif" />
+  <item	id="new_TDS" text="New Target Datastore" img="TDS.gif" />
+  <item id="new_MapProc" text="New Mapping Procedure" img="Proc.gif" />
+  <item id="new_LogicProc" text="New Logic Procedure" img="Crop.gif" />
+  <item id="new_InclProc" text="New Include Procedure" img="Proc.gif" />
+  <item id="new_MainLogicProc" text="New Main Procedure" img="72.ico" />
+  <item id="new_MainInclProc" text="New Main Include Procedure" img="Proc.gif" />
+  <item id="sep3" type="separator"/>
+  <item id="cut" img="cut.gif"   text="Cut"   imgdis="cut_dis.gif"  title="Cut" />
+  <item id="copy" img="copy.gif"  text="Copy"  imgdis="copy_dis.gif"  title="Copy" />
+  <item id="paste" img="paste.gif" text="Paste" imgdis="paste_dis.gif"  title="Paste" />
+  <item id="sep4" type="separator"/>
+  <item id="delNode" img="delete.gif"  text="Delete"  title="Delete Item" action="doTreeDelete"/>
+  <item id="delNodeAll" img="delete.gif"  text="Delete All"  title="Delete All" action="doTreeDeleteAll"/>
+  <item id="sep5" type="separator"/>
+  <item id="genScript" img="gear.gif"  text="Generate Script"  title="Generate Script" action="doGenerate"/>
+  <item id="sep6" type="separator"/>
+  <item id="model" img="gear.gif"  text="Model Description"  title="Model Description" action="doModel"/>
+</menu>

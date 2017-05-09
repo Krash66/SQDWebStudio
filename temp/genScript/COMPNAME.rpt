@@ -1,0 +1,10 @@
+ Field: COMPNAME  found in the following descriptions:
+   company
+   COMPANY_DDL
+
+ Field: COMPNAME  found in the following Datastores:
+   CDCIN
+   Tgtds
+
+ Field: COMPNAME  found in the following Procedures:
+   proc1

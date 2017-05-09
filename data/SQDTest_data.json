@@ -1,0 +1,71 @@
+{id:'0', item:[
+	{id:'0----------',sqdType:'fo_PROJ',  text:'Projects',item:[
+		{id:'0-0---------',sqdType:'PROJ', call:'funct1', text:'Proj_1', im0:"Project.ico", im1:"Project.ico", im2:"Project.ico", item:[
+			{id:'0-0-0--------',sqdType:'fo_ENV', text:'Environments',item:[
+				{id:'0-0-0-0-------',sqdType:'ENV',text:'Env_1', im0:"85.ico", im1:"85.ico", im2:"85.ico",  item:[
+					{id:'0-0-0-0-0------',sqdType:'fo_CONN',text:'Connections',item:[
+						{id:'0-0-0-0-0-0-----',sqdType:'CONN',text:'Conn_1',im0:"15.ico", im1:"15.ico", im2:"15.ico"}
+					]},
+					{id:'0-0-0-0-1------',sqdType:'fo_DESC',text:'Descriptions',item:[ 
+						{id:'0-0-0-0-1-0-----',sqdType:'fo_COBOL',text:'COBOL',item:[
+							{id:'0-0-0-0-1-0-0----',sqdType:'DESC',descType:'COBOL',text:'COMPANY',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"},
+							{id:'0-0-0-0-1-0-1----',sqdType:'DESC',descType:'COBOL',text:'DEPTMENT',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"},
+							{id:'0-0-0-0-1-0-2----',sqdType:'DESC',descType:'COBOL',text:'EMPLOYEE',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"},
+							{id:'0-0-0-0-1-0-3----',sqdType:'DESC',descType:'COBOL',text:'VENDOR',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"}
+						]},
+						{id:'0-0-0-0-1-1-----',sqdType:'fo_DDL',text:'DDL',item:[
+							{id:'0-0-0-0-1-1-0----',sqdType:'DESC',descType:'DDL',text:'comp',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"},
+							{id:'0-0-0-0-1-1-1----',sqdType:'DESC',descType:'DDL',text:'dept',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"},
+							{id:'0-0-0-0-1-1-2----',sqdType:'DESC',descType:'DDL',text:'empl',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"},
+							{id:'0-0-0-0-1-1-3----',sqdType:'DESC',descType:'DDL',text:'vend',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"}
+						]} 
+					]},
+					{id:'0-0-0-0-2------',sqdType:'fo_topVAR',text:'Variables',im0:"folderClosed.gif", im1:"folderOpen.gif"},
+					{id:'0-0-0-0-3------',sqdType:'fo_SYS',text:'Systems',item:[
+						{id:'0-0-0-0-3-0-----',sqdType:'SYS',text:'System_1',im0:"1.ico", im1:"1.ico", im2:"1.ico",item:[
+							{id:'0-0-0-0-3-0-0----',sqdType:'fo_ENG',text:'Engines',item:[
+								{id:'0-0-0-0-3-0-0-0---',sqdType:'ENG',text:'Eng_1',im0:"train.ico", im1:"train.ico", im2:"train.ico",item:[
+									{id:'0-0-0-0-3-0-0-0-0--',sqdType:'fo_SDS',text:'Sources',item:[
+										{id:'0-0-0-0-3-0-0-0-0-0-',sqdType:'SDS',text:'CDCIN',im0:"SDS.ico", im1:"SDS.ico", im2:"SDS.ico",item:[
+											{id:'0-0-0-0-3-0-0-0-0-0-0',sqdType:'SDS_SEL',text:'COMPANY',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"},
+											{id:'0-0-0-0-3-0-0-0-0-0-1',sqdType:'SDS_SEL',text:'DEPTMENT',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"},
+											{id:'0-0-0-0-3-0-0-0-0-0-2',sqdType:'SDS_SEL',text:'EMPLOYEE',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"},
+											{id:'0-0-0-0-3-0-0-0-0-0-3',sqdType:'SDS_SEL',text:'VENDOR',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"}
+										]}
+									]},
+									{id:'0-0-0-0-3-0-0-0-1--',sqdType:'fo_TDS',text:'Targets',item:[
+										{id:'0-0-0-0-3-0-0-0-1-0-',sqdType:'TDS',text:'company',im0:"TDS.ico", im1:"TDS.ico", im2:"TDS.ico",item:[
+											{id:'0-0-0-0-3-0-0-0-1-0-0',sqdType:'TDS_SEL',text:'comp',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"}
+										]},
+										{id:'0-0-0-0-3-0-0-0-1-1-',sqdType:'TDS',text:'deptment',im0:"TDS.ico", im1:"TDS.ico", im2:"TDS.ico",item:[
+											{id:'0-0-0-0-3-0-0-0-1-1-0',sqdType:'TDS_SEL',text:'dept',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"}
+										]},
+										{id:'0-0-0-0-3-0-0-0-1-2-',sqdType:'TDS',text:'employee',im0:"TDS.ico", im1:"TDS.ico", im2:"TDS.ico",item:[
+											{id:'0-0-0-0-3-0-0-0-1-2-0',sqdType:'TDS_SEL',text:'empl',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"}
+										]},
+										{id:'0-0-0-0-3-0-0-0-1-3-',sqdType:'TDS',text:'vendor',im0:"TDS.ico", im1:"TDS.ico", im2:"TDS.ico",item:[
+											{id:'0-0-0-0-3-0-0-0-1-3-0',sqdType:'TDS_SEL',text:'vend',im0:"desc.ico", im1:"desc.ico", im2:"desc.ico"}
+										]}
+									]},
+									{id:'0-0-0-0-3-0-0-0-2--',sqdType:'fo_VAR',text:'Variables',item:[
+										{id:'0-0-0-0-3-0-0-0-2-0-',sqdType:'VAR',text:'Var_1',im0:"var.ico", im1:"var.ico", im2:"var.ico"},
+										{id:'0-0-0-0-3-0-0-0-2-1-',sqdType:'VAR',text:'Var_2',im0:"var.ico", im1:"var.ico", im2:"var.ico"}
+									]},
+									{id:'0-0-0-0-3-0-0-0-3--',sqdType:'fo_PROC',text:'Procedures',item:[
+										{id:'0-0-0-0-3-0-0-0-3-0-',sqdType:'PROC',text:'P_company',im0:"Proc.ico", im1:"Proc.ico", im2:"Proc.ico"},
+										{id:'0-0-0-0-3-0-0-0-3-1-',sqdType:'PROC',text:'P_deptment',im0:"Proc.ico", im1:"Proc.ico", im2:"Proc.ico"},
+										{id:'0-0-0-0-3-0-0-0-3-2-',sqdType:'PROC',text:'P_employee',im0:"Proc.ico", im1:"Proc.ico", im2:"Proc.ico"},
+										{id:'0-0-0-0-3-0-0-0-3-3-',sqdType:'PROC',text:'P_vendor',im0:"Proc.ico", im1:"Proc.ico", im2:"Proc.ico"}
+									]},
+									{id:'0-0-0-0-3-0-0-0-4--',sqdType:'fo_MAIN',text:'Main',item:[
+										{id:'0-0-0-0-3-0-0-0-4-0-',sqdType:'MAIN',text:'MainProc',im0:"72.ico", im1:"72.ico", im2:"72.ico"}
+									]}
+								]}
+							]}
+						]}
+					]}
+				]}
+			]}   
+		]}
+	]}
+]}

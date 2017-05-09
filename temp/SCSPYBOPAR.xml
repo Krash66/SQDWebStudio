@@ -1,0 +1,139 @@
+<record id="SQD-GEN-REC-00001">
+<atom name="NAME" type="str">SQD-GEN-REC-00001</atom>
+<fld id="SQD-GEN-REC-00001">
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">SQD-GEN-REC-00001</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEN" type="int">17</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="SPYBOPAR">
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">SPYBOPAR</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEN" type="int">17</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="YBOP-YBOPAR-KY">
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">YBOP-YBOPAR-KY</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="YBOP-OFRG-PRMTR-CD">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">YBOP-OFRG-PRMTR-CD</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="YBOP-MNDTRY-NT">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">YBOP-MNDTRY-NT</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="POSITION" type="int">5</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="YBOP-SOF-OFRG-PRMTR-RTG-IMP">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">YBOP-SOF-OFRG-PRMTR-RTG-IMP</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="POSITION" type="int">6</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="YBOP-USG-QUALIF-CD">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">YBOP-USG-QUALIF-CD</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="POSITION" type="int">7</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="YBOP-SOF-PRMTR-CDNLTY">
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">YBOP-SOF-PRMTR-CDNLTY</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="POSITION" type="int">8</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">3</atom>
+</fld>
+<fld id="YBOP-SOF-OFRG-PRMTR-RT-SEQ">
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">YBOP-SOF-OFRG-PRMTR-RT-SEQ</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="POSITION" type="int">10</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="PRECISION" type="int">1</atom>
+</fld>
+<fld id="YBOP-USE-PRMTR-VAL-DESC">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">YBOP-USE-PRMTR-VAL-DESC</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="POSITION" type="int">11</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="YBOP-PRMTR-PRTG-SEQ">
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">YBOP-PRMTR-PRTG-SEQ</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="POSITION" type="int">12</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">3</atom>
+</fld>
+<fld id="YBOP-SOF-OFRG-PRMTR-PROFILE">
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NAME" type="str">YBOP-SOF-OFRG-PRMTR-PROFILE</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="POSITION" type="int">14</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="PRECISION" type="int">1</atom>
+</fld>
+<fld id="YBOP-SOF-OFRG-PRMTR-DEFAULT">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">YBOP-SOF-OFRG-PRMTR-DEFAULT</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="POSITION" type="int">15</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="FILLER1">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">FILLER1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="POSITION" type="int">16</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+</fld>
+</record>

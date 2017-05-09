@@ -1,0 +1,225 @@
+<dbdmap id="">
+<database id="DPYBSOFF">
+<atom name="NAME" type="str">DPYBSOFF</atom>
+<segment id="SPYBSOFF">
+<atom name="MINLEN" type="int">400</atom>
+<atom name="ROOTLEN" type="int">3</atom>
+<atom name="MAXLEN" type="int">400</atom>
+<atom name="DEPTH" type="int">1</atom>
+<atom name="NAME" type="str">SPYBSOFF</atom>
+<field id="YBSOFFKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NAME" type="str">YBSOFFKY</atom>
+</field>
+<field id="/CKSOFFK">
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NAME" type="str">/CKSOFFK</atom>
+</field>
+<field id="SOFNO   ">
+<atom name="TYPE" type="str">P</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NAME" type="str">SOFNO   </atom>
+</field>
+<field id="SOFNAME ">
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">4</atom>
+<atom name="LEN" type="int">30</atom>
+<atom name="NAME" type="str">SOFNAME </atom>
+</field>
+<field id="SOFCPTN ">
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">34</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="NAME" type="str">SOFCPTN </atom>
+</field>
+<field id="AVBLSTDT">
+<atom name="TYPE" type="str">P</atom>
+<atom name="START" type="int">40</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="NAME" type="str">AVBLSTDT</atom>
+</field>
+<field id="SOFSTAT ">
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">67</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">SOFSTAT </atom>
+</field>
+<field id="SOFCDTM ">
+<atom name="TYPE" type="str">P</atom>
+<atom name="START" type="int">113</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="NAME" type="str">SOFCDTM </atom>
+</field>
+<field id="PRODCAT ">
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">362</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">PRODCAT </atom>
+</field>
+<segment id="SPYBFUTY" parent="SPYBSOFF">
+<atom name="MINLEN" type="int">160</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MAXLEN" type="int">160</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NOTWIN" type="int">1</atom>
+<atom name="NAME" type="str">SPYBFUTY</atom>
+</segment>
+<segment id="SPYBTRSH" parent="SPYBSOFF">
+<atom name="MINLEN" type="int">49</atom>
+<atom name="ROOTLEN" type="int">16</atom>
+<atom name="MAXLEN" type="int">49</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">SPYBTRSH</atom>
+<field id="YBTRSHKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="NAME" type="str">YBTRSHKY</atom>
+</field>
+<field id="YBTRSTAT">
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">35</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">YBTRSTAT</atom>
+</field>
+<segment id="SPYBTABL" parent="SPYBTRSH">
+<atom name="MINLEN" type="int">20</atom>
+<atom name="ROOTLEN" type="int">19</atom>
+<atom name="MAXLEN" type="int">20</atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="NAME" type="str">SPYBTABL</atom>
+<field id="YBTABLKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NAME" type="str">YBTABLKY</atom>
+</field>
+</segment>
+</segment>
+<segment id="SPYBOPAR" parent="SPYBSOFF">
+<atom name="MINLEN" type="int">17</atom>
+<atom name="ROOTLEN" type="int">8</atom>
+<atom name="MAXLEN" type="int">17</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">SPYBOPAR</atom>
+<field id="YBOPARKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="NAME" type="str">YBOPARKY</atom>
+</field>
+<segment id="SPYBOPVL" parent="SPYBOPAR">
+<atom name="MINLEN" type="int">27</atom>
+<atom name="ROOTLEN" type="int">30</atom>
+<atom name="MAXLEN" type="int">27</atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="NAME" type="str">SPYBOPVL</atom>
+<field id="YBOPVLKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">22</atom>
+<atom name="NAME" type="str">YBOPVLKY</atom>
+</field>
+</segment>
+</segment>
+<segment id="SVYBFCUP" parent="SPYBSOFF">
+<atom name="MINLEN" type="int">0</atom>
+<atom name="ROOTLEN" type="int">11</atom>
+<atom name="MAXLEN" type="int">0</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">SVYBFCUP</atom>
+<field id="YBFCUPKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="NAME" type="str">YBFCUPKY</atom>
+</field>
+</segment>
+<segment id="SPYBPREQ" parent="SPYBSOFF">
+<atom name="MINLEN" type="int">29</atom>
+<atom name="ROOTLEN" type="int">11</atom>
+<atom name="MAXLEN" type="int">29</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">SPYBPREQ</atom>
+<field id="YBPREQKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="NAME" type="str">YBPREQKY</atom>
+</field>
+</segment>
+<segment id="SPYBFCDN" parent="SPYBSOFF">
+<atom name="MINLEN" type="int">32</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MAXLEN" type="int">32</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">SPYBFCDN</atom>
+<field id="SOFNO   ">
+<atom name="TYPE" type="str">P</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NAME" type="str">SOFNO   </atom>
+</field>
+<field id="SOFFCSDT">
+<atom name="TYPE" type="str">P</atom>
+<atom name="START" type="int">4</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="NAME" type="str">SOFFCSDT</atom>
+</field>
+</segment>
+<segment id="SVYBREQS" parent="SPYBSOFF">
+<atom name="MINLEN" type="int">0</atom>
+<atom name="ROOTLEN" type="int">11</atom>
+<atom name="MAXLEN" type="int">0</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">SVYBREQS</atom>
+<field id="YBREQSKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="NAME" type="str">YBREQSKY</atom>
+</field>
+</segment>
+<segment id="SPYBTARI" parent="SPYBSOFF">
+<atom name="MINLEN" type="int">21</atom>
+<atom name="ROOTLEN" type="int">17</atom>
+<atom name="MAXLEN" type="int">21</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">SPYBTARI</atom>
+<field id="YBTARIKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">14</atom>
+<atom name="NAME" type="str">YBTARIKY</atom>
+</field>
+</segment>
+<segment id="SBYBCTYP" parent="SPYBSOFF">
+<atom name="MINLEN" type="int">57</atom>
+<atom name="ROOTLEN" type="int">23</atom>
+<atom name="MAXLEN" type="int">57</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">SBYBCTYP</atom>
+<field id="YBCTYPKY">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="NAME" type="str">YBCTYPKY</atom>
+</field>
+</segment>
+</segment>
+</database>
+</dbdmap>

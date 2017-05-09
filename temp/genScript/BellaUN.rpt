@@ -1,0 +1,236 @@
+SQDC000I *******************************************************
+SQDC021I sqdparse Version 3.9.28-dev (Windows-x86)
+SQDC022I Build-id 5e81afa984e5868e7f78c7e7253cb472b9eec26a
+SQDC023I (c)2001-2014 SQData Corporation.
+SQDC000I *******************************************************
+SQDC000I 
+SQD0000I 2014-11-04 16:40:36
+>>> Start Preprocessed C:/wamp/www/SQDATA/Studio/temp/genScript/BellaUN.inl
+000001 --------------------------------------------------------
+000002 --           PROJECT: Bella
+000003 --       ENVIRONMENT: Env1
+000004 --            SYSTEM: sysOra
+000005 --------------------------------------------------------
+000006 JOBNAME BellaUN;
+000007 REPORT engRep1 EVERY 100;
+000008 COMMIT EVERY 50 FORCE;
+000009 DATEFORMAT ISO;
+000010 
+000011 RDBMS DB2 db2Out;
+000012 
+000013 -- ------------------------------------------------------
+000014 --           Data Definition Section
+000015 -- ------------------------------------------------------
+000016 
+000017 DESCRIPTION SQLDDL
+000018 /+
+000019 CREATE TABLE CATDLVY
+000020 (
+000021     CADLVY_CACC_NO   CHAR(7)   
+000022    ,CADLVY_CD        CHAR(2)   
+000023    ,CADLVY_SEQ       NUMBER(5) 
+000024    ,CADLVY_ID1       CHAR(9) 
+000025    ,CADLVY_ID2       CHAR(50)
+000026    ,CADLVY_UPDT_LOGN CHAR(8) 
+000027    ,CADLVY_UPDT_DTM  CHAR(26)
+000028    ,CADLVY_COMP1     CHAR(2) 
+000029    ,CADLVY_COMP2     CHAR(2) 
+000030    ,CADLVY_COMP3     CHAR(2) 
+000031    ,CADLVY_COMP4     CHAR(2) 
+000032    ,CADLVY_COMP5     CHAR(2) 
+000033    ,CADLVY_COMP6     CHAR(2) 
+000034    ,CADLVY_COMP7     CHAR(2) 
+000035    ,CADLVY_COMP8     CHAR(2) 
+000036    ,CADLVY_COMP9     CHAR(2) 
+000037    ,CADLVY_COMP10    CHAR(2) 
+000038    ,CADLVY_COMP11    CHAR(2) 
+000039    ,CADLVY_COMP12    CHAR(2) 
+000040    ,CADLVY_COMP13    CHAR(2) 
+000041    ,CADLVY_COMP14    CHAR(2) 
+000042 );+/
+000043               AS o_CATDLVY;
+000044 
+000045 -- ------------------ *** Exception Datastore *** ------------------------
+000046 DATASTORE cdc://OraHost/CDCExcept/CDCUNLOAD OF BINARY AS EX_CDCUNLOAD DESCRIBED BY DUMMY;
+000047 
+000048 DATASTORE cdc://OraHost:3333/OraSYS/BellaUN
+000049           OF HSSUNLOAD
+000050           AS CDCUNLOAD
+000051           DESCRIBED BY
+000052                     o_CATDLVY
+000053 ;
+000054 
+000055 DESCRIPTION SQLDDL
+000056 /+
+000057 CREATE TABLE CATDLVY
+000058 (
+000059   CADLVY_CACC_NO                 DECIMAL(7, 0)  NOT NULL,
+000060   CADLVY_CD                      CHAR(2)        NOT NULL,
+000061   CADLVY_SEQ                     DECIMAL(5, 0)  NOT NULL,
+000062   CADLVY_ID1                     CHAR(9),
+000063   CADLVY_ID2                     CHAR(50),
+000064   CADLVY_UPDT_LOGN               CHAR(8)        NOT NULL,
+000065   CADLVY_UPDT_DTM                TIMESTAMP      NOT NULL,
+000066   CADLVY_COMP1                   CHAR(2)        NOT NULL,
+000067   CADLVY_COMP2                   CHAR(2)        NOT NULL,
+000068   CADLVY_COMP3                   CHAR(2)        NOT NULL,
+000069   CADLVY_COMP4                   CHAR(2)        NOT NULL,
+000070   CADLVY_COMP5                   CHAR(2)        NOT NULL,
+000071   CADLVY_COMP6                   CHAR(2)        NOT NULL,
+000072   CADLVY_COMP7                   CHAR(2)        NOT NULL,
+000073   CADLVY_COMP8                   CHAR(2)        NOT NULL,
+000074   CADLVY_COMP9                   CHAR(2)        NOT NULL,
+000075   CADLVY_COMP10                  CHAR(2)        NOT NULL,
+000076   CADLVY_COMP11                  CHAR(2)        NOT NULL,
+000077   CADLVY_COMP12                  CHAR(2)        NOT NULL,
+000078   CADLVY_COMP13                  CHAR(2)        NOT NULL,
+000079   CADLVY_COMP14                  CHAR(2)        NOT NULL
+000080 )+/
+000081               AS CATDLVY;
+000082 
+000083 DATASTORE TargetTBL
+000084           OF Relational
+000085           AS Tdb2
+000086           DESCRIBED BY
+000087                     CATDLVY
+000088           FOR Change
+000089 ;
+000090 
+000091 -- ------------------------------------------------------
+000092 --           Field Specification Section
+000093 -- ------------------------------------------------------
+000094 
+000095 -- ------------------------------------------------------
+000096 --           Procedure Section
+000097 -- ------------------------------------------------------
+000098 
+000099 CREATE PROC UnProc AS SELECT
+000100 {
+000101      CADLVY_CACC_NO  =  CADLVY_CACC_NO
+000102      CADLVY_CD  =  CADLVY_CD
+000103      CADLVY_SEQ  =  CADLVY_SEQ
+000104      CADLVY_ID1  =  CADLVY_ID1
+000105      CADLVY_ID2  =  CADLVY_ID2
+000106      CADLVY_UPDT_LOGN  =  CADLVY_UPDT_LOGN
+000107      CADLVY_UPDT_DTM  =  CADLVY_UPDT_DTM
+000108      CADLVY_COMP1  =  CADLVY_COMP1
+000109      CADLVY_COMP2  =  CADLVY_COMP2
+000110      CADLVY_COMP3  =  CADLVY_COMP3
+000111      CADLVY_COMP4  =  CADLVY_COMP4
+000112      CADLVY_COMP5  =  CADLVY_COMP5
+000113      CADLVY_COMP6  =  CADLVY_COMP6
+000114      CADLVY_COMP7  =  CADLVY_COMP7
+000115      CADLVY_COMP8  =  CADLVY_COMP8
+000116      CADLVY_COMP9  =  CADLVY_COMP9
+000117      CADLVY_COMP10  =  CADLVY_COMP10
+000118      CADLVY_COMP11  =  CADLVY_COMP11
+000119      CADLVY_COMP12  =  CADLVY_COMP12
+000120      CADLVY_COMP13  =  CADLVY_COMP13
+000121      CADLVY_COMP14  =  CADLVY_COMP14
+000122 }
+000123 FROM CDCUNLOAD;
+000124 
+000125 
+000126 -- ------------------------------------------------------
+000127 --           Main Section
+000128 -- ------------------------------------------------------
+000129 
+000130 PROCESS INTO
+000131        Tdb2
+000132 SELECT
+000133 {
+000134 {
+000135     CALLPROC(UnProc)
+000136 }
+000137 
+000138 }
+000139 FROM CDCUNLOAD;
+<<< End Preprocessed C:/wamp/www/SQDATA/Studio/temp/genScript/BellaUN.inl
+Report File.............................: engRep1
+Relational Database Name................: DB2
+User ID.................................: db2Out
+System Character Code...................: ASCII(LI)
+Number of Data Stores...................: 3
+Data Store..............................: cdc://OraHost/CDCExcept/CDCUNLOAD
+  Character Code........................: ASCII(LI)
+  Alias.................................: EX_CDCUNLOAD
+  Type..................................: BINARY
+  Auto-clean............................: Yes
+  Number of Records.....................: 0
+Data Store..............................: cdc://OraHost:3333/OraSYS/BellaUN
+  Character Code........................: EBCDIC
+  Alias.................................: CDCUNLOAD
+  Type..................................: HSSR Unload Data Set
+  Auto-clean............................: Yes
+  Number of Records.....................: 1
+    Record Name.........................: CATDLVY
+    Record Description Alias............: o_CATDLVY
+    Record Description Length...........: 136
+    Number of Fields Initialized........: 0
+    Number of Fields....................: 21
+                                          TYPE       OFF   LEN   XLEN  SCL
+                                          ---------- ----- ----- ----- ---  
+      CADLVY_CACC_NO....................: CHAR           1     7d     7d   0
+      CADLVY_CD.........................: CHAR           8     2d     2d   0
+      CADLVY_SEQ........................: NUMBER        10     6d     6d   0
+      CADLVY_ID1........................: CHAR          16     9d     9d   0
+      CADLVY_ID2........................: CHAR          25    50d    50d   0
+      CADLVY_UPDT_LOGN..................: CHAR          75     8d     8d   0
+      CADLVY_UPDT_DTM...................: CHAR          83    26d    26d   0
+      CADLVY_COMP1......................: CHAR         109     2d     2d   0
+      CADLVY_COMP2......................: CHAR         111     2d     2d   0
+      CADLVY_COMP3......................: CHAR         113     2d     2d   0
+      CADLVY_COMP4......................: CHAR         115     2d     2d   0
+      CADLVY_COMP5......................: CHAR         117     2d     2d   0
+      CADLVY_COMP6......................: CHAR         119     2d     2d   0
+      CADLVY_COMP7......................: CHAR         121     2d     2d   0
+      CADLVY_COMP8......................: CHAR         123     2d     2d   0
+      CADLVY_COMP9......................: CHAR         125     2d     2d   0
+      CADLVY_COMP10.....................: CHAR         127     2d     2d   0
+      CADLVY_COMP11.....................: CHAR         129     2d     2d   0
+      CADLVY_COMP12.....................: CHAR         131     2d     2d   0
+      CADLVY_COMP13.....................: CHAR         133     2d     2d   0
+      CADLVY_COMP14.....................: CHAR         135     2d     2d   0
+Data Store..............................: TargetTBL
+  Character Code........................: ASCII(LI)
+  Alias.................................: Tdb2
+  Type..................................: RELATIONAL(ODBC)
+  Auto-clean............................: Yes
+  Number of Records.....................: 1
+    Record Name.........................: CATDLVY
+    Record Description Alias............: CATDLVY
+    Record Description Length...........: 130
+    Number of Fields Initialized........: 0
+    Number of Fields....................: 21
+                                          TYPE       OFF   LEN   XLEN  SCL
+                                          ---------- ----- ----- ----- ---  
+      CADLVY_CACC_NO....................: PACKED         1     4d     9d   0
+      CADLVY_CD.........................: CHAR           5     2d     2d   0
+      CADLVY_SEQ........................: PACKED         7     3d     7d   0
+      CADLVY_ID1........................: CHAR          10     9d     9d   0
+      CADLVY_ID2........................: CHAR          19    50d    50d   0
+      CADLVY_UPDT_LOGN..................: CHAR          69     8d     8d   0
+      CADLVY_UPDT_DTM...................: TIMESTAMP     77    26d    26d   0
+      CADLVY_COMP1......................: CHAR         103     2d     2d   0
+      CADLVY_COMP2......................: CHAR         105     2d     2d   0
+      CADLVY_COMP3......................: CHAR         107     2d     2d   0
+      CADLVY_COMP4......................: CHAR         109     2d     2d   0
+      CADLVY_COMP5......................: CHAR         111     2d     2d   0
+      CADLVY_COMP6......................: CHAR         113     2d     2d   0
+      CADLVY_COMP7......................: CHAR         115     2d     2d   0
+      CADLVY_COMP8......................: CHAR         117     2d     2d   0
+      CADLVY_COMP9......................: CHAR         119     2d     2d   0
+      CADLVY_COMP10.....................: CHAR         121     2d     2d   0
+      CADLVY_COMP11.....................: CHAR         123     2d     2d   0
+      CADLVY_COMP12.....................: CHAR         125     2d     2d   0
+      CADLVY_COMP13.....................: CHAR         127     2d     2d   0
+      CADLVY_COMP14.....................: CHAR         129     2d     2d   0
+  Number of steps.......................: 2
+Section.................................: UnProc
+  Number of steps.......................: 63
+Section.................................: SQDSTP002
+  Number of steps.......................: 2
+SQDUR01E Invalid url (C:/wamp/www/SQDATA/Studio/temp/genScript/BellaUN.prc)
+SQD0035E (38) Parser finished processing C:/wamp/www/SQDATA/Studio/temp/genScript/BellaUN.inl 
+SQD0041E (39) Processing completed with return code 8 
+SQDC016I SQDPARSE(pid=6356) terminated with Return Code 8, Reason Code=0x8 (N/A)

@@ -1,0 +1,292 @@
+<record id="VSGPGRU">
+<atom name="ALIAS" type="str">VSGPGRU</atom>
+<atom name="NAME" type="str">VSGPGRU</atom>
+<fld id="GA_GRP_NO_ID">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_GRP_NO_ID</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+<fld id="GA_SUBGR_NO">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_SUBGR_NO</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GA_GRP_STAS_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_GRP_STAS_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_EFF_DT">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="NAME" type="str">GA_EFF_DT</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GA_TERM_DT">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="NAME" type="str">GA_TERM_DT</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GA_MRK_ID_NUM">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_MRK_ID_NUM</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GA_INDY_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_INDY_CD</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GA_GRP_SERV_NM">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_GRP_SERV_NM</atom>
+<atom name="LEN" type="int">50</atom>
+</fld>
+<fld id="GA_CHG_BK_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_CHG_BK_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_GD_APPL_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_GD_APPL_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_TIME_FILE_MO">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="PRECISION" type="int">3</atom>
+<atom name="NAME" type="str">GA_TIME_FILE_MO</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_GRC_DY_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="PRECISION" type="int">3</atom>
+<atom name="NAME" type="str">GA_GRC_DY_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_OCR_RECV_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_OCR_RECV_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_CLAIM_STP_PROC_DT">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="NAME" type="str">GA_CLAIM_STP_PROC_DT</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GA_CLAIM_STOP_EFF_DT">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="NAME" type="str">GA_CLAIM_STOP_EFF_DT</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GA_CLAIM_STOP_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_CLAIM_STOP_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_JEOP_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_JEOP_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_PREV_GRP_NO">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_PREV_GRP_NO</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+<fld id="GA_PREV_SGP_NO">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_PREV_SGP_NO</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GA_FRWD_GRP_NO">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_FRWD_GRP_NO</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+<fld id="GA_FRWD_SGP_NO">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_FRWD_SGP_NO</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GA_CNTY_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">21</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_CNTY_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_TYPE_COV_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">22</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_TYPE_COV_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_COMM_TY_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">23</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_COMM_TY_CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GA_UNA_CSH_IND">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">24</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_UNA_CSH_IND</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="GA_CMBL_GRP_NO">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">25</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_CMBL_GRP_NO</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+<fld id="GA_CMBL_SUBGR_NO">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">26</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GA_CMBL_SUBGR_NO</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GRUPKEYI">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">27</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GRUPKEYI</atom>
+<atom name="LEN" type="int">9</atom>
+</fld>
+<fld id="GRUPSTAC">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">28</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GRUPSTAC</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="MARKNUMI">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">29</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">MARKNUMI</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GRUPSERM">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">30</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GRUPSERM</atom>
+<atom name="LEN" type="int">50</atom>
+</fld>
+<fld id="CMBLGRPI">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">31</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">CMBLGRPI</atom>
+<atom name="LEN" type="int">9</atom>
+</fld>
+</record>

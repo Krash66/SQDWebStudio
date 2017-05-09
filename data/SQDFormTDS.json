@@ -1,0 +1,62 @@
+[
+	{type: "settings", position: "label-left", labelAlign: "left", labelWidth: 90, inputWidth:180},
+	{type: "fieldset", label:"Target Datastore Properties", inputWidth:"auto", list:[
+			{ name: "objid", type: "input", label: "objid", value: "", readonly: "true", hidden: false },
+            { name: "projName", type: "input", label: "Project Name", value: "", readonly: "true", hidden: false },
+            { name: "envName", type: "input", label: "Environment Name", value: "", readonly: "true", hidden: false },
+            { name: "sysName", type: "input", label: "System Name", value: "", readonly: "true", hidden: false },
+			{ name: "engName", type: "input", label: "Engine Name", value: "", readonly: "true", hidden: false },
+			{name:"DSname",type:"input", label:"Alias", value:""},
+			{ name: "DSdir", type: "input", label: "DS Direction", value: "", readonly: "true", hidden: false },
+			{name:"DSType", type:"select", inputWidth:180, label:"Datastore Type", options:[
+					{text:"Binary", value: "Binary"},
+					{text:"Delimited", value:"Delimited"},
+					{text:"XML", value:"XML"},
+					{text:"Relational", value:"Relational"},
+					{text:"DB2Load", value:"DB2Load"},
+					{text:"IMSDB", value:"IMSDB"},
+					{text:"VSAM", value:"VSAM"},
+					{text:"UTSCDC", value:"UTSCDC"},
+					{text:"IMSCDC", value:"IMSCDC"},
+					{text:"DB2CDC", value:"DB2CDC"},
+					{text:"VSAMCDC", value:"VSAMCDC"},
+					{text:"OracleCDC", value:"OracleCDC"}
+			]},
+			{name:"DSAccess", type:"select", inputWidth:180, label:"Access/Transport", options:[
+					{text:"Table Name Only", value:"TABName"},
+					{text:"File", value:"File"},
+					{text:"MQ Series", value:"MQS"},
+					{text:"TCP/IP", value:"TCP"}
+			]},
+			{name:"DSPhysName",type: "input", label:"Physical Name", value:""},
+			{name:"DSHostName",type: "input", label:"Host Name", value:""},
+			{name:"DSPort",type:"input", label:"Port", value:""},
+			{type:"fieldset", label:"Description", inputWidth:"auto", list:[
+				{name:"DSDesc",type: "input", offsetLeft:0, inputWidth:245, rows:3, value:""}
+			]}
+		]},
+		{type:"newcolumn"},
+		{type:"fieldset", label: "Extended Properties", inputWidth:"auto", offsetLeft:0, list:[
+			{name:"DSException", type: "input", inputWidth:80, labelWidth:50, label:"Exception"},
+			{name:"DSUOW", type:"input", inputWidth:80, labelWidth:50, label:"UOW"},
+			{type:"newcolumn"},
+			{name:"DSIMSPathData", type:"checkbox", position:"label-left", labelAlign:"right", labelWidth:100, label:"IMS PathData", checked: false}, 
+			{name:"DSSkipChangeCheck", type:"checkbox", position:"label-left", labelAlign:"right", labelWidth:100, label:"Skip Change Check", checked: false} 
+		]},
+		{type:"fieldset", label:"Target Properties", inputWidth: "auto", offsetLeft:0, hidden: false, list:[
+			{name:"DSOperationType", type:"select", inputWidth:180, label:"Operation Type", options:[
+					{text:"", value:""},
+					{text:"Insert", value:"Insert"},
+					{text:"Update", value:"Update"},
+					{text:"Delete", value:"Delete"},
+					{text:"Change", value:"Change"},
+					{text:"Modify", value:"Modify"}
+			]},
+			{name:"DSKeyChange", type:"checkbox", position:"label-left", labelAlign:"left", labelWidth:150, label:"Allow for Key changes", checked: false} 
+		]},
+		{type:"fieldset",  inputWidth:"auto", offsetLeft:0, list:[
+			{name:"btnTDSSave",type:"button", width:80, value:"Save"},
+			{type: "newcolumn"},
+			{name:"btnTDSDelete", type:"button", width:80,value:"Delete"}
+		]}
+]

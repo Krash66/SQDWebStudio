@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:dhtmlx_touch_how-tos    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="dhtmlx_touch_how-tos" id="dhtmlx_touch_how-tos">DHTMLX Touch how-tos</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="how_can_i_use_connector_functionality_for_dhtmlx_touch_components" id="how_can_i_use_connector_functionality_for_dhtmlx_touch_components">How can I use connector functionality for DHTMLX Touch components?</a></h2>
+<div class="level2">
+
+<p>
+There are 2 connector types you can use for touch components:
+</p>
+<ul>
+<li class="level1"><div class="li"> JSONDataConnector</div>
+</li>
+<li class="level1"><div class="li"> DataConnector<br/>
+ For more details, see the <a href="dhtmlxconnector___jsondataconnector.html" class="wikilink1" title="dhtmlxconnector:jsondataconnector">related chapter of this documentation</a>.</div>
+</li>
+</ul>
+
+<p>
+
+To implement CRUD operation you should use connectors mentioned above together with Touch dataProcessor. For more details, see <a href="touch_server-side.html" class="urlextern" title="http://192.168.1.251/dhtmlx/touch/doku.php?id=touch_server-side"  rel="nofollow">DHTMLX Touch documentation</a>.
+</p>
+
+</div>
+
+<h2><a name="how_can_i_save_data_changes_made_in_form_simple_way" id="how_can_i_save_data_changes_made_in_form_simple_way">How can I save data changes made in form (simple way)?</a></h2>
+<div class="level2">
+
+<p>
+Basically, to save data changes you can use code like:
+
+</p>
+<pre class="code javascript">dhx.<span class="me1">ajax</span><span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">post</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php?action=insert&quot;</span><span class="sy0">,</span> $$<span class="br0">&#40;</span><span class="st0">'form'</span><span class="br0">&#41;</span>.<span class="me1">getValues</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;</pre>
+<p>
+For more details, see the guide &#039;<a href="dhtmlxconnector___form_changes.html" class="wikilink1" title="dhtmlxconnector:form_changes">Saving data changes made in form</a>&#039;.
+
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

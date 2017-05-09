@@ -1,0 +1,34 @@
+[
+	{type: "settings", position: "label-left", labelWidth: 120, inputWidth: 320},
+	{type: "fieldset", label: "Engine Properties", inputWidth: "auto", list:[
+			{name:"txtEngName",type:"input", label:"Engine Name", value:"Eng_1"}, 
+			{name:"selEngConn", type:"select", inputWidth:220, label: "Connection", options:[
+					{text:"Conn_1", value:"Conn_1"},
+					{text:"", value: ""}
+			]},
+			{name:"txtEngRptFile",type:"input", label:"Report File", value:"Report1.rpt"}, 
+			{name:"txtEngRptEvery",type:"input", label:"Report Every", value:"10000"},
+			{name:"selEngDateFormat", type:"select", inputWidth:220, label:"Date Format", options:[
+					{text:"", value:""},
+					{text:"ISO", value:"ISO"},
+					{text:"YYYYMMDD", value:"YYYYMMDD"}
+			]},
+			{name:"txtEngCommitEvery",type:"input", label:"Commit Every", value:"0"}, 
+			{name:"cbEngForceCommit",type:"checkbox", label:"Force Commit", checked:false}, 
+			{type:"fieldset", label:"Description", inputWidth: 300, list:[
+				{name:"txtEngDesc",type: "input",rows: "3", inputWidth: 260, value:"Any User defined description for this Engine"}
+			]}
+		]},
+	{type: "fieldset", label: "Target System Library Paths", inputWidth: "auto", list:[
+			{name:"txtEngDBDLib", type: "input", inputWidth:320, label:"DBD"},
+			{name:"txtEngCopybookLib", type: "input", inputWidth:320, label:"Copybook"},
+			{name:"txtEngDTDLib", type:"input", inputWidth:320, label:"XML/DTD"},
+			{name:"txtEngDDLLib", type:"input", inputWidth:320, label:"DDL"},
+			{name:"txtEngInclude", type:"input", inputWidth:320, label:"Include"}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{name:"btnEnvSave", type:"button", value:"Save"},
+			{type:"newcolumn"},
+			{name:"btnEnvDelete",type:"button", value:"Delete"}
+		]}
+]

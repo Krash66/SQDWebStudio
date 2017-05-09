@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tree id="0">
+  <item id="fldProj" text="Projects" select="1" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="sqdType">fldProj</userdata>
+    <userdata name="Icon">folderOpen.gif</userdata>
+    <userdata name="loadFunction">loadCtlFolder</userdata>
+    <userdata name="tabId">0</userdata>
+  </item>
+</tree>

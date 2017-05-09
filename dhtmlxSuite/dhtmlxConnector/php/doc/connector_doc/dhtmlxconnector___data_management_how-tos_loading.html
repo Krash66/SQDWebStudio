@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:data_management_how-tos_loading    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="data_management_how-tos_loading_data" id="data_management_how-tos_loading_data">Data management how-tos (loading data)</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="how_can_i_enable_dynamic_loading" id="how_can_i_enable_dynamic_loading">How can I enable dynamic loading?</a></h2>
+<div class="level2">
+
+<p>
+To enable dynamic loading you should:
+</p>
+<ul>
+<li class="level1"><div class="li"> on client-side enable the related mode (e.g. smart rendering or paging for grid)<br/>
+ <br/>
+ <pre class="code javascript">grid.<span class="me1">enableSmartRendering</span><span class="br0">&#40;</span>mode<span class="sy0">,</span>buffer<span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> on server-side call method <a href="dhtmlxconnector___connector_object_methods.html#dynamic_loading" class="wikilink1" title="dhtmlxconnector:connector_object_methods">dynamic_loading()</a><br/>
+ <br/>
+ <pre class="code php"><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">dynamic_loading</span><span class="br0">&#40;</span><span class="br0">&#91;</span><span class="re0">$rowsNum</span><span class="br0">&#93;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+</ul>
+
+<p>
+See the guide &#039;<a href="dhtmlxconnector___dyn_loading.html#common" class="wikilink1" title="dhtmlxconnector:dyn_loading">Dynamic loading</a>&#039; for more information.
+
+</p>
+
+</div>
+
+<h2><a name="how_can_i_format_change_data_before_loading" id="how_can_i_format_change_data_before_loading">How can I format/change data before loading?</a></h2>
+<div class="level2">
+
+<p>
+To set some specific formatting or change data before sending to client-side, you should use the <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event handler. For more details of this topic, see &#039;<a href="dhtmlxconnector___formatting.html" class="wikilink1" title="dhtmlxconnector:formatting">Formatting/Changing Data before Loading</a>&#039;
+
+</p>
+<pre class="code php"><span class="kw2">function</span> color_rows<span class="br0">&#40;</span><span class="re0">$row</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+	<span class="kw1">if</span> <span class="br0">&#40;</span><span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">get_index</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">%</span><span class="nu19">2</span><span class="br0">&#41;</span>
+	<span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_row_color</span><span class="br0">&#40;</span><span class="st0">&quot;red&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeRender&quot;</span><span class="sy0">,</span><span class="st0">&quot;color_rows&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="how_can_i_load_data_from_database_table" id="how_can_i_load_data_from_database_table">How can I load data from database table?</a></h2>
+<div class="level2">
+
+<p>
+To load data from database table you should use one of two methods:
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___connector_object_methods.html#render_table" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_table()</a> (for loading from single table)<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;tableA&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;column1,column2&quot;</span><span class="sy0">,</span> <span class="st0">&quot;extra_column3&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___connector_object_methods.html#render_sql" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_sql()</a> (for loading from several tables)<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_sql</span><span class="br0">&#40;</span><span class="st0">&quot;Select * from tableA, tableB  where  tableA.id=tableB.id&quot;</span><span class="sy0">,</span> <span class="st0">&quot;tableA.id&quot;</span><span class="sy0">,</span><span class="st0">&quot;column1,column2&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="how_can_i_load_data_from_excel_file" id="how_can_i_load_data_from_excel_file">How can I load data from Excel file?</a></h2>
+<div class="level2">
+
+<p>
+To load data from Excel file you should download phpExcel library from <a href="http://support.dhtmlx.com/x-files/connector/phpExcel.zip" class="urlextern" title="http://support.dhtmlx.com/x-files/connector/phpExcel.zip"  rel="nofollow">http://support.dhtmlx.com/x-files/connector/phpExcel.zip</a> and include additional files:
+</p>
+<ul>
+<li class="level1"><div class="li"> &#039;lib/PHPExcel.php&#039; (phpExcel package)</div>
+</li>
+<li class="level2"><div class="li"> &#039;lib/PHPExcel/IOFactory.php&#039; (phpExcel package)</div>
+</li>
+<li class="level2"><div class="li"> &#039;db_excel.php&#039; (standard connector&#039;s package)</div>
+</li>
+</ul>
+
+<p>
+Then, call <a href="dhtmlxconnector___connector_object_methods.html#render_table" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_table()</a>) method where as parameters you should specify cell range and Excel columns. Set the second parameter to &#039;id&#039; for auto id generation.
+
+</p>
+<pre class="code php"><span class="co1">//files from phpExcel package</span>
+<span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st_h">'lib/PHPExcel.php'</span><span class="br0">&#41;</span>;
+<span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st_h">'lib/PHPExcel/IOFactory.php'</span><span class="br0">&#41;</span>;
+<span class="co1">//connectors</span>
+<span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../codebase/db_excel.php&quot;</span><span class="br0">&#41;</span>;
+<span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../codebase/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="st0">&quot;../some.xls&quot;</span><span class="sy0">,</span> <span class="st0">&quot;ExcelDBDataWrapper&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;A18:F83&quot;</span><span class="sy0">,</span> <span class="st0">&quot;id&quot;</span><span class="sy0">,</span> <span class="st0">&quot;A,B,C,D,E,F&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+For more details, see the guide chapter &#039;<a href="dhtmlxconnector___basis.html#loading_from_excel_file" class="wikilink1" title="dhtmlxconnector:basis">loading from Excel file</a>&#039; in &#039;<a href="dhtmlxconnector___basis.html" class="wikilink1" title="dhtmlxconnector:basis">Base concepts</a>&#039; guide.
+</p>
+
+</div>
+
+<h2><a name="how_can_i_load_data_from_file_system" id="how_can_i_load_data_from_file_system">How can I load data from File System?</a></h2>
+<div class="level2">
+
+<p>
+To load data from File System you should include one additional file <em>db_filesystem.php</em> and call <a href="dhtmlxconnector___connector_object_methods.html#render_table" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_table()</a> method where as parameters you should specify <strong>folder</strong> (that requires data listing), <strong>field&#039;s id</strong> (leave it empty or use <em>safe_name</em> as ID of file) and <strong>lists of fields</strong>.
+
+</p>
+<pre class="code php"><span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;./codebase/connector/db_filesystem.php&quot;</span><span class="br0">&#41;</span>;
+<span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;./codebase/connector/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="st0">&quot;&quot;</span><span class="sy0">,</span> <span class="st0">&quot;FileSystem&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;../&quot;</span><span class="sy0">,</span><span class="st0">&quot;safe_name&quot;</span><span class="sy0">,</span><span class="st0">&quot;filename,full_filename,size,name,extention,date,is_folder&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+For more details, see the guide chapter &#039;<a href="dhtmlxconnector___basis.html#loading_from_file_system" class="wikilink1" title="dhtmlxconnector:basis">loading from File System</a>&#039; in &#039;<a href="dhtmlxconnector___basis.html" class="wikilink1" title="dhtmlxconnector:basis">Base concepts</a>&#039; guide.
+
+</p>
+
+</div>
+
+<h2><a name="how_can_i_send_additional_information_to_client-side" id="how_can_i_send_additional_information_to_client-side">How can I send additional information to client-side?</a></h2>
+<div class="level2">
+
+<p>
+To send additional information to client-side that won&#039;t be outputed but you&#039;ll have access to it, use the fourth(optional) parameter of <a href="dhtmlxconnector___connector_object_methods.html#render_table" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_table()</a> method. There you should specify columns that contain desired additional information. 
+
+</p>
+<pre class="code php"><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;some_table&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;name,price&quot;</span><span class="sy0">,</span><span class="st0">&quot;color,count&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+ 
+For more inoformation, see the chapter &#039;<a href="dhtmlxconnector___formatting.html#using_extra_fields" class="wikilink1" title="dhtmlxconnector:formatting">Using extra fields</a>&#039; in &#039;<a href="dhtmlxconnector___formatting.html" class="wikilink1" title="dhtmlxconnector:formatting">Formatting/Changing Data before Loading</a>&#039; guide.
+
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

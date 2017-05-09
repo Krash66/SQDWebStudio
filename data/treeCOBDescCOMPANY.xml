@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tree id="0">
+  <userdata name="DescId">Proj_1.Env_1.COMPANY</userdata>
+  <item id="COMPANY-REC" text="COMPANY-REC" select="1" im0="Field List.ico" im1="Field List.ico" im2="Field List.ico">
+    <userdata name="Icon">Field List.ico</userdata>
+    <userdata name="NumElements">5</userdata>
+    <userdata name="level">1</userdata>
+    <userdata name="Occurs">1</userdata>
+    <userdata name="OccurNum">0</userdata>
+    <userdata name="DataType">GROUPITEM</userdata>
+    <userdata name="Offset">0</userdata>
+    <userdata name="IntFieldLen">47</userdata>
+    <userdata name="Scale">0</userdata>
+    <userdata name="NullAllowed">Yes</userdata>
+    <userdata name="IsKey">No</userdata>
+    <userdata name="FKey"></userdata>
+    <userdata name="InitVal"></userdata>
+    <userdata name="ReType"></userdata>
+    <userdata name="ExtType"></userdata>
+    <userdata name="Invalid"></userdata>
+    <userdata name="DateFormat"></userdata>
+    <userdata name="Label"></userdata>
+    <userdata name="RecId"></userdata>
+    <item id="COMPNAME" text="COMPNAME" im0="105.ico" im1="105.ico" im2="105.ico">
+      <userdata name="Icon">105.ico</userdata>
+      <userdata name="NumElements">0</userdata>
+      <userdata name="level">2</userdata>
+      <userdata name="Occurs">1</userdata>
+      <userdata name="OccurNum">0</userdata>
+      <userdata name="DataType">CHAR</userdata>
+      <userdata name="Offset">0</userdata>
+      <userdata name="IntFieldLen">10</userdata>
+      <userdata name="Scale">0</userdata>
+      <userdata name="NullAllowed">No</userdata>
+      <userdata name="IsKey">Yes</userdata>
+      <userdata name="FKey"></userdata>
+      <userdata name="InitVal"></userdata>
+      <userdata name="ReType"></userdata>
+      <userdata name="ExtType"></userdata>
+      <userdata name="Invalid"></userdata>
+      <userdata name="DateFormat"></userdata>
+      <userdata name="Label"></userdata>
+      <userdata name="RecId"></userdata>
+    </item>
+    <item id="COMP-ADDRESS" text="COMP-ADDRESS" im0="Field List.ico" im1="Field List.ico" im2="Field List.ico">
+      <userdata name="Icon">Field List.ico</userdata>
+      <userdata name="NumElements">0</userdata>
+      <userdata name="level">2</userdata>
+      <userdata name="Occurs">1</userdata>
+      <userdata name="OccurNum">0</userdata>
+      <userdata name="DataType">CHAR</userdata>
+      <userdata name="Offset">10</userdata>
+      <userdata name="IntFieldLen">20</userdata>
+      <userdata name="Scale">0</userdata>
+      <userdata name="NullAllowed">Yes</userdata>
+      <userdata name="IsKey">No</userdata>
+      <userdata name="FKey"></userdata>
+      <userdata name="InitVal"></userdata>
+      <userdata name="ReType"></userdata>
+      <userdata name="ExtType"></userdata>
+      <userdata name="Invalid"></userdata>
+      <userdata name="DateFormat"></userdata>
+      <userdata name="Label"></userdata>
+      <userdata name="RecId"></userdata>
+    </item>
+    <item id="COMP-CITY" text="COMP-CITY" im0="Field List.ico" im1="Field List.ico" im2="Field List.ico">
+      <userdata name="Icon">Field List.ico</userdata>
+      <userdata name="NumElements">0</userdata>
+      <userdata name="level">2</userdata>
+      <userdata name="Occurs">1</userdata>
+      <userdata name="OccurNum">0</userdata>
+      <userdata name="DataType">CHAR</userdata>
+      <userdata name="Offset">30</userdata>
+      <userdata name="IntFieldLen">10</userdata>
+      <userdata name="Scale">0</userdata>
+      <userdata name="NullAllowed">Yes</userdata>
+      <userdata name="IsKey">No</userdata>
+      <userdata name="FKey"></userdata>
+      <userdata name="InitVal"></userdata>
+      <userdata name="ReType"></userdata>
+      <userdata name="ExtType"></userdata>
+      <userdata name="Invalid"></userdata>
+      <userdata name="DateFormat"></userdata>
+      <userdata name="Label"></userdata>
+      <userdata name="RecId"></userdata>
+    </item>
+    <item id="COMP-STATE" text="COMP-STATE" im0="Field List.ico" im1="Field List.ico" im2="Field List.ico">
+      <userdata name="Icon">Field List.ico</userdata>
+      <userdata name="NumElements">0</userdata>
+      <userdata name="level">2</userdata>
+      <userdata name="Occurs">1</userdata>
+      <userdata name="OccurNum">0</userdata>
+      <userdata name="DataType">CHAR</userdata>
+      <userdata name="Offset">40</userdata>
+      <userdata name="IntFieldLen">2</userdata>
+      <userdata name="Scale">0</userdata>
+      <userdata name="NullAllowed">Yes</userdata>
+      <userdata name="IsKey">No</userdata>
+      <userdata name="FKey"></userdata>
+      <userdata name="InitVal"></userdata>
+      <userdata name="ReType"></userdata>
+      <userdata name="ExtType"></userdata>
+      <userdata name="Invalid"></userdata>
+      <userdata name="DateFormat"></userdata>
+      <userdata name="Label"></userdata>
+      <userdata name="RecId"></userdata>
+    </item>
+    <item id="COMP-ZIP" text="COMP-ZIP" im0="Field List.ico" im1="Field List.ico" im2="Field List.ico">
+      <userdata name="Icon">Field List.ico</userdata>
+      <userdata name="NumElements">0</userdata>
+      <userdata name="level">2</userdata>
+      <userdata name="Occurs">1</userdata>
+      <userdata name="OccurNum">0</userdata>
+      <userdata name="DataType">CHAR</userdata>
+      <userdata name="Offset">42</userdata>
+      <userdata name="IntFieldLen">5</userdata>
+      <userdata name="Scale">0</userdata>
+      <userdata name="NullAllowed">Yes</userdata>
+      <userdata name="IsKey">No</userdata>
+      <userdata name="FKey"></userdata>
+      <userdata name="InitVal"></userdata>
+      <userdata name="ReType"></userdata>
+      <userdata name="ExtType"></userdata>
+      <userdata name="Invalid"></userdata>
+      <userdata name="DateFormat"></userdata>
+      <userdata name="Label"></userdata>
+      <userdata name="RecId"></userdata>
+    </item>
+  </item>
+</tree>

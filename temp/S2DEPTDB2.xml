@@ -1,0 +1,58 @@
+<record id="DEPTDB2">
+<atom name="NAME" type="str">DEPTDB2</atom>
+<atom name="ALIAS" type="str">DEPTDB2</atom>
+<fld id="DEPTNO">
+<atom name="ID" type="int">0</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="NAME" type="str">DEPTNO</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="DEPT_NAME">
+<atom name="ID" type="int">1</atom>
+<atom name="LEN" type="int">29</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="NAME" type="str">DEPT_NAME</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="DEPT_MGRNO">
+<atom name="ID" type="int">2</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="NAME" type="str">DEPT_MGRNO</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="DEPT_ADMRDEP">
+<atom name="ID" type="int">3</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="NAME" type="str">DEPT_ADMRDEP</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="DEPT_LOC">
+<atom name="ID" type="int">4</atom>
+<atom name="LEN" type="int">16</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="NAME" type="str">DEPT_LOC</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="COMPNAME">
+<atom name="ID" type="int">5</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="NAME" type="str">COMPNAME</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+</record>

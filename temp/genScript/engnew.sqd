@@ -1,0 +1,170 @@
+--------------------------------------------------------
+--           PROJECT: newTest3-30-15
+--       ENVIRONMENT: envnew
+--            SYSTEM: sysnew
+--------------------------------------------------------
+JOBNAME engnew;
+DATEFORMAT ISO;
+
+RDBMS DB2 db1;
+
+-- ------------------------------------------------------
+--           Data Definition Section
+-- ------------------------------------------------------
+
+DESCRIPTION IMSDBD 'remt_schema.dbd' AS remt_schema;
+
+DESCRIPTION COBOL 'SREAUDIT.COB'
+              AS SREAUDIT
+
+              FOR SEGMENT SREAUDIT
+              IN DATABASE DREMT10P;
+
+DESCRIPTION  'SREMUCOM.COB'
+              AS SREMUCOM
+
+              FOR SEGMENT SREMUCOM
+              IN DATABASE DREMT10P;
+
+DESCRIPTION COBOL 'SRECOMMS.COB'
+              AS SRECOMMS
+
+              FOR SEGMENT SRECOMMS
+              IN DATABASE DREMT10P;
+
+DATASTORE cdc://host21:1111/inCDC/engnew
+          OF UTSCDC
+          AS CDCIN
+          DESCRIBED BY
+                    SREAUDIT
+                   ,SREMUCOM
+                   ,SRECOMMS
+;
+
+DESCRIPTION SQLDDL 'PROC_AUDT_DETLS_REMT_1.ddl'
+              AS PROC_AUDT_DETLS_REMT_1;
+
+DATASTORE PROC_AUDIT
+          OF Relational
+          AS TgtProcAudit
+          DESCRIBED BY
+                    PROC_AUDT_DETLS_REMT_1
+          FOR Change
+;
+
+DESCRIPTION SQLDDL 'o_CATDLVY.ddl'
+              AS o_CATDLVY;
+
+DATASTORE CATDVLY
+          OF Relational
+          AS TgtCATD
+          DESCRIBED BY
+                    o_CATDLVY
+          FOR Change
+;
+
+-- ------------------------------------------------------
+--           Field Specification Section
+-- ------------------------------------------------------
+
+DECLARE var_1 12 3;
+
+-- ------------------------------------------------------
+--           Procedure Section
+-- ------------------------------------------------------
+
+CREATE PROC ProcAudit AS SELECT
+{
+     SEQUENCE_NUMBER  =  SEQNUM(start_value,increment_value)
+     ORIGIN  =  ORIGIN
+     APPLMNEM  =  APPLMNEM
+     CURR_DATE  =  CURR_DATE
+     REC_TYP  =  REC_TYP
+     CONCAT_KEY  =  CONCAT_KEY
+     FUNC_OPID  =  RSRVD_DATA
+     RSRVD_DATA  =  LAST_UPDT_DATE
+     FUNC_RLSE_IND  =  FUNC_CODE
+     LAST_UPDT_DTTM  =  FUNC_OPID
+     FUNC_CODE  =  FUNC_RLSE_IND
+}
+FROM CDCIN;
+
+
+CREATE PROC Lproc1 AS SELECT
+{
+
+-- Replace '**ProcedureName**' with the correct Procedure Name
+
+CASE CDC_TBNAME(CDCIN)
+     WHEN 'SREAUDIT'
+     DO
+          CALLPROC(**ProcedureName**)
+     END
+     WHEN 'SREMUCOM'
+     DO
+          CALLPROC(**ProcedureName**)
+     END
+     WHEN 'SRECOMMS'
+     DO
+          CALLPROC(**ProcedureName**)
+     END
+
+}
+FROM CDCIN;
+
+
+CREATE PROC test2 AS SELECT
+{
+     CADLVY_CACC_NO  =  SREAUDIT
+     CADLVY_CD  =  ORIGIN
+     CADLVY_SEQ  =  APPLMNEM
+     CADLVY_ID1  =  CURR_DATE
+     CADLVY_ID2  =  REC_TYP
+     CADLVY_UPDT_LOGN  =  CONCAT_KEY
+     CADLVY_UPDT_DTM  =  RSRVD_DATA
+     CADLVY_COMP1  =  LAST_UPDT_DATE
+     CADLVY_COMP2  =  LAST_UPDT_TIME
+     CADLVY_COMP3  =  FUNC_CODE
+     CADLVY_COMP4  =  FUNC_OPID
+     CADLVY_COMP5  =  FUNC_RLSE_IND
+     CADLVY_COMP6  =  RSVDTA
+     CADLVY_COMP7  =  LSUPDT
+     CADLVY_COMP8  =  LSUPTM
+     CADLVY_COMP9  =  FUNCDE
+     CADLVY_COMP10  =  FUNCID
+     CADLVY_COMP11  =  FRLSND
+     CADLVY_COMP12  =  PFK_KFLDC2
+     CADLVY_COMP13  =  CDCTSTMP(CDCIN)
+     CADLVY_COMP14  =  CDCTSTMPPK(CDCIN)
+}
+FROM CDCIN;
+
+
+-- ------------------------------------------------------
+--           Main Section
+-- ------------------------------------------------------
+
+PROCESS INTO
+       TgtProcAudit
+      ,TgtCATD
+SELECT
+{
+
+-- Replace '**ProcedureName**' with the correct Procedure Name
+
+CASE CDC_TBNAME(CDCIN)
+     WHEN 'SREAUDIT'
+     DO
+          CALLPROC(**ProcedureName**)
+     END
+     WHEN 'SREMUCOM'
+     DO
+          CALLPROC(**ProcedureName**)
+     END
+     WHEN 'SRECOMMS'
+     DO
+          CALLPROC(**ProcedureName**)
+     END
+
+}
+FROM CDCIN;

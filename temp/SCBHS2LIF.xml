@@ -1,0 +1,260 @@
+<record id="BHS2LIF-STRUCTURE-DATA-ITEM">
+<atom name="NAME" type="str">BHS2LIF-STRUCTURE-DATA-ITEM</atom>
+<fld id="BHS2LIF-STRUCTURE-DATA-ITEM">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">BHS2LIF-STRUCTURE-DATA-ITEM</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="LEN" type="int">100</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="LFT-KEY">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">LFT-KEY</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="LFT-GRP-NBR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">LFT-GRP-NBR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-BEN-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">9</atom>
+<atom name="NAME" type="str">LFT-BEN-CD</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-TIER">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">18</atom>
+<atom name="NAME" type="str">LFT-TIER</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-KEY-FILLER">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">19</atom>
+<atom name="NAME" type="str">LFT-KEY-FILLER</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+<fld id="LFT-MED-LFT-1">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="NAME" type="str">LFT-MED-LFT-1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-MED-LFT-ADJ-1">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">24</atom>
+<atom name="NAME" type="str">LFT-MED-LFT-ADJ-1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-MED-LFT-YR-1">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">28</atom>
+<atom name="NAME" type="str">LFT-MED-LFT-YR-1</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIMT-FLEX-AMT-1">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">30</atom>
+<atom name="NAME" type="str">LFT-REIMT-FLEX-AMT-1</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIM-FLX-AMT-SPT-1">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">32</atom>
+<atom name="NAME" type="str">LFT-REIM-FLX-AMT-SPT-1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIM-APP-LFT-AMT-1">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">36</atom>
+<atom name="NAME" type="str">LFT-REIM-APP-LFT-AMT-1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-MED-LFT-2">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">40</atom>
+<atom name="NAME" type="str">LFT-MED-LFT-2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-MED-LFT-ADJ-2">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">44</atom>
+<atom name="NAME" type="str">LFT-MED-LFT-ADJ-2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-MED-LFT-YR-2">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">48</atom>
+<atom name="NAME" type="str">LFT-MED-LFT-YR-2</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIMT-FLEX-AMT-2">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">50</atom>
+<atom name="NAME" type="str">LFT-REIMT-FLEX-AMT-2</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIM-FLX-AMT-SPT-2">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">52</atom>
+<atom name="NAME" type="str">LFT-REIM-FLX-AMT-SPT-2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIM-APP-LFT-AMT-2">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">56</atom>
+<atom name="NAME" type="str">LFT-REIM-APP-LFT-AMT-2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-MED-LFT-3">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">60</atom>
+<atom name="NAME" type="str">LFT-MED-LFT-3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-MED-LFT-ADJ-3">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">64</atom>
+<atom name="NAME" type="str">LFT-MED-LFT-ADJ-3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-MED-LFT-YR-3">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">68</atom>
+<atom name="NAME" type="str">LFT-MED-LFT-YR-3</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIMT-FLEX-AMT-3">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">70</atom>
+<atom name="NAME" type="str">LFT-REIMT-FLEX-AMT-3</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">21</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIM-FLX-AMT-SPT-3">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">72</atom>
+<atom name="NAME" type="str">LFT-REIM-FLX-AMT-SPT-3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">22</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIM-APP-LFT-AMT-3">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">76</atom>
+<atom name="NAME" type="str">LFT-REIM-APP-LFT-AMT-3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">23</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-PSY-LFT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">80</atom>
+<atom name="NAME" type="str">LFT-PSY-LFT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">24</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="LFT-REIMT-CT">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">84</atom>
+<atom name="NAME" type="str">LFT-REIMT-CT</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">25</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+</record>

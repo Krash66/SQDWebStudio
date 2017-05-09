@@ -1,0 +1,192 @@
+<dbdmap id="">
+<database id="PCBHSP10">
+<atom name="NAME" type="str">PCBHSP10</atom>
+<segment id="BHS1DEP ">
+<atom name="MAXLEN" type="int">72</atom>
+<atom name="NAME" type="str">BHS1DEP </atom>
+<atom name="DEPTH" type="int">1</atom>
+<atom name="ROOTLEN" type="int">24</atom>
+<atom name="MINLEN" type="int">72</atom>
+<field id="DEPEIDK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">DEPEIDK </atom>
+<atom name="LEN" type="int">24</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+<segment id="BHS2LIF " parent="BHS1DEP ">
+<atom name="MAXLEN" type="int">100</atom>
+<atom name="NAME" type="str">BHS2LIF </atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="ROOTLEN" type="int">44</atom>
+<atom name="MINLEN" type="int">100</atom>
+<field id="LIFSEQK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">LIFSEQK </atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+</segment>
+<segment id="BHS2MCH " parent="BHS1DEP ">
+<atom name="MAXLEN" type="int">572</atom>
+<atom name="NAME" type="str">BHS2MCH </atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="ROOTLEN" type="int">44</atom>
+<atom name="MINLEN" type="int">572</atom>
+<field id="MCHCLMK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">MCHCLMK </atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+<field id="MCHNBRK ">
+<atom name="START" type="int">3</atom>
+<atom name="NAME" type="str">MCHNBRK </atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+<field id="MCHOVRK ">
+<atom name="START" type="int">275</atom>
+<atom name="NAME" type="str">MCHOVRK </atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+<segment id="BHS3MDE " parent="BHS2MCH ">
+<atom name="MAXLEN" type="int">2640</atom>
+<atom name="NAME" type="str">BHS3MDE </atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="ROOTLEN" type="int">46</atom>
+<atom name="MINLEN" type="int">2640</atom>
+<field id="MDELNOK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">MDELNOK </atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+</segment>
+<segment id="BHS3MNA " parent="BHS2MCH ">
+<atom name="MAXLEN" type="int">3040</atom>
+<atom name="NAME" type="str">BHS3MNA </atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="ROOTLEN" type="int">46</atom>
+<atom name="MINLEN" type="int">3040</atom>
+<field id="MNALNOK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">MNALNOK </atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+</segment>
+<segment id="BHS3OCD " parent="BHS2MCH ">
+<atom name="MAXLEN" type="int">515</atom>
+<atom name="NAME" type="str">BHS3OCD </atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="ROOTLEN" type="int">47</atom>
+<atom name="MINLEN" type="int">515</atom>
+<field id="MOCDNOK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">MOCDNOK </atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+</segment>
+<segment id="BHS3REV " parent="BHS2MCH ">
+<atom name="MAXLEN" type="int">1840</atom>
+<atom name="NAME" type="str">BHS3REV </atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MINLEN" type="int">1840</atom>
+</segment>
+</segment>
+<segment id="BHS2DCH " parent="BHS1DEP ">
+<atom name="MAXLEN" type="int">512</atom>
+<atom name="NAME" type="str">BHS2DCH </atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="ROOTLEN" type="int">44</atom>
+<atom name="MINLEN" type="int">512</atom>
+<field id="DCHCLMK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">DCHCLMK </atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+<field id="DCHOVRK ">
+<atom name="START" type="int">275</atom>
+<atom name="NAME" type="str">DCHOVRK </atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+<segment id="BHS3DDE " parent="BHS2DCH ">
+<atom name="MAXLEN" type="int">2634</atom>
+<atom name="NAME" type="str">BHS3DDE </atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="ROOTLEN" type="int">46</atom>
+<atom name="MINLEN" type="int">2634</atom>
+<field id="DDELNOK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">DDELNOK </atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+</segment>
+<segment id="BHS3DNA " parent="BHS2DCH ">
+<atom name="MAXLEN" type="int">2794</atom>
+<atom name="NAME" type="str">BHS3DNA </atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="ROOTLEN" type="int">46</atom>
+<atom name="MINLEN" type="int">2794</atom>
+<field id="DNALNOK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">DNALNOK </atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+</segment>
+</segment>
+<segment id="BHS2PPV " parent="BHS1DEP ">
+<atom name="MAXLEN" type="int">80</atom>
+<atom name="NAME" type="str">BHS2PPV </atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="ROOTLEN" type="int">32</atom>
+<atom name="MINLEN" type="int">80</atom>
+<field id="PPVSEQK ">
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">PPVSEQK </atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+</segment>
+<segment id="BHS2PRE " parent="BHS1DEP ">
+<atom name="MAXLEN" type="int">860</atom>
+<atom name="NAME" type="str">BHS2PRE </atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="ROOTLEN" type="int">31</atom>
+<atom name="MINLEN" type="int">60</atom>
+<field id="PRESEQK ">
+<atom name="START" type="int">3</atom>
+<atom name="NAME" type="str">PRESEQK </atom>
+<atom name="LEN" type="int">7</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">X</atom>
+</field>
+</segment>
+<segment id="BHS2CLA " parent="BHS1DEP ">
+<atom name="MAXLEN" type="int">72</atom>
+<atom name="NAME" type="str">BHS2CLA </atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MINLEN" type="int">72</atom>
+<atom name="NOTWIN" type="int">1</atom>
+</segment>
+</segment>
+</database>
+</dbdmap>

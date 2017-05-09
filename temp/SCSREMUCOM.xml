@@ -1,0 +1,211 @@
+<record id="SREMUCOM">
+<atom name="NAME" type="str">SREMUCOM</atom>
+<fld id="SREMUCOM">
+<atom name="LEN" type="int">115</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="NAME" type="str">SREMUCOM</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<fld id="ORIGIN">
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="NAME" type="str">ORIGIN</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="APP-MNEM">
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="NAME" type="str">APP-MNEM</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="SYS-DATE">
+<atom name="LEN" type="int">8</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="POSITION" type="int">8</atom>
+<atom name="NAME" type="str">SYS-DATE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="REC-TYPE">
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="POSITION" type="int">16</atom>
+<atom name="NAME" type="str">REC-TYPE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="CONC-KEY">
+<atom name="LEN" type="int">19</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="NAME" type="str">CONC-KEY</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="RSRVD-DATA">
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="POSITION" type="int">39</atom>
+<atom name="NAME" type="str">RSRVD-DATA</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+</fld>
+<fld id="LAST-UPDT-DATE">
+<atom name="LEN" type="int">8</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="POSITION" type="int">41</atom>
+<atom name="NAME" type="str">LAST-UPDT-DATE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="LAST-UPDT-TIME">
+<atom name="LEN" type="int">6</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="POSITION" type="int">49</atom>
+<atom name="NAME" type="str">LAST-UPDT-TIME</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="COMM-AMT">
+<atom name="LEN" type="int">8</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="POSITION" type="int">55</atom>
+<atom name="NAME" type="str">COMM-AMT</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">15</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+</fld>
+<fld id="COMM-CODE">
+<atom name="LEN" type="int">1</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="POSITION" type="int">63</atom>
+<atom name="NAME" type="str">COMM-CODE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="COMM-ORIDE-IND">
+<atom name="LEN" type="int">1</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="POSITION" type="int">64</atom>
+<atom name="NAME" type="str">COMM-ORIDE-IND</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="COMM-DR-ACCT-NO">
+<atom name="LEN" type="int">10</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="POSITION" type="int">65</atom>
+<atom name="NAME" type="str">COMM-DR-ACCT-NO</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">10</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+</fld>
+<fld id="COMM-CHRG-CURR-TYPE-CODE">
+<atom name="LEN" type="int">1</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="POSITION" type="int">75</atom>
+<atom name="NAME" type="str">COMM-CHRG-CURR-TYPE-CODE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="TXBLE-CODE">
+<atom name="LEN" type="int">1</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="POSITION" type="int">76</atom>
+<atom name="NAME" type="str">TXBLE-CODE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="TAX-RATE">
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="POSITION" type="int">77</atom>
+<atom name="NAME" type="str">TAX-RATE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+</fld>
+<fld id="ENTRY-TYPE">
+<atom name="LEN" type="int">3</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="POSITION" type="int">81</atom>
+<atom name="NAME" type="str">ENTRY-TYPE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="CORR-PYMT-CHRG-TYPE">
+<atom name="LEN" type="int">1</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="POSITION" type="int">84</atom>
+<atom name="NAME" type="str">CORR-PYMT-CHRG-TYPE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="PRICE-CURR-CODE">
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="POSITION" type="int">85</atom>
+<atom name="NAME" type="str">PRICE-CURR-CODE</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="ACCT-BILLG-STTS">
+<atom name="LEN" type="int">1</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="POSITION" type="int">89</atom>
+<atom name="NAME" type="str">ACCT-BILLG-STTS</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="CHRG-AMT">
+<atom name="LEN" type="int">8</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="POSITION" type="int">90</atom>
+<atom name="NAME" type="str">CHRG-AMT</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">15</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+</fld>
+</fld>
+</record>

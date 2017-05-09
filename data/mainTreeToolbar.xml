@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<toolbar>
+  <item id="btn_treeNew" type="buttonSelect" img="new.gif" imgdis="new_dis.gif" text="New" title="New Item" action="showNewItemSelect">
+    <item type="button"	id="new_Env"  text="Environment" img="85.ico" action="doOnNewEnv"/>
+    <item type="button"	id="new_Conn" text="Connection"    img="15.ico"    action="doOnNewConn"/>
+    <item type="button"	id="new_SrcDesc"  text="Source Description"  img="desc.ico"  action="doOnNewSrcDesc"/>
+    <item type="button"	id="new_TgtDesc"  text="Target Description"  img="desc.ico"  action="doOnNewTgtDesc"/>
+    <item type="button" id="new_VarTop" text="Variable"  img="var.ico"  action="doOnNewVar"/>
+    <item type="button"	id="new_Sys" text="System"   img="1.ico"       action="doOnNewSys"/>
+    <item type="button"	id="new_Eng" text="Engine"   img="train.ico"         action="doOnNewEng"/>
+    <item type="button"	id="new_SDS" text="Source Datastore"   img="SDS.ico"   action="doOnNewSDS"/>
+    <item type="button"	id="new_TDS" text="Target Datastore"   img="TDS.ico"   action="doOnNewTDS"/>
+    <item type="button"	id="new_Var" text="Variable"   img="var.ico"   action="doOnNewVar"/>
+    <item type="button"	id="new_Proc" text="Procedure"   img="Proc.ico"   action="doOnNewProc"/>
+    <item type="button"	id="new_Main" text="Main Procedure"   img="72.ico"   action="doOnNewMain"/>
+  </item>
+  <item id="sep1" type="separator"/>
+  
+  <item id="cut"   type="button" img="cut.gif"   text=""   imgdis="cut_dis.gif"  title="Cut"   action="doTreeEdit">
+    <userdata name="linka"><![CDATA[http://linkA]]></userdata>
+    <userdata name="linkb"><![CDATA[http://linkB]]></userdata>
+  </item>
+  <item id="copy"  type="button" img="copy.gif"  text=""  imgdis="copy_dis.gif"  title="Copy"  action="doTreeEdit">
+    <userdata name="linkc"><![CDATA[http://linkC]]></userdata>
+  </item>
+  <item id="paste" type="button" img="paste.gif" text="" imgdis="paste_dis.gif"  title="Paste" action="doTreeEdit"/>
+
+  <item id="sep4" type="separator"/>
+
+  <item  type="button" id="delNode" img="delete.ico"  text=""  title="Delete Item" action="doTreeDelete"/>
+
+</toolbar>

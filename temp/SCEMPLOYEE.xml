@@ -1,0 +1,151 @@
+<record id="EMPLOYEE-REC">
+<atom name="NAME" type="str">EMPLOYEE-REC</atom>
+<fld id="EMPLOYEE-REC">
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="NAME" type="str">EMPLOYEE-REC</atom>
+<atom name="LEN" type="int">87</atom>
+<fld id="EMPNO">
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="NAME" type="str">EMPNO</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+<fld id="EMPL-FIRST">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="NAME" type="str">EMPL-FIRST</atom>
+<atom name="LEN" type="int">12</atom>
+</fld>
+<fld id="EMPL-MID">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">18</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="NAME" type="str">EMPL-MID</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="EMPL-LAST">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">19</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="NAME" type="str">EMPL-LAST</atom>
+<atom name="LEN" type="int">15</atom>
+</fld>
+<fld id="EMPL-DEPT">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">34</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="NAME" type="str">EMPL-DEPT</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="EMPL-PHONE">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">37</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="NAME" type="str">EMPL-PHONE</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="EMPL-HIREDT">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">41</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="NAME" type="str">EMPL-HIREDT</atom>
+<atom name="LEN" type="int">10</atom>
+</fld>
+<fld id="EMPL-JOB">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">51</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="NAME" type="str">EMPL-JOB</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="EMPL-EDLEVEL">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">59</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="NAME" type="str">EMPL-EDLEVEL</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="EMPL-SEX">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">61</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="NAME" type="str">EMPL-SEX</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="EMPL-DOB">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">62</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="NAME" type="str">EMPL-DOB</atom>
+<atom name="LEN" type="int">10</atom>
+</fld>
+<fld id="EMPL-SALARY">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">72</atom>
+<atom name="PRECISION" type="int">9</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="NAME" type="str">EMPL-SALARY</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="EMPL-BONUS">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">77</atom>
+<atom name="PRECISION" type="int">9</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="NAME" type="str">EMPL-BONUS</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="EMPL-COMM">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">82</atom>
+<atom name="PRECISION" type="int">9</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="NAME" type="str">EMPL-COMM</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+</fld>
+</record>

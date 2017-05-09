@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rows>
+  <row id="legType">
+		<cell>Legacy Type</cell>
+		<cell></cell>
+  </row>
+  <row id="DataType">
+    <cell>Data Type</cell>
+    <cell></cell>
+  </row>
+  <row id="IsKey">
+    <cell>Key field?</cell>
+    <cell type="co" xmlcontent="1" editable="0">
+      <option value="yes">yes</option>
+      <option value="no">no</option>
+    </cell>
+  </row>
+  <row id="NullAllowed">
+    <cell>Null Allowed?</cell>
+    <cell type="co" xmlcontent="1" editable="0">
+      <option value="yes">yes</option>
+      <option value="no">no</option>
+    </cell>
+  </row>
+  <row id="IntFieldLen">
+    <cell>Internal field length</cell>
+    <cell></cell>
+  </row>
+  <row id="Scale">
+    <cell>Scale</cell>
+    <cell></cell>
+  </row>
+  <row id="InitVal">
+    <cell>Initialization value</cell>
+    <cell></cell>
+  </row>
+  <row id="ReType">
+    <cell>Re-Type data as</cell>
+    <cell type="co" xmlcontent="1" editable="0">
+      <option value="FCHAR">FCHAR</option>
+      <option value="BINARY">BINARY</option>
+      <option value="DATE">DATE</option>
+      <option value="VCHAR">VCHAR</option>
+      <option value="FULLW">FULLW</option>
+      <option value="HALFW">HALFW</option>
+      <option value="NUMBER">NUMBER</option>
+    </cell>
+  </row>
+  <row id="ExtType">
+    <cell>External data Type</cell>
+    <cell type="co" xmlcontent="1" editable="0">
+      <option value="ALPHA">ALPHA</option>
+      <option value="ALNUM">ALNUM</option>
+      <option value="CIYYMMDD">CIYYMMDD</option>
+      <option value="DDMMYY">DDMMYY</option>
+      <option value="DDMMYYHHMM">DDMMYYHHMM</option>
+      <option value="DDMMYYHHMMSS">DDMMYYHHMMSS</option>
+      <option value="EURDATE">EURDATE</option>
+      <option value="HHMM">HHMM</option>
+      <option value="HHMMSS">HHMMSS</option>
+      <option value="ISODATE">ISODATE</option>
+      <option value="MMDDYY">MMDDYY</option>
+      <option value="MMDDYYHHMM">MMDDYYHHMM</option>
+      <option value="MMDDYYHHMMSS">MMDDYYHHMMSS</option>
+      <option value="USADATE">USADATE</option>
+      <option value="YYDDD">YYDDD</option>
+      <option value="YYDDMM">YYDDMM</option>
+      <option value="YYMMDD">YYMMDD</option>
+      <option value="YYMMDDHHMM">YYMMDDHHMM</option>
+      <option value="YYMMDDHHMMSS">YYMMDDHHMMSS</option>
+      <option value="YYYYDDD">YYYYDDD</option>
+      <option value="YYYYDDMM">YYYYDDMM</option>
+      <option value="YYYYMMDD">YYYYMMDD</option>
+      <option value="YYYYMMDDHHMM">YYYYMMDDHHMM</option>
+      <option value="YYYYMMDDHHMMSS">YYYYMMDDHHMMSS</option>
+    </cell>
+  </row>
+  <row id="Invalid">
+    <cell>Action for invalid value</cell>
+    <cell type="co" xmlcontent="1" editable="0">
+      <option value="SETNULL">SETNULL</option>
+      <option value="SETSPACE">SETSPACE</option>
+      <option value="SETZERO">SETZERO</option>
+      <option value="SETEXP">SETEXP</option>
+      <option value="0001-01-01">0001-01-01</option>
+      <option value="00.00.00">00.00.00</option>
+      <option value="00.00">00.00</option>
+    </cell>
+  </row>
+  <row id="DateFormat">
+    <cell>Date format</cell>
+    <cell></cell>
+  </row>
+  <row id="Label">
+    <cell>Label</cell>
+    <cell></cell>
+  </row>
+</rows>

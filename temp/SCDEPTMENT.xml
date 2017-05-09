@@ -1,0 +1,61 @@
+<record id="DEPTMENT-REC">
+<atom name="NAME" type="str">DEPTMENT-REC</atom>
+<fld id="DEPTMENT-REC">
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEN" type="int">57</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">DEPTMENT-REC</atom>
+<fld id="DEPTNO">
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">DEPTNO</atom>
+</fld>
+<fld id="DEPT-NAME">
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEN" type="int">29</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">3</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">DEPT-NAME</atom>
+</fld>
+<fld id="DEPT-MGRNO">
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">32</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">DEPT-MGRNO</atom>
+</fld>
+<fld id="DEPT-ADMRDEP">
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">38</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">DEPT-ADMRDEP</atom>
+</fld>
+<fld id="DEPT-LOC">
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="LEN" type="int">16</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">41</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">DEPT-LOC</atom>
+</fld>
+</fld>
+</record>

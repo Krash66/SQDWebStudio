@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:dyn_loading    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+<h1><a name="dynamic_loading" id="dynamic_loading">Dynamic loading</a></h1>
+<div class="level1">
+
+<p>
+Dynamical Loading mode allows to load data not all at once, but partially, by client-side request. It decreases initial loading time and loading of server.<br/>
+
+</p>
+
+<p>
+To work correctly, on client-side should be enabled related mode:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>grid</strong> - <em>smart rendering</em> and <em>paging</em> modes</div>
+</li>
+<li class="level1"><div class="li"> <strong>treegrid</strong> - <em>dynamic branch loading</em> mode</div>
+</li>
+<li class="level1"><div class="li"> <strong>tree</strong> - <em>dynamic branch loading</em> mode</div>
+</li>
+<li class="level1"><div class="li"> <strong>combo</strong> - <em>partial autocomplete</em> ( you don&#039;t need  it for normal autocomplete) </div>
+</li>
+<li class="level1"><div class="li"> <strong>dataview</strong> - <em>dynamiс scrolling</em> or <em>dynamic paging</em></div>
+</li>
+</ul>
+
+<p>
+
+To activate the mode you should use the method <a href="dhtmlxconnector___connector_object_methods.html#dynamic_loading" class="wikilink1" title="dhtmlxconnector:connector_object_methods">dynamic_loading()</a>:
+
+</p>
+<pre class="code php"><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">dynamic_loading</span><span class="br0">&#40;</span><span class="br0">&#91;</span><span class="re0">$rowsNum</span><span class="br0">&#93;</span><span class="br0">&#41;</span>;</pre>
+<p>
+<div class='dhx_note'><div class='dhx_note_img'>&nbsp;</div>
+In 'dynamic loading' mode you can't use GROUP BY within SQL query
+</div>
+</p>
+
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>none</em> for a tree,treegrid.</div>
+</li>
+<li class="level1"><div class="li"> <em>number of rows</em> which should be initially loaded (the value should be more than a number of rows visible in the grid, or at least any positive number) for a grid.</div>
+</li>
+<li class="level1"><div class="li"> <em>maximum number of options</em> which server will send to a combo in the &#039;autocomplete mode&#039; for a single data request.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="tree_treegrid_specific" id="tree_treegrid_specific">tree/treegrid specific</a></h3>
+<div class="level3">
+
+<p>
+Normally, connector makes all operations automatically, and doesn&#039;t need customization.<br/>
+
+But, in case of dynamic loading in tree/treeGrid, database can contain field indicated leaf or branch the current item is. 
+In <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event handler you are allowed to mark an item as a leaf or branch (it decreases a number of <acronym title="Structured Query Language">SQL</acronym> queries and increases perfomance).
+
+</p>
+<pre class="code php"><span class="kw2">function</span> custom_define<span class="br0">&#40;</span><span class="re0">$item</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+		<span class="kw1">if</span> <span class="br0">&#40;</span><span class="re0">$item</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;is_a_branch&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+			<span class="re0">$item</span><span class="sy0">-&gt;</span><span class="me1">set_kids</span><span class="br0">&#40;</span><span class="kw2">true</span><span class="br0">&#41;</span>;
+		<span class="kw1">else</span>
+			<span class="re0">$item</span><span class="sy0">-&gt;</span><span class="me1">set_kids</span><span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+<span class="re0">$tree</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeRender&quot;</span><span class="sy0">,</span><span class="st0">&quot;custom_define&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+The same approach can be used for non-dynamical mode of tree/treeGrid as well. It&#039;s not obligatory but lets you increase data generation performance. 
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

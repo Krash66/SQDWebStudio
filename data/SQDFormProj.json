@@ -1,0 +1,16 @@
+[
+	{type: "settings", position: "label-left", labelWidth: 120, inputWidth: 320},
+	{type: "fieldset", label: "Project Properties", inputWidth: "auto", list:[
+			{id:"projName", type: "input", label: "Project Name", value: "Proj_1"},
+			{id:"projCdate", type: "input", label: "Project Creation Date", value: "July 1, 2013 11:05am"},
+			{id:"projLUdate", type: "input", label: "Project Last Updated", value: "August 28, 2013 1:25pm"},
+			{id:"projDSN", type: "input", label: "Metadata DSN", value: "SQDmetaMySQL"},
+			{id:"projCust", type: "input", label: "Customer Name", value: "Demo"}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{name:"btnProjSave", type: "button", value: "Save"},
+			{type: "newcolumn"},
+			{name:"btnProjDelete",type: "button", value: "Delete"}
+		]}
+]
+  

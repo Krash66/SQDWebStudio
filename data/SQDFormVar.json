@@ -1,0 +1,17 @@
+[
+	{type: "settings", position: "label-left", labelWidth: 120, inputWidth: 320},
+	{type: "fieldset", label: "Variable Properties", inputWidth: "auto", list:[
+			{name:"txtVarName", type: "input",  label: "Name", value: ""},
+			{name:"txtVarSize",type: "input", label: "Size", value: ""},
+			{name:"txtVarInitVal",type: "input", label: "Initial Value", value: ""},
+			{name:"gbVarDesc",type: "fieldset", label: "Description", inputWidth: 500, list:[
+				{name:"txtVarDesc", type: "input",rows: "3", inputWidth: 460, value: ""}
+			]}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{name:"btnVarSave", type: "button", value: "Save"},
+			{type: "newcolumn"},
+			{name:"btnVarDelete",type: "button", value: "Delete"}
+		]}
+]
+  

@@ -1,0 +1,41 @@
+<record id="SQD-GEN-REC-00001">
+<atom name="NAME" type="str">SQD-GEN-REC-00001</atom>
+<fld id="SQD-GEN-REC-00001">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">188</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">SQD-GEN-REC-00001</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="N05101-N05101KY">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">38</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">N05101-N05101KY</atom>
+<atom name="LEVEL" type="int">3</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="N05101-DATA">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">130</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">38</atom>
+<atom name="NAME" type="str">N05101-DATA</atom>
+<atom name="LEVEL" type="int">3</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="N05101-SECINDX">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">168</atom>
+<atom name="NAME" type="str">N05101-SECINDX</atom>
+<atom name="LEVEL" type="int">3</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+</record>

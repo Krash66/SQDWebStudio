@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:db_operations    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="elementary_db_operations_with_connector" id="elementary_db_operations_with_connector">Elementary DB operations with Connector</a></h1>
+<div class="level1">
+
+<p>
+dhtmlxConnector allows to execute some actions against DB.
+</p>
+
+</div>
+
+<h2><a name="sql_queries" id="sql_queries">SQL queries</a></h2>
+<div class="level2">
+
+<p>
+DBWrapper object can be accessed as:
+
+</p>
+<pre class="code php"><span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">sql</span></pre>
+<p>
+Then, it can be used in queries in the following way:
+
+</p>
+<pre class="code php"><span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">sql</span><span class="sy0">-&gt;</span><span class="me1">query</span><span class="br0">&#40;</span><span class="st0">&quot;DELETE FROM some_table WHERE ID=1&quot;</span><span class="br0">&#41;</span>;
+<span class="co1">//or</span>
+<span class="re0">$res</span> <span class="sy0">=</span> <span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">sql</span><span class="sy0">-&gt;</span><span class="me1">query</span><span class="br0">&#40;</span><span class="st0">&quot;SELECT * FROM some_table WHERE ID=1&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$data</span> <span class="sy0">=</span>  <span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">sql</span><span class="sy0">-&gt;</span><span class="me1">get_next</span><span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="co1">//or</span>
+<span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">sql</span><span class="sy0">-&gt;</span><span class="me1">query</span><span class="br0">&#40;</span><span class="st0">&quot;INSERT INTO some_table(type) VALUES('simple')&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$id</span> <span class="sy0">=</span> <span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">sql</span><span class="sy0">-&gt;</span><span class="me1">get_new_id</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="insert_query" id="insert_query">INSERT query</a></h2>
+<div class="level2">
+<pre class="code php"><span class="re0">$id</span> <span class="sy0">=</span> <span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">insert</span><span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span>
+		<span class="st0">&quot;type&quot;</span> <span class="sy0">=&gt;</span> <span class="st0">&quot;simple&quot;</span><span class="sy0">,</span>
+                 <span class="sy0">...</span>
+<span class="br0">&#41;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> hash of values</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="update_query" id="update_query">UPDATE query</a></h2>
+<div class="level2">
+<pre class="code php"><span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">update</span><span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span>
+		<span class="st0">&quot;type_id&quot;</span> <span class="sy0">=&gt;</span> <span class="st_h">'1'</span>
+		<span class="st0">&quot;type&quot;</span> <span class="sy0">=&gt;</span> <span class="st_h">'simple'</span>
+<span class="br0">&#41;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> hash of values. For successful result it must contain <em>identity field</em>. </div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="delete_query" id="delete_query">DELETE query</a></h2>
+<div class="level2">
+<pre class="code php"><span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">delete</span><span class="br0">&#40;</span><span class="re0">$id</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> ID of the record that should be deleted </div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="creating_a_new_connector" id="creating_a_new_connector">Creating a new connector</a></h2>
+<div class="level2">
+
+<p>
+You can create an extra connector object on the fly and use it for DB operations.
+
+</p>
+<pre class="code php"><span class="re0">$temp</span> <span class="sy0">=</span> <span class="kw2">new</span> Connector<span class="br0">&#40;</span><span class="re0">$db_connection</span><span class="br0">&#41;</span>;
+<span class="re0">$temp</span><span class="sy0">-&gt;</span><span class="me1">configure</span><span class="br0">&#40;</span><span class="st0">&quot;some_table&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="re0">$temp</span><span class="sy0">-&gt;</span><span class="me1">insert</span><span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span>
+	<span class="st0">&quot;some1&quot;</span> <span class="sy0">=&gt;</span> <span class="st0">&quot;value 1&quot;</span><span class="sy0">,</span>
+	<span class="st0">&quot;some2&quot;</span> <span class="sy0">=&gt;</span> <span class="st0">&quot;value 2&quot;</span>
+<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+<span class="re0">$temp</span><span class="sy0">-&gt;</span><span class="me1">delete</span><span class="br0">&#40;</span><span class="st0">&quot;2&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

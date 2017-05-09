@@ -1,0 +1,35 @@
+[
+	{type: "settings", position: "label-left", labelWidth: 120, inputWidth: 320},
+	{type: "fieldset", label: "Login", inputWidth: "auto", list:[
+			{
+			id:"UserName", 
+			type: "input", 
+			label: "User Name",
+			required: true,
+			validate: "NotEmpty", 
+			value: "SampleUser"
+			},
+			{
+			id:"Password", 
+			type: "password", 
+			label: "Password",
+			required: true,
+			validate: "NotEmpty", 
+			value: "password"
+			}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{
+			name: "DoLogin", 
+			type: "button", 
+			value: "Login"
+			},
+			{type: "newcolumn"},
+			{
+			name: "DoReset", 
+			type: "button", 
+			value: "Reset"
+			}
+		]}
+]
+  

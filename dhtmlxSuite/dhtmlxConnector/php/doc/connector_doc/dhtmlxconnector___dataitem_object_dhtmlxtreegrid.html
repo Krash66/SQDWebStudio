@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:dataitem_object_dhtmlxtreegrid    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="dhtmlxtreegrid" id="dhtmlxtreegrid">dhtmlxTreeGrid</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="get_id" id="get_id">get_id</a></h2>
+<div class="level2">
+
+<p>
+returns the id of an item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">get_id</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_id" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_id</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_index" id="get_index">get_index</a></h2>
+<div class="level2">
+
+<p>
+returns the index of the currently selected item (for example, in grid, it will be the index of a row ) 
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">get_index</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> none.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_parent_id" id="get_parent_id">get_parent_id</a></h2>
+<div class="level2">
+
+<p>
+returns the parent id of the selected item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">get_parent_id</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> none</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_value" id="get_value">get_value</a></h2>
+<div class="level2">
+
+<p>
+returns the value of a field.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name or alias of the field.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_value" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_value</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_cell_attribute" id="set_cell_attribute">set_cell_attribute</a></h2>
+<div class="level2">
+
+<p>
+sets an attribute for a cell of item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_cell_attribute</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$attr</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name of alias of the cell</div>
+</li>
+<li class="level2"><div class="li"> <em>$attr</em> - name of attribute</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - value of attribute</div>
+</li>
+</ul>
+
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_cell_style" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_cell_style</a></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_cell_class" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_cell_class</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_cell_class" id="set_cell_class">set_cell_class</a></h2>
+<div class="level2">
+
+<p>
+sets the css class for a cell of item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_cell_class</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name or alias of the cell</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - css class for the cell</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_cell_style" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_cell_style</a></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_cell_attribute" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_cell_attribute</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_cell_style" id="set_cell_style">set_cell_style</a></h2>
+<div class="level2">
+
+<p>
+sets the style for a cell of item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_cell_style</span><span class="br0">&#40;</span><span class="re0">$style</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$style</em> - <acronym title="HyperText Markup Language">HTML</acronym> style attributes.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_cell_class" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_cell_class</a></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_cell_attribute" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_cell_attribute</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_id" id="set_id">set_id</a></h2>
+<div class="level2">
+
+<p>
+sets the id of the item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_id</span><span class="br0">&#40;</span><span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$value</em> - id of the item.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#get_id" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">get_id</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_image" id="set_image">set_image</a></h2>
+<div class="level2">
+
+<p>
+sets image for all check states of the node in tree.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_image</span><span class="br0">&#40;</span><span class="re0">$img</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$img</em> - relative path to image which will be set for the item of tree (relative to the folder with tree&#039;s icons).</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="skip" id="skip">skip</a></h2>
+<div class="level2">
+
+<p>
+ignores the current item while rendering output. Allows you to define custom filtration rules. 
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">skip</span><span class="br0">&#40;</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> none</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_row_attribute" id="set_row_attribute">set_row_attribute</a></h2>
+<div class="level2">
+
+<p>
+sets an attribute for any row in the component.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_row_attribute</span><span class="br0">&#40;</span><span class="re0">$attr</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$attr</em> - name of attribute</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - value of attribute</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_row_style" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_row_style</a></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_row_attribute" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_row_attribute</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_row_color" id="set_row_color">set_row_color</a></h2>
+<div class="level2">
+
+<p>
+sets color for any row in the component.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_row_color</span><span class="br0">&#40;</span><span class="re0">$color</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$color</em> - color of a row</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_row_style" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_row_style</a></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_row_attribute" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_row_attribute</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_row_style" id="set_row_style">set_row_style</a></h2>
+<div class="level2">
+
+<p>
+sets the style for any row of the component.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_row_style</span><span class="br0">&#40;</span><span class="re0">$style</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$style</em> - <acronym title="HyperText Markup Language">HTML</acronym> style attributes</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_row_color" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_row_color</a></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#set_row_attribute" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">set_row_attribute</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_value" id="set_value">set_value</a></h2>
+<div class="level2">
+
+<p>
+sets the value of a field.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name or alias of the field</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - value of the field in question</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtreegrid.html#get_value" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtreegrid">get_value</a></span> </div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_userdata" id="set_userdata">set_userdata</a></h2>
+<div class="level2">
+
+<p>
+<em>(available from version 1.5)</em> <br/>
+ sets user data for the item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_userdata</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - the user data name</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - user data string</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___formatting.html#using_extra_fields" class="wikilink1" title="dhtmlxconnector:formatting">Formatting/changing data before loading</a></div>
+</li>
+</ul>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

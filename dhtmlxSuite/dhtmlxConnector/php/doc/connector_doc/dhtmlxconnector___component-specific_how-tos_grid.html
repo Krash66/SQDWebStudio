@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:component-specific_how-tos_grid    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="component-specific_how-tos_grid" id="component-specific_how-tos_grid">Component-specific how-tos (grid)</a></h1>
+<div class="level1">
+
+</div>
+
+<h3><a name="how_can_i_define_grid_structure_on_server-side" id="how_can_i_define_grid_structure_on_server-side">How can I define grid structure on server-side?</a></h3>
+<div class="level3">
+
+<p>
+To define grid structure on server-side you can use one of two modes:
+</p>
+<ul>
+<li class="level1"><div class="li"> automatic</div>
+</li>
+<li class="level1"><div class="li"> manual</div>
+</li>
+</ul>
+
+<p>
+In both modes you should use set_config() method where as input parameter GridConfiguration object must be specified.<br/>
+
+</p>
+
+<p>
+In automatic mode, grid will use names of table&#039;s fields as labels for the columns. 
+
+</p>
+<pre class="code php"><span class="re0">$config</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConfiguration<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_config</span><span class="br0">&#40;</span><span class="re0">$config</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;grid50000&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_nm,item_cd&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+In manual mode, structure is defined by php command. Names of commands mimic names of js commands with similar functionality.
+
+</p>
+<pre class="code php"><span class="re0">$config</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConfiguration<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setHeader</span><span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;column 1&quot;</span><span class="sy0">,</span><span class="st0">&quot;column 2&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+<span class="re0">$config</span><span class="sy0">-&gt;</span><span class="me1">setColTypes</span><span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;ro&quot;</span><span class="sy0">,</span><span class="st0">&quot;ed&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_config</span><span class="br0">&#40;</span><span class="re0">$config</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;grid50000&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_nm,item_cd&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+ 
+For more information of the topics covered here, see &#039;<a href="dhtmlxconnector___grid_structure_on_server.html" class="wikilink1" title="dhtmlxconnector:grid_structure_on_server">defining grid structure on server-side</a>&#039; guide.
+</p>
+
+</div>
+
+<h3><a name="how_can_i_export_grid_s_data_from_server_to_excel_file" id="how_can_i_export_grid_s_data_from_server_to_excel_file">How can I export grid&#039;s data from server to Excel file?</a></h3>
+<div class="level3">
+
+<p>
+To export data to Excel file you should:
+</p>
+<ol>
+<li class="level1"><div class="li"> Include one additional file<br/>
+ <br/>
+ <pre class="code php"><span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../../codebase/convert.php&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> Activate conversion service<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$convert</span> <span class="sy0">=</span> <span class="kw2">new</span> ConvertService<span class="br0">&#40;</span><span class="st0">&quot;http://dhtmlx.com/docs/products/devExchange/samples/grid2excel_02/server/generate.php&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> Start exporting<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$convert</span><span class="sy0">-&gt;</span><span class="me1">excel</span><span class="br0">&#40;</span><span class="st0">&quot;some.xls&quot;</span><span class="sy0">,</span><span class="kw2">false</span><span class="br0">&#41;</span>;</pre>
+<p>
+ Both method&#039;s parameters are optional. The first parameter is a name of output file. The second parameter specifies how file will be exported: <em>true</em> - as inline content, <em>false</em> - as individual file.<br/>
+
+</p>
+</div>
+</li>
+</ol>
+
+<p>
+After you call the method excel(), service automatically will start to export data defined through GridConnector. 
+</p>
+
+<p>
+For more information of this topic, see &#039;<a href="dhtmlxconnector___grid_data_export.html" class="wikilink1" title="dhtmlxconnector:grid_data_export">Data export</a>&#039; guide.
+</p>
+
+</div>
+
+<h3><a name="how_can_i_export_grid_s_data_from_server_to_pdf_file" id="how_can_i_export_grid_s_data_from_server_to_pdf_file">How can I export grid&#039;s data from server to pdf file?</a></h3>
+<div class="level3">
+
+<p>
+To export data to pdf file you should:
+</p>
+<ol>
+<li class="level1"><div class="li"> Include one additional file<br/>
+ <br/>
+ <pre class="code php"><span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../../codebase/convert.php&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> Activate conversion service<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$convert</span> <span class="sy0">=</span> <span class="kw2">new</span> ConvertService<span class="br0">&#40;</span><span class="st0">&quot;http://dhtmlx.com/docs/products/devExchange/samples/grid2pdf_02/server/generate.php&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> Start exporting<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$convert</span><span class="sy0">-&gt;</span><span class="me1">pdf</span><span class="br0">&#40;</span><span class="st0">&quot;some.pdf&quot;</span><span class="sy0">,</span><span class="kw2">false</span><span class="br0">&#41;</span>;</pre>
+<p>
+ Both method&#039;s parameters are optional. The first parameter is a name of output file. The second parameter specifies how file will be exported: <em>true</em> - as inline content, <em>false</em> - as individual file.<br/>
+
+</p>
+</div>
+</li>
+</ol>
+
+<p>
+After you call the method pdf(), service automatically will start to export data defined through GridConnector. <br/>
+
+</p>
+
+<p>
+For more information of this topic, see &#039;<a href="dhtmlxconnector___grid_data_export.html" class="wikilink1" title="dhtmlxconnector:grid_data_export">Data export</a>&#039; guide.
+</p>
+
+</div>
+
+<h3><a name="how_can_i_populate_select_combo_columns_with_data" id="how_can_i_populate_select_combo_columns_with_data">How can I populate select/combo columns with data?</a></h3>
+<div class="level3">
+
+<p>
+To define options of select/combo columns you have 2 ways:
+</p>
+<ol>
+<li class="level1"><div class="li"> to load data from the same table the grid is populated with data from<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_options</span><span class="br0">&#40;</span><span class="st0">&quot;item_nm&quot;</span><span class="sy0">,</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;1&quot;</span> <span class="sy0">=&gt;</span> <span class="st0">&quot;one&quot;</span><span class="sy0">,</span> <span class="st0">&quot;2&quot;</span><span class="sy0">=&gt;</span><span class="st0">&quot;two&quot;</span><span class="sy0">,</span><span class="st0">&quot;3&quot;</span> <span class="sy0">=&gt;</span> <span class="st0">&quot;three&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>; <span class="co1">// value =&gt; label</span>
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;grid50&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_nm,item_cd&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> to load data from another table<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$options</span> <span class="sy0">=</span> <span class="kw2">new</span> OptionsConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="re0">$options</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;countries&quot;</span><span class="sy0">,</span><span class="st0">&quot;country_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;country_id(value),country_name(label)&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_options</span><span class="br0">&#40;</span><span class="st0">&quot;item_nm&quot;</span><span class="sy0">,</span><span class="re0">$options</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;grid50&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_nm,item_cd&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+</ol>
+
+<p>
+For more information of this topic, see <a href="dhtmlxconnector___grid_columns.html" class="wikilink1" title="dhtmlxconnector:grid_columns">&#039;Select/combobox columns in grid&#039;</a> article. 
+</p>
+
+</div>
+
+<h3><a name="how_can_i_load_data_from_a_table_that_doesn_t_contain_identity_field" id="how_can_i_load_data_from_a_table_that_doesn_t_contain_identity_field">How can I load data from a table that doesn&#039;t contain identity field?</a></h3>
+<div class="level3">
+
+<p>
+Using KeyGridConnector instead of GridConnector, you can load data from a table without identity field. In this case, any data field will serve as identity.
+
+</p>
+<pre class="code php"><span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> KeyGridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;mytable&quot;</span><span class="sy0">,</span><span class="st0">&quot;name&quot;</span><span class="sy0">,</span><span class="st0">&quot;name,address,phone&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+For more details, see &#039;<a href="dhtmlxconnector___keygridconnector.html" class="wikilink1" title="dhtmlxconnector:keygridconnector">KeyGridConnector</a>&#039; guide.
+
+</p>
+
+</div>
+
+<h3><a name="how_can_i_set_a_custom_style_for_a_row_or_a_cell" id="how_can_i_set_a_custom_style_for_a_row_or_a_cell">How can I set a custom style for a row or a cell?</a></h3>
+<div class="level3">
+
+<p>
+dhtmlxConnector contains a bit of methods that allow to set the appearance of a grid.<br/>
+
+These methods can be divided into 2 groups: 
+
+</p>
+<table class="columns-plugin" style="width:950px">
+<tr><td class="first" style="width:15%;vertical-align:top;">
+
+<p>
+
+<strong>for a cell customization:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___dataitem_object_dhtmlxgrid.html#set_cell_attribute" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxgrid">set_cell_attribute</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___dataitem_object_dhtmlxgrid.html#set_cell_class" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxgrid">set_cell_class</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___dataitem_object_dhtmlxgrid.html#set_cell_style" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxgrid">set_cell_style</a></div>
+</li>
+</ul>
+</td><td style="width:15%;">
+
+<p>
+
+<strong>for a row customization:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___dataitem_object_dhtmlxgrid.html#set_row_attribute" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxgrid">set_row_attribute</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___dataitem_object_dhtmlxgrid.html#set_row_color" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxgrid">set_row_color</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___dataitem_object_dhtmlxgrid.html#set_row_style" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxgrid">set_row_style</a></div>
+</li>
+</ul>
+</td><td class="last" style="width:33%;">
+</td></tr></table>
+<pre class="code php"><span class="kw2">function</span> color_rows<span class="br0">&#40;</span><span class="re0">$row</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+	<span class="kw1">if</span> <span class="br0">&#40;</span><span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">get_index</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">%</span><span class="nu19">2</span><span class="br0">&#41;</span>
+	<span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_row_color</span><span class="br0">&#40;</span><span class="st0">&quot;red&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeRender&quot;</span><span class="sy0">,</span><span class="st0">&quot;color_rows&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;records&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_nm,item_cd&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+Tips:
+</p>
+<ul>
+<li class="level1"><div class="li"> to overwrite background you should use &#039;<strong>background</strong>&#039; not &#039;<strong>background-color</strong>&#039; attribute.</div>
+</li>
+<li class="level1"><div class="li"> skin&#039;s css can overwrite a number of css attributes. To avoid it - use the <strong>!important</strong> flag.<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_row_attribute</span><span class="br0">&#40;</span><span class="st0">&quot;class&quot;</span><span class="sy0">,</span><span class="st0">&quot;backrgroundclass&quot;</span><span class="br0">&#41;</span>;</pre><pre class="code javascript">.<span class="me1">backrgroundclass</span><span class="br0">&#123;</span>
+   background<span class="sy0">:</span>red <span class="sy0">!</span>important;
+<span class="br0">&#125;</span></pre></div>
+</li>
+</ul>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

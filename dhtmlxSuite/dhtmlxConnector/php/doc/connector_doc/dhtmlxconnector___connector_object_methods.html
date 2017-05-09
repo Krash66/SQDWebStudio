@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:connector_object_methods    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="connector_object" id="connector_object">Connector object</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="add_section" id="add_section">add_section</a></h2>
+<div class="level2">
+
+<p>
+(<em>available from version 1.5 and applicable just to DataConnector/JSONDataConnector</em>)<br/>
+
+adds the first child tag(section) to data
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">add_section</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span> <span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - the section name</div>
+</li>
+<li class="level1"><div class="li"> <em>$value</em>  -the section value</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___jsondataconnector.html#adding_tags_sections_to_data" class="wikilink1" title="dhtmlxconnector:jsondataconnector">JSONDataConnector/DataConnector</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="dynamic_loading" id="dynamic_loading">dynamic_loading</a></h2>
+<div class="level2">
+
+<p>
+enables the dynamical loading mode for connector.
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">dynamic_loading</span><span class="br0">&#40;</span><span class="br0">&#91;</span><span class="re0">$rowsNum</span><span class="br0">&#93;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>tree, treegrid</em> - no parameters</div>
+</li>
+<li class="level2"><div class="li"> <em>grid</em> - number of rows which should be initially loaded (the value should be more than number of rows visible in grid, or at least any positive number)</div>
+</li>
+<li class="level2"><div class="li"> <em>combo</em> - maximum number of options which server will send for a single data request in autocomplete mode</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___dyn_loading.html" class="wikilink1" title="dhtmlxconnector:dyn_loading">Dynamic loading</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="enable_log" id="enable_log">enable_log</a></h2>
+<div class="level2">
+
+<p>
+enables logging for connector.
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">enable_log</span><span class="br0">&#40;</span><span class="st0">&quot;path to log file&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>path</em> - absolute or relative path to text file where log will be written.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___errors.html" class="wikilink1" title="dhtmlxconnector:errors">Errors handling and logging</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="is_select_mode" id="is_select_mode">is_select_mode</a></h2>
+<div class="level2">
+
+<p>
+returns current active mode.
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">is_select_mode</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> none.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>Returns:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>true</em>, if select mode is active.</div>
+</li>
+<li class="level2"><div class="li"> <em>false</em>, if update mode is active.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="render_array" id="render_array">render_array</a></h2>
+<div class="level2">
+
+<p>
+configures connector to take data from a <acronym title="Hypertext Preprocessor">PHP</acronym> array which can be filled by any kind of external logic.
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">render_array</span><span class="br0">&#40;</span><span class="re0">$data</span><span class="sy0">,</span><span class="re0">$id</span><span class="sy0">,</span><span class="re0">$text</span><span class="sy0">,</span><span class="re0">$extra</span><span class="sy0">,</span><span class="re0">$relation_id</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$data</em> - name of <acronym title="Hypertext Preprocessor">PHP</acronym> array.</div>
+</li>
+<li class="level1"><div class="li"> <em>$id</em> - name of id field.</div>
+</li>
+<li class="level1"><div class="li"> <em>$text</em> - comma separated list of data fields.</div>
+</li>
+<li class="level1"><div class="li"> <em>$extra</em> - comma separated list of extra fields, optional.</div>
+</li>
+<li class="level1"><div class="li"> <em>$relation_id</em> - used for building hierarchy in case of Tree and TreeGrid.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___connector_object_methods.html#render_sql" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_sql</a></span></div>
+</li>
+<li class="level2"><div class="li"> <span class="curid"><a href="dhtmlxconnector___connector_object_methods.html#render_complex_sql" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_complex_sql</a></span></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___basis.html#loading_from_php_array" class="wikilink1" title="dhtmlxconnector:basis">Basic concepts</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="render_sql" id="render_sql">render_sql</a></h2>
+<div class="level2">
+
+<p>
+configures connector to take data based on provided <acronym title="Structured Query Language">SQL</acronym> text. 
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">render_sql</span><span class="br0">&#40;</span><span class="re0">$sql</span><span class="sy0">,</span><span class="re0">$id</span><span class="sy0">,</span><span class="re0">$text</span><span class="sy0">,</span><span class="re0">$extra</span><span class="sy0">,</span><span class="re0">$relation_id</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$sql</em> - any sql code, which will be used as a base for data selection.</div>
+</li>
+<li class="level2"><div class="li"> <em>$id</em> - name of id field.</div>
+</li>
+<li class="level2"><div class="li"> <em>$text</em> - comma separated list of data fields.</div>
+</li>
+<li class="level2"><div class="li"> <em>$extra</em> - comma separated list of extra fields, optional.</div>
+</li>
+<li class="level2"><div class="li"> <em>$relation_id</em> - used for building hierarchy in case of Tree and TreeGrid.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___connector_object_methods.html#render_table" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_table</a></span></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___basis.html#work_with_several_tables" class="wikilink1" title="dhtmlxconnector:basis">Basic concepts</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="render_complex_sql" id="render_complex_sql">render_complex_sql</a></h2>
+<div class="level2">
+
+<p>
+configures connector to take data based on provided <acronym title="Structured Query Language">SQL</acronym> text.<br/>
+ 
+Works similar to <span class="curid"><a href="dhtmlxconnector___connector_object_methods.html#render_sql" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_sql</a></span>, but have 2 differences:
+
+</p>
+<ol>
+<li class="level1"><div class="li"> Uses provided sql exactly as it is;</div>
+</li>
+<li class="level1"><div class="li"> Can be used only for data loading (for data saving you can use separate connector, event handlers, or custom model).</div>
+</li>
+</ol>
+
+<p>
+
+The method can be used to call stored procedures in the database.
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">render_complex_sql</span><span class="br0">&#40;</span><span class="re0">$sql</span><span class="sy0">,</span><span class="re0">$id</span><span class="sy0">,</span><span class="re0">$text</span><span class="sy0">,</span><span class="re0">$extra</span><span class="sy0">,</span><span class="re0">$relation_id</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$sql</em> - any sql code, which will be used as a base for data selection or the name of a stored procedure.</div>
+</li>
+<li class="level2"><div class="li"> <em>$id</em> - name of id field.</div>
+</li>
+<li class="level2"><div class="li"> <em>$text</em> - comma separated list of data fields.</div>
+</li>
+<li class="level2"><div class="li"> <em>$extra</em> - comma separated list of extra fields, optional.</div>
+</li>
+<li class="level2"><div class="li"> <em>$relation_id</em> - used for building hierarchy in case of Tree and TreeGrid.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___connector_object_methods.html#render_sql" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_sql</a></span></div>
+</li>
+<li class="level2"><div class="li"> <span class="curid"><a href="dhtmlxconnector___connector_object_methods.html#render_table" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_table</a></span></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___basis.html#calling_stored_procedures" class="wikilink1" title="dhtmlxconnector:basis">Basic concepts</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="render_table" id="render_table">render_table</a></h2>
+<div class="level2">
+
+<p>
+configures connector to take data from single table.
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="re0">$table</span><span class="sy0">,</span><span class="re0">$id</span><span class="sy0">,</span><span class="re0">$text</span><span class="sy0">,</span><span class="re0">$extra</span><span class="sy0">,</span><span class="re0">$relation</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$table</em> - name of table.</div>
+</li>
+<li class="level1"><div class="li"> <em>$id</em> - name of id field.</div>
+</li>
+<li class="level1"><div class="li"> <em>$text</em> - comma separated list of data fields.</div>
+</li>
+<li class="level1"><div class="li"> <em>$extra</em> - comma separated list of extra fields, optional.</div>
+</li>
+<li class="level1"><div class="li"> <em>$relation_id</em> - used for building hierarchy in case of Tree and TreeGrid.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>Description:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> If you want to render all fields from DB ( except of identity field), you can use simplified command:<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="re0">$table</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+</ul>
+
+<p>
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___connector_object_methods.html#render_sql" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_sql</a></span></div>
+</li>
+<li class="level2"><div class="li"> <span class="curid"><a href="dhtmlxconnector___connector_object_methods.html#render_complex_sql" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_complex_sql</a></span></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___basis.html#work_with_one_table" class="wikilink1" title="dhtmlxconnector:basis">Basic concepts</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_encoding" id="set_encoding">set_encoding</a></h2>
+<div class="level2">
+
+<p>
+allows you to set encoding that will be applied to generated <acronym title="Extensible Markup Language">XML</acronym> (default encoding is UTF-8). 
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">set_encoding</span><span class="br0">&#40;</span><span class="st0">&quot;iso-8859-1&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> encoding name.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_limit" id="set_limit">set_limit</a></h2>
+<div class="level2">
+
+<p>
+limits the number of data items that will be loaded to a component.
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">set_limit</span><span class="br0">&#40;</span><span class="br0">&#91;</span><span class="re0">$rowsNum</span><span class="br0">&#93;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> number of data items which should be loaded</div>
+</li>
+</ul>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

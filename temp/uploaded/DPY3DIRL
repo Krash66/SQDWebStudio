@@ -1,0 +1,41 @@
+         TITLE   'ASSEMBLE OF DBDNAME=DPY3DIRL '
+*        DSNAME=IMSPROD.DBDLIB
+*        VOL=SYS323
+*        DBDGEN DATE            TIME
+       DBD     NAME=DPY3DIRL,ACCESS=(HIDAM,VSAM),PASSWD=NO
+***********************************************************************
+*        DATASET GROUP NUMBER 1                                       *
+***********************************************************************
+DSG001 DATASET DD1=DPY3PD1,DEVICE=3380,SIZE=(4096),SCAN=0
+***********************************************************************
+*        SEGMENT NUMBER 1                                             *
+***********************************************************************
+       SEGM    NAME=SPY3DIRL,PARENT=0,BYTES=235,RULES=(PPV,LAST),      C
+               PTR=(TWINBWD,,,,)
+       FIELD   NAME=(Y3DIRLKY,SEQ,U),START=1,BYTES=18,TYPE=C
+       FIELD   NAME=(YNCACCNO),START=1,BYTES=7,TYPE=C
+       FIELD   NAME=(YIARTYCD),START=147,BYTES=4,TYPE=C
+       FIELD   NAME=(YGAREANO),START=158,BYTES=1,TYPE=C
+       FIELD   NAME=(DIRLGRID),START=162,BYTES=4,TYPE=P
+       FIELD   NAME=(DIRLSQNO),START=166,BYTES=3,TYPE=P
+       FIELD   NAME=(DIGRASDT),START=169,BYTES=8,TYPE=P
+       FIELD   NAME=(YKOPECID),START=177,BYTES=1,TYPE=C
+       FIELD   NAME=(YKFUNOIN),START=194,BYTES=5,TYPE=C
+       FIELD   NAME=(DEFUNO),START=194,BYTES=5,TYPE=P
+       FIELD   NAME=(FUSTATIN),START=199,BYTES=1,TYPE=C
+       FIELD   NAME=(YHFUSTAT),START=199,BYTES=1,TYPE=C
+       FIELD   NAME=(YKFUNOOT),START=200,BYTES=5,TYPE=C
+       FIELD   NAME=(FUSTATOT),START=205,BYTES=1,TYPE=C
+       LCHILD  NAME=(SIY3DIRL,DIY3DIRL),PTR=INDX,RULES=LAST
+       LCHILD  NAME=(SSZWINY3,DSZWINY3),PTR=INDX,RULES=LAST
+       XDFLD   NAME=XDZWDIRL,SEGMENT=SPY3DIRL,EXTRTN=CISINDX,          C
+               SRCH=(DIRLGRID,DIRLSQNO,DIGRASDT)
+***********************************************************************
+*        SEGMENT NUMBER 2                                             *
+***********************************************************************
+       SEGM    NAME=SPY3MISC,PARENT=((SPY3DIRL,)),BYTES=83,            C
+               RULES=(LLL,LAST),PTR=(TWIN,,,,)
+       FIELD   NAME=(Y3MISCKY,SEQ,U),START=1,BYTES=4,TYPE=C
+       DBDGEN
+       FINISH
+       END

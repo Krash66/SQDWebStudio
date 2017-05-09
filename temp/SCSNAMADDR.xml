@@ -1,0 +1,530 @@
+<record id="SQD-GEN-REC-00001">
+<atom name="NAME" type="str">SQD-GEN-REC-00001</atom>
+<fld id="SQD-GEN-REC-00001">
+<atom name="LEN" type="int">250</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NAME" type="str">SQD-GEN-REC-00001</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-SNAMADDR">
+<atom name="LEN" type="int">250</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">EQ-SNAMADDR</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-RSRVD-DATA">
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-RSRVD-DATA</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-LAST-UPDT-DATE">
+<atom name="LEN" type="int">8</atom>
+<atom name="POSITION" type="int">2</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-LAST-UPDT-DATE</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-LAST-UPDT-TIME">
+<atom name="LEN" type="int">6</atom>
+<atom name="POSITION" type="int">10</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-LAST-UPDT-TIME</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="PRECISION" type="int">6</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-KFLDEQ">
+<atom name="LEN" type="int">11</atom>
+<atom name="POSITION" type="int">16</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-KFLDEQ</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-BR-NO">
+<atom name="LEN" type="int">4</atom>
+<atom name="POSITION" type="int">16</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-BR-NO</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-CUST-NO">
+<atom name="LEN" type="int">5</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-CUST-NO</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-LOCN-ID">
+<atom name="LEN" type="int">2</atom>
+<atom name="POSITION" type="int">25</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-LOCN-ID</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="PRECISION" type="int">2</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+<fld id="EQ-NA">
+<atom name="LEN" type="int">130</atom>
+<atom name="POSITION" type="int">27</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-NA</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-ADDR-NAME">
+<atom name="LEN" type="int">34</atom>
+<atom name="POSITION" type="int">27</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-ADDR-NAME</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-ADDR-LINE-1">
+<atom name="LEN" type="int">32</atom>
+<atom name="POSITION" type="int">61</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-ADDR-LINE-1</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-ADDR-LINE-2">
+<atom name="LEN" type="int">32</atom>
+<atom name="POSITION" type="int">93</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-ADDR-LINE-2</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-ADDR-LINE-3">
+<atom name="LEN" type="int">32</atom>
+<atom name="POSITION" type="int">125</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-ADDR-LINE-3</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+<fld id="EQ-GIRO-NO">
+<atom name="LEN" type="int">13</atom>
+<atom name="POSITION" type="int">157</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-GIRO-NO</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-KOREN-GIRO-GROUP">
+<atom name="LEN" type="int">13</atom>
+<atom name="POSITION" type="int">157</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-KOREN-GIRO-GROUP</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-KOREN-GIRO-NO">
+<atom name="LEN" type="int">7</atom>
+<atom name="POSITION" type="int">163</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-KOREN-GIRO-NO</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+<fld id="EQ-TEST-KEY-CODE">
+<atom name="LEN" type="int">1</atom>
+<atom name="POSITION" type="int">170</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-TEST-KEY-CODE</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-LANG-CODE">
+<atom name="LEN" type="int">2</atom>
+<atom name="POSITION" type="int">171</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-LANG-CODE</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-ISO-CNTRY-CODE-DOM">
+<atom name="LEN" type="int">2</atom>
+<atom name="POSITION" type="int">173</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-ISO-CNTRY-CODE-DOM</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-DLTN-IND">
+<atom name="LEN" type="int">1</atom>
+<atom name="POSITION" type="int">175</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-DLTN-IND</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-BANK-SORT-CODE">
+<atom name="LEN" type="int">10</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-BANK-SORT-CODE</atom>
+<atom name="ID" type="int">21</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-BANK-SORT-CODE-FRNCH">
+<atom name="LEN" type="int">10</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-BANK-SORT-CODE-FRNCH</atom>
+<atom name="ID" type="int">22</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-ETABL-CODE">
+<atom name="LEN" type="int">5</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-ETABL-CODE</atom>
+<atom name="ID" type="int">23</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-GUICH-CODE">
+<atom name="LEN" type="int">5</atom>
+<atom name="POSITION" type="int">181</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-GUICH-CODE</atom>
+<atom name="ID" type="int">24</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+<fld id="EQ-BANK-SORT-CODE-SPNSH">
+<atom name="LEN" type="int">10</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-BANK-SORT-CODE-SPNSH</atom>
+<atom name="ID" type="int">25</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-SPNSH-BANK-SORT-CODE-PRFX">
+<atom name="LEN" type="int">4</atom>
+<atom name="POSITION" type="int">178</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-SPNSH-BANK-SORT-CODE-PRFX</atom>
+<atom name="ID" type="int">26</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-SPNSH-BANK-SORT-CODE-LOCN">
+<atom name="LEN" type="int">4</atom>
+<atom name="POSITION" type="int">182</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-SPNSH-BANK-SORT-CODE-LOCN</atom>
+<atom name="ID" type="int">27</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+<fld id="EQ-BANK-SORT-CODE-JPNSE">
+<atom name="LEN" type="int">10</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-BANK-SORT-CODE-JPNSE</atom>
+<atom name="ID" type="int">28</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-ZERO-VALUE-6">
+<atom name="LEN" type="int">6</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-ZERO-VALUE-6</atom>
+<atom name="ID" type="int">29</atom>
+<atom name="PRECISION" type="int">6</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-JPNSE-BANK-SORT-CODE-LOCN">
+<atom name="LEN" type="int">4</atom>
+<atom name="POSITION" type="int">182</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-JPNSE-BANK-SORT-CODE-LOCN</atom>
+<atom name="ID" type="int">30</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+<fld id="EQ-BANK-SORT-CODE-FED">
+<atom name="LEN" type="int">10</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-BANK-SORT-CODE-FED</atom>
+<atom name="ID" type="int">31</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-FED-WIRE-ID">
+<atom name="LEN" type="int">9</atom>
+<atom name="POSITION" type="int">177</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-FED-WIRE-ID</atom>
+<atom name="ID" type="int">32</atom>
+<atom name="PRECISION" type="int">9</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+<fld id="EQ-BANK-SORT-CODE-BRZLN">
+<atom name="LEN" type="int">10</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-BANK-SORT-CODE-BRZLN</atom>
+<atom name="ID" type="int">33</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-SBACN-CLRNG-ID">
+<atom name="LEN" type="int">9</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-SBACN-CLRNG-ID</atom>
+<atom name="ID" type="int">34</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-SBACN-CLRNG-NO">
+<atom name="LEN" type="int">5</atom>
+<atom name="POSITION" type="int">176</atom>
+<atom name="LEVEL" type="int">14</atom>
+<atom name="NAME" type="str">EQ-SBACN-CLRNG-NO</atom>
+<atom name="ID" type="int">35</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-BRZLN-CITY-ID">
+<atom name="LEN" type="int">4</atom>
+<atom name="POSITION" type="int">181</atom>
+<atom name="LEVEL" type="int">14</atom>
+<atom name="NAME" type="str">EQ-BRZLN-CITY-ID</atom>
+<atom name="ID" type="int">36</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+</fld>
+<fld id="EQ-BANK-CODE">
+<atom name="LEN" type="int">1</atom>
+<atom name="POSITION" type="int">186</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-BANK-CODE</atom>
+<atom name="ID" type="int">37</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-TT-CHRG-CODE">
+<atom name="LEN" type="int">1</atom>
+<atom name="POSITION" type="int">187</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-TT-CHRG-CODE</atom>
+<atom name="ID" type="int">38</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-EFT-KEY">
+<atom name="LEN" type="int">4</atom>
+<atom name="POSITION" type="int">188</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-EFT-KEY</atom>
+<atom name="ID" type="int">39</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-HOL-CODE">
+<atom name="LEN" type="int">5</atom>
+<atom name="POSITION" type="int">192</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-HOL-CODE</atom>
+<atom name="ID" type="int">40</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="EQ-ISO-CNTRY-CODE">
+<atom name="LEN" type="int">2</atom>
+<atom name="POSITION" type="int">192</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-ISO-CNTRY-CODE</atom>
+<atom name="ID" type="int">41</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-ISO-RGN-CODE">
+<atom name="LEN" type="int">2</atom>
+<atom name="POSITION" type="int">195</atom>
+<atom name="LEVEL" type="int">11</atom>
+<atom name="NAME" type="str">EQ-ISO-RGN-CODE</atom>
+<atom name="ID" type="int">42</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+<fld id="EQ-CHIPS-ID">
+<atom name="LEN" type="int">6</atom>
+<atom name="POSITION" type="int">197</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-CHIPS-ID</atom>
+<atom name="ID" type="int">43</atom>
+<atom name="PRECISION" type="int">6</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-CHAPS-ID">
+<atom name="LEN" type="int">6</atom>
+<atom name="POSITION" type="int">203</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-CHAPS-ID</atom>
+<atom name="ID" type="int">44</atom>
+<atom name="PRECISION" type="int">6</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-ADDR-NAME-FIRST-DLIM">
+<atom name="LEN" type="int">2</atom>
+<atom name="POSITION" type="int">209</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-ADDR-NAME-FIRST-DLIM</atom>
+<atom name="ID" type="int">45</atom>
+<atom name="PRECISION" type="int">3</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-ADDR-NAME-LAST-DLIM">
+<atom name="LEN" type="int">2</atom>
+<atom name="POSITION" type="int">211</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-ADDR-NAME-LAST-DLIM</atom>
+<atom name="ID" type="int">46</atom>
+<atom name="PRECISION" type="int">3</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-ADDR-NAME-SORT-FLD">
+<atom name="LEN" type="int">20</atom>
+<atom name="POSITION" type="int">213</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-ADDR-NAME-SORT-FLD</atom>
+<atom name="ID" type="int">47</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-A90-IND">
+<atom name="LEN" type="int">1</atom>
+<atom name="POSITION" type="int">233</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-A90-IND</atom>
+<atom name="ID" type="int">48</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-LOCN-EXIST-IND">
+<atom name="LEN" type="int">1</atom>
+<atom name="POSITION" type="int">234</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-LOCN-EXIST-IND</atom>
+<atom name="ID" type="int">49</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-GMT-STD-DEVN">
+<atom name="LEN" type="int">3</atom>
+<atom name="POSITION" type="int">235</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-GMT-STD-DEVN</atom>
+<atom name="ID" type="int">50</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-AGENTS-CLRNG-CODE">
+<atom name="LEN" type="int">4</atom>
+<atom name="POSITION" type="int">238</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-AGENTS-CLRNG-CODE</atom>
+<atom name="ID" type="int">51</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="EQ-AID-CODE">
+<atom name="LEN" type="int">6</atom>
+<atom name="POSITION" type="int">242</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">EQ-AID-CODE</atom>
+<atom name="ID" type="int">52</atom>
+<atom name="PRECISION" type="int">6</atom>
+<atom name="LEGACY_TYPE" type="str">TEXTNUM</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+</fld>
+</record>

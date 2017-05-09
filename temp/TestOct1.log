@@ -1,0 +1,63 @@
+
+-----------------------Monday 12th of October 2015 10:54:57 PM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Monday 12th of October 2015 10:59:10 PM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlMain( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Monday 12th of October 2015 11:06:59 PM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Monday 12th of October 2015 11:07:08 PM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlMain( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Tuesday 13th of October 2015 12:01:48 AM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Tuesday 13th of October 2015 12:02:01 AM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Tuesday 13th of October 2015 12:02:15 AM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlMain( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Wednesday 14th of October 2015 12:19:08 AM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function addSDS( Pid, TPid )
+file: AddObj.js
+message: Unable to get property '_init' of undefined or null reference
+
+-----------------------Wednesday 4th of November 2015 09:57:35 PM CET------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+error Type: TypeError
+function: function addSDS( Pid, TPid )
+file: AddObj.js
+message: Cannot read property '_init' of undefined

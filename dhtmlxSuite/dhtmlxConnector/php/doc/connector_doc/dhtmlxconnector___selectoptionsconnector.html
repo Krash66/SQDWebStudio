@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:selectoptionsconnector    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+<h1><a name="selectoptionsconnector" id="selectoptionsconnector">SelectOptionsConnector</a></h1>
+<div class="level1">
+
+<p>
+SelectOptionsConnector is used by the dhtmlxForm component to fill a list of options for  the <a href="dhtmlxform___form_select.html" class="wikilink1" title="dhtmlxform:form_select">&#039;select&#039;</a> item.<br/>
+
+Don&#039;t confuse SelectOptionsConnector with OptionsConnector. The second one is an auxiliary connector and used just in the context of dhtmlxGrid and dhtmlxScheduler components. SelectOptionsConnector is an independent connector able to generate output <acronym title="Extensible Markup Language">XML</acronym> data.  
+</p>
+
+<p>
+So, to define options of the <strong><a href="dhtmlxform___form_select.html" class="wikilink1" title="dhtmlxform:form_select">select</a></strong> form&#039;s item you should make the following:
+
+</p>
+<ol>
+<li class="level1"><div class="li"> On client-side you should specify the parameter &#039;connector&#039;:<br/>
+ <br/>
+ <pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span>
+		<span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;select&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Categories&quot;</span><span class="sy0">,</span> connector<span class="sy0">:</span><span class="st0">&quot;options.php&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+		<span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;button&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="st0">&quot;Proceed&quot;</span><span class="br0">&#125;</span>
+<span class="br0">&#93;</span>;
+myForm <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXForm<span class="br0">&#40;</span><span class="st0">&quot;form_container&quot;</span><span class="sy0">,</span> formData<span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> On server-side your code will look like:<br/>
+ <br/>
+ <pre class="code php"><span class="kw2">&lt;?php</span> 
+<span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;../codebase/connector/options_connector.php&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$res</span><span class="sy0">=</span><a href="http://www.php.net/mysql_connect"><span class="kw3">mysql_connect</span></a><span class="br0">&#40;</span><span class="st0">&quot;localhost&quot;</span><span class="sy0">,</span><span class="st0">&quot;root&quot;</span><span class="sy0">,</span><span class="st0">&quot;&quot;</span><span class="br0">&#41;</span>;
+<a href="http://www.php.net/mysql_select_db"><span class="kw3">mysql_select_db</span></a><span class="br0">&#40;</span><span class="st0">&quot;tasks&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="re0">$data</span> <span class="sy0">=</span> <span class="kw2">new</span> SelectOptionsConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="sy0">,</span> <span class="st0">&quot;MySQL&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$data</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;categories&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;value, label&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="kw2">?&gt;</span> </pre>
+<p>
+ <strong>Render_table</strong> method takes the following parameters:
+</p>
+</div>
+<ul>
+<li class="level2"><div class="li"> &#039;categories&#039; - the name of table.</div>
+</li>
+<li class="level2"><div class="li"> &#039;id&#039; - the id column</div>
+</li>
+<li class="level2"><div class="li"> &#039;value&#039; - the column that will be used as values of options.</div>
+</li>
+<li class="level2"><div class="li"> &#039;label&#039; - the column that will be used as labels of options.</div>
+</li>
+</ul>
+</li>
+</ol>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

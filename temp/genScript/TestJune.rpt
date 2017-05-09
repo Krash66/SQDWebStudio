@@ -1,0 +1,37 @@
+ Field: CO%  found in the following descriptions:
+Description:   company   contains field:   COMPANY-REC
+Description:   company   contains field:   COMPNAME
+Description:   company   contains field:   COMP-ADDRESS
+Description:   company   contains field:   COMP-CITY
+Description:   company   contains field:   COMP-STATE
+Description:   company   contains field:   COMP-ZIP
+Description:   COMPANY_DDL   contains field:   COMPNAME
+Description:   COMPANY_DDL   contains field:   COMP_ADDRESS
+Description:   COMPANY_DDL   contains field:   COMP_CITY
+Description:   COMPANY_DDL   contains field:   COMP_STATE
+Description:   COMPANY_DDL   contains field:   COMP_ZIP
+
+ Field: CO%  found in the following Datastores:
+Datastore:   CDCIN   contains field:   COMPANY-REC
+Datastore:   CDCIN   contains field:   COMPNAME
+Datastore:   CDCIN   contains field:   COMP-ADDRESS
+Datastore:   CDCIN   contains field:   COMP-CITY
+Datastore:   CDCIN   contains field:   COMP-STATE
+Datastore:   CDCIN   contains field:   COMP-ZIP
+Datastore:   Tgtds   contains field:   COMPNAME
+Datastore:   Tgtds   contains field:   COMP_ADDRESS
+Datastore:   Tgtds   contains field:   COMP_CITY
+Datastore:   Tgtds   contains field:   COMP_STATE
+Datastore:   Tgtds   contains field:   COMP_ZIP
+
+ Field: CO%  found in the following Procedures:
+Procedure:   proc1   contains target field:   COMPNAME
+Procedure:   proc1   contains target field:   COMP_ADDRESS
+Procedure:   proc1   contains target field:   COMP_CITY
+Procedure:   proc1   contains target field:   COMP_STATE
+Procedure:   proc1   contains target field:   COMP_ZIP
+Procedure:   proc1   contains source field:   COMPNAME
+Procedure:   proc1   contains source field:   COMP-ADDRESS
+Procedure:   proc1   contains source field:   COMP-CITY
+Procedure:   proc1   contains source field:   COMP-STATE
+Procedure:   proc1   contains source field:   COMP-ZIP

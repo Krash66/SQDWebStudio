@@ -1,0 +1,109 @@
+         TITLE   'ASSEMBLE OF DBDNAME=DPYBSOFF '
+*        DSNAME=SYSTEMS.IMSPRODP.DBDLIB
+*        VOL=SYS001
+*        DBDGEN DATE 08/03/1998 TIME 21.30
+       DBD     NAME=DPYBSOFF,ACCESS=(HDAM,VSAM),                       C
+               RMNAME=(DFSHDC40,2,4780,2700),PASSWD=NO,                C
+               VERSION=             DATE 08/03/98 TIME 21.30
+***********************************************************************
+*        DATASET GROUP NUMBER 1                                       *
+***********************************************************************
+DSG001 DATASET DD1=DPYBPD1,SIZE=(8192),SCAN=0
+***********************************************************************
+*        SEGMENT NUMBER 1                                             *
+***********************************************************************
+       SEGM    NAME=SPYBSOFF,PARENT=0,BYTES=400,RULES=(PPV,LAST),      C
+               PTR=(TWIN,,,CTR,)
+       FIELD   NAME=(YBSOFFKY,SEQ,U),START=1,BYTES=3,TYPE=C
+       FIELD   NAME=(/CKSOFFK),START=1,BYTES=3
+       FIELD   NAME=(SOFNO),START=1,BYTES=3,TYPE=P
+       FIELD   NAME=(SOFNAME),START=4,BYTES=30,TYPE=C
+       FIELD   NAME=(SOFCPTN),START=34,BYTES=5,TYPE=C
+       FIELD   NAME=(AVBLSTDT),START=40,BYTES=5,TYPE=P
+       FIELD   NAME=(SOFSTAT),START=67,BYTES=1,TYPE=C
+       FIELD   NAME=(SOFCDTM),START=113,BYTES=8,TYPE=P
+       FIELD   NAME=(PRODCAT),START=362,BYTES=1,TYPE=C
+       LCHILD  NAME=(SPYBFCDN),PTR=SNGL,PAIR=SVYBFCUP,RULES=LAST
+       LCHILD  NAME=(SPYBPREQ),PTR=SNGL,PAIR=SVYBREQS,RULES=FIRST
+       LCHILD  NAME=(SBYDSOFF,DPYDCTYP),PTR=NONE,PAIR=SBYBCTYP,        C
+               RULES=LAST
+       LCHILD  NAME=(SSXEINYB,DSXEINYB),PTR=INDX,RULES=LAST
+       XDFLD   NAME=XDXESOFF,SEGMENT=SPYBSOFF,SUBSEQ=(/CKSOFFK),       C
+               EXTRTN=CISINDX,SRCH=(PRODCAT,SOFCPTN,SOFSTAT,AVBLSTDT)
+       LCHILD  NAME=(SSZSINYB,DSZSINYB),PTR=INDX,RULES=LAST
+       XDFLD   NAME=XDZSCAP,SEGMENT=SPYBSOFF,SUBSEQ=(/CKSOFFK),        C
+               SRCH=(SOFCPTN,SOFSTAT,AVBLSTDT)
+       LCHILD  NAME=(SSZTINYB,DSZTINYB),PTR=INDX,RULES=LAST
+       XDFLD   NAME=XDZTNAME,SEGMENT=SPYBSOFF,SUBSEQ=(/CKSOFFK),       C
+               SRCH=(SOFNAME,SOFSTAT,AVBLSTDT)
+***********************************************************************
+*        SEGMENT NUMBER 2                                             *
+***********************************************************************
+       SEGM    NAME=SPYBFUTY,PARENT=((SPYBSOFF,)),BYTES=160,           C
+               RULES=(LLL,LAST),PTR=(NOTWIN,,,,)
+***********************************************************************
+*        SEGMENT NUMBER 3                                             *
+***********************************************************************
+       SEGM    NAME=SPYBTRSH,PARENT=((SPYBSOFF,)),BYTES=49,            C
+               RULES=(LLL,LAST),PTR=(TWIN,,,,)
+       FIELD   NAME=(YBTRSHKY,SEQ,U),START=1,BYTES=13,TYPE=C
+       FIELD   NAME=(YBTRSTAT),START=35,BYTES=1,TYPE=C
+***********************************************************************
+*        SEGMENT NUMBER 4                                             *
+***********************************************************************
+       SEGM    NAME=SPYBTABL,PARENT=((SPYBTRSH,)),BYTES=20,            C
+               RULES=(LLL,LAST),PTR=(TWIN,,,,)
+       FIELD   NAME=(YBTABLKY,SEQ,U),START=1,BYTES=3,TYPE=C
+***********************************************************************
+*        SEGMENT NUMBER 5                                             *
+***********************************************************************
+       SEGM    NAME=SPYBOPAR,PARENT=((SPYBSOFF,)),BYTES=17,            C
+               RULES=(LLL,LAST),PTR=(TWIN,,,,)
+       FIELD   NAME=(YBOPARKY,SEQ,U),START=1,BYTES=5,TYPE=C
+***********************************************************************
+*        SEGMENT NUMBER 6                                             *
+***********************************************************************
+       SEGM    NAME=SPYBOPVL,PARENT=((SPYBOPAR,)),BYTES=27,            C
+               RULES=(LLL,LAST),PTR=(TWIN,,,,)
+       FIELD   NAME=(YBOPVLKY,SEQ,U),START=1,BYTES=22,TYPE=C
+***********************************************************************
+*        SEGMENT NUMBER 7                                             *
+***********************************************************************
+       SEGM    NAME=SVYBFCUP,PARENT=((SPYBSOFF,)),PTR=PAIRED,          C
+               SOURCE=((SPYBFCDN,DATA,DPYBSOFF))
+       FIELD   NAME=(YBFCUPKY,SEQ,U),START=1,BYTES=8,TYPE=C
+***********************************************************************
+*        SEGMENT NUMBER 8                                             *
+***********************************************************************
+       SEGM    NAME=SPYBPREQ,PARENT=((SPYBSOFF,),(SPYBSOFF,PHYSICAL)), C
+               BYTES=29,RULES=(VVV,LAST),PTR=(TWIN,LTWIN,,,)
+       FIELD   NAME=(YBPREQKY,SEQ,U),START=1,BYTES=8,TYPE=C
+***********************************************************************
+*        SEGMENT NUMBER 9                                             *
+***********************************************************************
+       SEGM    NAME=SPYBFCDN,PARENT=((SPYBSOFF,),(SPYBSOFF,PHYSICAL)), C
+               BYTES=32,RULES=(LVV,FIRST),PTR=(TWIN,LTWIN,,,)
+       FIELD   NAME=(SOFNO),START=1,BYTES=3,TYPE=P
+       FIELD   NAME=(SOFFCSDT),START=4,BYTES=5,TYPE=P
+***********************************************************************
+*        SEGMENT NUMBER 10                                            *
+***********************************************************************
+       SEGM    NAME=SVYBREQS,PARENT=((SPYBSOFF,)),PTR=PAIRED,          C
+               SOURCE=((SPYBPREQ,DATA,DPYBSOFF))
+       FIELD   NAME=(YBREQSKY,SEQ,U),START=1,BYTES=8,TYPE=C
+***********************************************************************
+*        SEGMENT NUMBER 11                                            *
+***********************************************************************
+       SEGM    NAME=SPYBTARI,PARENT=((SPYBSOFF,)),BYTES=21,            C
+               RULES=(LLL,LAST),PTR=(TWIN,,,,)
+       FIELD   NAME=(YBTARIKY,SEQ,U),START=1,BYTES=14,TYPE=C
+***********************************************************************
+*        SEGMENT NUMBER 12                                            *
+***********************************************************************
+       SEGM    NAME=SBYBCTYP,PARENT=((SPYBSOFF,),                      C
+               (SPYDCTYP,PHYSICAL,DPYDCTYP)),BYTES=57,RULES=(VVV,LAST),C
+               PTR=(TWIN,,,,PAIRED)
+       FIELD   NAME=(YBCTYPKY,SEQ,U),START=1,BYTES=20,TYPE=C
+       DBDGEN
+       FINISH
+       END

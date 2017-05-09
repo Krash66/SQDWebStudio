@@ -1,0 +1,111 @@
+<dbdmap id="">
+<database id="DPY3DIRL">
+<atom name="NAME" type="str">DPY3DIRL</atom>
+<segment id="SPY3DIRL">
+<atom name="ROOTLEN" type="int">18</atom>
+<atom name="MAXLEN" type="int">235</atom>
+<atom name="MINLEN" type="int">235</atom>
+<atom name="NAME" type="str">SPY3DIRL</atom>
+<atom name="DEPTH" type="int">1</atom>
+<field id="Y3DIRLKY">
+<atom name="NAME" type="str">Y3DIRLKY</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="LEN" type="int">18</atom>
+</field>
+<field id="YNCACCNO">
+<atom name="NAME" type="str">YNCACCNO</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="LEN" type="int">7</atom>
+</field>
+<field id="YIARTYCD">
+<atom name="NAME" type="str">YIARTYCD</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">147</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="YGAREANO">
+<atom name="NAME" type="str">YGAREANO</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">158</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="DIRLGRID">
+<atom name="NAME" type="str">DIRLGRID</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="START" type="int">162</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="DIRLSQNO">
+<atom name="NAME" type="str">DIRLSQNO</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="START" type="int">166</atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+<field id="DIGRASDT">
+<atom name="NAME" type="str">DIGRASDT</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="START" type="int">169</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="YKOPECID">
+<atom name="NAME" type="str">YKOPECID</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">177</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="YKFUNOIN">
+<atom name="NAME" type="str">YKFUNOIN</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">194</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="DEFUNO  ">
+<atom name="NAME" type="str">DEFUNO  </atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="START" type="int">194</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="FUSTATIN">
+<atom name="NAME" type="str">FUSTATIN</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">199</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="YHFUSTAT">
+<atom name="NAME" type="str">YHFUSTAT</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">199</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="YKFUNOOT">
+<atom name="NAME" type="str">YKFUNOOT</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">200</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="FUSTATOT">
+<atom name="NAME" type="str">FUSTATOT</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">205</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<segment id="SPY3MISC" parent="SPY3DIRL">
+<atom name="ROOTLEN" type="int">22</atom>
+<atom name="MAXLEN" type="int">83</atom>
+<atom name="MINLEN" type="int">83</atom>
+<atom name="NAME" type="str">SPY3MISC</atom>
+<atom name="DEPTH" type="int">2</atom>
+<field id="Y3MISCKY">
+<atom name="NAME" type="str">Y3MISCKY</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+</segment>
+</segment>
+</database>
+</dbdmap>

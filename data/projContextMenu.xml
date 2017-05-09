@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <item id="new_Proj" text="New Project" img="Project.gif"/>
+  <item id="sep3" type="separator"/>
+  <item id="cut"    img="cut.gif"   text="Cut"   imgdis="cut_dis.gif"  title="Cut" />
+  <item id="copy"  img="copy.gif"  text="Copy"  imgdis="copy_dis.gif"  title="Copy" />
+  <item id="paste" img="paste.gif" text="Paste" imgdis="paste_dis.gif"  title="Paste" />
+  <item id="sep4" type="separator"/>
+  <item id="delNode" img="delete.gif"  text="Delete"  title="Delete Item" action="doTreeDelete"/>
+  <item id="delNodeAll" img="delete.gif"  text="Delete All"  title="Delete All" action="doTreeDeleteAll"/>
+  <item id="sep5" type="separator"/>
+  <item id="genScript" img="gear.gif"  text="Generate Script"  title="Generate Script" action="doGenerate"/>
+  <item id="sep6" type="separator"/>
+  <item id="model" img="gear.gif"  text="Model Description"  title="Model Description" action="doModel"/>
+</menu>

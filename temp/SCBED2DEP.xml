@@ -1,0 +1,1421 @@
+<record id="CS2MBR2C-STRUCTURE-DATA-ITEM">
+<atom name="NAME" type="str">CS2MBR2C-STRUCTURE-DATA-ITEM</atom>
+<fld id="CS2MBR2C-STRUCTURE-DATA-ITEM">
+<atom name="ID" type="int">0</atom>
+<atom name="LEN" type="int">1176</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NAME" type="str">CS2MBR2C-STRUCTURE-DATA-ITEM</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+<fld id="DEP-DEP-ADDR">
+<atom name="ID" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DEP-ADDR</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-MED-ADDR">
+<atom name="ID" type="int">2</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-MED-ADDR</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DNT-ADDR">
+<atom name="ID" type="int">3</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DNT-ADDR</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">8</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-EMP-ID">
+<atom name="ID" type="int">4</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-EMP-ID</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">16</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-REL-CD">
+<atom name="ID" type="int">5</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-REL-CD</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">29</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-SEX">
+<atom name="ID" type="int">6</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-SEX</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">31</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DOB">
+<atom name="ID" type="int">7</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DOB</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">32</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DIFF-ORIG-DT">
+<atom name="ID" type="int">8</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DIFF-ORIG-DT</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">36</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-PRE-EXS">
+<atom name="ID" type="int">9</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-PRE-EXS</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">37</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-FNAME">
+<atom name="ID" type="int">10</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-FNAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">38</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-SS-NBR">
+<atom name="ID" type="int">11</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-SS-NBR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">48</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-LNAME">
+<atom name="ID" type="int">12</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-LNAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">58</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-SUB-XREF">
+<atom name="ID" type="int">13</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-SUB-XREF</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">78</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-CENT-IND">
+<atom name="ID" type="int">14</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-CENT-IND</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">91</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-VERIF-DT1">
+<atom name="ID" type="int">15</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-VERIF-DT1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">92</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-IND1">
+<atom name="ID" type="int">16</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-IND1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">97</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-EFF-DT1">
+<atom name="ID" type="int">17</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-EFF-DT1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">100</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-CANC-DT1">
+<atom name="ID" type="int">18</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-CANC-DT1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">104</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DUAL-ID1">
+<atom name="ID" type="int">19</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DUAL-ID1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">108</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-VERIF-DT2">
+<atom name="ID" type="int">20</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-VERIF-DT2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">124</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-IND2">
+<atom name="ID" type="int">21</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-IND2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">129</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-EFF-DT2">
+<atom name="ID" type="int">22</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-EFF-DT2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">132</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-CANC-DT2">
+<atom name="ID" type="int">23</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-CANC-DT2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">136</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DUAL-ID2">
+<atom name="ID" type="int">24</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DUAL-ID2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">140</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-VERIF-DT3">
+<atom name="ID" type="int">25</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-VERIF-DT3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">156</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-IND3">
+<atom name="ID" type="int">26</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-IND3</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">161</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-EFF-DT3">
+<atom name="ID" type="int">27</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-EFF-DT3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">164</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-CANC-DT3">
+<atom name="ID" type="int">28</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-CANC-DT3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">168</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DUAL-ID3">
+<atom name="ID" type="int">29</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DUAL-ID3</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">172</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-VERIF-DT4">
+<atom name="ID" type="int">30</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-VERIF-DT4</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">188</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-IND4">
+<atom name="ID" type="int">31</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-IND4</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">193</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-EFF-DT4">
+<atom name="ID" type="int">32</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-EFF-DT4</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">196</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-CANC-DT4">
+<atom name="ID" type="int">33</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-CANC-DT4</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">200</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DUAL-ID4">
+<atom name="ID" type="int">34</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DUAL-ID4</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">204</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-VERIF-DT5">
+<atom name="ID" type="int">35</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-VERIF-DT5</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">220</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-IND5">
+<atom name="ID" type="int">36</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-IND5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">225</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-EFF-DT5">
+<atom name="ID" type="int">37</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-EFF-DT5</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">228</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-CANC-DT5">
+<atom name="ID" type="int">38</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-CANC-DT5</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">232</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DUAL-ID5">
+<atom name="ID" type="int">39</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DUAL-ID5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">236</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-VERIF-DT6">
+<atom name="ID" type="int">40</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-VERIF-DT6</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">252</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-IND6">
+<atom name="ID" type="int">41</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-IND6</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">257</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-EFF-DT6">
+<atom name="ID" type="int">42</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-EFF-DT6</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">260</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OI-CANC-DT6">
+<atom name="ID" type="int">43</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OI-CANC-DT6</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">264</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DUAL-ID6">
+<atom name="ID" type="int">44</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DUAL-ID6</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">268</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID1">
+<atom name="ID" type="int">45</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">284</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID-DT1">
+<atom name="ID" type="int">46</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID-DT1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">292</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID2">
+<atom name="ID" type="int">47</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">296</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID-DT2">
+<atom name="ID" type="int">48</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID-DT2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">304</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID3">
+<atom name="ID" type="int">49</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID3</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">308</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID-DT3">
+<atom name="ID" type="int">50</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID-DT3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">316</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID4">
+<atom name="ID" type="int">51</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID4</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">320</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID-DT4">
+<atom name="ID" type="int">52</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID-DT4</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">328</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID5">
+<atom name="ID" type="int">53</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">332</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID-DT5">
+<atom name="ID" type="int">54</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID-DT5</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">340</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID6">
+<atom name="ID" type="int">55</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID6</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">344</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-IND-OI-ID-DT6">
+<atom name="ID" type="int">56</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-IND-OI-ID-DT6</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">352</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-NAME">
+<atom name="ID" type="int">57</atom>
+<atom name="LEN" type="int">25</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-NAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">356</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-ADDR">
+<atom name="ID" type="int">58</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-ADDR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">381</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-ADDR2">
+<atom name="ID" type="int">59</atom>
+<atom name="LEN" type="int">15</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-ADDR2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">401</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-CITY">
+<atom name="ID" type="int">60</atom>
+<atom name="LEN" type="int">15</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-CITY</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">416</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-ZIP">
+<atom name="ID" type="int">61</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-ZIP</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="POSITION" type="int">431</atom>
+<atom name="PRECISION" type="int">9</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-EFF-DT">
+<atom name="ID" type="int">62</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-EFF-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">436</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-CANC-DT">
+<atom name="ID" type="int">63</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-CANC-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">440</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-STATE">
+<atom name="ID" type="int">64</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-STATE</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">444</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-INS-NAME">
+<atom name="ID" type="int">65</atom>
+<atom name="LEN" type="int">26</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-INS-NAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">446</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-MED-A-ELIG-DT">
+<atom name="ID" type="int">66</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-MED-A-ELIG-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">476</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-MED-B-ELIG-DT">
+<atom name="ID" type="int">67</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-MED-B-ELIG-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">480</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DISAB-DT">
+<atom name="ID" type="int">68</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DISAB-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">484</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DISAB-DIAG">
+<atom name="ID" type="int">69</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DISAB-DIAG</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="POSITION" type="int">488</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-NEXT-COV-ID">
+<atom name="ID" type="int">70</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-NEXT-COV-ID</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">490</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-NEXT-COV-IND">
+<atom name="ID" type="int">71</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-NEXT-COV-IND</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">503</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-MICRO-DT">
+<atom name="ID" type="int">72</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-MICRO-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">504</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-USER-ID">
+<atom name="ID" type="int">73</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-USER-ID</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">508</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-USER-ID-DT">
+<atom name="ID" type="int">74</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-USER-ID-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">516</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-COMMENT-DT">
+<atom name="ID" type="int">75</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-COMMENT-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">520</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-USER-ID">
+<atom name="ID" type="int">76</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-USER-ID</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">524</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-USER-ID-DT">
+<atom name="ID" type="int">77</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-USER-ID-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">532</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-EFF-DT-MED1">
+<atom name="ID" type="int">78</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-EFF-DT-MED1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">536</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-CANC-DT-MED1">
+<atom name="ID" type="int">79</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-CANC-DT-MED1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">540</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-EFF-DT-DNT1">
+<atom name="ID" type="int">80</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-EFF-DT-DNT1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">544</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-CANC-DT-DNT1">
+<atom name="ID" type="int">81</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-CANC-DT-DNT1</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">548</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-CANC-CD-MED1">
+<atom name="ID" type="int">82</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-CANC-CD-MED1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">552</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-CANC-CD-DNT1">
+<atom name="ID" type="int">83</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-CANC-CD-DNT1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">553</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-FEP-COV-SOURCE1">
+<atom name="ID" type="int">84</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-FEP-COV-SOURCE1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">554</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-EFF-DT-MED2">
+<atom name="ID" type="int">85</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-EFF-DT-MED2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">556</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-CANC-DT-MED2">
+<atom name="ID" type="int">86</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-CANC-DT-MED2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">560</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-EFF-DT-DNT2">
+<atom name="ID" type="int">87</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-EFF-DT-DNT2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">564</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-CANC-DT-DNT2">
+<atom name="ID" type="int">88</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-CANC-DT-DNT2</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">568</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-CANC-CD-MED2">
+<atom name="ID" type="int">89</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-CANC-CD-MED2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">572</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-CANC-CD-DNT2">
+<atom name="ID" type="int">90</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-CANC-CD-DNT2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">573</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-FEP-COV-SOURCE2">
+<atom name="ID" type="int">91</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-FEP-COV-SOURCE2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">574</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-EFF-DT-MED3">
+<atom name="ID" type="int">92</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-EFF-DT-MED3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">576</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-CANC-DT-MED3">
+<atom name="ID" type="int">93</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-CANC-DT-MED3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">580</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-EFF-DT-DNT3">
+<atom name="ID" type="int">94</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-EFF-DT-DNT3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">584</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ELIG-CANC-DT-DNT3">
+<atom name="ID" type="int">95</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ELIG-CANC-DT-DNT3</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">588</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-CANC-CD-MED3">
+<atom name="ID" type="int">96</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-CANC-CD-MED3</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">592</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-CANC-CD-DNT3">
+<atom name="ID" type="int">97</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-CANC-CD-DNT3</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">593</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-FEP-COV-SOURCE3">
+<atom name="ID" type="int">98</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-FEP-COV-SOURCE3</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">594</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-COMMENT-DT">
+<atom name="ID" type="int">99</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-COMMENT-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">596</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-NAME">
+<atom name="ID" type="int">100</atom>
+<atom name="LEN" type="int">25</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-NAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">600</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-ADDR">
+<atom name="ID" type="int">101</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-ADDR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">625</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-ADDR2">
+<atom name="ID" type="int">102</atom>
+<atom name="LEN" type="int">15</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-ADDR2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">645</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-CITY">
+<atom name="ID" type="int">103</atom>
+<atom name="LEN" type="int">15</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-CITY</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">660</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-STATE">
+<atom name="ID" type="int">104</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-STATE</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">675</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-ZIP">
+<atom name="ID" type="int">105</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-ZIP</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="POSITION" type="int">677</atom>
+<atom name="PRECISION" type="int">9</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-POLICY">
+<atom name="ID" type="int">106</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-POLICY</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">682</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-PHONE">
+<atom name="ID" type="int">107</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-PHONE</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="POSITION" type="int">702</atom>
+<atom name="PRECISION" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-EFF-DT">
+<atom name="ID" type="int">108</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-EFF-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">708</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-CANC-DT">
+<atom name="ID" type="int">109</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-CANC-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">712</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-INS-NAME">
+<atom name="ID" type="int">110</atom>
+<atom name="LEN" type="int">26</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-INS-NAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">716</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-COMMENT">
+<atom name="ID" type="int">111</atom>
+<atom name="LEN" type="int">45</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-COMMENT</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">742</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-NAME">
+<atom name="ID" type="int">112</atom>
+<atom name="LEN" type="int">25</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-NAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">787</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-ADDR">
+<atom name="ID" type="int">113</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-ADDR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">812</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-ADDR2">
+<atom name="ID" type="int">114</atom>
+<atom name="LEN" type="int">15</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-ADDR2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">832</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-CITY">
+<atom name="ID" type="int">115</atom>
+<atom name="LEN" type="int">15</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-CITY</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">847</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-POLICY">
+<atom name="ID" type="int">116</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-POLICY</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">862</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-PHONE">
+<atom name="ID" type="int">117</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-PHONE</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="POSITION" type="int">882</atom>
+<atom name="PRECISION" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-EFF-DT">
+<atom name="ID" type="int">118</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-EFF-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">888</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-CANC-DT">
+<atom name="ID" type="int">119</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-CANC-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">892</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-COMMENT">
+<atom name="ID" type="int">120</atom>
+<atom name="LEN" type="int">45</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-COMMENT</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">896</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-STATE">
+<atom name="ID" type="int">121</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-STATE</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">941</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-ZIP">
+<atom name="ID" type="int">122</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-ZIP</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="POSITION" type="int">943</atom>
+<atom name="PRECISION" type="int">9</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-INS-NAME">
+<atom name="ID" type="int">123</atom>
+<atom name="LEN" type="int">26</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-INS-NAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">948</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL1-EMPLOYER-NAME">
+<atom name="ID" type="int">124</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL1-EMPLOYER-NAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">974</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL2-EMPLOYER-NAME">
+<atom name="ID" type="int">125</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL2-EMPLOYER-NAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">994</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-EMPLOYER-NAME">
+<atom name="ID" type="int">126</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-EMPLOYER-NAME</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1014</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-POLICY">
+<atom name="ID" type="int">127</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-POLICY</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1034</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ST-ELIG-DT">
+<atom name="ID" type="int">128</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ST-ELIG-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">1072</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-DEP-NBR">
+<atom name="ID" type="int">129</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-DEP-NBR</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="POSITION" type="int">1076</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-PRIOR-COV-ID">
+<atom name="ID" type="int">130</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-PRIOR-COV-ID</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1078</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-PRIOR-COV-IND">
+<atom name="ID" type="int">131</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-PRIOR-COV-IND</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1091</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-ALT-TRMT-IND">
+<atom name="ID" type="int">132</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-ALT-TRMT-IND</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1092</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-EXCL-IND">
+<atom name="ID" type="int">133</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-EXCL-IND</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1093</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-HRC-IND">
+<atom name="ID" type="int">134</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-HRC-IND</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1094</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-HCFA-NBR">
+<atom name="ID" type="int">135</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-HCFA-NBR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1095</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-USER-ID">
+<atom name="ID" type="int">136</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-USER-ID</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1108</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-USER-ID-DT">
+<atom name="ID" type="int">137</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-USER-ID-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">1116</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-COMMENT-DT">
+<atom name="ID" type="int">138</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-COMMENT-DT</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="POSITION" type="int">1120</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-PHONE">
+<atom name="ID" type="int">139</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-PHONE</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="POSITION" type="int">1124</atom>
+<atom name="PRECISION" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL3-COMMENT">
+<atom name="ID" type="int">140</atom>
+<atom name="LEN" type="int">45</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL3-COMMENT</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1130</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+<fld id="DEP-OCL-LEGAL-IND">
+<atom name="ID" type="int">141</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NAME" type="str">DEP-OCL-LEGAL-IND</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">1175</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+</fld>
+</fld>
+</record>

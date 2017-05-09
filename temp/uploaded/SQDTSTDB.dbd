@@ -1,0 +1,38 @@
+*********************************************************************** 00110000
+*                                                                     * 00111000
+*         SQDATA TEST DATABASE                                        * 00112000
+*                                                                     * 00113000
+*********************************************************************** 00240000
+*---+----1----+----2----+----3----+----4----+----5----+----6----+----7* 00330000
+*              EXIT=(*,LOG,SQDICDC,KEY,DATA,PATH,                       00340000
+*              (CASCADE,KEY,DATA,PATH))                                 00350000
+*---------------------------------------------------------------------* 00440000
+  DBD     NAME=SQDTSTDB,                                               C00450000
+               ACCESS=(HDAM,VSAM),                                     C00450100
+               RMNAME=(DFSHDC40,40,100),                               C00450200
+               EXIT=(*,LOG,KEY,DATA,PATH,                              C00450300
+               (CASCADE,KEY,DATA,PATH))                                 00450400
+*                                                                     * 00451000
+  DATASET DD1=SQDTSTDB,DEVICE=3380,SIZE=2048                            00460000
+*                                                                     * 00461000
+  SEGM    NAME=COMPANY,PARENT=0,BYTES=47                                00470000
+* SEGM    NAME=COMPANY,PARENT=0,BYTES=47,RULES=(LLL,LAST)               00471000
+  FIELD   NAME=(COMPNAME,SEQ,U),BYTES=010,START=00001,TYPE=C            00480000
+*                                                                     * 00480100
+  SEGM    NAME=VENDOR,PARENT=COMPANY,BYTES=60                           00480500
+* SEGM    NAME=VENDOR,PARENT=COMPANY,BYTES=60,RULES=(LLL,LAST)          00480600
+  FIELD   NAME=(VENDID,SEQ,U),BYTES=003,START=00001,TYPE=C              00480700
+  FIELD   NAME=VENDZIP,BYTES=005,START=00055,TYPE=C                     00480800
+*                                                                     * 00480900
+  SEGM    NAME=DEPTMENT,PARENT=COMPANY,BYTES=57                         00481000
+* SEGM    NAME=DEPTMENT,PARENT=COMPANY,BYTES=57,RULES=(LLL,LAST)        00481100
+  FIELD   NAME=(DEPTNO,SEQ,U),BYTES=003,START=00001,TYPE=C              00481200
+*                                                                     * 00481300
+  SEGM    NAME=EMPLOYEE,PARENT=DEPTMENT,BYTES=88                        00481400
+* SEGM    NAME=EMPLOYEE,PARENT=DEPTMENT,BYTES=88,RULES=(LLL,LAST)       00481500
+  FIELD   NAME=(EMPNO,SEQ,U),BYTES=006,START=00001,TYPE=C               00481600
+* FIELD   NAME=EMPED,BYTES=2,START=60,TYPE=X                            00481700
+*                                                                     * 00482000
+  DBDGEN                                                                00490000
+  FINISH                                                                00500000
+  END                                                                   00510000

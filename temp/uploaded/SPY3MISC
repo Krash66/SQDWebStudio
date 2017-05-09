@@ -1,0 +1,43 @@
+           04 SPY3MISC.
+             06 Y3MC-Y3MISC-KY.
+               08 Y3MC-MISC-TYP     PIC X(2).
+               08 Y3MC-MISC-SEQ     PIC S9(3)      COMP-3.
+             06 Y3MC-DIRL-TXT       PIC X(70).
+             06 Y3MC-ADRS-LOCTN-FILLER REDEFINES Y3MC-DIRL-TXT.
+               08 Y3MC-ADRS-LOCTN   PIC X(20).
+               08 FILLER            PIC X(50).
+             06 Y3MC-ADRS-MISC-DAT-FILLER REDEFINES Y3MC-DIRL-TXT.
+               08 Y3MC-ADRS-MISC-DAT
+                                    PIC X(30).
+               08 FILLER            PIC X(40).
+             06 Y3MC-DIRL-NM-FILLER REDEFINES Y3MC-DIRL-TXT.
+               08 Y3MC-DIRL-NM      PIC X(55).
+               08 FILLER            PIC X(15).
+             06 Y3MC-DIRL-INDT-CPTN-FILLER REDEFINES Y3MC-DIRL-TXT.
+               08 Y3MC-DIRL-INDT-CPTN
+                                    PIC X(55).
+               08 FILLER            PIC X(15).
+             06 Y3MC-DIRL-NM-ALP-INSTN-FILLER REDEFINES Y3MC-DIRL-TXT.
+               08 Y3MC-DIRL-NM-ALP-INSTN
+                                    PIC X(55).
+               08 FILLER            PIC X(15).
+             06 Y3MC-MUNIC-NM-FILLER REDEFINES Y3MC-DIRL-TXT.
+               08 Y3MC-MUNIC-NM     PIC X(30).
+               08 FILLER            PIC X(40).
+             06 Y3MC-DSGNTN-DESC-FILLER REDEFINES Y3MC-DIRL-TXT.
+               08 Y3MC-DSGNTN-DESC  PIC X(55).
+               08 FILLER            PIC X(15).
+             06 Y3MC-FOR-LSG-EXCH-NM-FILLER REDEFINES Y3MC-DIRL-TXT.
+               08 Y3MC-FOR-LSG-EXCH-NM
+                                    PIC X(35).
+               08 FILLER            PIC X(35).
+             06 Y3MC-DIRCTORY-LIST-CONVERSN REDEFINES Y3MC-DIRL-TXT.
+               08 Y3MC-NCDC-TEL-NPA PIC X(3).
+               08 Y3MC-NCDC-TEL-NXX PIC X(3).
+               08 Y3MC-NCDC-TEL-LN  PIC X(4).
+               08 Y3MC-OP-PRMTR-VAL-A
+                                    PIC X(6).
+               08 FILLER            OCCURS 54 TIMES
+                                    PIC X.
+             06 FILLER              OCCURS 9 TIMES
+                                    PIC X.

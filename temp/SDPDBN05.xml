@@ -1,0 +1,65 @@
+<dbdmap id="">
+<database id="PDBN05  ">
+<atom name="NAME" type="str">PDBN05  </atom>
+<segment id="PSN05101">
+<atom name="NAME" type="str">PSN05101</atom>
+<atom name="DEPTH" type="int">1</atom>
+<atom name="ROOTLEN" type="int">38</atom>
+<atom name="MINLEN" type="int">188</atom>
+<atom name="MAXLEN" type="int">188</atom>
+<field id="N05101KY">
+<atom name="NAME" type="str">N05101KY</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">38</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="START" type="int">1</atom>
+</field>
+<field id="SECINDX ">
+<atom name="NAME" type="str">SECINDX </atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="START" type="int">169</atom>
+</field>
+<segment id="PSN05210" parent="PSN05101">
+<atom name="NAME" type="str">PSN05210</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="ROOTLEN" type="int">73</atom>
+<atom name="MINLEN" type="int">185</atom>
+<atom name="MAXLEN" type="int">185</atom>
+<field id="N05210KY">
+<atom name="NAME" type="str">N05210KY</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">35</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="START" type="int">1</atom>
+</field>
+<field id="/CK038  ">
+<atom name="NAME" type="str">/CK038  </atom>
+<atom name="LEN" type="int">38</atom>
+<atom name="START" type="int">1</atom>
+</field>
+<segment id="PSN05320" parent="PSN05210">
+<atom name="NAME" type="str">PSN05320</atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="ROOTLEN" type="int">108</atom>
+<atom name="MINLEN" type="int">185</atom>
+<atom name="MAXLEN" type="int">185</atom>
+<field id="N05320KY">
+<atom name="NAME" type="str">N05320KY</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">35</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="START" type="int">1</atom>
+</field>
+<segment id="PSN05430" parent="PSN05320">
+<atom name="NAME" type="str">PSN05430</atom>
+<atom name="DEPTH" type="int">4</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MINLEN" type="int">150</atom>
+<atom name="MAXLEN" type="int">150</atom>
+</segment>
+</segment>
+</segment>
+</segment>
+</database>
+</dbdmap>

@@ -1,0 +1,13 @@
+[
+	{type: "settings", position: "label-left", labelWidth: 100, inputWidth: 180},
+	{type: "fieldset", label: "Mapping Procedure", inputWidth: "auto", list:[
+			{id:"procName", name:"procName", type: "input", label: "Procedure Name", value: ""},
+			{type: "newcolumn"},
+			{id:"procDesc", name:"procDesc", labelAlign:"right", label: "Description", type: "input", inputWidth: "260", rows: "2", value: ""}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{name:"btnProcSave",type: "button", value: "Save"},
+			{type: "newcolumn"},
+			{name:"btnProcDelete",type: "button", value: "Delete"}
+		]}
+]

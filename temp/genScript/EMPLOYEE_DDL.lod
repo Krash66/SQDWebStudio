@@ -1,0 +1,22 @@
+LOAD DATA
+INFILE 'EMPLOYEE_DDL.dat'  "FIX 39"
+INTO TABLE EMPLOYEE_DDL
+(
+        EMPNO         POSITION(1:6)   CHAR
+       ,EMPL_FIRST         POSITION(7:12)   CHAR
+       ,EMPL_MID         POSITION(19:1)   CHAR
+       ,EMPL_LAST         POSITION(20:15)   CHAR
+       ,EMPL_DEPT         POSITION(35:3)   CHAR
+       ,EMPL_PHONE         POSITION(38:4)   CHAR
+       ,EMPL_HIREDT         POSITION(42:10)   CHAR
+       ,EMPL_JOB         POSITION(52:8)   CHAR
+       ,EMPL_EDLEVEL         POSITION(60:2)   SHORT
+       ,EMPL_SEX         POSITION(62:1)   CHAR
+       ,EMPL_DOB         POSITION(63:10)   CHAR
+       ,EMPL_SALARY         POSITION(73:5)   DECIMAL
+       ,EMPL_BONUS         POSITION(78:5)   DECIMAL
+       ,EMPL_COMM         POSITION(83:5)   DECIMAL
+       ,EMPED         POSITION(88:2)   CHAR
+       ,PFK_DEPTNO         POSITION(90:3)   CHAR
+       ,PFK_COMPNAME         POSITION(93:10)   CHAR
+);

@@ -1,0 +1,29 @@
+[
+	{type: "settings", position: "label-left", labelWidth: 120, inputWidth: 320},
+	{type: "fieldset", label: "Connection Properties", inputWidth: "auto", list:[
+			{name:"txtConnName",type: "input", label: "Connection Name", value: "Conn_1"},
+			{name:"selConnType", type: "select", inputWidth: "320", label: "Connection Type", options:[
+					{text: "ODBC", value: "ODBC"},
+					{text: "ODBC with substitution Variable", value: "ODBCsub"},
+					{text: "DB2", value: "DB2"},
+					{text: "OCI", value: "OCI"},
+					{text: "NATIVEORA", value: "NATIVEORA"}
+				]},
+			{type: "fieldset", label: "Description", inputWidth: 440, list:[
+				{name:"txtConnDesc",type: "input",rows: "3", inputWidth: 400, value: "Any User defined description for this connection"}
+			]}
+		]},
+	{type: "fieldset", label: "Connection Database Properties", inputWidth: "auto", list:[
+			{name:"txtConnDatabase", type: "input", inputWidth: "320", label: "Database", value: "SYSA_WHSE"},
+			{name:"txtConnDateFormat", type: "input", inputWidth: "320", label: "Date Format", value: "YYYYMMDD"}
+		]},
+	{type: "fieldset", label: "Connection Database User Properties", inputWidth: "auto", list:[
+			{name:"txtConnUID", type: "input", inputWidth: "320", label: "Username", value: "SampleUser"},
+			{name:"txtConnPW", type: "password", inputWidth: "320", label: "Password", value: "SQData"}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{name:"btnConnSave",type: "button", value: "Save"},
+			{type: "newcolumn"},
+			{name:"btnConnDelete",type: "button", value: "Delete"}
+		]}
+]

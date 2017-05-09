@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tree id="0">
+  <item id="Date" text="Date" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="NODETYPE">Heading</userdata>
+    <item id="AFTER" text="AFTER" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the value of a date, time or timestamp after adding a specified number of days, months, years, minutes, hours and/or seconds or years to a source date, time or timestamp.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">AFTER(date | time | timestamp,[nYY],[nMM],[nDD],[nHH],[nMI],[nSS])</userdata>
+      <userdata name="DESC">returns the value of a date, time or timestamp after adding a specified number of days, months, years, minutes, hours and/or seconds or years to a source date, time or timestamp.</userdata>
+    </item>
+    <item id="BEFORE" text="BEFORE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the value of a date, time or timestamp resulting from subtracting a specified number of days, months, years, minutes, hours and/or seconds or years from a source date.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">BEFORE(date | time | timestamp,[nYY],[nMM],[nDD],[nHH],[nMI],[nSS])</userdata>
+      <userdata name="DESC">returns the value of a date, time or timestamp resulting from subtracting a specified number of days, months, years, minutes, hours and/or seconds or years from a source date.</userdata>
+    </item>
+    <item id="BIGTIME" text="BIGTIME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the current time in HH.MM.SS.mmmmmm format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">BIGTIME()</userdata>
+      <userdata name="DESC">returns the current time in HH.MM.SS.mmmmmm format.</userdata>
+    </item>
+    <item id="DATE2SMALLJUL" text="DATE2SMALLJUL" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="converts a conventional date (YYYYMMDD) to julian date format, returning only the day number.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">DATE2SMALLJUL(source_date)</userdata>
+      <userdata name="DESC">converts a conventional date (YYYYMMDD) to julian date format, returning only the day number.</userdata>
+    </item>
+    <item id="DATEFMT" text="DATEFMT"  im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="formats/reformats a date value. also converts a two (2) digit year to a four (4) digit year by adding (greater-than) 2000 for sources and adding (less-than)1900 for sources. The formats are specified by three mandatory characters: YMD, which can be in any order, and may optionally be seperated by other characters such as / or -">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">DATEFMT(source_date,source_format,target_format)</userdata>
+      <userdata name="DESC">formats/reformats a date value. also converts a two (2) digit year to a four (4) digit year by adding (greater-than) 2000 for sources and adding (less-than)1900 for sources. The formats are specified by three mandatory characters: YMD, which can be in any order, and may optionally be seperated by other characters such as / or -</userdata>
+    </item>
+    <item id="DATETIME" text="DATETIME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the current date and time in YYYY-MM-DD-HH-MM--SS format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">DATETIME()</userdata>
+      <userdata name="DESC">returns the current date and time in YYYY-MM-DD-HH-MM--SS format.</userdata>
+    </item>
+    <item id="DAY" text="DAY" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the day portion of a source date.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">DAY(date)</userdata>
+      <userdata name="DESC">returns the day portion of a source date.</userdata>
+    </item>
+    <item id="DAYNAME" text="DAYNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the name of a day from a number (1 through 7). (see DAYOFWEEK for determining based on date)">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">DAYNAME(num)</userdata>
+      <userdata name="DESC">returns the name of a day from a number (1 through 7). (see DAYOFWEEK for determining based on date)</userdata>
+    </item>
+    <item id="DAYOFWEEK" text="DAYOFWEEK" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the day number (1 through 7) from the current date.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">DAYOFWEEK()</userdata>
+      <userdata name="DESC">returns the day number (1 through 7) from the current date.</userdata>
+    </item>
+    <item id="GMT2LOCAL" text="GMT2LOCAL" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="converts GMT to Local Time.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">GMT2LOCAL(CDCTSTMP(CDCIN))</userdata>
+      <userdata name="DESC">converts GMT to Local Time.</userdata>
+    </item>
+    <item id="IS_ISO_DATE" text="IS_ISO_DATE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="Returns true if the data is in YYYY-MM-DD format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">IS_ISO_DATE()</userdata>
+      <userdata name="DESC">Returns true if the data is in YYYY-MM-DD format.</userdata>
+    </item>
+    <item id="JULIAN" text="JULIAN" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="derive a Julian date value (YYYYDDD format) from the current date.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">JULIAN()</userdata>
+      <userdata name="DESC">derive a Julian date value (YYYYDDD format) from the current date.</userdata>
+    </item>
+    <item id="JULIAN2DATE" text="JULIAN2DATE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="converts Julian date to a conventional date in YYYYMMDD format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">JULIAN2DATE(date)</userdata>
+      <userdata name="DESC">converts Julian date to a conventional date in YYYYMMDD format.</userdata>
+    </item>
+    <item id="MONTH" text="MONTH" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the number of a month from a specific date.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">MONTH(date)</userdata>
+      <userdata name="DESC">returns the number of a month from a specific date.</userdata>
+    </item>
+    <item id="MONTHNAME" text="MONTHNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the name of month from a number (1 through 12)">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">MONTHNAME(number)</userdata>
+      <userdata name="DESC">returns the name of month from a number (1 through 12)</userdata>
+    </item>
+    <item id="SECONDS" text="SECONDS" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="converts the time value in HH:MM:SS format into the equivalent number of seconds that the time represents.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">SECONDS(time)</userdata>
+      <userdata name="DESC">converts the time value in HH:MM:SS format into the equivalent number of seconds that the time represents.</userdata>
+    </item>
+    <item id="SMALLJUL" text="SMALLJUL" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the day portion of a Julian date from the current date.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">SMALLJUL()</userdata>
+      <userdata name="DESC">returns the day portion of a Julian date from the current date.</userdata>
+    </item>
+    <item id="SMALLJUL2DATE" text="SMALLJUL2DATE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="converts the day portion of a Julian date into a date formatted as YYYYMMDD. The YYYY value is derived from the current year.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">SMALLJUL2DATE(julian_day)</userdata>
+      <userdata name="DESC">converts the day portion of a Julian date into a date formatted as YYYYMMDD. The YYYY value is derived from the current year.</userdata>
+    </item>
+    <item id="STORECLOCK" text="STORECLOCK" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the current eight (8) byte MVS storeclock (STCK) value in a hexadecimal character format (i.e. 16 bytes).">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">STORECLOCK()</userdata>
+      <userdata name="DESC">returns the current eight (8) byte MVS storeclock (STCK) value in a hexadecimal character format (i.e. 16 bytes).</userdata>
+    </item>
+    <item id="TIME" text="TIME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the current time in HH.MM.SS format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">TIME()</userdata>
+      <userdata name="DESC">returns the current time in HH.MM.SS format.</userdata>
+    </item>
+    <item id="TIMESTAMP" text="TIMESTAMP" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns a timestamp value from the current date/time in YYYY-MM-DD-HH.MM.SS.mmmmmm format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">TIMESTAMP()</userdata>
+      <userdata name="DESC">returns a timestamp value from the current date/time in YYYY-MM-DD-HH.MM.SS.mmmmmm format.</userdata>
+    </item>
+    <item id="TODAY" text="TODAY" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the current date in YYYYMMDD format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">TODAY()</userdata>
+      <userdata name="DESC">returns the current date in YYYYMMDD format.</userdata>
+    </item>
+    <item id="WEEK" text="WEEK" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the number of a week within the year from a specified date in YYYYMMDD format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">WEEK(date)</userdata>
+      <userdata name="DESC">returns the number of a week within the year from a specified date in YYYYMMDD format.</userdata>
+    </item>
+    <item id="WEEKDAY" text="WEEKDAY" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the day of the week.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">WEEKDAY(date)</userdata>
+      <userdata name="DESC">returns the day of the week.</userdata>
+    </item>
+    <item id="YEAR" text="YEAR" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the current year value in YYYY format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">YEAR()</userdata>
+      <userdata name="DESC">returns the current year value in YYYY format.</userdata>
+    </item>
+  </item>
+  <item id="String" text="String" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="NODETYPE">Heading</userdata>
+    <item id="B2D" text="B2D" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="Returns the decimal representation of the content of a binary field.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">B2D(binary_field,field_length)</userdata>
+      <userdata name="DESC">Returns the decimal representation of the content of a binary field.</userdata>
+    </item>
+    <item id="B2X" text="B2X" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="converts a binary value to its hexadecimal equivalent in character format.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">B2X(binary_field,field_length)</userdata>
+      <userdata name="DESC">converts a binary value to its hexadecimal equivalent in character format.</userdata>
+    </item>
+    <item id="BITCHR" text="BITCHR" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">BITCHAR(binary_field,field_length)</userdata>
+      <userdata name="DESC"></userdata>
+    </item>
+    <item id="C2X" text="C2X" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="converts a character data string into a hexadecimal format. The code page of the hexadecimal translation is determined by the platform in which the C2X function was executed (i.e. EBCDIC for z/OS).">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">C2X(character_string)</userdata>
+      <userdata name="DESC">converts a character data string into a hexadecimal format. The code page of the hexadecimal translation is determined by the platform in which the C2X function was executed (i.e. EBCDIC for z/OS).</userdata>
+    </item>
+    <item id="CHRBIT" text="CHRBIT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">CHRBIT(binary_field,field_length)</userdata>
+      <userdata name="DESC"></userdata>
+    </item>
+    <item id="DSDIR" text="DSDIR" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the name of the directory in which a file type datastore resides.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">DSDIR(datastore)</userdata>
+      <userdata name="DESC">returns the name of the directory in which a file type datastore resides.</userdata>
+    </item>
+    <item id="DSNAME" text="DSNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the name of the physical datastore file.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">DSNAME(datastore_alias)</userdata>
+      <userdata name="DESC">returns the name of the physical datastore file.</userdata>
+    </item>
+    <item id="EXCLUDE" text="EXCLUDE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the data_string with any chracters not found in the inclusion_string removed. If 'MATCH' is specified, only parts of the data_string which match the inclusion_string exactly will be returned.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">EXCLUDE(data_string,inclusion_character_string,'ANY'|'MATCH')</userdata>
+      <userdata name="DESC">returns the data_string with any chracters not found in the inclusion_string removed. If 'MATCH' is specified, only parts of the data_string which match the inclusion_string exactly will be returned.</userdata>
+    </item>
+    <item id="FIX" text="FIX" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="capitalizes the first letter of each word in text_string.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">FIX(text_string)</userdata>
+      <userdata name="DESC">capitalizes the first letter of each word in text_string.</userdata>
+    </item>
+    <item id="LEFT" text="LEFT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the first length characters in data_string">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">LEFT(data string,length)</userdata>
+      <userdata name="DESC">returns the first length characters in data_string</userdata>
+    </item>
+    <item id="LENGTH" text="LENGTH" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the number of characters in data_string">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">LENGTH(data_string)</userdata>
+      <userdata name="DESC">returns the number of characters in data_string</userdata>
+    </item>
+    <item id="LOWER" text="LOWER" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns text_string with all characters converted to lower case">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">LOWER(text_string)</userdata>
+      <userdata name="DESC">returns text_string with all characters converted to lower case</userdata>
+    </item>
+    <item id="LTRIM" text="LTRIM" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="removes any characters found in character_string from the begining of data_string. If 'MATCH' is specified, only removes an occurance of the exact character_string from the beginning of data_string">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">LTRIM(data_string,character_string,'ANY'|'MATCH')</userdata>
+      <userdata name="DESC">removes any characters found in character_string from the begining of data_string. If 'MATCH' is specified, only removes an occurance of the exact character_string from the beginning of data_string</userdata>
+    </item>
+    <item id="MID" text="MID" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the substring of data_string starting at character start_position (1-based) and continuing for length characters.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">MID(data_string,start_position,length)</userdata>
+      <userdata name="DESC">returns the substring of data_string starting at character start_position (1-based) and continuing for length characters.</userdata>
+    </item>
+    <item id="MTRIM" text="MTRIM" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="this is the opposite of EXCLUDE, returning all characters not found in character_string.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">MTRIM(data_string,character_string,'ANY'|'MATCH')</userdata>
+      <userdata name="DESC">this is the opposite of EXCLUDE, returning all characters not found in character_string.</userdata>
+    </item>
+    <item id="RIGHT" text="RIGHT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the last length characters in string">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">RIGHT(string,length)</userdata>
+      <userdata name="DESC">returns the last length characters in string</userdata>
+    </item>
+    <item id="RTRIM" text="RTRIM" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="removes any characters found in character_string from the begining of data_string. If 'MATCH' is specified, only removes an occurance of the exact character_string from the end of data_string">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">RTRIM(data_string,character_string,'ANY'|'MATCH')</userdata>
+      <userdata name="DESC">removes any characters found in character_string from the begining of data_string. If 'MATCH' is specified, only removes an occurance of the exact character_string from the end of data_string</userdata>
+    </item>
+    <item id="SEARCH" text="SEARCH" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="examines a source data string and compares it against a second `search' data string. If the search data string is found within the source data string, SQData returns the position of the matching characters within the source data string. If no match is found, a value of zero (0) is returned.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">SEARCH(data_string,search_data_string)</userdata>
+      <userdata name="DESC">examines a source data string and compares it against a second `search' data string. If the search data string is found within the source data string, SQData returns the position of the matching characters within the source data string. If no match is found, a value of zero (0) is returned.</userdata>
+    </item>
+    <item id="STRING" text="STRING" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns a string literal, concatenating any arguments">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">STRING(string[,string,...])</userdata>
+      <userdata name="DESC">returns a string literal, concatenating any arguments</userdata>
+    </item>
+    <item id="TRANSLATE" text="TRANSLATE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="allows you to translate a specific character within a data string with another character. This function examines the data string and replaces all occurrences of a specific character with a user specified replacement character.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">TRANSLATE(data_string,original_character,replacement_character)</userdata>
+      <userdata name="DESC">allows you to translate a specific character within a data string with another character. This function examines the data string and replaces all occurrences of a specific character with a user specified replacement character.</userdata>
+    </item>
+    <item id="TRIM" text="TRIM" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="removes characters specified in character_string from the input data_string, or returns an empty string if no matching characters are found.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">TRIM(data_string,character_string,'ANY'|'MATCH')</userdata>
+      <userdata name="DESC">removes characters specified in character_string from the input data_string, or returns an empty string if no matching characters are found.</userdata>
+    </item>
+    <item id="UPPER" text="UPPER" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns text_string with all characters converted to upper case">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">UPPER(text_string)</userdata>
+      <userdata name="DESC">returns text_string with all characters converted to upper case</userdata>
+    </item>
+    <item id="WORD" text="WORD" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns substring of string, starting at character position and reading until the first space or end-of-string is found.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">WORD(string,position)</userdata>
+      <userdata name="DESC">returns substring of string, starting at character position and reading until the first space or end-of-string is found.</userdata>
+    </item>
+    <item id="WORDS" text="WORDS" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the number of words (seperated by at least one(1) space) are in the input string">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">WORDS(string)</userdata>
+      <userdata name="DESC">returns the number of words (seperated by at least one(1) space) are in the input string</userdata>
+    </item>
+    <item id="X2B" text="X2B" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="The X2B function converts a hexadecimal to its binary value equivalent. The return length is half of the input length.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">X2B(HEX_string)</userdata>
+      <userdata name="DESC">The X2B function converts a hexadecimal to its binary value equivalent. The return length is half of the input length.</userdata>
+    </item>
+    <item id="X2C" text="X2C" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="converts a data string in hexadecimal format into a character data string.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">X2C(data_string)</userdata>
+      <userdata name="DESC">converts a data string in hexadecimal format into a character data string.</userdata>
+    </item> 
+  </item>
+  <item id="Logical" text="Logical" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="NODETYPE">Heading</userdata>
+    <item id="AND" text="AND" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical AND, returns true(1) if all arguments evaluate TRUE, or false(0) if any evaluate FALSE.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">11</userdata>
+      <userdata name="SYNTAX">AND(boolean_functions)</userdata>
+      <userdata name="DESC">logical AND, returns true(1) if all arguments evaluate TRUE, or false(0) if any evaluate FALSE.</userdata>
+    </item>
+    <item id="BETWEEN" text="BETWEEN" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="determines whether or not a value is greater than one value and less than another value, inclusive">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">BETWEEN(source_value,lower_value,upper_value)</userdata>
+      <userdata name="DESC">determines whether or not a value is greater than one value and less than another value, inclusive</userdata>
+    </item>
+    <item id="EQ" text="EQ" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical equivilence test. Returns TRUE(1) if both values are equal, and FALSE(0) if they are not.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">EQ(value1,value2)</userdata>
+      <userdata name="DESC">logical equivilence test. Returns TRUE(1) if both values are equal, and FALSE(0) if they are not.</userdata>
+    </item>
+    <item id="FLDCHG" text="FLDCHG" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="determines whether or not a field/column has changed by comparing the before image with the after image.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">FLDCHG(source field)</userdata>
+      <userdata name="DESC">determines whether or not a field/column has changed by comparing the before image with the after image.</userdata>
+    </item>
+    <item id="GE" text="GE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical greater-than-or-equal-to test. Returns TRUE(1) if value1 >= value2, and FALSE(0) otherwise.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">GE(value1,value2)</userdata>
+      <userdata name="DESC">logical greater-than-or-equal-to test. Returns TRUE(1) if value1 >= value2, and FALSE(0) otherwise.</userdata>
+    </item>
+    <item id="GT" text="GT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical greater-than test. Returns TRUE(1) if value1 > value2, and FALSE(0) otherwise.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">GT(value1,value2)</userdata>
+      <userdata name="DESC">logical greater-than test. Returns TRUE(1) if value1 > value2, and FALSE(0) otherwise.</userdata>
+    </item>
+    <item id="IF" text="IF" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical IF. Can be used with ELSE, ELSE IF, OTHERWISE">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">IF(value1)</userdata>
+      <userdata name="DESC">logical IF. Can be used with ELSE, ELSE IF, OTHERWISE</userdata>
+    </item>
+    <item id="ELSE" text="ELSE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical ELSE. Used in an IF statement with DO (some task) END.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">ELSE</userdata>
+      <userdata name="DESC">logical ELSE. Used in an IF statement with DO (some task) END.</userdata>
+    </item>
+    <item id="INSIDE" text="INSIDE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="determines whether or not a value is greater than one value and less than another value, exclusive">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">INSIDE(source_value,lower_value,upper_value)</userdata>
+      <userdata name="DESC">determines whether or not a value is greater than one value and less than another value, exclusive</userdata>
+    </item>
+    <item id="ISDEC" text="ISDEC" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="determines whether or not a source value is a decimal number, returning TRUE(1) if it is and FALSE(0) if it is not.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">ISDEC(value)</userdata>
+      <userdata name="DESC">determines whether or not a source value is a decimal number, returning TRUE(1) if it is and FALSE(0) if it is not.</userdata>
+    </item>
+    <item id="ISINT" text="ISINT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="determines whether or not a source value is an integer, returning TRUE(1) if it is and FALSE(0) if it is not.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">ISINT(value)</userdata>
+      <userdata name="DESC">determines whether or not a source value is an integer, returning TRUE(1) if it is and FALSE(0) if it is not.</userdata>
+    </item>
+    <item id="ISNULL" text="ISNULL" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="determines whether or not a source value is null, returning TRUE(1) if it is and FALSE(0) if it is not.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">ISNULL(value)</userdata>
+      <userdata name="DESC">determines whether or not a source value is null, returning TRUE(1) if it is and FALSE(0) if it is not.</userdata>
+    </item>
+    <item id="ISNUM" text="ISNUM" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="determines whether or not a source value is numeric, returning TRUE(1) if it is and FALSE(0) if it is not.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">ISNUM(value)</userdata>
+      <userdata name="DESC">determines whether or not a source value is numeric, returning TRUE(1) if it is and FALSE(0) if it is not.</userdata>
+    </item>
+    <item id="ISTEXT" text="ISTEXT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="determines whether or not a source value is text, returning TRUE(1) if it is and FALSE(0) if it is not.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">ISTEXT(value)</userdata>
+      <userdata name="DESC">determines whether or not a source value is text, returning TRUE(1) if it is and FALSE(0) if it is not.</userdata>
+    </item>
+    <item id="LE" text="LE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical less-than-or-equal-to test. Returns TRUE(1) if value1 less-than-or-equal-to value2, and FALSE(0) otherwise.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">LE(value1,value2)</userdata>
+      <userdata name="DESC">logical less-than-or-equal-to test. Returns TRUE(1) if value1 less-than-or-equal-to value2, and FALSE(0) otherwise.</userdata>
+    </item>
+    <item id="LT" text="LT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical less-than test. Returns TRUE(1) if value1less-than value2, and FALSE(0) otherwise.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">LT(value1,value2)</userdata>
+      <userdata name="DESC">logical less-than test. Returns TRUE(1) if value1less-than value2, and FALSE(0) otherwise.</userdata>
+    </item>
+    <item id="NE" text="NE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical reverse-equivilence test. Returns FALSE(0) if both values are equal, and TRUE(1) if they are not.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">NE(value1,value2)</userdata>
+      <userdata name="DESC">logical reverse-equivilence test. Returns FALSE(0) if both values are equal, and TRUE(1) if they are not.</userdata>
+    </item>
+    <item id="NOT" text="NOT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical NOT, reverses the value of the input, so a logical FALSE becomes TRUE and a logical TRUE becomes FALSE">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">NOT(boolean_function)</userdata>
+      <userdata name="DESC">logical NOT, reverses the value of the input, so a logical FALSE becomes TRUE and a logical TRUE becomes FALSE</userdata>
+    </item>
+    <item id="ONEOF" text="ONEOF" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="Determines whether or not a value matches one or more search values.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">ONEOF(value,comparison_value1,comparision_value2[,comparison_valuex])</userdata>
+      <userdata name="DESC">Determines whether or not a value matches one or more search values.</userdata>
+    </item>
+    <item id="OR" text="OR" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="logical OR, returns true(1) if any argument evaluate TRUE, or false(0) if all evaluate FALSE.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">OR(boolean_function)</userdata>
+      <userdata name="DESC">logical OR, returns true(1) if any argument evaluate TRUE, or false(0) if all evaluate FALSE.</userdata>
+    </item>
+    <item id="RID" text="RID" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the relative number of the record in a source datastore.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">RID()</userdata>
+      <userdata name="DESC">returns the relative number of the record in a source datastore.</userdata>
+    </item>
+    <item id="WHERE" text="WHERE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="If the result of the function(s) within the WHERE clause are true (1), the functions that appear below the WHERE function are executed. Otherwise, the functions below the WHERE function are not executed.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">WHERE(function)</userdata>
+      <userdata name="DESC">If the result of the function(s) within the WHERE clause are true (1), the functions that appear below the WHERE function are executed. Otherwise, the functions below the WHERE function are not executed.</userdata>
+    </item>
+  </item>
+  <item id="Math" text="Math" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="NODETYPE">Heading</userdata>
+    <item id="ABS" text="ABS" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the absolute value of numeric_field">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">ABS(numeric_field)</userdata>
+      <userdata name="DESC">returns the absolute value of numeric_field</userdata>
+    </item>
+    <item id="ADD" text="ADD" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the input values mathematically added together">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">ADD(addend1,addend2[,addendx])</userdata>
+      <userdata name="DESC">returns the input values mathematically added together</userdata>
+    </item>
+    <item id="DECREMENT" text="DECREMENT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns numeric value, minus one(1)">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">DECREMENT(numeric value)</userdata>
+      <userdata name="DESC">returns numeric value, minus one(1)</userdata>
+    </item>
+    <item id="DIV" text="DIV" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns dividend divided by divisor, with precision scale.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">DIV(dividend,divisior,scale)</userdata>
+      <userdata name="DESC">returns dividend divided by divisor, with precision scale.</userdata>
+    </item>
+    <item id="INCREMENT" text="INCREMENT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns numeric value, plus one(1)">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">INCREMENT(numeric_value)</userdata>
+      <userdata name="DESC">returns numeric value, plus one(1)</userdata>
+    </item>
+    <item id="MOD" text="MOD" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the first argument modulo the second argument">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">MOD(numeric_value,numeric_value)</userdata>
+      <userdata name="DESC">returns the first argument modulo the second argument</userdata>
+    </item>
+    <item id="MULTIPLY" text="MULTIPLY" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the result of mathematically multiplying the arguments">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">MULTIPLY(numeric_value1,numeric_value2[,numeric_valuex])</userdata>
+      <userdata name="DESC">returns the result of mathematically multiplying the arguments</userdata>
+    </item>
+    <item id="ROUND" text="ROUND" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns decimal_value, rounded to precision scale.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">ROUND(decimal_value,scale)</userdata>
+      <userdata name="DESC">returns decimal_value, rounded to precision scale.</userdata>
+    </item>
+    <item id="SUBTRACT" text="SUBTRACT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="subtracts one number from another and returns the difference of the subtraction.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">SUBTRACT(numeric_value,subtraction_value[,subtraction_value,...])</userdata>
+      <userdata name="DESC">subtracts one number from another and returns the difference of the subtraction.</userdata>
+    </item>
+  </item>
+  <item id="Aggregate" text="Aggregate" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="NODETYPE">Heading</userdata>
+    <item id="COUNT" text="COUNT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the number of records/rows in a particular group as specified within the SQData SELECT subcommand.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">COUNT()</userdata>
+      <userdata name="DESC">returns the number of records/rows in a particular group as specified within the SQData SELECT subcommand.</userdata>
+    </item>
+    <item id="FIRST" text="FIRST" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the first occurrence of a particular data element within a group of records/rows.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">FIRST(field_name)</userdata>
+      <userdata name="DESC">returns the first occurrence of a particular data element within a group of records/rows.</userdata>
+    </item>
+    <item id="LAST" text="LAST" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the last occurrence of a particular data element within a group of records/rows.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">LAST(field_name)</userdata>
+      <userdata name="DESC">returns the last occurrence of a particular data element within a group of records/rows.</userdata>
+    </item>
+    <item id="MAX" text="MAX" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the largest value of a particular data element within a group of records/rows.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">MAX(data_element)</userdata>
+      <userdata name="DESC">returns the largest value of a particular data element within a group of records/rows.</userdata>
+    </item>
+    <item id="MIN" text="MIN" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the smallest value of a particular data element within a group of records/rows.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">MIN(data_element)</userdata>
+      <userdata name="DESC">returns the smallest value of a particular data element within a group of records/rows.</userdata>
+    </item>
+    <item id="SUM" text="SUM" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="totals each occurrence of a numeric data element within a group of records/rows.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">SUM(data_element)</userdata>
+      <userdata name="DESC">totals each occurrence of a numeric data element within a group of records/rows.</userdata>
+    </item>
+  </item>
+  <item id="Specialized" text="Specialized" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="NODETYPE">Heading</userdata>
+    <item id="CALLPROC" text="CALLPROC" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="invokes a predefined SQData mapping procedure (PROC) within an SQData command script.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CALLPROC(proc_name)</userdata>
+      <userdata name="DESC">invokes a predefined SQData mapping procedure (PROC) within an SQData command script.</userdata>
+    </item>
+    <item id="CLOSEDS" text="CLOSEDS" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="The CLOSEDS function closes a target datastore.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CLOSEDS(datastore_name)</userdata>
+      <userdata name="DESC">The CLOSEDS function closes a target datastore.</userdata>
+    </item>
+    <item id="DB2QUAL" text="DB2QUAL" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the qualifier of the DB2 table that is currently being processed via a DB2 datastore or a DB2 changed data capture (CDC) datastore." >
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">DB2QUAL(CDCIN)</userdata>
+      <userdata name="DESC">returns the qualifier of the DB2 table that is currently being processed via a DB2 datastore or a DB2 changed data capture (CDC) datastore.</userdata>
+    </item>
+    <item id="DB2TBLNAME" text="DB2TBLNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the name of the DB2 table that is currently being processed via a DB2 datastore or a DB2 changed data capture (CDC) datastore.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">DB2TBLNAME(CDCIN)</userdata>
+      <userdata name="DESC">returns the name of the DB2 table that is currently being processed via a DB2 datastore or a DB2 changed data capture (CDC) datastore.</userdata>
+    </item>
+    <item id="EMPTY" text="EMPTY" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="The EMPTY function returns a null value.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">EMPTY()</userdata>
+      <userdata name="DESC">The EMPTY function returns a null value.</userdata>
+    </item>
+    <item id="FLDMAX" text="FLDMAX" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="examines a set of values and returns the largest value in the set.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">FLDMAX(value1,value2 [,valuex])</userdata>
+      <userdata name="DESC">examines a set of values and returns the largest value in the set.</userdata>
+    </item>
+    <item id="FLDMIN" text="FLDMIN" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="examines a set of numeric values and returns the smallest number in the set.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">FLDMIN(value1,value2[,valuex])</userdata>
+      <userdata name="DESC">examines a set of numeric values and returns the smallest number in the set.</userdata>
+    </item>
+    <item id="FULLKEY" text="FULLKEY" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="The FULLKEY function returns the fully concatenated key of the current IMS segment. This function is useful for appending key data to child segments prior to writing the data to an output datastore. Also, see the PFK_ function.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">FULLKEY()</userdata>
+      <userdata name="DESC">The FULLKEY function returns the fully concatenated key of the current IMS segment. This function is useful for appending key data to child segments prior to writing the data to an output datastore. Also, see the PFK_ function.</userdata>
+    </item>
+    <item id="IMSDBNAME" text="IMSDBNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns name of the IMS database that is currently being processed via an IMS datastore or an IMS changed data capture (CDC) datastore.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">IMSDBNAME(CDCIN)</userdata>
+      <userdata name="DESC">returns name of the IMS database that is currently being processed via an IMS datastore or an IMS changed data capture (CDC) datastore.</userdata>
+    </item>
+    <item id="IMSSEGNAME" text="IMSSEGNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns name of the IMS segment that is currently being processed via an IMS datastore or an IMS changed data capture (CDC) datastore.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">IMSSEGNAME(CDCIN)</userdata>
+      <userdata name="DESC">returns name of the IMS segment that is currently being processed via an IMS datastore or an IMS changed data capture (CDC) datastore.</userdata>
+    </item>
+    <item id="LOOKFLD" text="LOOKFLD" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="retrieves a single field from a lookup or Join table based on the position of the lookup pointer returned from the LOOK function. The data returned by the LOOKFLD function can be mapped into a field of a target datastore.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">LOOKFLD(lookup_name,lookup_field)</userdata>
+      <userdata name="DESC">retrieves a single field from a lookup or Join table based on the position of the lookup pointer returned from the LOOK function. The data returned by the LOOKFLD function can be mapped into a field of a target datastore.</userdata>
+    </item>
+    <item id="LOOKFOUND" text="LOOKFOUND" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="checks the result of a lookup or join table search to determine whether or not a lookup key was found or not. LOOKFOUND returns a found (1) or a not found (0) value based on the results of the search via a LOOK function.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">LOOKFOUND(lookup_name)</userdata>
+      <userdata name="DESC">checks the result of a lookup or join table search to determine whether or not a lookup key was found or not. LOOKFOUND returns a found (1) or a not found (0) value based on the results of the search via a LOOK function.</userdata>
+    </item>
+    <item id="LOOP" text="LOOP" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="executes a function or group of functions a specified number of times.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">LOOP(condition)</userdata>
+      <userdata name="DESC">executes a function or group of functions a specified number of times.</userdata>
+    </item>
+    <item id="MAP" text="MAP" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="used to perform source to target data mapping within a function or nested set of functions. This function maps a source field/column, variable or function output to a target field.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">MAP(source_value,'target_field')</userdata>
+      <userdata name="DESC">used to perform source to target data mapping within a function or nested set of functions. This function maps a source field/column, variable or function output to a target field.</userdata>
+    </item>
+    <item id="MAP_BEFORE" text="MAP_BEFORE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">MAP_BEFORE(source_value,'target_field')</userdata>
+      <userdata name="DESC"></userdata>
+    </item>
+    <item id="NORM" text="NORM" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="used to `normalize' the contents of a source datastore record into one (1) or more target datastores. This function is typically used when the target datastore(s) is a relational table and the source datastore records contain de-normalized data (i.e. repeating groups/occurs).">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">3</userdata>
+      <userdata name="SYNTAX">NORM(proc_name,repeating_group_item,'STOPINIT'|'NOSTOP')</userdata>
+      <userdata name="DESC">used to `normalize' the contents of a source datastore record into one (1) or more target datastores. This function is typically used when the target datastore(s) is a relational table and the source datastore records contain de-normalized data (i.e. repeating groups/occurs).</userdata>
+    </item>
+    <item id="NULL" text="NULL" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns NULL">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">NULL()</userdata>
+      <userdata name="DESC">returns NULL</userdata>
+    </item>
+    <item id="OS" text="OS" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="executes a command that can normally be issued from a UNIX or Windows command prompt. SQData waits for the command to complete and then continues processing.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">OS(command_text)</userdata>
+      <userdata name="DESC">executes a command that can normally be issued from a UNIX or Windows command prompt. SQData waits for the command to complete and then continues processing.</userdata>
+    </item>
+    <item id="OUTDS" text="OUTDS" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="The OUTDS function is used to explicitly write records/rows to a target datastore without waiting for all of the target fields to be mapped (which happens automatically within the Integration Engine).">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">OUTDS (target_datastore)</userdata>
+      <userdata name="DESC">The OUTDS function is used to explicitly write records/rows to a target datastore without waiting for all of the target fields to be mapped (which happens automatically within the Integration Engine).</userdata>
+    </item>
+    <item id="OUTDSNAME" text="OUTDSNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the alias name of a source or target datastore as defined within the SQData script.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">OUTDSNAME(wildcard_data_store,replacement_value)</userdata>
+      <userdata name="DESC">returns the alias name of a source or target datastore as defined within the SQData script.</userdata>
+    </item>
+    <item id="OUTMSG" text="OUTMSG" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="display text_to_output in the report output. If rc is non-zero, will stop proccessing and exit with the return code rc.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">OUTMSG(rc,text_to_output)</userdata>
+      <userdata name="DESC">display text_to_output in the report output. If rc is non-zero, will stop proccessing and exit with the return code rc.</userdata>
+    </item>
+    <item id="PFK_" text="PFK_" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="The PFK_ function returns a parent ;apos;s full key (PFK) of the current IMS segment. This segment must be a dependent segment (i.e. not a root segment).">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">PFK_DBDkeyfieldname</userdata>
+      <userdata name="DESC">The PFK_ function returns a parent ;apos;s full key (PFK) of the current IMS segment. This segment must be a dependent segment (i.e. not a root segment).</userdata>
+    </item>
+    <item id="READ" text="READ" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="Either HOLDs or RESUMEs the reading of records from the primary datastore">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">READ('HOLD'|'RESUME')</userdata>
+      <userdata name="DESC">Either HOLDs or RESUMEs the reading of records from the primary datastore</userdata>
+    </item>
+    <item id="RECNAME" text="RECNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="The RECNAME function returns the name of the object associated with a DESCRIPTION alias. In the case of IMS, this object is the segment name, which can also be obtained using the IMSSEGNAME function. For VSAM CDC records, this is the eight (8) byte file name. For relational tables, this is the name of the source table.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">RECNAME(CDCIN)</userdata>
+      <userdata name="DESC">The RECNAME function returns the name of the object associated with a DESCRIPTION alias. In the case of IMS, this object is the segment name, which can also be obtained using the IMSSEGNAME function. For VSAM CDC records, this is the eight (8) byte file name. For relational tables, this is the name of the source table.</userdata>
+    </item>
+    <item id="REPLICATE" text="REPLICATE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">REPLICATE(CDCIN)</userdata>
+      <userdata name="DESC"></userdata>
+    </item>
+    <item id="SEQNUM" text="SEQNUM" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="increments a number by the value of a second numeric value. Each time that the SEQNUM function is called for the same numeric value(s), the SEQNUM function continues to increment the value from its previous state.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">SEQNUM(start_value,increment_value)</userdata>
+      <userdata name="DESC">increments a number by the value of a second numeric value. Each time that the SEQNUM function is called for the same numeric value(s), the SEQNUM function continues to increment the value from its previous state.</userdata>
+    </item>
+    <item id="SETPCBNAME" text="SETPCBNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">2</userdata>
+      <userdata name="SYNTAX">SETPCBNAME()</userdata>
+      <userdata name="DESC"></userdata>
+    </item>
+    <item id="TERMINATE" text="TERMINATE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="stop proccessing and exit with return code rc">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">TERMINATE(rc)</userdata>
+      <userdata name="DESC">stop proccessing and exit with return code rc</userdata>
+    </item>
+    <item id="UEXIT" text="UEXIT" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="The UEXIT function allows you to include C functions/programs in SQDATA. The C program is complied and included as a .dll and included in the root program.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">UEXIT(exit_name[,parm1,parm2,...])</userdata>
+      <userdata name="DESC">The UEXIT function allows you to include C functions/programs in SQDATA. The C program is complied and included as a .dll and included in the root program.</userdata>
+    </item>
+    <item id="VALUE" text="VALUE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="references a function alias. Please note that the function alias being referenced by VALUE must appear before the VALUE function in the command script.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">VALUE(work_variable)</userdata>
+      <userdata name="DESC">references a function alias. Please note that the function alias being referenced by VALUE must appear before the VALUE function in the command script.</userdata>
+    </item>
+  </item>
+  <item id="CDC" text="CDC" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="NODETYPE">Heading</userdata>
+    <item id="CDCBEFORE" text="CDCBEFORE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the before image of a source field involved in a transaction update or delete. For insert operations, a null value is returned.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CDCBEFORE(source_field)</userdata>
+      <userdata name="DESC">returns the before image of a source field involved in a transaction update or delete. For insert operations, a null value is returned.</userdata>
+    </item>
+    <item id="CDCOP" text="CDCOP" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the change operation of the transaction insert, update or delete operation. I for Inserts, R for updates, or D for deletes.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CDCOP(CDCIN)</userdata>
+      <userdata name="DESC">returns the change operation of the transaction insert, update or delete operation. I for Inserts, R for updates, or D for deletes.</userdata>
+    </item>
+    <item id="CDCRAW" text="CDCRAW" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the entire unaltered changed data capture (CDC) record from a CDC type datastore.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CDCRAW(CDCIN)</userdata>
+      <userdata name="DESC">returns the entire unaltered changed data capture (CDC) record from a CDC type datastore.</userdata>
+    </item>
+    <item id="CDCSTCK" text="CDCSTCK" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the eight (8) byte MVS storeclock value (STCK) from the changed data capture (CDC) record in a CDC type datastore. This storeclock value reflects the time that the data was changed within a transaction or program.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CDCSTCK(CDCIN)</userdata>
+      <userdata name="DESC">returns the eight (8) byte MVS storeclock value (STCK) from the changed data capture (CDC) record in a CDC type datastore. This storeclock value reflects the time that the data was changed within a transaction or program.</userdata>
+    </item>
+    <item id="CDCTSTMP" text="CDCTSTMP" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns a 26 byte timstamp from a changed data capture (CDC) record. The timestamp is in YYYY-MM-DD-HH.MM.SSSSSS format. This value reflects the time that the update took place.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CDCTSTMP(CDCIN)</userdata>
+      <userdata name="DESC">returns a 26 byte timstamp from a changed data capture (CDC) record. The timestamp is in YYYY-MM-DD-HH.MM.SSSSSS format. This value reflects the time that the update took place.</userdata>
+    </item>
+    <item id="CDCTSTMPPK" text="CDCTSTMPPK" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns a 20 byte packed (without punctuation) timestamp from a changed data capture (CDC) record. The timestamp is in YYYYMMDDHHMMSSSSSS format. This value reflects the time that the source record was updated.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CDCTSTMPPK(CDCIN)</userdata>
+      <userdata name="DESC">returns a 20 byte packed (without punctuation) timestamp from a changed data capture (CDC) record. The timestamp is in YYYYMMDDHHMMSSSSSS format. This value reflects the time that the source record was updated.</userdata>
+    </item>
+    <item id="CDCUID" text="CDCUID" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the user ID of the individual/group that initiated the change to the source record within a transaction or program.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CDCUID(CDCIN)</userdata>
+      <userdata name="DESC">returns the user ID of the individual/group that initiated the change to the source record within a transaction or program.</userdata>
+    </item>
+    <item id="CDCUOW" text="CDCUOW" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the unit-of-work identifier (recovery token) from the changed data capture (CDC) record in a CDC type datastore.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CDCUOW(CDCIN)</userdata>
+      <userdata name="DESC">returns the unit-of-work identifier (recovery token) from the changed data capture (CDC) record in a CDC type datastore.</userdata>
+    </item>
+    <item id="CDC_TBNAME" text="CDC_TBNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns the current table name in the source datastore (CDCIN) from the changed data capture (CDC) record in a CDC type datastore.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">CDC_TBNAME(CDCIN)</userdata>
+      <userdata name="DESC">returns the current table name in the source datastore (CDCIN) from the changed data capture (CDC) record in a CDC type datastore.</userdata>
+    </item>
+    <item id="IMSPGMNAME" text="IMSPGMNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns name of the IMS program that made the change to the source data that was subsequently captured by one of the SQData IMD data capture agents.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">IMSPGMNAME(CDCIN)</userdata>
+      <userdata name="DESC">returns name of the IMS program that made the change to the source data that was subsequently captured by one of the SQData IMD data capture agents.</userdata>
+    </item>
+    <item id="IMSPSBNAME" text="IMSPSBNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns name of the IMS PSB that was used to make the change to the source data that was subsequently captured by one of the SQData IMD data capture agents.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">IMSPSBNAME(CDCIN)</userdata>
+      <userdata name="DESC">returns name of the IMS PSB that was used to make the change to the source data that was subsequently captured by one of the SQData IMD data capture agents.</userdata>
+    </item>
+    <item id="IMSTRANNAME" text="IMSTRANNAME" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="returns name of the IMS transaction that was used to make the change to the source data that was subsequently captured by one of the SQData IMD data capture agents.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">1</userdata>
+      <userdata name="SYNTAX">IMSTRANNAME(CDCIN)</userdata>
+      <userdata name="DESC">returns name of the IMS transaction that was used to make the change to the source data that was subsequently captured by one of the SQData IMD data capture agents.</userdata>
+    </item>
+    <item id="SETIMAGE" text="SETIMAGE" im0="Paste Function.gif" im1="Paste Function.gif" im2="Paste Function.gif" tooltip="With the SETIMAGE function, you set the image to either 'BEFORE' or 'AFTER', and then use the same PROC for both images. The SETIMAGE function returns FALSE if you are asking for BEFORE and the change is not an update.">
+      <userdata name="NODETYPE">Func</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">SETIMAGE</userdata>
+      <userdata name="DESC">With the SETIMAGE function, you set the image to either 'BEFORE' or 'AFTER', and then use the same PROC for both images. The SETIMAGE function returns FALSE if you are asking for BEFORE and the change is not an update.</userdata>
+    </item>
+   </item>
+  <item id="Templates" text="Templates" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="NODETYPE">Heading</userdata>
+    <item id="CASE" text="CASE" im0="Template.gif" im1="Template.gif" im2="Template.gif" tooltip="">
+      <userdata name="NODETYPE">Template</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">Template for CASE/OTHERWISE Function</userdata>
+      <userdata name="DESC"></userdata>
+    </item>
+    <item id="RouteTraditional" text="RouteTraditional" im0="Template.gif" im1="Template.gif" im2="Template.gif" tooltip="Main Routing Procedure for an Engine. (Traditional Syntax)">
+      <userdata name="NODETYPE">Template</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">Template for Main Routing Procedure</userdata>
+      <userdata name="DESC">Main Routing Procedure for an Engine. (Traditional Syntax)</userdata>
+    </item>
+    <item id="Route" text="Route" im0="Template.gif" im1="Template.gif" im2="Template.gif" tooltip="Main Routing Procedure for an Engine. (URL/new Syntax)">
+      <userdata name="NODETYPE">Template</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">Template for Main Routing Procedure</userdata>
+      <userdata name="DESC">Main Routing Procedure for an Engine. (URL/new Syntax)</userdata>
+    </item>
+    <item id="LOOK" text="LOOK" im0="Template.gif" im1="Template.gif" im2="Template.gif" tooltip="performs a search on a pre-defined lookup or join table and sets the position (pointer) of the lookup table to the row that meets the criteria of the search.">
+      <userdata name="NODETYPE">Template</userdata>
+      <userdata name="NPARM">-1</userdata>
+      <userdata name="SYNTAX">LOOK(lookup_name,search_key[,search_key])</userdata>
+      <userdata name="DESC">performs a search on a pre-defined lookup or join table and sets the position (pointer) of the lookup table to the row that meets the criteria of the search.</userdata>
+    </item>
+    <item id="SetImage" text="SetImage" im0="Template.gif" im1="Template.gif" im2="Template.gif" tooltip="Template for SetImage">
+      <userdata name="NODETYPE">Template</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">Template for SetImage</userdata>
+      <userdata name="DESC"></userdata>
+    </item>
+    <item id="CURRENTDATE" text="CURRENTDATE" im0="Template.gif" im1="Template.gif" im2="Template.gif" tooltip="">
+      <userdata name="NODETYPE">Template</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">LEFT (DATETIME(),10)</userdata>
+      <userdata name="DESC">returns the current date in YYYY-MM-DD format.</userdata>
+    </item>
+    <item id="MAPBEFOREkeyChng" text="MAPBEFOREkeyChng" im0="Template.gif" im1="Template.gif" im2="Template.gif" tooltip="">
+      <userdata name="NODETYPE">Template</userdata>
+      <userdata name="NPARM">0</userdata>
+      <userdata name="SYNTAX">Template for MAPBEFOREkeyChng. Used when target keys can change.</userdata>
+      <userdata name="DESC">Template for MAPBEFOREkeyChng. Used when target keys can change.</userdata>
+    </item>
+  </item>
+</tree>

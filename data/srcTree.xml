@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tree id="0">
+  <item id="Proj_1.Env_1.fldSrcCOBOL" text="COBOL" checked="1" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="nodeType">folder</userdata>
+    <userdata name="sqdType">fldSrcCOBOLDesc</userdata>
+    <userdata name="loadFunction">loadCtlFolder</userdata>
+    <userdata name="Icon">folderOpen.gif</userdata>
+    <item id="Proj_1.Env_1.Src.COMPANY" text="COMPANY"  checked="1" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">COBOLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlCOBOLDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="Proj_1.Env_1.Src.DEPTMENT" text="DEPTMENT"  checked="1" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">COBOLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlCOBOLDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="Proj_1.Env_1.Src.EMPLOYEE" text="EMPLOYEE"  checked="1" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">COBOLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlCOBOLDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="Proj_1.Env_1.Src.VENDOR" text="VENDOR"  checked="1" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">COBOLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlCOBOLDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+  </item>
+  <item id="Proj_1.Env_1.fldSrcDDL" text="DDL" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+    <userdata name="nodeType">folder</userdata>
+    <userdata name="sqdType">fldDDLDesc</userdata>
+    <userdata name="loadFunction">loadCtlFolder</userdata>
+    <userdata name="Icon">folderOpen.gif</userdata>
+    <item id="Proj_1.Env_1.Src.comp" text="comp"  im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">DDLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="Proj_1.Env_1.Src.dept" text="dept" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">DDLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="Proj_1.Env_1.Src.empl" text="empl"  im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">DDLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="Proj_1.Env_1.Src.vend" text="vend"  im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">DDLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+  </item>
+</tree>

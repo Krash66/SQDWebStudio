@@ -1,0 +1,45 @@
+SQDC000I *******************************************************
+SQDC021I sqdparse Version 3.9.28-dev (Windows-x86)
+SQDC022I Build-id 5e81afa984e5868e7f78c7e7253cb472b9eec26a
+SQDC023I (c)2001-2014 SQData Corporation.
+SQDC000I *******************************************************
+SQDC000I 
+SQD0000I 2014-10-29 11:10:17
+>>> Start Preprocessed C:/wamp/www/SQDATA/Studio/temp/genScript/EngFF2.inl
+000001 --------------------------------------------------------
+000002 --           PROJECT: FFtest2
+000003 --       ENVIRONMENT: env2
+000004 --            SYSTEM: sysFF2
+000005 --------------------------------------------------------
+000006 JOBNAME EngFF2;
+000007 REPORT FFrep EVERY 1000;
+000008 COMMIT EVERY 1000 FORCE;
+000009 DATEFORMAT ISO;
+000010 
+000011 RDBMS DB2 ;
+000012 
+000013 -- ------------------------------------------------------
+000014 --           Data Definition Section
+000015 -- ------------------------------------------------------
+000016 
+000017 -- ------------------------------------------------------
+000018 --           Field Specification Section
+000019 -- ------------------------------------------------------
+000020 
+000021 -- ------------------------------------------------------
+000022 --           Procedure Section
+000023 -- ------------------------------------------------------
+000024 
+000025 -- ------------------------------------------------------
+000026 --           Main Section
+000027 -- ------------------------------------------------------
+000028 
+000029 PROCESS INTO
+000030 SELECT
+000031 {
+<<< End Preprocessed C:/wamp/www/SQDATA/Studio/temp/genScript/EngFF2.inl
+SQD0036E (3) Parse error in C:/wamp/www/SQDATA/Studio/temp/genScript/EngFF2.inl on line 30; token: SELECT 
+SQD0038E (35) Parser terminated with errors on line 30 
+SQD0035E (38) Parser finished processing C:/wamp/www/SQDATA/Studio/temp/genScript/EngFF2.inl 
+SQD0041E (39) Processing completed with return code 8 
+SQDC016I SQDPARSE(pid=6992) terminated with Return Code 8, Reason Code=0x8 (N/A)

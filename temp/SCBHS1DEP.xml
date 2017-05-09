@@ -1,0 +1,180 @@
+<record id="BHS1DEP-STRUCTURE-DATA-ITEM">
+<atom name="NAME" type="str">BHS1DEP-STRUCTURE-DATA-ITEM</atom>
+<fld id="BHS1DEP-STRUCTURE-DATA-ITEM">
+<atom name="NAME" type="str">BHS1DEP-STRUCTURE-DATA-ITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">72</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="ID" type="int">0</atom>
+<fld id="CLS-KEY">
+<atom name="NAME" type="str">CLS-KEY</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">24</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">1</atom>
+<fld id="CLS-PROC-PLAN-CD">
+<atom name="NAME" type="str">CLS-PROC-PLAN-CD</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">2</atom>
+</fld>
+<fld id="CLS-EMP-ID">
+<atom name="NAME" type="str">CLS-EMP-ID</atom>
+<atom name="POSITION" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">13</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">3</atom>
+</fld>
+<fld id="CLS-EMP-ID-EXT">
+<atom name="NAME" type="str">CLS-EMP-ID-EXT</atom>
+<atom name="POSITION" type="int">15</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">4</atom>
+</fld>
+<fld id="CLS-KEY-FILLER">
+<atom name="NAME" type="str">CLS-KEY-FILLER</atom>
+<atom name="POSITION" type="int">21</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">5</atom>
+</fld>
+<fld id="CLS-DEP-NBR">
+<atom name="NAME" type="str">CLS-DEP-NBR</atom>
+<atom name="POSITION" type="int">22</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">6</atom>
+</fld>
+</fld>
+<fld id="CLS-CHUNK-ONE">
+<atom name="NAME" type="str">CLS-CHUNK-ONE</atom>
+<atom name="POSITION" type="int">24</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">32</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">7</atom>
+<fld id="CLS-FNAME">
+<atom name="NAME" type="str">CLS-FNAME</atom>
+<atom name="POSITION" type="int">24</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">8</atom>
+</fld>
+<fld id="CLS-REL">
+<atom name="NAME" type="str">CLS-REL</atom>
+<atom name="POSITION" type="int">34</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">9</atom>
+</fld>
+<fld id="CLS-LNAME">
+<atom name="NAME" type="str">CLS-LNAME</atom>
+<atom name="POSITION" type="int">36</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">10</atom>
+</fld>
+</fld>
+<fld id="CLS-DOB">
+<atom name="NAME" type="str">CLS-DOB</atom>
+<atom name="POSITION" type="int">56</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">11</atom>
+</fld>
+<fld id="CLS-CHUNK-TWO">
+<atom name="NAME" type="str">CLS-CHUNK-TWO</atom>
+<atom name="POSITION" type="int">60</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">12</atom>
+<fld id="CLS-CENT-IND-DEP">
+<atom name="NAME" type="str">CLS-CENT-IND-DEP</atom>
+<atom name="POSITION" type="int">60</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">13</atom>
+</fld>
+<fld id="CLS-SEX">
+<atom name="NAME" type="str">CLS-SEX</atom>
+<atom name="POSITION" type="int">61</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">14</atom>
+</fld>
+</fld>
+<fld id="CLS-DATE">
+<atom name="NAME" type="str">CLS-DATE</atom>
+<atom name="POSITION" type="int">64</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">15</atom>
+</fld>
+<fld id="CLS-CHUNK-THREE">
+<atom name="NAME" type="str">CLS-CHUNK-THREE</atom>
+<atom name="POSITION" type="int">68</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="ID" type="int">16</atom>
+<fld id="CLS-TIME">
+<atom name="NAME" type="str">CLS-TIME</atom>
+<atom name="POSITION" type="int">68</atom>
+<atom name="PRECISION" type="int">8</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="ID" type="int">17</atom>
+</fld>
+</fld>
+</fld>
+</record>

@@ -1,0 +1,1725 @@
+<dbdmap id="">
+<database id="DADDR10P">
+<atom name="NAME" type="str">DADDR10P</atom>
+<segment id="SNAMADDR">
+<atom name="MINLEN" type="int">250</atom>
+<atom name="ROOTLEN" type="int">11</atom>
+<atom name="MAXLEN" type="int">250</atom>
+<atom name="NAME" type="str">SNAMADDR</atom>
+<atom name="DEPTH" type="int">1</atom>
+<field id="KFLDEQ  ">
+<atom name="NAME" type="str">KFLDEQ  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">11</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+</field>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="BRCHNO  ">
+<atom name="NAME" type="str">BRCHNO  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="CUSTNO  ">
+<atom name="NAME" type="str">CUSTNO  </atom>
+<atom name="START" type="int">21</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="LOCNID  ">
+<atom name="NAME" type="str">LOCNID  </atom>
+<atom name="START" type="int">26</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="NAADDR  ">
+<atom name="NAME" type="str">NAADDR  </atom>
+<atom name="START" type="int">28</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">130</atom>
+</field>
+<field id="ADDRNM  ">
+<atom name="NAME" type="str">ADDRNM  </atom>
+<atom name="START" type="int">28</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">34</atom>
+</field>
+<field id="ADRLN1  ">
+<atom name="NAME" type="str">ADRLN1  </atom>
+<atom name="START" type="int">62</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">32</atom>
+</field>
+<field id="ADRLN2  ">
+<atom name="NAME" type="str">ADRLN2  </atom>
+<atom name="START" type="int">94</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">32</atom>
+</field>
+<field id="ADRLN3  ">
+<atom name="NAME" type="str">ADRLN3  </atom>
+<atom name="START" type="int">126</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">32</atom>
+</field>
+<field id="GIRONO  ">
+<atom name="NAME" type="str">GIRONO  </atom>
+<atom name="START" type="int">158</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">13</atom>
+</field>
+<field id="KOGIGR  ">
+<atom name="NAME" type="str">KOGIGR  </atom>
+<atom name="START" type="int">158</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">13</atom>
+</field>
+<field id="KOGINO  ">
+<atom name="NAME" type="str">KOGINO  </atom>
+<atom name="START" type="int">164</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">7</atom>
+</field>
+<field id="TSTKND  ">
+<atom name="NAME" type="str">TSTKND  </atom>
+<atom name="START" type="int">171</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="LANGCD  ">
+<atom name="NAME" type="str">LANGCD  </atom>
+<atom name="START" type="int">172</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="DOMCOD  ">
+<atom name="NAME" type="str">DOMCOD  </atom>
+<atom name="START" type="int">174</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="DLTIND  ">
+<atom name="NAME" type="str">DLTIND  </atom>
+<atom name="START" type="int">176</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="BSRTCD  ">
+<atom name="NAME" type="str">BSRTCD  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="FRNBSC  ">
+<atom name="NAME" type="str">FRNBSC  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="ETABCD  ">
+<atom name="NAME" type="str">ETABCD  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="BASOCS  ">
+<atom name="NAME" type="str">BASOCS  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASOCJ  ">
+<atom name="NAME" type="str">BASOCJ  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="ZRVAL6  ">
+<atom name="NAME" type="str">ZRVAL6  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="BASOCF  ">
+<atom name="NAME" type="str">BASOCF  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASOCB  ">
+<atom name="NAME" type="str">BASOCB  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="SBCLID  ">
+<atom name="NAME" type="str">SBCLID  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+</field>
+<field id="SBCLNO  ">
+<atom name="NAME" type="str">SBCLNO  </atom>
+<atom name="START" type="int">177</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="FEWIID  ">
+<atom name="NAME" type="str">FEWIID  </atom>
+<atom name="START" type="int">178</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+</field>
+<field id="SPBSCP  ">
+<atom name="NAME" type="str">SPBSCP  </atom>
+<atom name="START" type="int">179</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="GUICCD  ">
+<atom name="NAME" type="str">GUICCD  </atom>
+<atom name="START" type="int">182</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="BRCIID  ">
+<atom name="NAME" type="str">BRCIID  </atom>
+<atom name="START" type="int">182</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="SPBSCL  ">
+<atom name="NAME" type="str">SPBSCL  </atom>
+<atom name="START" type="int">183</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="JPBSCL  ">
+<atom name="NAME" type="str">JPBSCL  </atom>
+<atom name="START" type="int">183</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="BANKCD  ">
+<atom name="NAME" type="str">BANKCD  </atom>
+<atom name="START" type="int">187</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="TTCHCD  ">
+<atom name="NAME" type="str">TTCHCD  </atom>
+<atom name="START" type="int">188</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="EFTKEY  ">
+<atom name="NAME" type="str">EFTKEY  </atom>
+<atom name="START" type="int">189</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="HOLCDE  ">
+<atom name="NAME" type="str">HOLCDE  </atom>
+<atom name="START" type="int">193</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="ISCNTY  ">
+<atom name="NAME" type="str">ISCNTY  </atom>
+<atom name="START" type="int">193</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="ISORGN  ">
+<atom name="NAME" type="str">ISORGN  </atom>
+<atom name="START" type="int">196</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="CHIPID  ">
+<atom name="NAME" type="str">CHIPID  </atom>
+<atom name="START" type="int">198</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="CHAPID  ">
+<atom name="NAME" type="str">CHAPID  </atom>
+<atom name="START" type="int">204</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="ANFDLM  ">
+<atom name="NAME" type="str">ANFDLM  </atom>
+<atom name="START" type="int">210</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="ANLDLM  ">
+<atom name="NAME" type="str">ANLDLM  </atom>
+<atom name="START" type="int">212</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="ANSFLD  ">
+<atom name="NAME" type="str">ANSFLD  </atom>
+<atom name="START" type="int">214</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">20</atom>
+</field>
+<field id="A90IND  ">
+<atom name="NAME" type="str">A90IND  </atom>
+<atom name="START" type="int">234</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="LOCIND  ">
+<atom name="NAME" type="str">LOCIND  </atom>
+<atom name="START" type="int">235</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="GMSTDE  ">
+<atom name="NAME" type="str">GMSTDE  </atom>
+<atom name="START" type="int">236</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+<field id="AGCLCO  ">
+<atom name="NAME" type="str">AGCLCO  </atom>
+<atom name="START" type="int">239</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="AIDCOD  ">
+<atom name="NAME" type="str">AIDCOD  </atom>
+<atom name="START" type="int">243</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<segment id="SADDROFL" parent="SNAMADDR">
+<atom name="MINLEN" type="int">200</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MAXLEN" type="int">200</atom>
+<atom name="NAME" type="str">SADDROFL</atom>
+<atom name="DEPTH" type="int">2</atom>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="SFLDBB  ">
+<atom name="NAME" type="str">SFLDBB  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="SEQUNO  ">
+<atom name="NAME" type="str">SEQUNO  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="CNADDC  ">
+<atom name="NAME" type="str">CNADDC  </atom>
+<atom name="START" type="int">19</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="SPADCG  ">
+<atom name="NAME" type="str">SPADCG  </atom>
+<atom name="START" type="int">19</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="SPADDC  ">
+<atom name="NAME" type="str">SPADDC  </atom>
+<atom name="START" type="int">19</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="CSSWAD  ">
+<atom name="NAME" type="str">CSSWAD  </atom>
+<atom name="START" type="int">33</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">11</atom>
+</field>
+</segment>
+<segment id="SRLCEQEQ" parent="SNAMADDR">
+<atom name="MINLEN" type="int">110</atom>
+<atom name="ROOTLEN" type="int">17</atom>
+<atom name="MAXLEN" type="int">110</atom>
+<atom name="NAME" type="str">SRLCEQEQ</atom>
+<atom name="DEPTH" type="int">2</atom>
+<field id="KFLDES  ">
+<atom name="NAME" type="str">KFLDES  </atom>
+<atom name="START" type="int">28</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+</field>
+<field id="BRCHNO  ">
+<atom name="NAME" type="str">BRCHNO  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="CUSTNO  ">
+<atom name="NAME" type="str">CUSTNO  </atom>
+<atom name="START" type="int">5</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="LOCNID  ">
+<atom name="NAME" type="str">LOCNID  </atom>
+<atom name="START" type="int">10</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">12</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">14</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">22</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="CURRCD  ">
+<atom name="NAME" type="str">CURRCD  </atom>
+<atom name="START" type="int">28</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="ISCNTY  ">
+<atom name="NAME" type="str">ISCNTY  </atom>
+<atom name="START" type="int">28</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="SEQUNO  ">
+<atom name="NAME" type="str">SEQUNO  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="CONTYP  ">
+<atom name="NAME" type="str">CONTYP  </atom>
+<atom name="START" type="int">34</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">19</atom>
+</field>
+<field id="FEXIND  ">
+<atom name="NAME" type="str">FEXIND  </atom>
+<atom name="START" type="int">34</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="TDTIND  ">
+<atom name="NAME" type="str">TDTIND  </atom>
+<atom name="START" type="int">35</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="TDFIND  ">
+<atom name="NAME" type="str">TDFIND  </atom>
+<atom name="START" type="int">36</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="CDTIND  ">
+<atom name="NAME" type="str">CDTIND  </atom>
+<atom name="START" type="int">37</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="CDFIND  ">
+<atom name="NAME" type="str">CDFIND  </atom>
+<atom name="START" type="int">38</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="NGIIND  ">
+<atom name="NAME" type="str">NGIIND  </atom>
+<atom name="START" type="int">39</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="NGPIND  ">
+<atom name="NAME" type="str">NGPIND  </atom>
+<atom name="START" type="int">40</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="NGSIND  ">
+<atom name="NAME" type="str">NGSIND  </atom>
+<atom name="START" type="int">41</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="LOCOBI  ">
+<atom name="NAME" type="str">LOCOBI  </atom>
+<atom name="START" type="int">42</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="PYCOBI  ">
+<atom name="NAME" type="str">PYCOBI  </atom>
+<atom name="START" type="int">43</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="COCLCC  ">
+<atom name="NAME" type="str">COCLCC  </atom>
+<atom name="START" type="int">44</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="PYCOIN  ">
+<atom name="NAME" type="str">PYCOIN  </atom>
+<atom name="START" type="int">49</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="RECOIN  ">
+<atom name="NAME" type="str">RECOIN  </atom>
+<atom name="START" type="int">50</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="XBTYIN  ">
+<atom name="NAME" type="str">XBTYIN  </atom>
+<atom name="START" type="int">51</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="PYCOFI  ">
+<atom name="NAME" type="str">PYCOFI  </atom>
+<atom name="START" type="int">52</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="UPCDRI  ">
+<atom name="NAME" type="str">UPCDRI  </atom>
+<atom name="START" type="int">53</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="STUSCD  ">
+<atom name="NAME" type="str">STUSCD  </atom>
+<atom name="START" type="int">54</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="STUSSD  ">
+<atom name="NAME" type="str">STUSSD  </atom>
+<atom name="START" type="int">55</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="STUSED  ">
+<atom name="NAME" type="str">STUSED  </atom>
+<atom name="START" type="int">63</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="REFACC  ">
+<atom name="NAME" type="str">REFACC  </atom>
+<atom name="START" type="int">71</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">12</atom>
+</field>
+<field id="INTERB  ">
+<atom name="NAME" type="str">INTERB  </atom>
+<atom name="START" type="int">83</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">7</atom>
+</field>
+<field id="STDACC  ">
+<atom name="NAME" type="str">STDACC  </atom>
+<atom name="START" type="int">90</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="SAPRCD  ">
+<atom name="NAME" type="str">SAPRCD  </atom>
+<atom name="START" type="int">98</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="RIBCHD  ">
+<atom name="NAME" type="str">RIBCHD  </atom>
+<atom name="START" type="int">100</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="UPBYUI  ">
+<atom name="NAME" type="str">UPBYUI  </atom>
+<atom name="START" type="int">102</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+</field>
+<segment id="SRLCEOFL" parent="SRLCEQEQ">
+<atom name="MINLEN" type="int">170</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MAXLEN" type="int">170</atom>
+<atom name="NAME" type="str">SRLCEOFL</atom>
+<atom name="DEPTH" type="int">3</atom>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="SFLDGX  ">
+<atom name="NAME" type="str">SFLDGX  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="SEQUNO  ">
+<atom name="NAME" type="str">SEQUNO  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="NTAMSC  ">
+<atom name="NAME" type="str">NTAMSC  </atom>
+<atom name="START" type="int">19</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="NTASZC  ">
+<atom name="NAME" type="str">NTASZC  </atom>
+<atom name="START" type="int">21</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="TRDFAN  ">
+<atom name="NAME" type="str">TRDFAN  </atom>
+<atom name="START" type="int">22</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">17</atom>
+</field>
+<field id="COWIRI  ">
+<atom name="NAME" type="str">COWIRI  </atom>
+<atom name="START" type="int">39</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">34</atom>
+</field>
+<field id="COWICC  ">
+<atom name="NAME" type="str">COWICC  </atom>
+<atom name="START" type="int">39</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="COWIIT  ">
+<atom name="NAME" type="str">COWIIT  </atom>
+<atom name="START" type="int">41</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="COWIAN  ">
+<atom name="NAME" type="str">COWIAN  </atom>
+<atom name="START" type="int">43</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">30</atom>
+</field>
+<field id="REACIB  ">
+<atom name="NAME" type="str">REACIB  </atom>
+<atom name="START" type="int">73</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">34</atom>
+</field>
+<field id="REAICC  ">
+<atom name="NAME" type="str">REAICC  </atom>
+<atom name="START" type="int">73</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="REACIT  ">
+<atom name="NAME" type="str">REACIT  </atom>
+<atom name="START" type="int">75</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="REAIAN  ">
+<atom name="NAME" type="str">REAIAN  </atom>
+<atom name="START" type="int">77</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">30</atom>
+</field>
+<field id="ACWIBI  ">
+<atom name="NAME" type="str">ACWIBI  </atom>
+<atom name="START" type="int">107</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">34</atom>
+</field>
+<field id="FILLGX  ">
+<atom name="NAME" type="str">FILLGX  </atom>
+<atom name="START" type="int">141</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">30</atom>
+</field>
+</segment>
+<segment id="SNAMCORB" parent="SRLCEQEQ">
+<atom name="MINLEN" type="int">90</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MAXLEN" type="int">90</atom>
+<atom name="NAME" type="str">SNAMCORB</atom>
+<atom name="DEPTH" type="int">3</atom>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="SFLDQ8  ">
+<atom name="NAME" type="str">SFLDQ8  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="CRPRIN  ">
+<atom name="NAME" type="str">CRPRIN  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="ADVCDY  ">
+<atom name="NAME" type="str">ADVCDY  </atom>
+<atom name="START" type="int">18</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="ADCDIN  ">
+<atom name="NAME" type="str">ADCDIN  </atom>
+<atom name="START" type="int">20</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="CCVDCP  ">
+<atom name="NAME" type="str">CCVDCP  </atom>
+<atom name="START" type="int">21</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="CPHDCH  ">
+<atom name="NAME" type="str">CPHDCH  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="CLHDCH  ">
+<atom name="NAME" type="str">CLHDCH  </atom>
+<atom name="START" type="int">35</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="CBDHDC  ">
+<atom name="NAME" type="str">CBDHDC  </atom>
+<atom name="START" type="int">43</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="RCTYCC  ">
+<atom name="NAME" type="str">RCTYCC  </atom>
+<atom name="START" type="int">51</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="CMAIND  ">
+<atom name="NAME" type="str">CMAIND  </atom>
+<atom name="START" type="int">52</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="CBDADC  ">
+<atom name="NAME" type="str">CBDADC  </atom>
+<atom name="START" type="int">53</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="CDADGD  ">
+<atom name="NAME" type="str">CDADGD  </atom>
+<atom name="START" type="int">54</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="CDADSD  ">
+<atom name="NAME" type="str">CDADSD  </atom>
+<atom name="START" type="int">56</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="EAECCD  ">
+<atom name="NAME" type="str">EAECCD  </atom>
+<atom name="START" type="int">58</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="ELDCCC  ">
+<atom name="NAME" type="str">ELDCCC  </atom>
+<atom name="START" type="int">66</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+</segment>
+<segment id="SADDRPTY" parent="SRLCEQEQ">
+<atom name="MINLEN" type="int">210</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MAXLEN" type="int">210</atom>
+<atom name="NAME" type="str">SADDRPTY</atom>
+<atom name="DEPTH" type="int">3</atom>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="SFLDGU  ">
+<atom name="NAME" type="str">SFLDGU  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="SEQUNO  ">
+<atom name="NAME" type="str">SEQUNO  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="EXSSI1  ">
+<atom name="NAME" type="str">EXSSI1  </atom>
+<atom name="START" type="int">19</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">35</atom>
+</field>
+<field id="EXSSI2  ">
+<atom name="NAME" type="str">EXSSI2  </atom>
+<atom name="START" type="int">54</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">35</atom>
+</field>
+<field id="EXSSI3  ">
+<atom name="NAME" type="str">EXSSI3  </atom>
+<atom name="START" type="int">89</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">35</atom>
+</field>
+<field id="EXSSI4  ">
+<atom name="NAME" type="str">EXSSI4  </atom>
+<atom name="START" type="int">124</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">35</atom>
+</field>
+<field id="COINBK  ">
+<atom name="NAME" type="str">COINBK  </atom>
+<atom name="START" type="int">159</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">7</atom>
+</field>
+<field id="COWIBK  ">
+<atom name="NAME" type="str">COWIBK  </atom>
+<atom name="START" type="int">166</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">7</atom>
+</field>
+<field id="PAYGBK  ">
+<atom name="NAME" type="str">PAYGBK  </atom>
+<atom name="START" type="int">173</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">7</atom>
+</field>
+<field id="NOMBNY  ">
+<atom name="NAME" type="str">NOMBNY  </atom>
+<atom name="START" type="int">180</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">7</atom>
+</field>
+<field id="COWIRF  ">
+<atom name="NAME" type="str">COWIRF  </atom>
+<atom name="START" type="int">187</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">12</atom>
+</field>
+</segment>
+</segment>
+<segment id="SSHRTNAM" parent="SNAMADDR">
+<atom name="MINLEN" type="int">90</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MAXLEN" type="int">90</atom>
+<atom name="NAME" type="str">SSHRTNAM</atom>
+<atom name="DEPTH" type="int">2</atom>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="SFLDM8  ">
+<atom name="NAME" type="str">SFLDM8  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="SRCFIE  ">
+<atom name="NAME" type="str">SRCFIE  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="LOCNAM  ">
+<atom name="NAME" type="str">LOCNAM  </atom>
+<atom name="START" type="int">18</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">30</atom>
+</field>
+<field id="SHTADR  ">
+<atom name="NAME" type="str">SHTADR  </atom>
+<atom name="START" type="int">48</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">30</atom>
+</field>
+<field id="LNFDLM  ">
+<atom name="NAME" type="str">LNFDLM  </atom>
+<atom name="START" type="int">78</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LNLDLM  ">
+<atom name="NAME" type="str">LNLDLM  </atom>
+<atom name="START" type="int">80</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+</segment>
+<segment id="SDPTPERS" parent="SNAMADDR">
+<atom name="MINLEN" type="int">150</atom>
+<atom name="ROOTLEN" type="int">15</atom>
+<atom name="MAXLEN" type="int">150</atom>
+<atom name="NAME" type="str">SDPTPERS</atom>
+<atom name="DEPTH" type="int">2</atom>
+<field id="KFLDER  ">
+<atom name="NAME" type="str">KFLDER  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+</field>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="PRODCD  ">
+<atom name="NAME" type="str">PRODCD  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="PRODSU  ">
+<atom name="NAME" type="str">PRODSU  </atom>
+<atom name="START" type="int">19</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="DPPRAD  ">
+<atom name="NAME" type="str">DPPRAD  </atom>
+<atom name="START" type="int">21</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">34</atom>
+</field>
+<field id="DPPRTI  ">
+<atom name="NAME" type="str">DPPRTI  </atom>
+<atom name="START" type="int">55</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">20</atom>
+</field>
+<field id="COMENT  ">
+<atom name="NAME" type="str">COMENT  </atom>
+<atom name="START" type="int">75</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">40</atom>
+</field>
+</segment>
+<segment id="SVLCEQEQ" parent="SNAMADDR">
+<atom name="MINLEN" type="int">0</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="MAXLEN" type="int">0</atom>
+<atom name="NAME" type="str">SVLCEQEQ</atom>
+<atom name="DEPTH" type="int">2</atom>
+</segment>
+<segment id="SCCENMEM" parent="SNAMADDR">
+<atom name="MINLEN" type="int">150</atom>
+<atom name="ROOTLEN" type="int">16</atom>
+<atom name="MAXLEN" type="int">150</atom>
+<atom name="NAME" type="str">SCCENMEM</atom>
+<atom name="DEPTH" type="int">2</atom>
+<field id="KFLDW4  ">
+<atom name="NAME" type="str">KFLDW4  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+</field>
+<field id="/CKLOCN ">
+<atom name="NAME" type="str">/CKLOCN </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">11</atom>
+</field>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="CCCODE  ">
+<atom name="NAME" type="str">CCCODE  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="CCRGCO  ">
+<atom name="NAME" type="str">CCRGCO  </atom>
+<atom name="START" type="int">22</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+<field id="CLCECI  ">
+<atom name="NAME" type="str">CLCECI  </atom>
+<atom name="START" type="int">25</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">7</atom>
+</field>
+<field id="CUSTNO  ">
+<atom name="NAME" type="str">CUSTNO  </atom>
+<atom name="START" type="int">25</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="LOCNID  ">
+<atom name="NAME" type="str">LOCNID  </atom>
+<atom name="START" type="int">30</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="BASJGP  ">
+<atom name="NAME" type="str">BASJGP  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASOCP  ">
+<atom name="NAME" type="str">BASOCP  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASCJP  ">
+<atom name="NAME" type="str">BASCJP  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="ETCOPR  ">
+<atom name="NAME" type="str">ETCOPR  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="BASCSJ  ">
+<atom name="NAME" type="str">BASCSJ  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASCJJ  ">
+<atom name="NAME" type="str">BASCJJ  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="ZEVA6P  ">
+<atom name="NAME" type="str">ZEVA6P  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="BASCFP  ">
+<atom name="NAME" type="str">BASCFP  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASCGP  ">
+<atom name="NAME" type="str">BASCGP  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASCKP  ">
+<atom name="NAME" type="str">BASCKP  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="FEWIIP  ">
+<atom name="NAME" type="str">FEWIIP  </atom>
+<atom name="START" type="int">33</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+</field>
+<field id="SPSCPP  ">
+<atom name="NAME" type="str">SPSCPP  </atom>
+<atom name="START" type="int">34</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="BLCONP  ">
+<atom name="NAME" type="str">BLCONP  </atom>
+<atom name="START" type="int">34</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+<field id="BLCLNP  ">
+<atom name="NAME" type="str">BLCLNP  </atom>
+<atom name="START" type="int">34</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="KOAPNO  ">
+<atom name="NAME" type="str">KOAPNO  </atom>
+<atom name="START" type="int">34</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="BLOFNP  ">
+<atom name="NAME" type="str">BLOFNP  </atom>
+<atom name="START" type="int">35</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="GUCOPR  ">
+<atom name="NAME" type="str">GUCOPR  </atom>
+<atom name="START" type="int">37</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="BLNGNP  ">
+<atom name="NAME" type="str">BLNGNP  </atom>
+<atom name="START" type="int">37</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="SPSCLP  ">
+<atom name="NAME" type="str">SPSCLP  </atom>
+<atom name="START" type="int">38</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="JPSCLP  ">
+<atom name="NAME" type="str">JPSCLP  </atom>
+<atom name="START" type="int">38</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="BLLINP  ">
+<atom name="NAME" type="str">BLLINP  </atom>
+<atom name="START" type="int">38</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="BLIBNP  ">
+<atom name="NAME" type="str">BLIBNP  </atom>
+<atom name="START" type="int">40</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="PYCSPC  ">
+<atom name="NAME" type="str">PYCSPC  </atom>
+<atom name="START" type="int">42</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="CLMELA  ">
+<atom name="NAME" type="str">CLMELA  </atom>
+<atom name="START" type="int">43</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="RTDEEK  ">
+<atom name="NAME" type="str">RTDEEK  </atom>
+<atom name="START" type="int">51</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="RTBLIN  ">
+<atom name="NAME" type="str">RTBLIN  </atom>
+<atom name="START" type="int">55</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="KODDPC  ">
+<atom name="NAME" type="str">KODDPC  </atom>
+<atom name="START" type="int">56</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+</segment>
+<segment id="SSORTSET" parent="SNAMADDR">
+<atom name="MINLEN" type="int">40</atom>
+<atom name="ROOTLEN" type="int">14</atom>
+<atom name="MAXLEN" type="int">40</atom>
+<atom name="NAME" type="str">SSORTSET</atom>
+<atom name="DEPTH" type="int">2</atom>
+<field id="KFLDFO  ">
+<atom name="NAME" type="str">KFLDFO  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+</field>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="BASCSI  ">
+<atom name="NAME" type="str">BASCSI  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+<field id="BASOCL  ">
+<atom name="NAME" type="str">BASOCL  </atom>
+<atom name="START" type="int">20</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="BASCSP  ">
+<atom name="NAME" type="str">BASCSP  </atom>
+<atom name="START" type="int">22</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<segment id="SSORTCOD" parent="SSORTSET">
+<atom name="MINLEN" type="int">70</atom>
+<atom name="ROOTLEN" type="int">24</atom>
+<atom name="MAXLEN" type="int">70</atom>
+<atom name="NAME" type="str">SSORTCOD</atom>
+<atom name="DEPTH" type="int">3</atom>
+<field id="KFLDFM  ">
+<atom name="NAME" type="str">KFLDFM  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+</field>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="BASCGJ  ">
+<atom name="NAME" type="str">BASCGJ  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASOJL  ">
+<atom name="NAME" type="str">BASOJL  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASCFJ  ">
+<atom name="NAME" type="str">BASCFJ  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="ETCOLA  ">
+<atom name="NAME" type="str">ETCOLA  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="GUCOLA  ">
+<atom name="NAME" type="str">GUCOLA  </atom>
+<atom name="START" type="int">22</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="BASCSL  ">
+<atom name="NAME" type="str">BASCSL  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="SPSCPL  ">
+<atom name="NAME" type="str">SPSCPL  </atom>
+<atom name="START" type="int">19</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="SPSCLL  ">
+<atom name="NAME" type="str">SPSCLL  </atom>
+<atom name="START" type="int">23</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="BASCJL  ">
+<atom name="NAME" type="str">BASCJL  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="ZEVA6L  ">
+<atom name="NAME" type="str">ZEVA6L  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="JPSCLL  ">
+<atom name="NAME" type="str">JPSCLL  </atom>
+<atom name="START" type="int">23</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="BASCFL  ">
+<atom name="NAME" type="str">BASCFL  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="FEWIIL  ">
+<atom name="NAME" type="str">FEWIIL  </atom>
+<atom name="START" type="int">18</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+</field>
+<field id="BASCGL  ">
+<atom name="NAME" type="str">BASCGL  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BLCONL  ">
+<atom name="NAME" type="str">BLCONL  </atom>
+<atom name="START" type="int">19</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+<field id="BLCLNL  ">
+<atom name="NAME" type="str">BLCLNL  </atom>
+<atom name="START" type="int">19</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="BLOFNL  ">
+<atom name="NAME" type="str">BLOFNL  </atom>
+<atom name="START" type="int">20</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="BLNGNL  ">
+<atom name="NAME" type="str">BLNGNL  </atom>
+<atom name="START" type="int">22</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="BLLINL  ">
+<atom name="NAME" type="str">BLLINL  </atom>
+<atom name="START" type="int">23</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="BLIBNL  ">
+<atom name="NAME" type="str">BLIBNL  </atom>
+<atom name="START" type="int">25</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="BASJGF  ">
+<atom name="NAME" type="str">BASJGF  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASOJF  ">
+<atom name="NAME" type="str">BASOJF  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BASCJF  ">
+<atom name="NAME" type="str">BASCJF  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="ETCOFI  ">
+<atom name="NAME" type="str">ETCOFI  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="GUCOFI  ">
+<atom name="NAME" type="str">GUCOFI  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="BASCSF  ">
+<atom name="NAME" type="str">BASCSF  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="SPSCPF  ">
+<atom name="NAME" type="str">SPSCPF  </atom>
+<atom name="START" type="int">29</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="SPSCLF  ">
+<atom name="NAME" type="str">SPSCLF  </atom>
+<atom name="START" type="int">33</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="BASJJF  ">
+<atom name="NAME" type="str">BASJJF  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="ZEVA6F  ">
+<atom name="NAME" type="str">ZEVA6F  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="JPSCLF  ">
+<atom name="NAME" type="str">JPSCLF  </atom>
+<atom name="START" type="int">33</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="BASCFF  ">
+<atom name="NAME" type="str">BASCFF  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="FEWIIF  ">
+<atom name="NAME" type="str">FEWIIF  </atom>
+<atom name="START" type="int">28</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+</field>
+<field id="BASCGF  ">
+<atom name="NAME" type="str">BASCGF  </atom>
+<atom name="START" type="int">27</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<field id="BLCONF  ">
+<atom name="NAME" type="str">BLCONF  </atom>
+<atom name="START" type="int">29</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+<field id="BLCLNF  ">
+<atom name="NAME" type="str">BLCLNF  </atom>
+<atom name="START" type="int">29</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="BLOFNF  ">
+<atom name="NAME" type="str">BLOFNF  </atom>
+<atom name="START" type="int">30</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="BLNGNF  ">
+<atom name="NAME" type="str">BLNGNF  </atom>
+<atom name="START" type="int">32</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="BLLINF  ">
+<atom name="NAME" type="str">BLLINF  </atom>
+<atom name="START" type="int">33</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="BLIBNF  ">
+<atom name="NAME" type="str">BLIBNF  </atom>
+<atom name="START" type="int">35</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="BRCHNO  ">
+<atom name="NAME" type="str">BRCHNO  </atom>
+<atom name="START" type="int">37</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+</field>
+<field id="/CKSORTS">
+<atom name="NAME" type="str">/CKSORTS</atom>
+<atom name="START" type="int">12</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+</segment>
+</segment>
+<segment id="SADDCASE" parent="SNAMADDR">
+<atom name="MINLEN" type="int">40</atom>
+<atom name="ROOTLEN" type="int">28</atom>
+<atom name="MAXLEN" type="int">40</atom>
+<atom name="NAME" type="str">SADDCASE</atom>
+<atom name="DEPTH" type="int">2</atom>
+<field id="KFLDFL  ">
+<atom name="NAME" type="str">KFLDFL  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">17</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+</field>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="OFAPHR  ">
+<atom name="NAME" type="str">OFAPHR  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">12</atom>
+</field>
+<field id="CASENO  ">
+<atom name="NAME" type="str">CASENO  </atom>
+<atom name="START" type="int">29</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+</segment>
+<segment id="SADDRXNL" parent="SNAMADDR">
+<atom name="MINLEN" type="int">87</atom>
+<atom name="ROOTLEN" type="int">16</atom>
+<atom name="MAXLEN" type="int">87</atom>
+<atom name="NAME" type="str">SADDRXNL</atom>
+<atom name="DEPTH" type="int">2</atom>
+<field id="KFLDLN  ">
+<atom name="NAME" type="str">KFLDLN  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+</field>
+<field id="RSVDTA  ">
+<atom name="NAME" type="str">RSVDTA  </atom>
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+</field>
+<field id="LSUPDT  ">
+<atom name="NAME" type="str">LSUPDT  </atom>
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="LSUPTM  ">
+<atom name="NAME" type="str">LSUPTM  </atom>
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+<field id="EXSYID  ">
+<atom name="NAME" type="str">EXSYID  </atom>
+<atom name="START" type="int">17</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+<field id="EFVDAT  ">
+<atom name="NAME" type="str">EFVDAT  </atom>
+<atom name="START" type="int">22</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="ENEFDA  ">
+<atom name="NAME" type="str">ENEFDA  </atom>
+<atom name="START" type="int">30</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+</field>
+<field id="EXSYRC  ">
+<atom name="NAME" type="str">EXSYRC  </atom>
+<atom name="START" type="int">38</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+<field id="SUCPMI  ">
+<atom name="NAME" type="str">SUCPMI  </atom>
+<atom name="START" type="int">39</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">1</atom>
+</field>
+</segment>
+</segment>
+</database>
+</dbdmap>

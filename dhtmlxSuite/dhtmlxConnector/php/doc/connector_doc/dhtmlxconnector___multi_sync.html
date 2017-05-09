@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:multi_sync    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="multi-user_sync" id="multi-user_sync">Multi-user sync</a></h1>
+<div class="level1">
+
+<p>
+<strong>APPLICABLE TO:</strong> Grid, TreeGrid, Tree, Combo, Scheduler, DataView, Chart, Form
+</p>
+
+<p>
+Starting from version 1.0, dhtmlxConnector can work in multi-user mode that allows users to see changes of each other in real time. 
+</p>
+
+<p>
+To enable mode you need to write additions both to client- and server-sides:
+</p>
+
+</div>
+
+<h2><a name="client-side" id="client-side">client-side</a></h2>
+<div class="level2">
+<ol>
+<li class="level1"><div class="li"> init component with dataprocessor (if it hasn&#039;t initialized yet)<br/>
+ <br/>
+ <pre class="code javascript">dp <span class="sy0">=</span> <span class="kw2">new</span> dataProcessor<span class="br0">&#40;</span><span class="st0">&quot;myconnector.php&quot;</span><span class="br0">&#41;</span>;
+dp.<span class="me1">init</span><span class="br0">&#40;</span>mygrid<span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> call <strong>setAutoUpdate()</strong> method where input parameter is delay between update calls<br/>
+ <br/>
+ <pre class="code javascript">dp.<span class="me1">setAutoUpdate</span><span class="br0">&#40;</span><span class="nu0">2000</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+</ol>
+
+</div>
+
+<h2><a name="server-side" id="server-side">server-side</a></h2>
+<div class="level2">
+<ol>
+<li class="level1"><div class="li"> call <strong>enable_live_update()</strong> method<br/>
+ <br/>
+ <pre class="code php">  	<span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../codebase/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
+	<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+	<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">enable_live_update</span><span class="br0">&#40;</span><span class="st_h">'actions_table'</span><span class="br0">&#41;</span>;  <span class="co1">//this line!</span></pre>
+<p>
+ <em>actions_table</em> - table in database, which will be used for sync. data storage.<br/>
+ It needs to have the next structure:<br/>
+  
+</p>
+<pre class="code sql"><span class="kw1">CREATE</span> <span class="kw1">TABLE</span> <span class="st0">`actions_table`</span> <span class="br0">&#40;</span>
+  <span class="st0">`id`</span> int<span class="br0">&#40;</span><span class="nu0">11</span><span class="br0">&#41;</span> <span class="kw1">NOT</span> <span class="kw1">NULL</span> <span class="kw1">AUTO_INCREMENT</span><span class="sy0">,</span>
+  <span class="st0">`dataId`</span> int<span class="br0">&#40;</span><span class="nu0">11</span><span class="br0">&#41;</span> <span class="kw1">NOT</span> <span class="kw1">NULL</span><span class="sy0">,</span>
+  <span class="st0">`type`</span> varchar<span class="br0">&#40;</span><span class="nu0">255</span><span class="br0">&#41;</span> <span class="kw1">NOT</span> <span class="kw1">NULL</span><span class="sy0">,</span>
+  <span class="st0">`user`</span> varchar<span class="br0">&#40;</span><span class="nu0">255</span><span class="br0">&#41;</span> <span class="kw1">NOT</span> <span class="kw1">NULL</span><span class="sy0">,</span>
+  <span class="kw1">PRIMARY</span> <span class="kw1">KEY</span> <span class="br0">&#40;</span><span class="st0">`id`</span><span class="br0">&#41;</span>
+<span class="br0">&#41;</span> ENGINE<span class="sy0">=</span>MyISAM;</pre></div>
+</li>
+</ol>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

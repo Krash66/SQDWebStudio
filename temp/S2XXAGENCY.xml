@@ -1,0 +1,274 @@
+<record id="BCBSDB24.XX1_AGENCY_NAME">
+<atom name="NAME" type="str">BCBSDB24.XX1_AGENCY_NAME</atom>
+<atom name="ALIAS" type="str">XX1_AGENCY_NAME</atom>
+<fld id="AGENCY_CLIENT_ID">
+<atom name="LEN" type="int">7</atom>
+<atom name="NAME" type="str">AGENCY_CLIENT_ID</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENCY_ID_NBR">
+<atom name="LEN" type="int">12</atom>
+<atom name="NAME" type="str">AGENCY_ID_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_ID_NBR">
+<atom name="LEN" type="int">12</atom>
+<atom name="NAME" type="str">AGENT_ID_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENCY_TYPE_CD">
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">AGENCY_TYPE_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="APPL_ID_NBR">
+<atom name="LEN" type="int">3</atom>
+<atom name="NAME" type="str">APPL_ID_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="CO_ID_NBR">
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">CO_ID_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENCY_BUS_NAME">
+<atom name="LEN" type="int">50</atom>
+<atom name="NAME" type="str">AGENCY_BUS_NAME</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_L_NAME">
+<atom name="LEN" type="int">25</atom>
+<atom name="NAME" type="str">AGENT_L_NAME</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_F_NAME">
+<atom name="LEN" type="int">20</atom>
+<atom name="NAME" type="str">AGENT_F_NAME</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_INIT_M_NAME">
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">AGENT_INIT_M_NAME</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_TITLE_TEXT">
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">AGENT_TITLE_TEXT</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_TYPE_TEXT">
+<atom name="LEN" type="int">20</atom>
+<atom name="NAME" type="str">AGENT_TYPE_TEXT</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_TYPE_CD">
+<atom name="LEN" type="int">6</atom>
+<atom name="NAME" type="str">AGENT_TYPE_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="SYS_UPDT_TS">
+<atom name="LEN" type="int">26</atom>
+<atom name="NAME" type="str">SYS_UPDT_TS</atom>
+<atom name="TYPE" type="str">TST</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="PRECISION" type="int">6</atom>
+<atom name="LEGACY_TYPE" type="str">TIMESTAMP</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="SYS_ERROR_CD">
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">SYS_ERROR_CD</atom>
+<atom name="TYPE" type="str">INTEGER</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENCY_ADMIN_CD">
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">AGENCY_ADMIN_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENCY_PREFER_CD">
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">AGENCY_PREFER_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="ADDR_CHK_TEXT">
+<atom name="LEN" type="int">20</atom>
+<atom name="NAME" type="str">ADDR_CHK_TEXT</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="ADDR_CHK_CD">
+<atom name="LEN" type="int">6</atom>
+<atom name="NAME" type="str">ADDR_CHK_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="ADDR_CORRSP_TEXT">
+<atom name="LEN" type="int">20</atom>
+<atom name="NAME" type="str">ADDR_CORRSP_TEXT</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="ADDR_CORRSP_CD">
+<atom name="LEN" type="int">6</atom>
+<atom name="NAME" type="str">ADDR_CORRSP_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENCY_STATUS_TEXT">
+<atom name="LEN" type="int">26</atom>
+<atom name="NAME" type="str">AGENCY_STATUS_TEXT</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">21</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENCY_REGN_CD">
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">AGENCY_REGN_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">22</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="CHK_PULL_CD">
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">CHK_PULL_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">23</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="CHK_RECV_CD">
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">CHK_RECV_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">24</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENCY_LIC_NBR">
+<atom name="LEN" type="int">9</atom>
+<atom name="NAME" type="str">AGENCY_LIC_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">25</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_REP_NBR">
+<atom name="LEN" type="int">12</atom>
+<atom name="NAME" type="str">AGENT_REP_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">26</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_BIRTH_DT">
+<atom name="LEN" type="int">10</atom>
+<atom name="NAME" type="str">AGENT_BIRTH_DT</atom>
+<atom name="TYPE" type="str">DATE</atom>
+<atom name="ID" type="int">27</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">DATE</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="AGENT_NAME_SFX">
+<atom name="LEN" type="int">10</atom>
+<atom name="NAME" type="str">AGENT_NAME_SFX</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">28</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="SQDSTCK">
+<atom name="LEN" type="int">16</atom>
+<atom name="NAME" type="str">SQDSTCK</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">29</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+</record>

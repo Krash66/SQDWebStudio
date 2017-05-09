@@ -1,0 +1,56 @@
+           04 SPY3DIRL.
+             06 Y3DI-DIRL-KY.
+               08 Y3DI-CACC-NO      PIC 9(7).
+               08 Y3DI-OP-NO        PIC S9(5)      COMP-3.
+               08 Y3DI-DIRL-ASN-ENTD-DTM
+                                    PIC S9(15)     COMP-3.
+             06 Y3DI-CL-PHRS-CD     PIC X(3).
+             06 Y3DI-DIRL-CL-CD     PIC X(2).
+             06 Y3DI-ST-NM          PIC X(30).
+             06 FILLER              OCCURS 4 TIMES
+                                    PIC X.
+             06 Y3DI-ST-SUFX        PIC X(5).
+             06 Y3DI-ST-NO          PIC X(8).
+             06 Y3DI-ADRS-LANG-FRMT PIC X.
+             06 Y3DI-APT-RM-SUT-NO  PIC X(5).
+             06 Y3DI-PROV-ST-CD     PIC X(4).
+             06 Y3DI-DIRL-SRNM      PIC X(20).
+             06 Y3DI-DIRL-GVN-NM    PIC X(25).
+             06 Y3DI-DIRL-NM-PRFX   PIC X(15).
+             06 Y3DI-DIRL-NM-SUFX   PIC X(5).
+             06 FILLER              OCCURS 1 TIMES
+                                    PIC X.
+             06 Y3DI-AREA-TYP-CD    PIC X(4).
+             06 Y3DI-DIRL-AREA-CD   PIC X(7).
+             06 Y3DI-ADRS-AREA-SEQ-NO
+                                    PIC X.
+             06 Y3DI-DISPL-REF-DIRL-NCDC
+                                    PIC X.
+             06 Y3DI-DISPL-ACC-CD   PIC X.
+             06 Y3DI-DISPL-NPA      PIC X.
+             06 Y3DI-DIRL-GR-ID     PIC S9(7)      COMP-3.
+             06 Y3DI-DIRL-SEQ-NO    PIC S9(5)      COMP-3.
+             06 Y3DI-DIRL-GR-ASN-ENTD-DTM
+                                    PIC S9(15)     COMP-3.
+             06 Y3DI-DIRL-DT-GR.
+               08 Y3DI-EDT-CDT-INDR PIC X.
+               08 Y3DI-DIRL-ASN-EDTM
+                                    PIC S9(15)     COMP-3.
+               08 Y3DI-DIRL-ASN-CDTM REDEFINES Y3DI-DIRL-ASN-EDTM
+                                    PIC S9(15)     COMP-3.
+             06 Y3DI-DIRL-ASN-SDTM  PIC S9(15)     COMP-3.
+             06 Y3DI-FU-NO-IN.
+               08 Y3DI-FU-NO        PIC S9(9)      COMP-3.
+             06 Y3DI-FU-STAT-IN.
+               08 Y3DI-FU-STAT      PIC X.
+             06 Y3DI-FU-NO-OT.
+               08 Y3DI-FU-NO        PIC S9(9)      COMP-3.
+             06 Y3DI-FU-STAT-OT.
+               08 Y3DI-FU-STAT      PIC X.
+             06 Y3DI-REVN-GR.
+               08 Y3DI-REVN-GR-TM   PIC S9(7)      COMP-3.
+               08 Y3DI-REVN-GR-LOGN PIC X(8).
+             06 Y3DI-NPUB-REF-NO    PIC X(4).
+             06 Y3DI-ST-TYP-EXT     PIC X(6).
+             06 FILLER              OCCURS 8 TIMES
+                                    PIC X.

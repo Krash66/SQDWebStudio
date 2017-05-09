@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <item id="file" text="File">
+    <item id="mnuNewProj" text="New Project" img="Project.gif" />
+    <item id="mnuOpenProj" text="Open Project" img="open.gif" />
+    <item id="file_sep_1" type="separator"/>
+    <item id="mnuCloseProj" text="Close Project" img="close.gif" />
+    <item id="mnuCloseAllProj" text="Close All Projects" img="close.gif" />
+    <item id="file_sep_2" type="separator"/>
+    <item id="mnuXMLtoDTD" text="XML Message to DTD" img="print.gif" enabled="false"/>
+    <item id="mnuImportScript" text="Import Script" img="page_setup.gif" enabled="false"/>
+    <item id="mnuBackupMeta" text="Backup Metadata" img="close.gif" enabled="false"/>
+    <item id="file_sep_3" type="separator"/>
+    <item id="mnuSave" text="Save" img="save.gif" imgdis="save_dis.gif" enabled="false"/>
+    <item id="file_sep_4" type="separator"/>
+    <item id="mnuExit" text="Exit" img="close_dis.gif"/>
+  </item>
+  <item id="sep_top_1" type="separator"/>
+  <item id="edit" text="Edit">
+    <item id="mnuCopy" text="Copy" img="copy.gif" imgdis="copy_dis.gif"/>
+    <item id="mnuPaste" text="Paste" img="paste.gif" imgdis="paste_dis.gif"/>
+    <item id="mnuDelete" text="Delete" img="close.gif" imgdis="close_dis.gif"/>
+  </item>
+  <item id="help" text="Help">
+    <item id="mnuAbout" text="About WebStudio" img="about.gif" imgdis="about_dis.gif"/>
+    <item id="mnuHelp" text="Help" img="help.gif" imgdis="help_dis.gif"/>
+    <item id="mnuBugReporting" text="Bug Reporting" img="bug_reporting.gif" imgdis="bug_reporting_dis.gif"/>
+  </item>
+</menu>

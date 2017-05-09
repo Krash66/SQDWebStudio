@@ -1,0 +1,1800 @@
+<record id="BHS2MCH-STRUCTURE-DATA-ITEM">
+<atom name="NAME" type="str">BHS2MCH-STRUCTURE-DATA-ITEM</atom>
+<fld id="BHS2MCH-STRUCTURE-DATA-ITEM">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">BHS2MCH-STRUCTURE-DATA-ITEM</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">572</atom>
+<fld id="CLH-KEY">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">CLH-KEY</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">20</atom>
+<fld id="CLH-CENT-IND-INV-COMP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CENT-IND-INV-COMP</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-DECADE-COMP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DECADE-COMP</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-INV-NBR-COMP">
+<atom name="PRECISION" type="int">13</atom>
+<atom name="POSITION" type="int">2</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-INV-NBR-COMP</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">7</atom>
+</fld>
+<fld id="CLH-KEY-FILLER">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">9</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-KEY-FILLER</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-DT-PROC-COMP">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">12</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-DT-PROC-COMP</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-TIME-COMP">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">16</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-TIME-COMP</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+</fld>
+<fld id="CLH-AREA">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">CLH-AREA</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">552</atom>
+<fld id="CLH-PAY-LN-NBR">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-PAY-LN-NBR</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-CENT-IND-INV">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">22</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CENT-IND-INV</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-DECADE-INV">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">23</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DECADE-INV</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-INV-NBR">
+<atom name="PRECISION" type="int">13</atom>
+<atom name="POSITION" type="int">24</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-INV-NBR</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">7</atom>
+</fld>
+<fld id="CLH-INV-NBR-X">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">24</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-INV-NBR-X</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">7</atom>
+</fld>
+<fld id="CLH-SUPEROP-IND-HDR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">31</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SUPEROP-IND-HDR</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-DT-PROC">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">32</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-DT-PROC</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-TIME">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">36</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-TIME</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-DECADE-ALT">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">40</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DECADE-ALT</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ALT-INV-NBR">
+<atom name="PRECISION" type="int">13</atom>
+<atom name="POSITION" type="int">41</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-ALT-INV-NBR</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">7</atom>
+</fld>
+<fld id="CLH-ALT-INV-NBR-X">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">41</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ALT-INV-NBR-X</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">7</atom>
+</fld>
+<fld id="CLH-INV-STAT-CD">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">48</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-INV-STAT-CD</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-TERM-NBR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">50</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-TERM-NBR</atom>
+<atom name="ID" type="int">21</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-ROUTE-CD">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">54</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-ROUTE-CD</atom>
+<atom name="ID" type="int">22</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-OPER-ID">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">56</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-OPER-ID</atom>
+<atom name="ID" type="int">23</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="CLH-ORIG-PMT-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">64</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-ORIG-PMT-DT</atom>
+<atom name="ID" type="int">24</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-ORIG-PMT-TIME">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">68</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-ORIG-PMT-TIME</atom>
+<atom name="ID" type="int">25</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-DT-REC">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">72</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-DT-REC</atom>
+<atom name="ID" type="int">26</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-ACT-PD-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">76</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-ACT-PD-DT</atom>
+<atom name="ID" type="int">27</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-SV-PEND-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">80</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-SV-PEND-DT</atom>
+<atom name="ID" type="int">28</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-PEND-RLSE-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">84</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-PEND-RLSE-DT</atom>
+<atom name="ID" type="int">29</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-HOSP-ADMN-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">88</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-HOSP-ADMN-DT</atom>
+<atom name="ID" type="int">30</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-DSCH-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">92</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-DSCH-DT</atom>
+<atom name="ID" type="int">31</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-OI-VERIF-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">96</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-OI-VERIF-DT</atom>
+<atom name="ID" type="int">32</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-BAL-TOTL">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">100</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-BAL-TOTL</atom>
+<atom name="ID" type="int">33</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-ADJ-AMT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">104</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-ADJ-AMT</atom>
+<atom name="ID" type="int">34</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-BSA-APPLIED-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">108</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-BSA-APPLIED-IND</atom>
+<atom name="ID" type="int">35</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-REIMT-FLEX-IND-HDR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">109</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-REIMT-FLEX-IND-HDR</atom>
+<atom name="ID" type="int">36</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-OI-CON-TOT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">112</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-OI-CON-TOT</atom>
+<atom name="ID" type="int">37</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-OI-PAID-TOT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">116</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-OI-PAID-TOT</atom>
+<atom name="ID" type="int">38</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-UR-SV-AMT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">120</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-UR-SV-AMT</atom>
+<atom name="ID" type="int">39</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-PRICING-AMT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">124</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-PRICING-AMT</atom>
+<atom name="ID" type="int">40</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-CLM-PAID-AMT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">128</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-CLM-PAID-AMT</atom>
+<atom name="ID" type="int">41</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-CLM-PREPAID-AMT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">132</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-CLM-PREPAID-AMT</atom>
+<atom name="ID" type="int">42</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-DED-RM">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">136</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-DED-RM</atom>
+<atom name="ID" type="int">43</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-DAYS-RM">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">140</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-DAYS-RM</atom>
+<atom name="ID" type="int">44</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-COV-DAYS">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">142</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-COV-DAYS</atom>
+<atom name="ID" type="int">45</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-NON-COV-DAYS">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">144</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-NON-COV-DAYS</atom>
+<atom name="ID" type="int">46</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-ITS-HDR-PRICE-METH">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">146</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-HDR-PRICE-METH</atom>
+<atom name="ID" type="int">47</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-EE-ZIP">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">148</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-EE-ZIP</atom>
+<atom name="ID" type="int">48</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-PAY-TO-ZIP">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">152</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-PAY-TO-ZIP</atom>
+<atom name="ID" type="int">49</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-PAY-TO-ASPW">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">156</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-PAY-TO-ASPW</atom>
+<atom name="ID" type="int">50</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-SEN-GOLD">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">160</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-SEN-GOLD</atom>
+<atom name="ID" type="int">51</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-PRO-APP-FROM-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">164</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-PRO-APP-FROM-DT</atom>
+<atom name="ID" type="int">52</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-PRO-APP-TO-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">168</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-PRO-APP-TO-DT</atom>
+<atom name="ID" type="int">53</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-MC-NBR">
+<atom name="PRECISION" type="int">10</atom>
+<atom name="POSITION" type="int">172</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-MC-NBR</atom>
+<atom name="ID" type="int">54</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+<fld id="CLH-MC-NBR-X">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">172</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-MC-NBR-X</atom>
+<atom name="ID" type="int">55</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+<fld id="CLH-HOURS">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">178</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-HOURS</atom>
+<atom name="ID" type="int">56</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-MINUTES">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">180</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-MINUTES</atom>
+<atom name="ID" type="int">57</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-ITS-SPLIT-CLM">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">182</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-SPLIT-CLM</atom>
+<atom name="ID" type="int">58</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-HOST-DF-STAT">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">183</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-HOST-DF-STAT</atom>
+<atom name="ID" type="int">59</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ACCUM-XREF-GROUP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">184</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ACCUM-XREF-GROUP</atom>
+<atom name="ID" type="int">60</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+<fld id="CLH-DIAGNOSIS-CD-1">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">190</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DIAGNOSIS-CD-1</atom>
+<atom name="ID" type="int">61</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="CLH-DIAGNOSIS-CD-2">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">195</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DIAGNOSIS-CD-2</atom>
+<atom name="ID" type="int">62</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="CLH-DIAGNOSIS-CD-3">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">200</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DIAGNOSIS-CD-3</atom>
+<atom name="ID" type="int">63</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="CLH-DIAGNOSIS-CD-4">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">205</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DIAGNOSIS-CD-4</atom>
+<atom name="ID" type="int">64</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="CLH-DIAGNOSIS-CD-5">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">210</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DIAGNOSIS-CD-5</atom>
+<atom name="ID" type="int">65</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="CLH-PND-RCYCL-STRT-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">215</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-PND-RCYCL-STRT-DT</atom>
+<atom name="ID" type="int">66</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-THIRD-PRTY-GRP-CAP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">219</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-THIRD-PRTY-GRP-CAP</atom>
+<atom name="ID" type="int">67</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-PLAN-PAR-STAT">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">220</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PLAN-PAR-STAT</atom>
+<atom name="ID" type="int">68</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-NATURE-OF-BUSINESS">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">221</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-NATURE-OF-BUSINESS</atom>
+<atom name="ID" type="int">69</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ITS-PLAN-PAYER-CD">
+<atom name="PRECISION" type="int">1</atom>
+<atom name="POSITION" type="int">222</atom>
+<atom name="LEGACY_TYPE" type="str">ZONE</atom>
+<atom name="NAME" type="str">CLH-ITS-PLAN-PAYER-CD</atom>
+<atom name="ID" type="int">70</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ACCESS-FEE">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">223</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-ACCESS-FEE</atom>
+<atom name="ID" type="int">71</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-ADMIN-FEE">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">227</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-ADMIN-FEE</atom>
+<atom name="ID" type="int">72</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-FIN-PROC-DT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">231</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-FIN-PROC-DT</atom>
+<atom name="ID" type="int">73</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-ITS-SCCF-SERIAL-NO">
+<atom name="PRECISION" type="int">15</atom>
+<atom name="POSITION" type="int">235</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-ITS-SCCF-SERIAL-NO</atom>
+<atom name="ID" type="int">74</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="CLH-ITS-SCCF-SERIAL-NUM-X">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">235</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-SCCF-SERIAL-NUM-X</atom>
+<atom name="ID" type="int">75</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="CLH-LOC-PLAN-CD">
+<atom name="PRECISION" type="int">5</atom>
+<atom name="POSITION" type="int">243</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-LOC-PLAN-CD</atom>
+<atom name="ID" type="int">76</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-LOC-PLAN-CD-X">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">243</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-LOC-PLAN-CD-X</atom>
+<atom name="ID" type="int">77</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-ITS-RESUB-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">246</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-RESUB-IND</atom>
+<atom name="ID" type="int">78</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ITS-ADJ-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">247</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-ADJ-IND</atom>
+<atom name="ID" type="int">79</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-SERV-BUR-ID-NBR">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">248</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-SERV-BUR-ID-NBR</atom>
+<atom name="ID" type="int">80</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-NBR-GRACE-DAYS">
+<atom name="PRECISION" type="int">1</atom>
+<atom name="POSITION" type="int">250</atom>
+<atom name="LEGACY_TYPE" type="str">ZONE</atom>
+<atom name="NAME" type="str">CLH-NBR-GRACE-DAYS</atom>
+<atom name="ID" type="int">81</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-OCP-CD">
+<atom name="PRECISION" type="int">1</atom>
+<atom name="POSITION" type="int">251</atom>
+<atom name="LEGACY_TYPE" type="str">ZONE</atom>
+<atom name="NAME" type="str">CLH-OCP-CD</atom>
+<atom name="ID" type="int">82</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-OCL-LETTER-IND">
+<atom name="PRECISION" type="int">1</atom>
+<atom name="POSITION" type="int">252</atom>
+<atom name="LEGACY_TYPE" type="str">ZONE</atom>
+<atom name="NAME" type="str">CLH-OCL-LETTER-IND</atom>
+<atom name="ID" type="int">83</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-AUDIT-FLAG">
+<atom name="PRECISION" type="int">1</atom>
+<atom name="POSITION" type="int">253</atom>
+<atom name="LEGACY_TYPE" type="str">ZONE</atom>
+<atom name="NAME" type="str">CLH-AUDIT-FLAG</atom>
+<atom name="ID" type="int">84</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-CNTL-PLAN">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">254</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-CNTL-PLAN</atom>
+<atom name="ID" type="int">85</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-LINE-COUNT">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">256</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-LINE-COUNT</atom>
+<atom name="ID" type="int">86</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-INT-SCRN-IND">
+<atom name="PRECISION" type="int">1</atom>
+<atom name="POSITION" type="int">258</atom>
+<atom name="LEGACY_TYPE" type="str">ZONE</atom>
+<atom name="NAME" type="str">CLH-INT-SCRN-IND</atom>
+<atom name="ID" type="int">87</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-CLMCHK-IND-HDR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">259</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CLMCHK-IND-HDR</atom>
+<atom name="ID" type="int">88</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-OPER-ID-AUDITOR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">260</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-OPER-ID-AUDITOR</atom>
+<atom name="ID" type="int">89</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="CLH-CENT-IND-ALT">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">268</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CENT-IND-ALT</atom>
+<atom name="ID" type="int">90</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-TOC">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">269</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-TOC</atom>
+<atom name="ID" type="int">91</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-RMK-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">270</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-RMK-CD</atom>
+<atom name="ID" type="int">92</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-OVR-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">274</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-OVR-CD</atom>
+<atom name="ID" type="int">93</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-GROUP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">276</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-GROUP</atom>
+<atom name="ID" type="int">94</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">9</atom>
+</fld>
+<fld id="CLH-BEN-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">285</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-BEN-CD</atom>
+<atom name="ID" type="int">95</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">9</atom>
+</fld>
+<fld id="CLH-GROUP-TYPE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">294</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-GROUP-TYPE</atom>
+<atom name="ID" type="int">96</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-COMPANY-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">296</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-COMPANY-CD</atom>
+<atom name="ID" type="int">97</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-PRODUCT-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">297</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PRODUCT-CD</atom>
+<atom name="ID" type="int">98</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-GRCC-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">300</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-GRCC-CD</atom>
+<atom name="ID" type="int">99</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-PRODUCT-OPT">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">303</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PRODUCT-OPT</atom>
+<atom name="ID" type="int">100</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-PAID-GROUP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">306</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PAID-GROUP</atom>
+<atom name="ID" type="int">101</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">9</atom>
+</fld>
+<fld id="CLH-PAID-BEN-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">315</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PAID-BEN-CD</atom>
+<atom name="ID" type="int">102</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">9</atom>
+</fld>
+<fld id="CLH-RSN-ADJ">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">324</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-RSN-ADJ</atom>
+<atom name="ID" type="int">103</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-SOURCE-ADJ">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">327</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SOURCE-ADJ</atom>
+<atom name="ID" type="int">104</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-SV-PEND-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">328</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SV-PEND-CD</atom>
+<atom name="ID" type="int">105</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-DOCUMENT-TP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">332</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DOCUMENT-TP</atom>
+<atom name="ID" type="int">106</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-DISP-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">333</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DISP-CD</atom>
+<atom name="ID" type="int">107</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-CONTRACT-TYPE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">334</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CONTRACT-TYPE</atom>
+<atom name="ID" type="int">108</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-CONT-PRV">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">336</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CONT-PRV</atom>
+<atom name="ID" type="int">109</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">10</atom>
+</fld>
+<fld id="CLH-PLAN-ID">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">346</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PLAN-ID</atom>
+<atom name="ID" type="int">110</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-MC-ACCEPTANCE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">347</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-MC-ACCEPTANCE</atom>
+<atom name="ID" type="int">111</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-LOC-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">348</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-LOC-CD</atom>
+<atom name="ID" type="int">112</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-PIP-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">350</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PIP-IND</atom>
+<atom name="ID" type="int">113</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-SDE-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">351</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SDE-IND</atom>
+<atom name="ID" type="int">114</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-SPEC-PAY">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">352</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SPEC-PAY</atom>
+<atom name="ID" type="int">115</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">10</atom>
+</fld>
+<fld id="CLH-MEDICARE-NBR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">362</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-MEDICARE-NBR</atom>
+<atom name="ID" type="int">116</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">10</atom>
+</fld>
+<fld id="CLH-DUAL-ID">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">372</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DUAL-ID</atom>
+<atom name="ID" type="int">117</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">13</atom>
+</fld>
+<fld id="CLH-PATIENT-NBR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">385</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PATIENT-NBR</atom>
+<atom name="ID" type="int">118</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">17</atom>
+</fld>
+<fld id="CLH-COVERAGE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">402</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-COVERAGE</atom>
+<atom name="ID" type="int">119</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-OPL-TYPE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">404</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-OPL-TYPE</atom>
+<atom name="ID" type="int">120</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-PAT-ST-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">406</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PAT-ST-CD</atom>
+<atom name="ID" type="int">121</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-STUDENT-FLAG">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">408</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-STUDENT-FLAG</atom>
+<atom name="ID" type="int">122</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-NEWBORN-FLAG">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">409</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-NEWBORN-FLAG</atom>
+<atom name="ID" type="int">123</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-PRICE-CAT">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">410</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PRICE-CAT</atom>
+<atom name="ID" type="int">124</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-PRICE-TYPE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">413</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PRICE-TYPE</atom>
+<atom name="ID" type="int">125</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-OUTLR-STAT">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">414</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-OUTLR-STAT</atom>
+<atom name="ID" type="int">126</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-CASE-TP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">415</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CASE-TP</atom>
+<atom name="ID" type="int">127</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ADM-TP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">416</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ADM-TP</atom>
+<atom name="ID" type="int">128</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ADMIT-DIAG">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">417</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ADMIT-DIAG</atom>
+<atom name="ID" type="int">129</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="CLH-DFT-TP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">422</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DFT-TP</atom>
+<atom name="ID" type="int">130</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ACT-CHK-NBR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">423</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ACT-CHK-NBR</atom>
+<atom name="ID" type="int">131</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">10</atom>
+</fld>
+<fld id="CLH-HLD-HMLS">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">433</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-HLD-HMLS</atom>
+<atom name="ID" type="int">132</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-WC-CLAIM-NBR">
+<atom name="PRECISION" type="int">15</atom>
+<atom name="POSITION" type="int">434</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-WC-CLAIM-NBR</atom>
+<atom name="ID" type="int">133</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="CLH-WC-CLAIM-NBR-X">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">434</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-WC-CLAIM-NBR-X</atom>
+<atom name="ID" type="int">134</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="CLH-STORE-FRONT-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">442</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-STORE-FRONT-IND</atom>
+<atom name="ID" type="int">135</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-CONT-PRV-ID-EXT">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">443</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CONT-PRV-ID-EXT</atom>
+<atom name="ID" type="int">136</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="CLH-CONT-PRV-LOCAL-ID">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">448</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CONT-PRV-LOCAL-ID</atom>
+<atom name="ID" type="int">137</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-SELF-INS-FLAG">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">449</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SELF-INS-FLAG</atom>
+<atom name="ID" type="int">138</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-CNTL-PLAN-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">454</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CNTL-PLAN-IND</atom>
+<atom name="ID" type="int">139</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ITS-POS-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">455</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-POS-IND</atom>
+<atom name="ID" type="int">140</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-PAG-SHARE-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">456</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PAG-SHARE-IND</atom>
+<atom name="ID" type="int">141</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-SPLIT-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">457</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SPLIT-IND</atom>
+<atom name="ID" type="int">142</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ITS-PRICING-AMT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">458</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-ITS-PRICING-AMT</atom>
+<atom name="ID" type="int">143</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-GROUP-STATUS">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">462</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-GROUP-STATUS</atom>
+<atom name="ID" type="int">144</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-MULTI-BILL-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">464</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-MULTI-BILL-CD</atom>
+<atom name="ID" type="int">145</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="CLH-CONDITION-1">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">469</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CONDITION-1</atom>
+<atom name="ID" type="int">146</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-CONDITION-2">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">471</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CONDITION-2</atom>
+<atom name="ID" type="int">147</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-CONDITION-3">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">473</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CONDITION-3</atom>
+<atom name="ID" type="int">148</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-CONDITION-4">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">475</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CONDITION-4</atom>
+<atom name="ID" type="int">149</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-CONDITION-5">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">477</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CONDITION-5</atom>
+<atom name="ID" type="int">150</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-PRO-APP-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">479</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PRO-APP-IND</atom>
+<atom name="ID" type="int">151</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-IPDR-REQD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">480</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-IPDR-REQD</atom>
+<atom name="ID" type="int">152</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-CLIENT-SIZE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">483</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CLIENT-SIZE</atom>
+<atom name="ID" type="int">153</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-REG-HSA-NBR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">484</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-REG-HSA-NBR</atom>
+<atom name="ID" type="int">154</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-MEDICARE-DED">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">486</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-MEDICARE-DED</atom>
+<atom name="ID" type="int">155</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-MC-BLOOD-DED">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">488</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-MC-BLOOD-DED</atom>
+<atom name="ID" type="int">156</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-MC-COINS-DLRS">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">490</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-MC-COINS-DLRS</atom>
+<atom name="ID" type="int">157</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-MC-NCOV-DAYS">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">494</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-MC-NCOV-DAYS</atom>
+<atom name="ID" type="int">158</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-PRV-CONTRACT-TYPE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">496</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-PRV-CONTRACT-TYPE</atom>
+<atom name="ID" type="int">159</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-NOTE-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">498</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-NOTE-IND</atom>
+<atom name="ID" type="int">160</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-SUB-ALPHA-PRFX-1-2">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">499</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SUB-ALPHA-PRFX-1-2</atom>
+<atom name="ID" type="int">161</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-SUB-ALPHA-PRFX-3">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">501</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SUB-ALPHA-PRFX-3</atom>
+<atom name="ID" type="int">162</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-SUB-ALPHA-STATE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">502</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SUB-ALPHA-STATE</atom>
+<atom name="ID" type="int">163</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-PD-REFERRAL-VISITS">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">509</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">CLH-PD-REFERRAL-VISITS</atom>
+<atom name="ID" type="int">164</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-REPOS-CLM-CTL-NBR">
+<atom name="PRECISION" type="int">10</atom>
+<atom name="POSITION" type="int">511</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-REPOS-CLM-CTL-NBR</atom>
+<atom name="ID" type="int">165</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+<fld id="CLH-ITS-HPA-ACTION-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">517</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-HPA-ACTION-CD</atom>
+<atom name="ID" type="int">166</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">5</atom>
+</fld>
+<fld id="CLH-ACCESS-FEE-PCT">
+<atom name="PRECISION" type="int">4</atom>
+<atom name="POSITION" type="int">535</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-ACCESS-FEE-PCT</atom>
+<atom name="ID" type="int">167</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-ACCESS-FEE-PCT-X">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">535</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ACCESS-FEE-PCT-X</atom>
+<atom name="ID" type="int">168</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CLH-ITS-XREF-SCCF-NUM">
+<atom name="PRECISION" type="int">15</atom>
+<atom name="POSITION" type="int">538</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">CLH-ITS-XREF-SCCF-NUM</atom>
+<atom name="ID" type="int">169</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="CLH-ITS-XREF-SCCF-NUM-X">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">538</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-XREF-SCCF-NUM-X</atom>
+<atom name="ID" type="int">170</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="CLH-REFUND-AMT">
+<atom name="PRECISION" type="int">8</atom>
+<atom name="POSITION" type="int">550</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">CLH-REFUND-AMT</atom>
+<atom name="ID" type="int">171</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CLH-ITS-CTL-CF-ACCT-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">554</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-CTL-CF-ACCT-CD</atom>
+<atom name="ID" type="int">172</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CLH-ITS-PROG-CD">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">556</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-PROG-CD</atom>
+<atom name="ID" type="int">173</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-HRC-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">557</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-HRC-IND</atom>
+<atom name="ID" type="int">174</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-CLMCHK-BYPASS-HDR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">558</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CLMCHK-BYPASS-HDR</atom>
+<atom name="ID" type="int">175</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-CLMCHK-HIST-IND">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">559</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-CLMCHK-HIST-IND</atom>
+<atom name="ID" type="int">176</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-ITS-PROG-PROD-TP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">560</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-ITS-PROG-PROD-TP</atom>
+<atom name="ID" type="int">177</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-SMTSUS-IND-HDR">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">561</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-SMTSUS-IND-HDR</atom>
+<atom name="ID" type="int">178</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">1</atom>
+</fld>
+<fld id="CLH-DRG-VER-ID">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">562</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CLH-DRG-VER-ID</atom>
+<atom name="ID" type="int">179</atom>
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+</fld>
+</fld>
+</record>

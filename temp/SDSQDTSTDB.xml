@@ -1,0 +1,67 @@
+<dbdmap id="">
+<database id="SQDTSTDB">
+<atom name="NAME" type="str">SQDTSTDB</atom>
+<segment id="COMPANY ">
+<atom name="MINLEN" type="int">47</atom>
+<atom name="MAXLEN" type="int">47</atom>
+<atom name="DEPTH" type="int">1</atom>
+<atom name="NAME" type="str">COMPANY </atom>
+<atom name="ROOTLEN" type="int">10</atom>
+<field id="COMPNAME">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">COMPNAME</atom>
+<atom name="LEN" type="int">10</atom>
+</field>
+<segment id="VENDOR  " parent="COMPANY ">
+<atom name="MINLEN" type="int">60</atom>
+<atom name="MAXLEN" type="int">60</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">VENDOR  </atom>
+<atom name="ROOTLEN" type="int">13</atom>
+<field id="VENDID  ">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">VENDID  </atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+<field id="VENDZIP ">
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">55</atom>
+<atom name="NAME" type="str">VENDZIP </atom>
+<atom name="LEN" type="int">5</atom>
+</field>
+</segment>
+<segment id="DEPTMENT" parent="COMPANY ">
+<atom name="MINLEN" type="int">57</atom>
+<atom name="MAXLEN" type="int">57</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="NAME" type="str">DEPTMENT</atom>
+<atom name="ROOTLEN" type="int">13</atom>
+<field id="DEPTNO  ">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">DEPTNO  </atom>
+<atom name="LEN" type="int">3</atom>
+</field>
+<segment id="EMPLOYEE" parent="DEPTMENT">
+<atom name="MINLEN" type="int">88</atom>
+<atom name="MAXLEN" type="int">88</atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="NAME" type="str">EMPLOYEE</atom>
+<atom name="ROOTLEN" type="int">19</atom>
+<field id="EMPNO   ">
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="START" type="int">1</atom>
+<atom name="NAME" type="str">EMPNO   </atom>
+<atom name="LEN" type="int">6</atom>
+</field>
+</segment>
+</segment>
+</segment>
+</database>
+</dbdmap>

@@ -1,0 +1,42 @@
+
+-----------------------Thursday 24th of September 2015 03:32:42 AM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Tuesday 29th of September 2015 05:08:19 PM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Object doesn't support property or method 'getElementsByTagName'
+
+-----------------------Tuesday 29th of September 2015 05:08:57 PM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Object doesn't support property or method 'getElementsByTagName'
+
+-----------------------Thursday 1st of October 2015 02:40:23 AM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Thursday 1st of October 2015 02:43:07 AM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference
+
+-----------------------Thursday 1st of October 2015 02:48:21 AM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlProc( id, tabId )
+file: UserControls.js
+message: Unable to get property 'replace' of undefined or null reference

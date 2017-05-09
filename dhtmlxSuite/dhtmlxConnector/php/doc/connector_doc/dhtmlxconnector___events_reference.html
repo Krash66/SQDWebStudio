@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:events_reference    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+<h1><a name="events" id="events">Events</a></h1>
+<div class="level1">
+
+</div>
+
+<h4><a name="events_list" id="events_list">events list</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li">  <a href="dhtmlxconnector___beforesort_event.html" class="wikilink1" title="dhtmlxconnector:beforesort_event">beforeSort Event</a></div>
+</li>
+<li class="level2"><div class="li">  <a href="dhtmlxconnector___beforefilter_event.html" class="wikilink1" title="dhtmlxconnector:beforefilter_event">beforeFilter Event</a></div>
+</li>
+<li class="level2"><div class="li">  <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender Event</a></div>
+</li>
+<li class="level2"><div class="li">  <a href="dhtmlxconnector___beforeoutput_event.html" class="wikilink1" title="dhtmlxconnector:beforeoutput_event">beforeOutput Event</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li">  <a href="dhtmlxconnector___beforeupdate_event.html" class="wikilink1" title="dhtmlxconnector:beforeupdate_event">beforeUpdate Event</a>   </div>
+</li>
+<li class="level2"><div class="li">  <a href="dhtmlxconnector___beforeinsert_event.html" class="wikilink1" title="dhtmlxconnector:beforeinsert_event">beforeInsert Event</a></div>
+</li>
+<li class="level2"><div class="li">  <a href="dhtmlxconnector___beforedelete_event.html" class="wikilink1" title="dhtmlxconnector:beforedelete_event">beforeDelete Event</a>  </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li">  <a href="dhtmlxconnector___afterupdate_event.html" class="wikilink1" title="dhtmlxconnector:afterupdate_event">afterUpdate Event</a></div>
+</li>
+<li class="level2"><div class="li">  <a href="dhtmlxconnector___afterinsert_event.html" class="wikilink1" title="dhtmlxconnector:afterinsert_event">afterInsert Event</a></div>
+</li>
+<li class="level2"><div class="li">  <a href="dhtmlxconnector___afterdelete_event.html" class="wikilink1" title="dhtmlxconnector:afterdelete_event">afterDelete Event</a>  </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li">  <a href="dhtmlxconnector___beforeprocessing_event.html" class="wikilink1" title="dhtmlxconnector:beforeprocessing_event">beforeProcessing Event</a></div>
+</li>
+<li class="level2"><div class="li">  <a href="dhtmlxconnector___afterprocessing_event.html" class="wikilink1" title="dhtmlxconnector:afterprocessing_event">afterProcessing Event</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li">  <a href="dhtmlxconnector___ondberror_event.html" class="wikilink1" title="dhtmlxconnector:ondberror_event">onDBError Event</a></div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="order_of_execution" id="order_of_execution">order of execution</a></h4>
+<div class="level4">
+
+<p>
+<strong>data loading</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> - incoming request parsed</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___beforesort_event.html" class="wikilink1" title="dhtmlxconnector:beforesort_event">beforeSort</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___beforefilter_event.html" class="wikilink1" title="dhtmlxconnector:beforefilter_event">beforeFilter</a></div>
+</li>
+<li class="level1"><div class="li"> - sql select executed</div>
+</li>
+<li class="level1"><div class="li"> - for each selected record</div>
+<ul>
+<li class="level3"><div class="li"> <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a></div>
+</li>
+<li class="level3"><div class="li"> - generate xml for record</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> - output data to client</div>
+</li>
+</ul>
+
+<p>
+
+<strong>data updating</strong> 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> - incoming request parsed</div>
+</li>
+<li class="level1"><div class="li"> - global transaction started ( if enabled )</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___beforeprocessing_event.html" class="wikilink1" title="dhtmlxconnector:beforeprocessing_event">beforeProcessing</a> </div>
+</li>
+<li class="level1"><div class="li"> for each record</div>
+<ul>
+<li class="level2"><div class="li"> - record level transaction if started ( if enabled )</div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___beforeinsert_event.html" class="wikilink1" title="dhtmlxconnector:beforeinsert_event">beforeInsert</a>|<a href="dhtmlxconnector___beforedelete_event.html" class="wikilink1" title="dhtmlxconnector:beforedelete_event">beforeDelete</a>|<a href="dhtmlxconnector___beforeupdate_event.html" class="wikilink1" title="dhtmlxconnector:beforeupdate_event">beforeUpdate</a></div>
+</li>
+<li class="level2"><div class="li"> - record level transaction commited ( if enabled )</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___afterprocessing_event.html" class="wikilink1" title="dhtmlxconnector:afterprocessing_event">afterProcessing</a></div>
+</li>
+<li class="level1"><div class="li"> - global transaction commited ( if enabled )</div>
+</li>
+</ul>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

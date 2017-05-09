@@ -1,0 +1,21 @@
+[
+	{type: "settings", position: "label-left", labelAlign: "left", labelWidth: "90", inputWidth: "180", offsetLeft: "0"},
+	{type: "fieldset", label: "Description Properties", inputWidth: "auto", list:[
+		{name:"txtDescName",type: "input", label: "Description Name", value: ""},
+		{type: "fieldset", label: "Description", inputWidth: "auto", list:[
+			{name:"txtDescDesc",type: "input", offsetLeft: "0", inputWidth: "245", rows: "3", value: ""}
+		]}
+	]},
+	{type: "fieldset", label: "Record Properties", inputWidth: "auto", offsetLeft: "0", list:[
+		{name:"txtDescRecLen", type: "input", inputWidth: "170", labelWidth: "75", label: "Record Length"},
+		{name:"txtDescTablespace", type: "input", inputWidth: "170", labelWidth: "75", label: "Tablespace"}
+	]},
+	{type: "fieldset", label: "Description File Properties", inputWidth: "auto", offsetLeft: "0", list:[
+		{name:"txtDescFilePath", type: "file", inputWidth: "160", position:"label-left", labelWidth: "65", label: "Description File"}				
+	]},
+	{type: "fieldset",  inputWidth: "auto", offsetLeft: "0", list:[
+		{name:"btnDescSave",type: "button", width:"80", value: "Save"},
+		{type: "newcolumn"},
+		{name:"btnDescDelete",type: "button", width:"80",value: "Delete"}
+	]}
+]

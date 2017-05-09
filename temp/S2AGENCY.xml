@@ -1,0 +1,175 @@
+<record id="BCBSDB24.XX1_AGENCY_FEE">
+<atom name="ALIAS" type="str">XX1_AGENCY_FEE</atom>
+<atom name="NAME" type="str">BCBSDB24.XX1_AGENCY_FEE</atom>
+<fld id="GRP_ID_NBR">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="NAME" type="str">GRP_ID_NBR</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="GRP_AGENCY_SEQ_NBR">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="NAME" type="str">GRP_AGENCY_SEQ_NBR</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PKG_ID_NBR">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="NAME" type="str">PKG_ID_NBR</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PKG_LOB_CD">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="NAME" type="str">PKG_LOB_CD</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AGENCY_SEQ_NBR">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="NAME" type="str">AGENCY_SEQ_NBR</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="APPL_ID_NBR">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="NAME" type="str">APPL_ID_NBR</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CO_ID_NBR">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="NAME" type="str">CO_ID_NBR</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AGENCY_ID_NBR">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="NAME" type="str">AGENCY_ID_NBR</atom>
+<atom name="LEN" type="int">12</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AGENT_ID_NBR">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="NAME" type="str">AGENT_ID_NBR</atom>
+<atom name="LEN" type="int">12</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AGENCY_SPLIT_PCT">
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="NAME" type="str">AGENCY_SPLIT_PCT</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">5</atom>
+</fld>
+<fld id="AGENCY_REIMB_CD">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="NAME" type="str">AGENCY_REIMB_CD</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AGENCY_RATE_CD">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="NAME" type="str">AGENCY_RATE_CD</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AGENCY_DOLLAR_CD">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="NAME" type="str">AGENCY_DOLLAR_CD</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AGENCY_RULE_CD">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="NAME" type="str">AGENCY_RULE_CD</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AGENCY_OVRIDE_PCT">
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="NAME" type="str">AGENCY_OVRIDE_PCT</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">5</atom>
+</fld>
+<fld id="AGENCY_FEE_AMT">
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="NAME" type="str">AGENCY_FEE_AMT</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">11</atom>
+</fld>
+<fld id="SYS_UPDT_TS">
+<atom name="TYPE" type="str">TST</atom>
+<atom name="LEGACY_TYPE" type="str">TIMESTAMP</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="NAME" type="str">SYS_UPDT_TS</atom>
+<atom name="LEN" type="int">26</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">6</atom>
+</fld>
+<fld id="SYS_ERROR_CD">
+<atom name="TYPE" type="str">INTEGER</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="NAME" type="str">SYS_ERROR_CD</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="SQDSTCK">
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="NAME" type="str">SQDSTCK</atom>
+<atom name="LEN" type="int">16</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</record>

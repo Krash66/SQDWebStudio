@@ -1,0 +1,46 @@
+[
+	{type: "settings", position: "label-left", labelAlign: "left", labelWidth: "90", inputWidth: "180", offsetLeft: "0"},
+	{type: "fieldset", label: "Source Datastore Properties", inputWidth: "auto", list:[
+			{name:"txtSDSAlias",type: "input", label: "Alias", value: ""},
+			{name:"selSDSType", type: "select", inputWidth: "180", label: "Datastore Type", options:[
+					{text: "Binary", value: "Binary"},
+					{text: "Delimited", value: "Delimited"},
+					{text: "XML", value: "XML"},
+					{text: "Relational", value: "Relational"},
+					{text: "DB2Load", value: "DB2Load"},
+					{text: "HSSUNLOAD", value: "HSSUNLOAD"},
+					{text: "IMSDB", value: "IMSDB"},
+					{text: "VSAM", value: "VSAM"},
+					{text: "UTSCDC", value: "UTSCDC"},
+					{text: "IMSCDC", value: "IMSCDC"},
+					{text: "IMSCDC LE", value: "IMSCDC LE"},
+					{text: "DB2CDC", value: "DB2CDC"},
+					{text: "VSAMCDC", value: "VSAMCDC"},
+					{text: "OracleCDC", value: "OracleCDC"}
+			]},
+			{name:"selSDSAccess", type: "select", inputWidth: "180", label: "Access/Transport", options:[
+					{text: "CDC Store", value: "CDCStore"},
+					{text: "File", value: "File"},
+					{text: "MQ Series", value: "MQS"},
+					{text: "TCP/IP", value: "TCP"}
+			]},
+			{name:"txtSDSPhysName",type: "input", label: "Physical Name", value: ""},
+			{name:"txtSDSHostName",type: "input", label: "Host Name", value: ""},
+			{name:"txtSDSPort",type: "input", label: "Port", value: ""},
+			{type: "fieldset", label: "Description", inputWidth: "auto", list:[
+				{name:"txtSDSDesc",type: "input", offsetLeft: "0", inputWidth: "245", rows: "3", value: ""}
+			]},
+		]},
+		{type: "fieldset", label: "Extended Properties", inputWidth: "auto", offsetLeft: "0", list:[
+			{name:"txtSDSException", type: "input", inputWidth: "80", labelWidth: "50", label: "Exception"},
+			{name:"txtSDSUOW", type: "input", inputWidth: "80", labelWidth: "50", label: "UOW"},
+			{type:"newcolumn"},
+			{name:"cbSDSIMSPathData", type: "checkbox", position:"label-left", labelAlign:"right", labelWidth: "100", label: "IMS PathData", checked: false}, 
+			{name:"cbSDSSkipChangeCheck", type: "checkbox", position:"label-left", labelAlign:"right", labelWidth: "100", label: "Skip Change Check", checked: false}
+		]},
+		{type: "fieldset",  inputWidth: "auto", offsetLeft: "0", list:[
+			{name:"btnSDSSave",type: "button", width:"80", value: "Save"},
+			{type: "newcolumn"},
+			{name:"btnSDSDelete",type: "button", width:"80",value: "Delete"}
+		]}
+]

@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:dataaction_object_methods    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="dataaction_object" id="dataaction_object">DataAction Object</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="add_field" id="add_field">add_field()</a></h2>
+<div class="level2">
+
+<p>
+allows you to register field for usage while INSERT/UPDATE/DELETE operation.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">add_field</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name or alias of the field</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - value of the field in question</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#remove_field" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">remove_field</a></span></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___complex_queries.html" class="wikilink1" title="dhtmlxconnector:complex_queries">Making queries</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="error" id="error">error()</a></h2>
+<div class="level2">
+
+<p>
+marks provided data as invalid and cancels default UPDATE processing (invalid record will be highlighted in <em class="u">red bold</em> font).
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">error</span><span class="br0">&#40;</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> none</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#invalid" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">invalid</a></span></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___validation.html" class="wikilink1" title="dhtmlxconnector:validation">Validation</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_data" id="get_data">get_data()</a></h2>
+<div class="level2">
+
+<p>
+returns hash of data values that will take part in INSERT/UPDATE/DELETE operations.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">get_data</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> none.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_id" id="get_id">get_id()</a></h2>
+<div class="level2">
+
+<p>
+returns the id of the currently selected record.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">get_id</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> none.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_new_id" id="get_new_id">get_new_id()</a></h2>
+<div class="level2">
+
+<p>
+returns the ID received after INSERT operation (valid for <a href="dhtmlxconnector___afterprocessing_event.html" class="wikilink1" title="dhtmlxconnector:afterprocessing_event">afterProcessing</a> event only).
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">get_new_id</span><span class="br0">&#40;</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> none.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_status" id="get_status">get_status()</a></h2>
+<div class="level2">
+
+<p>
+returns action type of the item.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">get_status</span><span class="br0">&#40;</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Returns:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>update</em>, <em>insert</em>, <em>delete</em>, <em>error</em> or <em>custom status</em> set through set_status() method</div>
+</li>
+</ul>
+
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> none.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#set_status" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">set_status</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_value" id="get_value">get_value()</a></h2>
+<div class="level2">
+
+<p>
+returns value of a field.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name of column or alias.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#set_value" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">set_value</a></span></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___validation.html#value_checking" class="wikilink1" title="dhtmlxconnector:validation">Validation</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="invalid" id="invalid">invalid()</a></h2>
+<div class="level2">
+
+<p>
+marks provided data as invalid and cancels default UPDATE processing (invalid record will be highlighted in <em class="u">bold</em> font).
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">invalid</span><span class="br0">&#40;</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> none.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#error" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">error</a></span></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___validation.html#processing_in_case_of_validation_error" class="wikilink1" title="dhtmlxconnector:validation">Validation</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="remove_field" id="remove_field">remove_field()</a></h2>
+<div class="level2">
+
+<p>
+allows to remove one of default fields from INSERT/UPDATE/DELETE operation.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">remove_field</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name or alias of the field.</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - value of the field in question.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#add_field" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">add_field</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_response_attribute" id="set_response_attribute">set_response_attribute()</a></h2>
+<div class="level2">
+
+<p>
+allows you to define custom attribute which will be added to the related action tag in <acronym title="Extensible Markup Language">XML</acronym> response.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">set_response_attribute</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name of the attribute.</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - value of the attribute in question.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#set_response_text" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">set_response_text</a></span></div>
+</li>
+<li class="level2"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#set_response_xml" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">set_response_xml</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_response_text" id="set_response_text">set_response_text()</a></h2>
+<div class="level2">
+
+<p>
+allows you to set string that will be included in response
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">set_response_text</span><span class="br0">&#40;</span><span class="re0">$text</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$text</em> - any text value that will be returned on client-side with related action.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#set_response_xml" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">set_response_xml</a></span></div>
+</li>
+<li class="level2"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#set_response_attribute" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">set_response_attribute</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_response_xml" id="set_response_xml">set_response_xml()</a></h2>
+<div class="level2">
+
+<p>
+allows you to set xml-string that will be included in response (if you need to provide just a text - use set_response_text() method).
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">set_response_xml</span><span class="br0">&#40;</span><span class="re0">$text</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$text</em> - any text value that will be returned on client-side with related action.</div>
+</li>
+</ul>
+
+<p>
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#set_response_text" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">set_response_text</a></span></div>
+</li>
+<li class="level2"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#set_response_attribute" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">set_response_attribute</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_status" id="set_status">set_status()</a></h2>
+<div class="level2">
+
+<p>
+sets the status of operation.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">set_status</span><span class="br0">&#40;</span><span class="re0">$value</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$value</em> - status of operation.<br/>
+ It can be either some predefined value (updated, inserted, deleted, error) or any custom status. Beware, when you set custom status you cancel default data processing.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#get_status" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">get_status</a></span></div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___validation.html#custom_status" class="wikilink1" title="dhtmlxconnector:validation">Validation</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_value" id="set_value">set_value()</a></h2>
+<div class="level2">
+
+<p>
+sets value of a field.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name or alias of the field</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - value of the field in question</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataaction_object_methods.html#get_value" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">get_value</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="success" id="success">success()</a></h2>
+<div class="level2">
+
+<p>
+confirms that operation has been executed correctly and cancels any default data processing.
+
+</p>
+<pre class="code php"><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">success</span><span class="br0">&#40;</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> in case INSERT operation: a new ID of element ( which will be updated on client-side ) </div>
+</li>
+</ul>
+
+<p>
+
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___complex_queries.html#using_server-side_events" class="wikilink1" title="dhtmlxconnector:complex_queries">Making queries</a></div>
+</li>
+</ul>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

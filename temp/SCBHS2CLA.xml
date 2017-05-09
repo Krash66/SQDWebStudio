@@ -1,0 +1,61 @@
+<record id="BHS2CLA-STRUCTURE-DATA-ITEM">
+<atom name="NAME" type="str">BHS2CLA-STRUCTURE-DATA-ITEM</atom>
+<fld id="BHS2CLA-STRUCTURE-DATA-ITEM">
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NAME" type="str">BHS2CLA-STRUCTURE-DATA-ITEM</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">72</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="CLA-ADDR">
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NAME" type="str">CLA-ADDR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">25</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CLA-ADDR4">
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NAME" type="str">CLA-ADDR4</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">25</atom>
+<atom name="LEN" type="int">25</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CLA-CITY">
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NAME" type="str">CLA-CITY</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">50</atom>
+<atom name="LEN" type="int">16</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CLA-ST">
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NAME" type="str">CLA-ST</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">66</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CLA-ZIP">
+<atom name="LEVEL" type="int">10</atom>
+<atom name="NAME" type="str">CLA-ZIP</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">68</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="PRECISION" type="int">8</atom>
+</fld>
+</fld>
+</record>

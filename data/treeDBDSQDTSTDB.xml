@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tree id="0" name="SQDTSTDB">
+  <item id="COMPANY" text="COMPANY" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+    <userdata name="level">1</userdata>
+    <userdata name="DescId">Proj_1.Env_1.Src.COMPANY</userdata>
+    <userdata name="Icon">desc.ico</userdata>
+    <item id="VENDOR" text="VENDOR" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="level">2</userdata>
+      <userdata name="DescId">Proj_1.Env_1.Src.VENDOR</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="DEPTMENT" text="DEPTMENT" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="level">2</userdata>
+      <userdata name="DescId">Proj_1.Env_1.Src.DEPTMENT</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+      <item id="EMPLOYEE" text="EMPLOYEE" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+        <userdata name="level">3</userdata>
+        <userdata name="DescId">Proj_1.Env_1.Src.EMPLOYEE</userdata>
+        <userdata name="Icon">desc.ico</userdata>
+      </item>
+    </item>
+  </item>
+</tree>

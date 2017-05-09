@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:app_security    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="security" id="security">Security</a></h1>
+<div class="level1">
+
+<p>
+dhtmlxConnector is open to external access of another programs and any external user is allowed to change data in database.<br/>
+
+Thus, adding some kind of session-based authentication is strongly recommended.<br/>
+
+</p>
+
+</div>
+
+<h2><a name="basic_security" id="basic_security">Basic security</a></h2>
+<div class="level2">
+
+<p>
+Built-in security manager allows you to limit connector for certain operations.
+</p>
+<pre class="code php"><span class="re0">$gridConn</span><span class="sy0">-&gt;</span><span class="me1">access</span><span class="sy0">-&gt;</span><span class="me1">deny</span><span class="br0">&#40;</span><span class="st0">&quot;read&quot;</span><span class="br0">&#41;</span>; <span class="co1">//blocks Select action</span>
+<span class="re0">$gridConn</span><span class="sy0">-&gt;</span><span class="me1">access</span><span class="sy0">-&gt;</span><span class="me1">deny</span><span class="br0">&#40;</span><span class="st0">&quot;insert&quot;</span><span class="br0">&#41;</span>; <span class="co1">//blocks Insert action</span>
+<span class="re0">$gridConn</span><span class="sy0">-&gt;</span><span class="me1">access</span><span class="sy0">-&gt;</span><span class="me1">deny</span><span class="br0">&#40;</span><span class="st0">&quot;update&quot;</span><span class="br0">&#41;</span>; <span class="co1">//blocks Update action</span>
+<span class="re0">$gridConn</span><span class="sy0">-&gt;</span><span class="me1">access</span><span class="sy0">-&gt;</span><span class="me1">deny</span><span class="br0">&#40;</span><span class="st0">&quot;delete&quot;</span><span class="br0">&#41;</span>; <span class="co1">//blocks Delete action</span></pre>
+<p>
+By default, connector allows all operations. 
+</p>
+
+</div>
+
+<h2><a name="protection_from_cross-site_scripting_xss" id="protection_from_cross-site_scripting_xss">Protection from cross-site scripting (XSS)</a></h2>
+<div class="level2">
+
+<p>
+Starting from version 1.5, dhtmlxConnector allows you to protect an app from XSS attacks. 
+</p>
+
+<p>
+To avoid XSS attacks, the library checks all data inputted by users and according to the set security level doesn&#039;t allow html or javascript code to be inserted.
+</p>
+
+<p>
+3 security levels are available:
+</p>
+<ul>
+<li class="level1"><div class="li">  <strong>DHX_SECURITY_SAFETEXT</strong> (default) - all html data is removed from the input field;</div>
+</li>
+<li class="level1"><div class="li">  <strong>DHX_SECURITY_SAFEHTML</strong> - allows html data, but removes possible script tags and handlers;</div>
+</li>
+<li class="level1"><div class="li">  <strong>DHX_SECURITY_TRUSTED</strong> - input fields are not filtered at all (similar to previous version of connectors).</div>
+</li>
+</ul>
+
+<p>
+
+To set the necessary security level, use the next code:
+</p>
+<pre class="code php">ConnectorSecurity<span class="sy0">::</span><span class="re0">$xss</span> <span class="sy0">=</span> DHX_SECURITY_SAFETEXT;
+<span class="co1">//ConnectorSecurity::$xss = DHX_SECURITY_SAFEHTML;</span>
+<span class="co1">//ConnectorSecurity::$xss = DHX_SECURITY_TRUSTED;</span></pre>
+<p>
+If you want to enable the same behavior as the previous versions of connectors have, set the <strong>DHX_SECURITY_TRUSTED</strong> mode.
+</p>
+
+</div>
+
+<h2><a name="preventing_csrf_and_xsrf_attacks" id="preventing_csrf_and_xsrf_attacks">Preventing CSRF and XSRF attacks</a></h2>
+<div class="level2">
+
+<p>
+<div class='dhx_note'><div class='dhx_note_img'>&nbsp;</div>
+The functionality requires 3.5 or later version of the DHTMLX Suite package
+</div>
+</p>
+
+<p>
+The protection is available starting from version 1.5 and can be activated by the following code line:
+</p>
+<pre class="code php">ConnectorSecurity<span class="sy0">::</span><span class="re0">$security_key</span> <span class="sy0">=</span> <span class="kw2">true</span>;</pre>
+<p>
+After calling such a command, connectors start to include additional security keys to all data loading operations and process data updating calls only if they contain the same keys. As a result of this processing, it&#039;s impossible to trigger a data updating operation from some third-party site, even if an attacker has access to a valid user session. 
+</p>
+
+<p>
+The technique is based on php sessions and assumes that any php session will be preserved between separate script calls (default php behavior).
+</p>
+
+<p>
+Please be sure that you understand what CSRF attack is, cause the stated technique won&#039;t prevent access to the connector from external urls, it will only prevent execution actions through some one elses session.  
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

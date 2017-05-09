@@ -1,0 +1,14 @@
+
+-----------------------Monday 8th of June 2015 08:30:03 PM EDT------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlSDS( id, tabId )
+file: UserControls.js
+message: Object doesn't support property or method 'setReadonly'
+
+-----------------------Monday 8th of June 2015 08:45:45 PM EDT------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+error Type: TypeError
+function: function loadCtlTDS( id, tabId )
+file: UserControls.js
+message: Object doesn't support property or method 'setReadonly'

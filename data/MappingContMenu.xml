@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <item id="undo" text="Undo last action" img="undo.gif"/>
+  <item id="sep1" type="separator"/>
+  <item id="del_src" text="Delete source field" img="delete.ico"/>
+  <item id="del_tgt" text="Delete target field" img="delete.ico" />
+  <item id="del_map" text="Delete mapping" img="delete.ico" />
+  <item id="sep2" type="separator"/>
+  <item id="cancel" text="cancel" img=""/>
+</menu>

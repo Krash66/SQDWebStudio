@@ -1,0 +1,49 @@
+<record id="COMPANY">
+<atom name="ALIAS" type="str">COMPANY</atom>
+<atom name="NAME" type="str">COMPANY</atom>
+<fld id="COMPNAME">
+<atom name="NULL" type="int">0</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="NAME" type="str">COMPNAME</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="COMP_ADDRESS">
+<atom name="NULL" type="int">0</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="NAME" type="str">COMP_ADDRESS</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="COMP_CITY">
+<atom name="NULL" type="int">0</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="NAME" type="str">COMP_CITY</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="COMP_STATE">
+<atom name="NULL" type="int">0</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">COMP_STATE</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="COMP_ZIP">
+<atom name="NULL" type="int">0</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="NAME" type="str">COMP_ZIP</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+</fld>
+</record>

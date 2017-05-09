@@ -1,0 +1,103 @@
+<record id="BCBSDB24.XX1_APL_TXT">
+<atom name="ALIAS" type="str">XX1_APL_TXT</atom>
+<atom name="NAME" type="str">BCBSDB24.XX1_APL_TXT</atom>
+<fld id="APPEAL_ID_NBR">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">APPEAL_ID_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">12</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="CMTS_CAT_CD">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CMTS_CAT_CD</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="CMTS_SEQ_NBR">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CMTS_SEQ_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="CMTS_LINE_NBR">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CMTS_LINE_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="APPL_ID_NBR">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">APPL_ID_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="CO_ID_NBR">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CO_ID_NBR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="CMTS_FULL_TEXT">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CMTS_FULL_TEXT</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">72</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="SYS_UPDT_TS">
+<atom name="LEGACY_TYPE" type="str">TIMESTAMP</atom>
+<atom name="NAME" type="str">SYS_UPDT_TS</atom>
+<atom name="TYPE" type="str">TST</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="PRECISION" type="int">6</atom>
+<atom name="LEN" type="int">26</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="SYS_ERROR_CD">
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="NAME" type="str">SYS_ERROR_CD</atom>
+<atom name="TYPE" type="str">INTEGER</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="IMAGE_REC_NBR">
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">IMAGE_REC_NBR</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="PRECISION" type="int">11</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+<fld id="SQDSTCK">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">SQDSTCK</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEN" type="int">16</atom>
+<atom name="NULL" type="int">0</atom>
+</fld>
+</record>

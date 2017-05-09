@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tree id="0">
+    <item id="Proj_1.Env_1.Src.COMPANY" text="COMPANY"  checked="1" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">COBOLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlCOBOLDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+      <item id="COMPANY-REC" text="COMPANY-REC" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+        <userdata name="Icon">Field List.ico</userdata>
+        <userdata name="NumElements">5</userdata>
+        <userdata name="level">1</userdata>
+        <userdata name="Occurs">1</userdata>
+        <userdata name="OccurNum">0</userdata>
+        <userdata name="DataType">GROUPITEM</userdata>
+        <userdata name="Offset">0</userdata>
+        <userdata name="IntFieldLen">47</userdata>
+        <userdata name="Scale">0</userdata>
+        <userdata name="NullAllowed">Yes</userdata>
+        <userdata name="IsKey">No</userdata>
+        <userdata name="FKey"></userdata>
+        <userdata name="InitVal"></userdata>
+        <userdata name="ReType"></userdata>
+        <userdata name="ExtType"></userdata>
+        <userdata name="Invalid"></userdata>
+        <userdata name="DateFormat"></userdata>
+        <userdata name="Label"></userdata>
+        <userdata name="RecId"></userdata>
+        <item id="COMPNAME" text="COMPNAME" im0="105.ico" im1="105.ico" im2="105.ico">
+          <userdata name="Icon">105.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">0</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">No</userdata>
+          <userdata name="IsKey">Yes</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="COMP-ADDRESS" text="COMP-ADDRESS" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">10</userdata>
+          <userdata name="IntFieldLen">20</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="COMP-CITY" text="COMP-CITY" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">30</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="COMP-STATE" text="COMP-STATE" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">40</userdata>
+          <userdata name="IntFieldLen">2</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="COMP-ZIP" text="COMP-ZIP" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">42</userdata>
+          <userdata name="IntFieldLen">5</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+      </item>
+    </item>
+    <item id="Proj_1.Env_1.Src.DEPTMENT" text="DEPTMENT"  checked="1" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">COBOLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlCOBOLDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+      <item id="DEPTMENT-REC" text="DEPTMENT-REC" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+        <userdata name="Icon">Field List.ico</userdata>
+        <userdata name="NumElements">6</userdata>
+        <userdata name="level">1</userdata>
+        <userdata name="Occurs">1</userdata>
+        <userdata name="OccurNum">0</userdata>
+        <userdata name="DataType">GROUPITEM</userdata>
+        <userdata name="Offset">0</userdata>
+        <userdata name="IntFieldLen">57</userdata>
+        <userdata name="Scale">0</userdata>
+        <userdata name="NullAllowed">Yes</userdata>
+        <userdata name="IsKey">No</userdata>
+        <userdata name="FKey"></userdata>
+        <userdata name="InitVal"></userdata>
+        <userdata name="ReType"></userdata>
+        <userdata name="ExtType"></userdata>
+        <userdata name="Invalid"></userdata>
+        <userdata name="DateFormat"></userdata>
+        <userdata name="Label"></userdata>
+        <userdata name="RecId"></userdata>
+        <item id="DEPTNO" text="DEPTNO" im0="105.ico" im1="105.ico" im2="105.ico">
+          <userdata name="Icon">105.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">0</userdata>
+          <userdata name="IntFieldLen">3</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">No</userdata>
+          <userdata name="IsKey">Yes</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="DEPT-NAME" text="DEPT-NAME" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">3</userdata>
+          <userdata name="IntFieldLen">29</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="DEPT-MGRNO" text="DEPT-MGRNO" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">32</userdata>
+          <userdata name="IntFieldLen">6</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="DEPT-ADMRDEP" text="DEPT-ADMRDEP" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">38</userdata>
+          <userdata name="IntFieldLen">3</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="DEPT-LOC" text="DEPT-LOC" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">41</userdata>
+          <userdata name="IntFieldLen">16</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="PFK_COMPNAME" text="PFK_COMPNAME" im0="105.ico" im1="105.ico" im2="105.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">-13</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">No</userdata>
+          <userdata name="IsKey">Yes</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+      </item>
+    </item>
+    <item id="Proj_1.Env_1.Src.EMPLOYEE" text="EMPLOYEE"  checked="1" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">COBOLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlCOBOLDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+      <item id="EMPLOYEE-REC" text="EMPLOYEE-REC" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+        <userdata name="Icon">Field List.ico</userdata>
+        <userdata name="NumElements">16</userdata>
+        <userdata name="level">1</userdata>
+        <userdata name="Occurs">1</userdata>
+        <userdata name="OccurNum">0</userdata>
+        <userdata name="DataType">GROUPITEM</userdata>
+        <userdata name="Offset">0</userdata>
+        <userdata name="IntFieldLen">47</userdata>
+        <userdata name="Scale">0</userdata>
+        <userdata name="NullAllowed">Yes</userdata>
+        <userdata name="IsKey">No</userdata>
+        <userdata name="FKey"></userdata>
+        <userdata name="InitVal"></userdata>
+        <userdata name="ReType"></userdata>
+        <userdata name="ExtType"></userdata>
+        <userdata name="Invalid"></userdata>
+        <userdata name="DateFormat"></userdata>
+        <userdata name="Label"></userdata>
+        <userdata name="RecId"></userdata>
+        <item id="EMPNO" text="EMPNO" im0="105.ico" im1="105.ico" im2="105.ico">
+          <userdata name="Icon">105.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">0</userdata>
+          <userdata name="IntFieldLen">6</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">No</userdata>
+          <userdata name="IsKey">Yes</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-FIRST" text="EMPL-FIRST" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">6</userdata>
+          <userdata name="IntFieldLen">12</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-MID" text="EMPL-MID" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">18</userdata>
+          <userdata name="IntFieldLen">1</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-LAST" text="EMPL-LAST" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">19</userdata>
+          <userdata name="IntFieldLen">15</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-DEPT" text="EMPL-DEPT" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">34</userdata>
+          <userdata name="IntFieldLen">3</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-PHONE" text="EMPL-PHONE" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">37</userdata>
+          <userdata name="IntFieldLen">4</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-HIREDT" text="EMPL-HIREDT" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">41</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-JOB" text="EMPL-JOB" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">51</userdata>
+          <userdata name="IntFieldLen">8</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-EDLEVEL" text="EMPL-EDLEVEL" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">SMALLINT</userdata>
+          <userdata name="Offset">59</userdata>
+          <userdata name="IntFieldLen">2</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-SEX" text="EMPL-SEX" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">61</userdata>
+          <userdata name="IntFieldLen">1</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-DOB" text="EMPL-DOB" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">62</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-SALARY" text="EMPL-SALARY" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">DECIMAL</userdata>
+          <userdata name="Offset">72</userdata>
+          <userdata name="IntFieldLen">5</userdata>
+          <userdata name="Scale">2</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-BONUS" text="EMPL-BONUS" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">DECIMAL</userdata>
+          <userdata name="Offset">77</userdata>
+          <userdata name="IntFieldLen">5</userdata>
+          <userdata name="Scale">2</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="EMPL-COMM" text="EMPL-COMM" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">DECIMAL</userdata>
+          <userdata name="Offset">82</userdata>
+          <userdata name="IntFieldLen">5</userdata>
+          <userdata name="Scale">2</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="PFK_DEPTNO" text="PFK_DEPTNO" im0="105.ico" im1="105.ico" im2="105.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">-9</userdata>
+          <userdata name="IntFieldLen">3</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">No</userdata>
+          <userdata name="IsKey">Yes</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="PFK_COMPNAME" text="PFK_COMPNAME" im0="105.ico" im1="105.ico" im2="105.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">-19</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">No</userdata>
+          <userdata name="IsKey">Yes</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+      </item>
+    </item>
+    <item id="Proj_1.Env_1.Src.VENDOR" text="VENDOR"  checked="1" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">COBOLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlCOBOLDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+      <item id="VENDOR-REC" text="VENDOR-REC" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+        <userdata name="Icon">Field List.ico</userdata>
+        <userdata name="NumElements">9</userdata>
+        <userdata name="level">1</userdata>
+        <userdata name="Occurs">1</userdata>
+        <userdata name="OccurNum">0</userdata>
+        <userdata name="DataType">GROUPITEM</userdata>
+        <userdata name="Offset">0</userdata>
+        <userdata name="IntFieldLen">60</userdata>
+        <userdata name="Scale">0</userdata>
+        <userdata name="NullAllowed">Yes</userdata>
+        <userdata name="IsKey">No</userdata>
+        <userdata name="FKey"></userdata>
+        <userdata name="InitVal"></userdata>
+        <userdata name="ReType"></userdata>
+        <userdata name="ExtType"></userdata>
+        <userdata name="Invalid"></userdata>
+        <userdata name="DateFormat"></userdata>
+        <userdata name="Label"></userdata>
+        <userdata name="RecId"></userdata>
+        <item id="VENDID" text="VENDID" im0="105.ico" im1="105.ico" im2="105.ico">
+          <userdata name="Icon">105.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">0</userdata>
+          <userdata name="IntFieldLen">3</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">No</userdata>
+          <userdata name="IsKey">Yes</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="VEND-NAME" text="VEND-NAME" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">3</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="VEND-COMPANY" text="VEND-COMPANY" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">13</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="VEND-ADDRESS" text="VEND-ADDRESS" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">23</userdata>
+          <userdata name="IntFieldLen">20</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="VEND-CITY" text="VEND-CITY" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">43</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="VEND-STATE" text="VEND-STATE" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">53</userdata>
+          <userdata name="IntFieldLen">2</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="VEND-ZIP" text="VEND-ZIP" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">55</userdata>
+          <userdata name="IntFieldLen">5</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">Yes</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="VENDZIP" text="VENDZIP" im0="FieldList.ico" im1="FieldList.ico" im2="FieldList.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">54</userdata>
+          <userdata name="IntFieldLen">5</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">No</userdata>
+          <userdata name="IsKey">No</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+        <item id="PFK_COMPNAME" text="PFK_COMPNAME" im0="105.ico" im1="105.ico" im2="105.ico">
+          <userdata name="Icon">Field List.ico</userdata>
+          <userdata name="NumElements">0</userdata>
+          <userdata name="level">2</userdata>
+          <userdata name="Occurs">1</userdata>
+          <userdata name="OccurNum">0</userdata>
+          <userdata name="DataType">CHAR</userdata>
+          <userdata name="Offset">-13</userdata>
+          <userdata name="IntFieldLen">10</userdata>
+          <userdata name="Scale">0</userdata>
+          <userdata name="NullAllowed">No</userdata>
+          <userdata name="IsKey">Yes</userdata>
+          <userdata name="FKey"></userdata>
+          <userdata name="InitVal"></userdata>
+          <userdata name="ReType"></userdata>
+          <userdata name="ExtType"></userdata>
+          <userdata name="Invalid"></userdata>
+          <userdata name="DateFormat"></userdata>
+          <userdata name="Label"></userdata>
+          <userdata name="RecId"></userdata>
+        </item>
+      </item>
+    </item>
+</tree>

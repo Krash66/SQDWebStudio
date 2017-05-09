@@ -1,0 +1,13 @@
+[
+	{type: "settings", position: "label-left", labelWidth: 100, inputWidth: 180},
+	{type: "fieldset", label: "Logic Procedure", inputWidth: "auto", list:[
+			{name:"txtProcName",type: "input", label: "Procedure Name", value: ""},
+			{type: "newcolumn"},
+			{name:"txtProcDesc", labelAlign:"right", label: "Description",type: "input", inputWidth: "260", rows: "2", value: ""}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{name:"btnConnSave",type: "button", value: "Save"},
+			{type: "newcolumn"},
+			{name:"btnConnDelete",type: "button", value: "Delete"}
+		]}
+]

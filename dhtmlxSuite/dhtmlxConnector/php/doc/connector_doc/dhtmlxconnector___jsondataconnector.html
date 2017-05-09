@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:jsondataconnector    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="jsondataconnector_dataconnector" id="jsondataconnector_dataconnector">JSONDataConnector/DataConnector</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="common" id="common">Common</a></h2>
+<div class="level2">
+
+<p>
+There are 2 connectors you can use for touch-oriented DHTMLX libraries (such as DHTMLX Touch, DataTable, DataStore): 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>DataConnector</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>JSONDataConnector</strong></div>
+</li>
+</ul>
+
+<p>
+They both work the same way, but differ in type of returned data. 
+</p>
+<pre class="code php"><span class="kw2">&lt;?php</span> 
+<span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;../../connector/data_connector.php&quot;</span><span class="br0">&#41;</span>;
+<span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;../../connector/db_sqlite.php&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span><span class="re0">$db</span> <span class="sy0">=</span> sqlite_open<span class="br0">&#40;</span><span class="st_h">'db'</span><span class="sy0">,</span> <span class="nu8">0777</span><span class="sy0">,</span> <span class="re0">$sqliteerror</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+	<a href="http://www.php.net/die"><span class="kw3">die</span></a><span class="br0">&#40;</span><span class="re0">$sqliteerror</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+<span class="re0">$data</span> <span class="sy0">=</span> <span class="kw2">new</span> JSONDataConnector<span class="br0">&#40;</span><span class="re0">$db</span><span class="sy0">,</span><span class="st0">&quot;SQLite&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$data</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;users&quot;</span><span class="sy0">,</span> <span class="st0">&quot;id&quot;</span><span class="sy0">,</span> <span class="st0">&quot;name,age,city&quot;</span><span class="br0">&#41;</span>;
+<span class="kw2">?&gt;</span></pre>
+</div>
+
+<h3><a name="dataconnector" id="dataconnector">DataConnector</a></h3>
+<div class="level3">
+
+<p>
+DataConnector generates &#039;<acronym title="Extensible Markup Language">XML</acronym>&#039; data feed as in:
+
+</p>
+<pre class="code xml"><span class="sc3"><span class="re1">&lt;data<span class="re2">&gt;</span></span></span>
+   <span class="sc3"><span class="re1">&lt;item</span> <span class="re0">id</span>=<span class="st0">&quot;1&quot;</span> <span class="re0">title</span>=<span class="st0">&quot;War and Peace&quot;</span>  <span class="re0">author</span>=<span class="st0">&quot;Leo Tolstoy&quot;</span><span class="re2">/&gt;</span></span>
+   <span class="sc3"><span class="re1">&lt;item</span> <span class="re0">id</span>=<span class="st0">&quot;2&quot;</span> <span class="re0">title</span>=<span class="st0">&quot;Hamlet&quot;</span>         <span class="re0">author</span>=<span class="st0">&quot;William Shakespeare&quot;</span><span class="re2">/&gt;</span></span>
+   <span class="sc3"><span class="re1">&lt;item</span> <span class="re0">id</span>=<span class="st0">&quot;3&quot;</span> <span class="re0">title</span>=<span class="st0">&quot;Madame Bovary&quot;</span>  <span class="re0">author</span>=<span class="st0">&quot;Gustave Flaubert&quot;</span><span class="re2">/&gt;</span></span>
+<span class="sc3"><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></pre>
+</div>
+
+<h3><a name="jsondataconnector" id="jsondataconnector">JSONDataConnector</a></h3>
+<div class="level3">
+
+<p>
+JSONDataConnector generates &#039;JSON&#039; data feed as in:
+</p>
+<pre class="code">
+[
+   { id:&quot;1&quot;, title:&quot;War and Peace&quot;,    author:&quot;Leo Tolstoy&quot; },
+   { id:&quot;2&quot;, title:&quot;Hamlet&quot;,           author:&quot;Shakespeare&quot; },
+   { id:&quot;3&quot;, title:&quot;Madame Bovary&quot;,    author:&quot;Gustave Flaubert&quot; }
+]
+</pre>
+
+</div>
+
+<h2><a name="adding_tags_sections_to_data" id="adding_tags_sections_to_data">Adding tags/sections to data</a></h2>
+<div class="level2">
+
+<p>
+Starting from version 1.5, there is a possibility to add the first child tags, sections to data returned by the connector. To add the tag(section), use method <a href="dhtmlxconnector___connector_object_methods.html#add_section" class="wikilink1" title="dhtmlxconnector:connector_object_methods">add_section</a>.
+</p>
+
+</div>
+
+<h3><a name="dataconnector1" id="dataconnector1">DataConnector</a></h3>
+<div class="level3">
+
+<p>
+<em>For example, if you call <a href="dhtmlxconnector___connector_object_methods.html#add_section" class="wikilink1" title="dhtmlxconnector:connector_object_methods">add_section</a> as follows</em>:
+</p>
+<pre class="code php"><span class="re0">$data</span> <span class="sy0">=</span> <span class="kw2">new</span> JSONDataConnector<span class="br0">&#40;</span><span class="re0">$db</span><span class="sy0">,</span><span class="st0">&quot;SQLite&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$data</span><span class="sy0">-&gt;</span><span class="me1">add_section</span><span class="br0">&#40;</span><span class="st0">&quot;config&quot;</span><span class="sy0">,</span> <span class="st0">&quot;some_data&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$data</span><span class="sy0">-&gt;</span><span class="me1">add_section</span><span class="br0">&#40;</span><span class="st0">&quot;config2&quot;</span><span class="sy0">,</span> <span class="st0">&quot;&lt;column&gt;data1&lt;/column&gt;&lt;column&gt;data2&lt;/column&gt;&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+<em>DataConnector produces the next data</em>:
+</p>
+<pre class="code xml"><span class="sc3"><span class="re1">&lt;data<span class="re2">&gt;</span></span></span>
+    <span class="sc3"><span class="re1">&lt;config<span class="re2">&gt;</span></span></span>some_data<span class="sc3"><span class="re1">&lt;/config<span class="re2">&gt;</span></span></span>
+    <span class="sc3"><span class="re1">&lt;config2<span class="re2">&gt;</span></span><span class="re1">&lt;column<span class="re2">&gt;</span></span></span>data1<span class="sc3"><span class="re1">&lt;/column<span class="re2">&gt;</span></span><span class="re1">&lt;column<span class="re2">&gt;</span></span></span>data2<span class="sc3"><span class="re1">&lt;/column<span class="re2">&gt;</span></span><span class="re1">&lt;/config2<span class="re2">&gt;</span></span></span>
+    <span class="sc3"><span class="re1">&lt;item</span> <span class="re0">id</span>=<span class="st0">&quot;1&quot;</span> <span class="re0">attr1</span>=<span class="st0">&quot;qwe&quot;</span> <span class="re0">attr2</span>=<span class="st0">&quot;asd&quot;</span> <span class="re2">/&gt;</span></span>
+    <span class="sc3"><span class="re1">&lt;item</span> <span class="re0">id</span>=<span class="st0">&quot;2&quot;</span> <span class="re0">attr1</span>=<span class="st0">&quot;qwe&quot;</span> <span class="re0">attr2</span>=<span class="st0">&quot;asd&quot;</span> <span class="re2">/&gt;</span></span>
+<span class="sc3"><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></pre>
+</div>
+
+<h3><a name="jsondataconnector1" id="jsondataconnector1">JSONDataConnector</a></h3>
+<div class="level3">
+
+<p>
+<em>If you call <a href="dhtmlxconnector___connector_object_methods.html#add_section" class="wikilink1" title="dhtmlxconnector:connector_object_methods">add_section</a> as follows</em>:
+</p>
+<pre class="code php"><span class="re0">$data</span> <span class="sy0">=</span> <span class="kw2">new</span> JSONDataConnector<span class="br0">&#40;</span><span class="re0">$db</span><span class="sy0">,</span><span class="st0">&quot;SQLite&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$data</span><span class="sy0">-&gt;</span><span class="me1">add_section</span><span class="br0">&#40;</span><span class="st0">&quot;config&quot;</span><span class="sy0">,</span> <span class="st0">&quot;'some_data'&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$data</span><span class="sy0">-&gt;</span><span class="me1">add_section</span><span class="br0">&#40;</span><span class="st0">&quot;config2&quot;</span><span class="sy0">,</span> <span class="st0">&quot;{ column1: 'data1'}&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+<em>JSONDataConnector produces the next data</em>: 
+</p>
+<pre class="code json">{
+    data: [
+      { 'id': '1', 'attr1':'qwe', 'attr2':'asd'},
+      { 'id': '2', 'attr1':'qwe', 'attr2':'asd'}
+    ],
+    config: 'some_data',
+    config2: { 'column1':'data1' },  
+}</pre>
+</div>
+
+<h2><a name="simple_data_transfer" id="simple_data_transfer">Simple Data Transfer</a></h2>
+<div class="level2">
+
+<p>
+
+JSONDataConnector/DataConnector supports simplified protocol for CRUD requests.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <em class="u">get all</em> data</div>
+</li>
+</ul>
+<pre class="code php"> GET  data<span class="sy0">.</span>php?action<span class="sy0">=</span>get</pre>
+<p>
+
+ server response - collection of json (xml) objects
+</p>
+<ul>
+<li class="level1"><div class="li"> <em class="u">get</em> info for some specific record</div>
+</li>
+</ul>
+<pre class="code php"> GET   data<span class="sy0">.</span>php?action<span class="sy0">=</span>get<span class="sy0">&amp;</span>id<span class="sy0">=</span><span class="nu0">123</span></pre>
+<p>
+
+ response - json(xml) object
+</p>
+<ul>
+<li class="level1"><div class="li"> <em class="u">delete</em></div>
+</li>
+</ul>
+<pre class="code php"> GET  data<span class="sy0">.</span>php?action<span class="sy0">=</span>delete
+ POST id<span class="sy0">=</span><span class="nu0">123</span></pre>
+<p>
+
+ server response - &#039;true&#039;/&#039;false&#039;
+</p>
+<ul>
+<li class="level1"><div class="li"> <em class="u">insert</em></div>
+</li>
+</ul>
+<pre class="code scharp"> GET  data.php?action=insert
+ POST id=123&amp;some=value&amp;other=value</pre>
+<p>
+
+ response 
+on success
+
+</p>
+<pre class="code php"><span class="kw2">true</span>
+<span class="sy0">&lt;</span>new_id<span class="sy0">&gt;</span></pre>
+<p>
+
+or 
+</p>
+<pre class="code scharp"> false </pre>
+<p>
+ on failed insert operation
+</p>
+<ul>
+<li class="level1"><div class="li"> <em class="u">update</em></div>
+</li>
+</ul>
+<pre class="code php"> GET  data<span class="sy0">.</span>php?action<span class="sy0">=</span>delete
+ POST id<span class="sy0">=</span><span class="nu0">123</span><span class="sy0">&amp;</span>some<span class="sy0">=</span>value<span class="sy0">&amp;</span>other<span class="sy0">=</span>value</pre>
+<p>
+
+ response - &#039;true&#039;/&#039;false&#039;
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

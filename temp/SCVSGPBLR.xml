@@ -1,0 +1,291 @@
+<record id="GF-VSGPBLRC">
+<atom name="NAME" type="str">GF-VSGPBLRC</atom>
+<fld id="GF-VSGPBLRC">
+<atom name="ID" type="int">0</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GF-VSGPBLRC</atom>
+<atom name="LEN" type="int">52</atom>
+<fld id="GF-SEGM-LGT-CD">
+<atom name="ID" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="NAME" type="str">GF-SEGM-LGT-CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GF-CON-TY-CD">
+<atom name="ID" type="int">2</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="NAME" type="str">GF-CON-TY-CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GF-SEGM-TY-CD">
+<atom name="ID" type="int">3</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GF-SEGM-TY-CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GF-RTE-EFF-DT">
+<atom name="ID" type="int">4</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="NAME" type="str">GF-RTE-EFF-DT</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GF-TERM-DT">
+<atom name="ID" type="int">5</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="NAME" type="str">GF-TERM-DT</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GF-DT-PRCS">
+<atom name="ID" type="int">6</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">14</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="NAME" type="str">GF-DT-PRCS</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="GF-RTE-STAS-CD">
+<atom name="ID" type="int">7</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">18</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="NAME" type="str">GF-RTE-STAS-CD</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GF-VFF-02-1">
+<atom name="ID" type="int">8</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GF-VFF-02-1</atom>
+<atom name="LEN" type="int">32</atom>
+<fld id="GF-OCCR-CNT-NO">
+<atom name="ID" type="int">9</atom>
+<atom name="LEVEL" type="int">7</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="PRECISION" type="int">4</atom>
+<atom name="NAME" type="str">GF-OCCR-CNT-NO</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GF-BILL-RTES">
+<atom name="ID" type="int">10</atom>
+<atom name="LEVEL" type="int">7</atom>
+<atom name="POSITION" type="int">22</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GF-BILL-RTES</atom>
+<atom name="LEN" type="int">30</atom>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">11</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">22</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">0</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">12</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">25</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">1</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">13</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">28</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">2</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">14</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">31</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">3</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">15</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">34</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">4</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">16</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">37</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">5</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">17</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">40</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">6</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">18</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">43</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">7</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">19</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">46</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">8</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-NGRP-BILL-RTE">
+<atom name="ID" type="int">20</atom>
+<atom name="ARRAY_SIZE" type="int">10</atom>
+<atom name="LEVEL" type="int">9</atom>
+<atom name="POSITION" type="int">49</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="INDICE" type="int">9</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-NGRP-BILL-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+</fld>
+</fld>
+<fld id="GF-VFF-01-1">
+<atom name="ID" type="int">21</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GF-VFF-01-1</atom>
+<atom name="LEN" type="int">32</atom>
+<fld id="GF-DBCR-VAL">
+<atom name="ID" type="int">22</atom>
+<atom name="LEVEL" type="int">7</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-DBCR-VAL</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="GF-GRP-BILL-RATE">
+<atom name="ID" type="int">23</atom>
+<atom name="LEVEL" type="int">7</atom>
+<atom name="POSITION" type="int">23</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-GRP-BILL-RATE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+</fld>
+<fld id="GF-VFF-03-1">
+<atom name="ID" type="int">24</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">GF-VFF-03-1</atom>
+<atom name="LEN" type="int">32</atom>
+<fld id="GF-MAX-CHD-NO">
+<atom name="ID" type="int">25</atom>
+<atom name="LEVEL" type="int">7</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="PRECISION" type="int">2</atom>
+<atom name="NAME" type="str">GF-MAX-CHD-NO</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="GF-CHD-RTE">
+<atom name="ID" type="int">26</atom>
+<atom name="LEVEL" type="int">7</atom>
+<atom name="POSITION" type="int">22</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="NAME" type="str">GF-CHD-RTE</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+</fld>
+</fld>
+</record>

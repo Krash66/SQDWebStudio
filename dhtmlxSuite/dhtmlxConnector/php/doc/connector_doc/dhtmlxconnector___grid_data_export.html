@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:grid_data_export    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="data_export" id="data_export">Data export</a></h1>
+<div class="level1">
+
+<p>
+<strong>APPLICABLE TO:</strong> grid
+</p>
+
+<p>
+External <em>grid-to-pdf</em> and <em>grid-to-excel</em> services allow to convert grid&#039;s data to <acronym title="Portable Document Format">PDF</acronym> or Excel format directly on server-side: from any table without actually rendering data in the grid.
+Shortly, you should perform the following steps:
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___grid_data_export.html#data_preparation" class="wikilink1" title="dhtmlxconnector:grid_data_export">prepare data</a></span>.</div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___grid_data_export.html#activation_conversion_service" class="wikilink1" title="dhtmlxconnector:grid_data_export">activate conversion service</a></span>.</div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___grid_data_export.html#start_exporting" class="wikilink1" title="dhtmlxconnector:grid_data_export">start exporting</a></span>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="data_preparation" id="data_preparation">data preparation</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> data to export is defined by render_table() or render_sql() method.</div>
+</li>
+<li class="level1"><div class="li"> to define grid structure (header, footer etc.) on server-side, see chapter &#039;&#039;.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="activation_conversion_service" id="activation_conversion_service">activation conversion service</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <strong>pdf</strong><br/>
+ <pre class="code php"><span class="re0">$convert</span> <span class="sy0">=</span> <span class="kw2">new</span> ConvertService<span class="br0">&#40;</span><span class="st0">&quot;http://dhtmlx.com/docs/products/devExchange/samples/grid2pdf_02/server/generate.php&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> <strong>excel</strong><br/>
+ <pre class="code php"><span class="re0">$convert</span> <span class="sy0">=</span> <span class="kw2">new</span> ConvertService<span class="br0">&#40;</span><span class="st0">&quot;http://dhtmlx.com/docs/products/devExchange/samples/grid2excel_02/server/generate.php&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="start_exporting" id="start_exporting">start exporting</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <strong>pdf</strong><br/>
+ <pre class="code php"><span class="re0">$convert</span><span class="sy0">-&gt;</span><span class="me1">pdf</span><span class="br0">&#40;</span><span class="st0">&quot;some.pdf&quot;</span><span class="sy0">,</span><span class="kw2">false</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> <strong>excel</strong><br/>
+ <pre class="code php"><span class="re0">$convert</span><span class="sy0">-&gt;</span><span class="me1">excel</span><span class="br0">&#40;</span><span class="st0">&quot;some.xls&quot;</span><span class="sy0">,</span><span class="kw2">false</span><span class="br0">&#41;</span>;</pre>
+<p>
+<br/>
+ <strong>Parameters:</strong>
+</p>
+</div>
+<ul>
+<li class="level2"><div class="li"> (optional) name of result file. The default value - data.pdf (data.xls)</div>
+</li>
+<li class="level2"><div class="li"> (optional) the second parameter specifies how file will be exported: </div>
+<ul>
+<li class="level4"><div class="li"> <em>true</em> - as inline content ( if browser has related plugin - document will be opened automatically)</div>
+</li>
+<li class="level4"><div class="li"> <em>false</em> - as individual file.<br/>
+ The default value - <em>false</em>.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Service automatically start to export data defined through GridConnector. 
+
+</p>
+
+</div>
+
+<h3><a name="samples" id="samples">samples</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <strong>pdf</strong><br/>
+ <br/>
+ <pre class="code php"><span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../../codebase/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
+<span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../../codebase/convert.php&quot;</span><span class="br0">&#41;</span>; 
+&nbsp;
+<span class="co1">//url to data conversion service</span>
+<span class="re0">$convert</span> <span class="sy0">=</span> <span class="kw2">new</span> ConvertService<span class="br0">&#40;</span><span class="st0">&quot;http://dhtmlx.com/docs/products/devExchange/samples/grid2pdf_02/server/generate.php&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$convert</span><span class="sy0">-&gt;</span><span class="me1">pdf</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="co1">//equal to calling pdf(&quot;data.pdf&quot;, false)</span>
+&nbsp;
+<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_config</span><span class="br0">&#40;</span><span class="kw2">new</span> GridConfiguration<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;	<span class="co1">//mandatory </span>
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;grid50&quot;</span><span class="br0">&#41;</span>;		<span class="co1">//table name and optional list of fields</span></pre></div>
+</li>
+<li class="level1"><div class="li"> <strong>Excel</strong><br/>
+ <br/>
+ <pre class="code php"><span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;../../config.php&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$res</span><span class="sy0">=</span><a href="http://www.php.net/mysql_connect"><span class="kw3">mysql_connect</span></a><span class="br0">&#40;</span><span class="re0">$mysql_server</span><span class="sy0">,</span><span class="re0">$mysql_user</span><span class="sy0">,</span><span class="re0">$mysql_pass</span><span class="br0">&#41;</span>;
+<a href="http://www.php.net/mysql_select_db"><span class="kw3">mysql_select_db</span></a><span class="br0">&#40;</span><span class="re0">$mysql_db</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../../codebase/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
+<span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../../codebase/convert.php&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="co1">//url to data conversion service</span>
+<span class="re0">$convert</span> <span class="sy0">=</span> <span class="kw2">new</span> ConvertService<span class="br0">&#40;</span><span class="st0">&quot;http://dhtmlx.com/docs/products/devExchange/samples/grid2excel_02/server/generate.php&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$convert</span><span class="sy0">-&gt;</span><span class="me1">excel</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="co1">//equal to calling excel(&quot;data.xls&quot;, false)</span>
+&nbsp;
+<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_config</span><span class="br0">&#40;</span><span class="kw2">new</span> GridConfiguration<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>; <span class="co1">//mandatory </span>
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;grid50&quot;</span><span class="br0">&#41;</span>; 	       <span class="co1">//table name and optional list of fields</span></pre></div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="useful_tips" id="useful_tips">useful tips</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> In case of dynamic Smart Rendering you can&#039;t use export from client-side and need to define header&#039;s data on server-side. See details <a href="dhtmlxconnector___grid_structure_on_server.html" class="wikilink1" title="dhtmlxconnector:grid_structure_on_server">here</a>.</div>
+<ul>
+<li class="level3"><div class="li"> in order to the <strong>render_sql</strong> method works correctly, you should use full header initialization ( not empty GridConfiguration() call). Otherwise, the component will try to fetch grid&#039;s structure directly from DB that is unallowable for the <strong>render_sql</strong> method.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

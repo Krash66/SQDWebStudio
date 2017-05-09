@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:api_reference    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+<h1><a name="api_methods" id="api_methods">API methods</a></h1>
+<div class="level1">
+
+<p>
+All the methods can be divided into main 2 categories:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Connector methods</strong> - methods of dhtmlxConnector instance. Available throughout the program.</div>
+<ul>
+<li class="level2"><div class="li"> <em><strong><a href="dhtmlxconnector___connector_object_methods.html" class="wikilink1" title="dhtmlxconnector:connector_object_methods">Connector Object</a></strong></em> - relates to dhtmlxConnector instance.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Event methods</strong> - methods available just inside events&#039; handler functions (different events provide different methods. The appropriate ones depend on input object).</div>
+<ul>
+<li class="level2"><div class="li"> <em><strong><a href="dhtmlxconnector___dataaction_object_methods.html" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">DataAction Object</a></strong></em> - relates to action queries.<br/>
+ <em class="u">Input object of</em>: <a href="dhtmlxconnector___beforeinsert_event.html" class="wikilink1" title="dhtmlxconnector:beforeinsert_event">beforeInsert</a>, <a href="dhtmlxconnector___beforeupdate_event.html" class="wikilink1" title="dhtmlxconnector:beforeupdate_event">beforeUpdate</a>, <a href="dhtmlxconnector___beforedelete_event.html" class="wikilink1" title="dhtmlxconnector:beforedelete_event">beforeDelete</a>, <a href="dhtmlxconnector___beforeprocessing_event.html" class="wikilink1" title="dhtmlxconnector:beforeprocessing_event">beforeProcessing</a>, <a href="dhtmlxconnector___afterprocessing_event.html" class="wikilink1" title="dhtmlxconnector:afterprocessing_event">afterProcessing</a>, <a href="dhtmlxconnector___afterdelete_event.html" class="wikilink1" title="dhtmlxconnector:afterdelete_event">afterDelete</a>, <a href="dhtmlxconnector___afterupdate_event.html" class="wikilink1" title="dhtmlxconnector:afterupdate_event">afterUpdate</a>, <a href="dhtmlxconnector___afterinsert_event.html" class="wikilink1" title="dhtmlxconnector:afterinsert_event">afterInsert</a> events.</div>
+</li>
+<li class="level2"><div class="li"> <em><strong><a href="dhtmlxconnector___dataitem_object_methods.html" class="wikilink1" title="dhtmlxconnector:dataitem_object_methods">DataItem Object</a></strong></em>  - relates to used dhtmlx component.<br/>
+ <em class="u">Input object of</em>: <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event.</div>
+</li>
+<li class="level2"><div class="li"> <em><strong><a href="dhtmlxconnector___sortinterface_object_methods.html" class="wikilink1" title="dhtmlxconnector:sortinterface_object_methods">SortInterface Object</a></strong></em>  - relates to collection of sorting rules.<br/>
+ <em class="u">Input object of</em>: <a href="dhtmlxconnector___beforesort_event.html" class="wikilink1" title="dhtmlxconnector:beforesort_event">beforeSort</a> event.</div>
+</li>
+<li class="level2"><div class="li"> <em><strong><a href="dhtmlxconnector___filterinterface_object_methods.html" class="wikilink1" title="dhtmlxconnector:filterinterface_object_methods">FilterInterface Object</a></strong></em>  - relates to collection of filtration rules.<br/>
+ <em class="u">Input object of</em>: <a href="dhtmlxconnector___beforefilter_event.html" class="wikilink1" title="dhtmlxconnector:beforefilter_event">beforeFilter</a> event.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="order_of_execution" id="order_of_execution">Order of execution</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <strong><a href="dhtmlxconnector___connector_object_methods.html" class="wikilink1" title="dhtmlxconnector:connector_object_methods">Connector Object</a></strong> - methods of the main object</div>
+<ul>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___connector_object_methods.html#render_table" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_table</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___connector_object_methods.html#render_sql" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_sql</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___connector_object_methods.html#set-encoding" class="wikilink1" title="dhtmlxconnector:connector_object_methods">set_encoding</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___connector_object_methods.html#dynamic_loading" class="wikilink1" title="dhtmlxconnector:connector_object_methods">dynamic_loading</a> </div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___connector_object_methods.html#enable_log" class="wikilink1" title="dhtmlxconnector:connector_object_methods">enable_log</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___connector_object_methods.html#is_select_mode" class="wikilink1" title="dhtmlxconnector:connector_object_methods">is_select_mode</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Events objects</strong> - objects that are passed as input parameters to events. Mentioned here methods can be used only inside  handlers&#039; functions of the appropriate events.</div>
+<ul>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___dataaction_object_methods.html" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">DataAction Object</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___dataitem_object_methods.html" class="wikilink1" title="dhtmlxconnector:dataitem_object_methods">DataItem Object</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___sortinterface_object_methods.html" class="wikilink1" title="dhtmlxconnector:sortinterface_object_methods">SortInterface Object</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="dhtmlxconnector___filterinterface_object_methods.html" class="wikilink1" title="dhtmlxconnector:filterinterface_object_methods">FilterInterface Object</a></div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

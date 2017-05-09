@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:event_handling    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="event_handling" id="event_handling">Event handling</a></h1>
+<div class="level1">
+
+</div>
+
+<h3><a name="common_use" id="common_use">common use</a></h3>
+<div class="level3">
+
+<p>
+DHTMLX Connector uses events to manage Insert/Update/Delete operations. 
+</p>
+
+<p>
+The code below shows how to attach event:
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span>event_name<span class="sy0">,</span>handlerFunc<span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>event_name</em> - name of the event.</div>
+</li>
+<li class="level1"><div class="li"> <em>handlerFunc</em> - handler function.</div>
+</li>
+</ul>
+
+<p>
+Handler functions get one input parameter and this parameter depends on attaching event.<br/>
+ 
+In the following table you&#039;ll see a full list of events and the appropriate input parameters of handler functions.
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Event  </th><th class="col1 centeralign">  Input parameter of handler function  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign">  <a href="dhtmlxconnector___beforesort_event.html" class="wikilink1" title="dhtmlxconnector:beforesort_event">beforeSort</a>    </td><td class="col1 centeralign">  <a href="dhtmlxconnector___sortinterface_object_methods.html" class="wikilink1" title="dhtmlxconnector:sortinterface_object_methods">SortInterface Object</a>     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">  <a href="dhtmlxconnector___beforefilter_event.html" class="wikilink1" title="dhtmlxconnector:beforefilter_event">beforeFilter</a>    </td><td class="col1 centeralign">  <a href="dhtmlxconnector___filterinterface_object_methods.html" class="wikilink1" title="dhtmlxconnector:filterinterface_object_methods">FilterInterface Object</a>     </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">  <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a>    </td><td class="col1 centeralign">  <a href="dhtmlxconnector___dataitem_object_methods.html" class="wikilink1" title="dhtmlxconnector:dataitem_object_methods">DataItem Object</a>     </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">  <a href="dhtmlxconnector___beforeprocessing_event.html" class="wikilink1" title="dhtmlxconnector:beforeprocessing_event">beforeProcessing</a><br/>
+ <a href="dhtmlxconnector___afterprocessing_event.html" class="wikilink1" title="dhtmlxconnector:afterprocessing_event">afterProcessing</a> <br/>
+ <a href="dhtmlxconnector___beforeinsert_event.html" class="wikilink1" title="dhtmlxconnector:beforeinsert_event">beforeInsert</a><br/>
+ <a href="dhtmlxconnector___beforeupdate_event.html" class="wikilink1" title="dhtmlxconnector:beforeupdate_event">beforeUpdate</a> <br/>
+ <a href="dhtmlxconnector___beforedelete_event.html" class="wikilink1" title="dhtmlxconnector:beforedelete_event">beforeDelete</a><br/>
+ <a href="dhtmlxconnector___afterinsert_event.html" class="wikilink1" title="dhtmlxconnector:afterinsert_event">afterInsert</a><br/>
+ <a href="dhtmlxconnector___afterupdate_event.html" class="wikilink1" title="dhtmlxconnector:afterupdate_event">afterUpdate</a><br/>
+ <a href="dhtmlxconnector___afterdelete_event.html" class="wikilink1" title="dhtmlxconnector:afterdelete_event">afterDelete</a>  </td><td class="col1 centeralign">  <a href="dhtmlxconnector___dataaction_object_methods.html" class="wikilink1" title="dhtmlxconnector:dataaction_object_methods">DataAction Object</a>     </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 centeralign">  <a href="dhtmlxconnector___beforeoutput_event.html" class="wikilink1" title="dhtmlxconnector:beforeoutput_event">beforeOutput</a>  </td><td class="col1 centeralign">  none  </td>
+	</tr>
+</table>
+
+</div>
+
+<h3><a name="data_behavior_models" id="data_behavior_models">data behavior models</a></h3>
+<div class="level3">
+
+<p>
+Starting from version 1.5, the library &#039;extends&#039; OOP support and allows creating a separate class for events processing. You get the possibility to work with one class that will control all processing instead of working with separate handler functions. 
+</p>
+<pre class="code php"><span class="kw2">class</span> SomeBehavior<span class="br0">&#123;</span>
+	<span class="kw2">public</span> <span class="kw2">function</span> beforeRender<span class="br0">&#40;</span><span class="re0">$data</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+		<span class="co1">//some logic</span>
+	<span class="br0">&#125;</span>
+	<span class="sy0">...</span> any other handlers <span class="sy0">...</span>
+<span class="br0">&#125;</span>
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="kw2">new</span> SomeBehavior<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;</pre>
+<p>
+The handlers of the model class take the same parameters as the ordinary events do.
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:dataitem_object_dhtmlxtree    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="dhtmlxtree" id="dhtmlxtree">dhtmlxTree</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="get_check_state" id="get_check_state">get_check_state</a></h2>
+<div class="level2">
+
+<p>
+returns the state of the selected item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">get_check_state</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Returns:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> state of checkbox related to the item:</div>
+<ul>
+<li class="level3"><div class="li"> &#039;0&#039; - unchecked</div>
+</li>
+<li class="level3"><div class="li"> &#039;1&#039; - checked. </div>
+</li>
+<li class="level3"><div class="li"> &#039;-1&#039; - third (custom) state.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtree.html#set_check_state" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtree">set_check_state</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_id" id="get_id">get_id</a></h2>
+<div class="level2">
+
+<p>
+returns the id of an item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">get_id</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtree.html#set_id" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtree">set_id</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_index" id="get_index">get_index</a></h2>
+<div class="level2">
+
+<p>
+returns the index of the currently selected item (for example, in grid, it will be the index of a row ) 
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">get_index</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> none.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_parent_id" id="get_parent_id">get_parent_id</a></h2>
+<div class="level2">
+
+<p>
+returns the parent id of the selected item. 
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">get_parent_id</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> none</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="get_value" id="get_value">get_value</a></h2>
+<div class="level2">
+
+<p>
+returns the value of a field.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name or alias of the field.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtree.html#set_value" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtree">set_value</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_attribute" id="set_attribute">set_attribute</a></h2>
+<div class="level2">
+
+<p>
+allows you to set some attribute for a item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_attribute</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span> <span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - the name of an attribute.</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - the value that an attribute is set to.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_check_state" id="set_check_state">set_check_state</a></h2>
+<div class="level2">
+
+<p>
+allows you to set the state of the checkbox related to an item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_check_state</span><span class="br0">&#40;</span><span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$value</em> - state of the item.<br/>
+ Valid values are:</div>
+<ul>
+<li class="level3"><div class="li"> &#039;0&#039; - unchecked.</div>
+</li>
+<li class="level3"><div class="li"> &#039;1&#039; - checked.</div>
+</li>
+<li class="level3"><div class="li"> &#039;-1&#039; - third custom state.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtree.html#get_check_state" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtree">get_check_state</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_id" id="set_id">set_id</a></h2>
+<div class="level2">
+
+<p>
+sets the id of an item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_id</span><span class="br0">&#40;</span><span class="re0">$value</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$value</em> - id of the item.</div>
+</li>
+</ul>
+
+<p>
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtree.html#get_id" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtree">get_id</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_image" id="set_image">set_image</a></h2>
+<div class="level2">
+
+<p>
+allows you to set image for any item in tree.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_image</span><span class="br0">&#40;</span><span class="re0">$img</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$img</em> - relative path to image which will be set for a item.</div>
+</li>
+</ul>
+
+<p>
+<strong>Description:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> Can be used with variable number of parameters.<br/>
+ <br/>
+ <pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_image</span><span class="br0">&#40;</span><span class="re0">$img1</span><span class="sy0">,</span><span class="re0">$img2</span><span class="sy0">,</span><span class="re0">$img3</span><span class="br0">&#41;</span> </pre></div>
+<ul>
+<li class="level2"><div class="li"> <em>$img1</em> - image of folder in opened state</div>
+</li>
+<li class="level2"><div class="li"> <em>$img2</em> - image of folder in closed state</div>
+</li>
+<li class="level2"><div class="li"> <em>$img3</em> - image of leaf item</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_kids" id="set_kids">set_kids</a></h2>
+<div class="level2">
+
+<p>
+allows you to mark an item as a leaf or branch of tree.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_kids</span><span class="br0">&#40;</span><span class="re0">$is_enabled</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$is_enabled</em> - (<em>boolean</em>) specifies whether an item must be marked as a branch.</div>
+<ul>
+<li class="level3"><div class="li"> <em>true</em> - item will be marked as a branch.</div>
+</li>
+<li class="level3"><div class="li"> <em>false</em> - item will be marked as a leaf.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___dyn_loading.html#tree_treegrid_specific" class="wikilink1" title="dhtmlxconnector:dyn_loading">Dynamic loading</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="skip" id="skip">skip</a></h2>
+<div class="level2">
+
+<p>
+ignores the current item while rendering output. Allows you to define custom filtration rules. 
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">skip</span><span class="br0">&#40;</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> none</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_value" id="set_value">set_value</a></h2>
+<div class="level2">
+
+<p>
+sets the value of a field.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - name or alias of the field</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - value of the field in question</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See Also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___dataitem_object_dhtmlxtree.html#get_value" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxtree">get_value</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="set_userdata" id="set_userdata">set_userdata</a></h2>
+<div class="level2">
+
+<p>
+<em>(available from version 1.5)</em> <br/>
+ sets user data for the item.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_userdata</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span></pre>
+<p>
+
+<strong>Parameters:</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$name</em> - the user data name</div>
+</li>
+<li class="level2"><div class="li"> <em>$value</em> - user data string</div>
+</li>
+</ul>
+
+<p>
+
+<strong>See also:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___formatting.html#using_extra_fields" class="wikilink1" title="dhtmlxconnector:formatting">Formatting/changing data before loading</a></div>
+</li>
+</ul>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

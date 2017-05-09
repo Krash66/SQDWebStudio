@@ -1,0 +1,391 @@
+<dbdmap id="">
+<database id="VFGGRP10">
+<atom name="NAME" type="str">VFGGRP10</atom>
+<segment id="VSGPGRU ">
+<atom name="MAXLEN" type="int">137</atom>
+<atom name="DEPTH" type="int">1</atom>
+<atom name="MINLEN" type="int">137</atom>
+<atom name="ROOTLEN" type="int">9</atom>
+<atom name="NAME" type="str">VSGPGRU </atom>
+<field id="GRUPKEYI">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="NAME" type="str">GRUPKEYI</atom>
+</field>
+<field id="GRUPSTAC">
+<atom name="START" type="int">10</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">GRUPSTAC</atom>
+</field>
+<field id="MARKNUMI">
+<atom name="START" type="int">20</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">MARKNUMI</atom>
+</field>
+<field id="GRUPSERM">
+<atom name="START" type="int">28</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">50</atom>
+<atom name="NAME" type="str">GRUPSERM</atom>
+</field>
+<field id="CMBLGRPI">
+<atom name="START" type="int">125</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="NAME" type="str">CMBLGRPI</atom>
+</field>
+<segment id="VSGPPAC " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">445</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">445</atom>
+<atom name="ROOTLEN" type="int">11</atom>
+<atom name="NAME" type="str">VSGPPAC </atom>
+<field id="NULLPKGN">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="KEY" type="str">NON UNIQUE</atom>
+<atom name="NAME" type="str">NULLPKGN</atom>
+</field>
+<field id="PACKSEQN">
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">PACKSEQN</atom>
+</field>
+<field id="PACKSRTD">
+<atom name="START" type="int">5</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">PACKSRTD</atom>
+</field>
+<field id="PACKENDD">
+<atom name="START" type="int">9</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">PACKENDD</atom>
+</field>
+<segment id="VSGPPKA " parent="VSGPPAC ">
+<atom name="MAXLEN" type="int">65</atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="MINLEN" type="int">65</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPPKA </atom>
+</segment>
+</segment>
+<segment id="VSGPSUP " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">63</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">63</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPSUP </atom>
+<segment id="VSGPPKG " parent="VSGPSUP ">
+<atom name="MAXLEN" type="int">57</atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="MINLEN" type="int">57</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPPKG </atom>
+<field id="NULLPKGN">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">NULLPKGN</atom>
+</field>
+<field id="SCOVEFVD">
+<atom name="START" type="int">13</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">SCOVEFVD</atom>
+</field>
+<field id="PACKTRMD">
+<atom name="START" type="int">21</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">PACKTRMD</atom>
+</field>
+<segment id="VSGPLTC " parent="VSGPPKG ">
+<atom name="MAXLEN" type="int">85</atom>
+<atom name="DEPTH" type="int">4</atom>
+<atom name="MINLEN" type="int">85</atom>
+<atom name="ROOTLEN" type="int">12</atom>
+<atom name="NAME" type="str">VSGPLTC </atom>
+<field id="PLCYSEQN">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="NAME" type="str">PLCYSEQN</atom>
+</field>
+<field id="LTCCPOLN">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">LTCCPOLN</atom>
+</field>
+<field id="LTCCBGPI">
+<atom name="START" type="int">4</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="NAME" type="str">LTCCBGPI</atom>
+</field>
+<field id="NULLSUBI">
+<atom name="START" type="int">13</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">12</atom>
+<atom name="NAME" type="str">NULLSUBI</atom>
+</field>
+<field id="RCRDGRP1">
+<atom name="START" type="int">25</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="NAME" type="str">RCRDGRP1</atom>
+</field>
+<field id="LTCCSTAC">
+<atom name="START" type="int">56</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">LTCCSTAC</atom>
+</field>
+</segment>
+</segment>
+<segment id="VSGPDEP " parent="VSGPSUP ">
+<atom name="NOTWIN" type="int">1</atom>
+<atom name="MAXLEN" type="int">16</atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="MINLEN" type="int">16</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPDEP </atom>
+</segment>
+</segment>
+<segment id="VSGPCON " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">35</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">35</atom>
+<atom name="ROOTLEN" type="int">17</atom>
+<atom name="NAME" type="str">VSGPCON </atom>
+<field id="GPDFNUML">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="NAME" type="str">GPDFNUML</atom>
+</field>
+<field id="NULLCRTN">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">NULLCRTN</atom>
+</field>
+<segment id="VSGPBLR " parent="VSGPCON ">
+<atom name="MAXLEN" type="int">52</atom>
+<atom name="DEPTH" type="int">3</atom>
+<atom name="MINLEN" type="int">25</atom>
+<atom name="ROOTLEN" type="int">19</atom>
+<atom name="NAME" type="str">VSGPBLR </atom>
+<field id="CTRTTPEC">
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="KEY" type="str">NON UNIQUE</atom>
+<atom name="NAME" type="str">CTRTTPEC</atom>
+</field>
+<field id="SEGMTPEC">
+<atom name="START" type="int">5</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">SEGMTPEC</atom>
+</field>
+<field id="RATEEFVD">
+<atom name="START" type="int">7</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">RATEEFVD</atom>
+</field>
+<field id="NULLTRMD">
+<atom name="START" type="int">11</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">NULLTRMD</atom>
+</field>
+<segment id="VSGPSTR " parent="VSGPBLR ">
+<atom name="MAXLEN" type="int">36</atom>
+<atom name="DEPTH" type="int">4</atom>
+<atom name="MINLEN" type="int">9</atom>
+<atom name="ROOTLEN" type="int">21</atom>
+<atom name="NAME" type="str">VSGPSTR </atom>
+<field id="NULLCATN">
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="NAME" type="str">NULLCATN</atom>
+</field>
+</segment>
+</segment>
+</segment>
+<segment id="VSGPBCP " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">0</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">0</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPBCP </atom>
+</segment>
+<segment id="VSGPBIL " parent="VSGPGRU ">
+<atom name="NOTWIN" type="int">1</atom>
+<atom name="MAXLEN" type="int">73</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">73</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPBIL </atom>
+</segment>
+<segment id="VSGPUND " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">156</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">156</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPUND </atom>
+</segment>
+<segment id="VSGPADN " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">32</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">32</atom>
+<atom name="ROOTLEN" type="int">13</atom>
+<atom name="NAME" type="str">VSGPADN </atom>
+<field id="GPDFTYPL">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="NAME" type="str">GPDFTYPL</atom>
+</field>
+</segment>
+<segment id="VSGPHST " parent="VSGPGRU ">
+<atom name="NOTWIN" type="int">1</atom>
+<atom name="MAXLEN" type="int">32</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">32</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPHST </atom>
+</segment>
+<segment id="VSGPDPT " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">32</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">32</atom>
+<atom name="ROOTLEN" type="int">13</atom>
+<atom name="NAME" type="str">VSGPDPT </atom>
+<field id="NULLDPTN">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="NAME" type="str">NULLDPTN</atom>
+</field>
+</segment>
+<segment id="VSGPNAT " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">196</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">196</atom>
+<atom name="ROOTLEN" type="int">11</atom>
+<atom name="NAME" type="str">VSGPNAT </atom>
+<field id="NTPCRFRN">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="KEY" type="str">NON UNIQUE</atom>
+<atom name="NAME" type="str">NTPCRFRN</atom>
+</field>
+<field id="NULLEFFD">
+<atom name="START" type="int">3</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">NULLEFFD</atom>
+</field>
+<field id="NULLTRMD">
+<atom name="START" type="int">7</atom>
+<atom name="TYPE" type="str">P</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">NULLTRMD</atom>
+</field>
+</segment>
+<segment id="VSGPCMM " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">152</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">152</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPCMM </atom>
+</segment>
+<segment id="VSGPNTE " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">60</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">60</atom>
+<atom name="ROOTLEN" type="int">13</atom>
+<atom name="NAME" type="str">VSGPNTE </atom>
+<field id="GPDFNTEI">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="NAME" type="str">GPDFNTEI</atom>
+</field>
+</segment>
+<segment id="VSGPBNK " parent="VSGPGRU ">
+<atom name="NOTWIN" type="int">1</atom>
+<atom name="MAXLEN" type="int">55</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">55</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPBNK </atom>
+<field id="NULLBNKI">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="NAME" type="str">NULLBNKI</atom>
+</field>
+</segment>
+<segment id="VSGPFID " parent="VSGPGRU ">
+<atom name="NOTWIN" type="int">1</atom>
+<atom name="MAXLEN" type="int">30</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">30</atom>
+<atom name="ROOTLEN" type="int">0</atom>
+<atom name="NAME" type="str">VSGPFID </atom>
+<field id="/SX001  ">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">/SX001  </atom>
+</field>
+<field id="FEINEMPR">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="NAME" type="str">FEINEMPR</atom>
+</field>
+</segment>
+<segment id="VSGPPOL " parent="VSGPGRU ">
+<atom name="MAXLEN" type="int">90</atom>
+<atom name="DEPTH" type="int">2</atom>
+<atom name="MINLEN" type="int">90</atom>
+<atom name="ROOTLEN" type="int">57</atom>
+<atom name="NAME" type="str">VSGPPOL </atom>
+<field id="PLCYKKEY">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">C</atom>
+<atom name="LEN" type="int">48</atom>
+<atom name="KEY" type="str">UNIQUE</atom>
+<atom name="NAME" type="str">PLCYKKEY</atom>
+</field>
+<field id="/SX002  ">
+<atom name="START" type="int">1</atom>
+<atom name="TYPE" type="str">X</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">/SX002  </atom>
+</field>
+</segment>
+</segment>
+</database>
+</dbdmap>

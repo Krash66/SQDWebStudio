@@ -1,0 +1,34 @@
+[
+	{type: "settings", position: "label-left", labelWidth: 120, inputWidth: 320},
+	{type: "fieldset", label: "Environment Properties", inputWidth: "auto", list:[
+			{name:"txtEnvName",type: "input", label: "Environment Name", value: "Env_1"}, 
+			{type: "fieldset", label: "Description", inputWidth: 500, list:[
+				{name:"txtEnvDesc",type: "input",rows: "3", inputWidth: 460, value: "Any user description for this Environment"}
+			]}
+		]},
+	{type: "fieldset", label: "Local Script/Project Directory", inputWidth: "auto", list:[
+			{name:"txtScriptDir", type: "input", inputWidth: "320", label: "Script", value: "../User_directory/Proj_1/scripts/"},
+			{type: "newcolumn"},
+			{name: "btnBrowseScriptDir", type: "button", value:"browse"}
+		]},
+	{type: "fieldset", label: "Local Description Directories", inputWidth: "auto", list:[
+			{name:"txtCobolDir", type: "input", inputWidth: "320", label: "Cobol", value: "../User_directory/Proj_1/COBOL/"},
+			{name:"txtDBDDir", type: "input", inputWidth: "320", label: "DBD", value: "../User_directory/Proj_1/DBD/"},
+			{name:"txtDDLDir", type: "input", inputWidth: "320", label: "DDL", value: "../User_directory/Proj_1/DDL/"},
+			{name:"txtCDir", type: "input", inputWidth: "320", label: "C", value: "../User_directory/Proj_1/c/"},
+			{name:"txtDMLDir", type: "input", inputWidth: "320", label: "DML", value: "../User_directory/Proj_1/DML/"},
+			{name:"txtDTDDir", type: "input", inputWidth: "320", label: "XML/DTD", value: "../User_directory/Proj_1/DTD/"},
+			{type: "newcolumn"},
+			{name: "btnBrowseCobolDir", type: "button", value:"browse"},
+			{name: "btnBrowseDBDDir", type: "button", value:"browse"},
+			{name: "btnBrowseDDLDir", type: "button", value:"browse"},
+			{name: "btnBrowseCDir", type: "button", value:"browse"},
+			{name: "btnBrowseDMLDir", type: "button", value:"browse"},
+			{name: "btnBrowseDTDDir", type: "button", value:"browse"}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{name:"btnEnvSave", type: "button", value: "Save"},
+			{type: "newcolumn"},
+			{name:"btnEnvDelete",type: "button", value: "Delete"}
+		]}
+]

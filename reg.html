@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>SQData Web Studio - User Registration Page</title>
+       <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxForm/codebase/skins/dhtmlxform_dhx_skyblue.css"/>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+       <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxForm/codebase/dhtmlxcommon.js"></script>
+       <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxForm/codebase/dhtmlxform.js"></script>
+       <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxForm/codebase/ext/dhtmlxform_dyn.js"></script>
+       <script type="text/javascript" src="../Studio/scripts/jquery-1.10.2.js"></script>
+       <script type="text/javascript" src="../Studio/scripts/prototype.js"></script>
+
+    </head>
+
+	<body>
+       <div id="DivLogo">
+       <img src="../Studio/data/SQDimgs/sq_skyblue.jpg" alt="SQData Logo"/>
+       SQData Web Studio User Registration
+       </div>
+              
+       <form action="../Studio/php/register.php" method="post">
+            <div id="form_container" style="width:250px;height:300px;text-align:center;"></div>
+       </form>
+                
+       <script type="text/javascript">
+
+           var formReg = [
+	            { type: "settings", position: "label-left", labelWidth: 120, inputWidth: 320 },
+	            { type: "fieldset", label: "User Registration", inputWidth: "auto", list: [
+			            { id: "username", name: "username", type: "input", label: "User Name", required: true, validate: "NotEmpty", value: "" },
+			            { id: "password1", name: "password1", type: "password", label: "Password", required: true, validate: "NotEmpty", value: "" },
+                        { id: "password2", name: "password2", type: "password", label: "Re-Enter Password", required: true, validate: "NotEmpty", value: "" }
+		            ]
+	            },
+	            { type: "fieldset", inputWidth: "auto", list: [
+			            { name: "DoReg", type: "button", value: "Register" },
+                        { type: "newcolumn" },
+			            { name: "DoLogin", type: "button", value: "Login"
+			            }
+		            ]
+	            }];
+
+
+           var loginForm = new dhtmlXForm( "form_container", formReg );
+
+           loginForm.attachEvent( "onButtonClick", function ( name )
+           {
+               if ( name == "DoReg" )
+               {
+                   if ( loginForm.validate() )
+                       document.forms[0].submit()
+               }else
+               if ( name == "DoLogin" )
+               {
+                   window.location.assign( "../Studio/login.html" )
+               }
+           } );
+
+         </script>
+    </body>
+</html>
+<!--<html>
+	<head>
+		<meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1"/>
+		<title>Register</title>
+	</head>
+	<body>
+    <form name="register" action="./php/register.php" method="post">
+	<table>
+		<tr>
+			<td colspan="2"><p><strong>Registration Form</strong></p></td>
+		</tr>
+		<tr>
+			<td>Username:</td>
+			<td><input type="text" name="username" maxlength="20" /></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" name="password1" /></td>
+		</tr>
+		<tr>
+			<td>Confirm Password:</td>
+			<td><input type="password" name="password2" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input type="submit" value="Register" /></td>
+		</tr>
+	</table>
+    </form>
+    </body>
+</html>-->

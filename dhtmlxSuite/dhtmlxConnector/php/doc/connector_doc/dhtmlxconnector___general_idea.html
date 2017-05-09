@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:general_idea    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+<h1><a name="general_idea_of_dhtmlxconnector" id="general_idea_of_dhtmlxconnector">General idea of dhtmlxConnector</a></h1>
+<div class="level1">
+
+<p>
+dhtmlxConnector is a server-side library that lets you access data sources. 
+It consists of individual component-specific connectors and a set of additional ones providing advanced functionality.
+</p>
+
+<p>
+A dhtmlxConnector&#039;s job is to provide necessary data exchange conditions so that you do
+ not have to deal with the technical details of working with 
+various data stores, systems or services. As such, each type of dhtmlxConnector is designed to use a specific <acronym title="Application Programming Interface">API</acronym>.
+</p>
+
+<p>
+As the library is server-side it provides different manipulations just on server backend:
+</p>
+<ul>
+<li class="level1"><div class="li"> loading data (statically or dynamically) from database, File System, Excel file.</div>
+</li>
+<li class="level1"><div class="li"> server-side filtration, sorting and validation.</div>
+</li>
+</ul>
+
+<p>
+When you need to deal with client-side as well, i.e. pass data back to server, you should use DataProcessor additionally (for more details of this topic, see the chapter &#039;<a href="dhtmlxconnector___dp.html" class="wikilink1" title="dhtmlxconnector:dp">Client-side requirement - dataProcessor</a>&#039;).
+</p>
+
+</div>
+
+<h3><a name="general_list_of_connectors" id="general_list_of_connectors">general list of connectors</a></h3>
+<div class="level3">
+
+<p>
+
+Component-specific:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>ChartConnector</strong> (relates to <a href="dhtmlxchart___toc.html" class="wikilink1" title="dhtmlxchart:toc">dhtmlxChart</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>ComboConnector</strong> (relates to <a href="dhtmlxcombo___toc.html" class="wikilink1" title="dhtmlxcombo:toc">dhtmlxCombo</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>DataViewConnector</strong> (relates to <a href="dhtmlxdataview___toc.html" class="wikilink1" title="dhtmlxdataview:toc">dhtmlxDataView</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>FormConnector</strong> (relates to <a href="dhtmlxform___toc.html" class="wikilink1" title="dhtmlxform:toc">dhtmlxForm</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>GridConnector</strong> (relates to <a href="dhtmlxgrid___toc.html" class="wikilink1" title="dhtmlxgrid:toc">dhtmlxGrid</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>SchedulerConnector</strong> (relates to <a href="dhtmlxscheduler___toc.html" class="wikilink1" title="dhtmlxscheduler:toc">dhtmlxScheduler</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>TreeConnector</strong> (relates to <a href="dhtmlxtree___toc.html" class="wikilink1" title="dhtmlxtree:toc">dhtmlxTree</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>TreeGridConnector</strong> (relates to <a href="dhtmlxtreegrid___toc.html" class="wikilink1" title="dhtmlxtreegrid:toc">dhtmlxTreeGrid</a>)</div>
+</li>
+</ul>
+
+<p>
+Additional (most important):
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___jsondataconnector.html" class="wikilink1" title="dhtmlxconnector:jsondataconnector">JSONDataConnector/DataConnector</a> ( relates to <strong>touch-oriented libraries</strong>: DHTMLX Touch, DataTable, dhtmlXDataStore)</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___keygridconnector.html" class="wikilink1" title="dhtmlxconnector:keygridconnector">KeyGridConnector</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___selectoptionsconnector.html" class="wikilink1" title="dhtmlxconnector:selectoptionsconnector">SelectOptionsConnector</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___treegroupconnector.html" class="wikilink1" title="dhtmlxconnector:treegroupconnector">TreeGroupConnector/TreeGridGroupConnector</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___treemultitableconnector.html" class="wikilink1" title="dhtmlxconnector:treemultitableconnector">TreeMultitableConnector</a></div>
+</li>
+</ul>
+
+<p>
+<div class='dhx_note'><div class='dhx_note_img'>&nbsp;</div>
+Throughout the documentation you'll see examples that use 'GridConnector'. Subject to using component, replace it with the needed connector. 
+</div>
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

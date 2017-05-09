@@ -1,0 +1,269 @@
+<record id="SQD-GEN-REC-00001">
+<atom name="NAME" type="str">SQD-GEN-REC-00001</atom>
+<fld id="SQD-GEN-REC-00001">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NAME" type="str">SQD-GEN-REC-00001</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEN" type="int">83</atom>
+<fld id="SPY3MISC">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="NAME" type="str">SPY3MISC</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEN" type="int">83</atom>
+<fld id="Y3MC-Y3MISC-KY">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-Y3MISC-KY</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEN" type="int">4</atom>
+<fld id="Y3MC-MISC-TYP">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-MISC-TYP</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="Y3MC-MISC-SEQ">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-MISC-SEQ</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="POSITION" type="int">2</atom>
+<atom name="PRECISION" type="int">3</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+</fld>
+<fld id="Y3MC-DIRL-TXT">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-DIRL-TXT</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="LEN" type="int">70</atom>
+</fld>
+<fld id="Y3MC-ADRS-LOCTN-FILLER">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-ADRS-LOCTN-FILLER</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="LEN" type="int">70</atom>
+<fld id="Y3MC-ADRS-LOCTN">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-ADRS-LOCTN</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="LEN" type="int">20</atom>
+</fld>
+</fld>
+<fld id="Y3MC-ADRS-MISC-DAT-FILLER">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-ADRS-MISC-DAT-FILLER</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="LEN" type="int">70</atom>
+<fld id="Y3MC-ADRS-MISC-DAT">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-ADRS-MISC-DAT</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="LEN" type="int">30</atom>
+</fld>
+</fld>
+<fld id="Y3MC-DIRL-NM-FILLER">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-DIRL-NM-FILLER</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="LEN" type="int">70</atom>
+<fld id="Y3MC-DIRL-NM">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-DIRL-NM</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="LEN" type="int">55</atom>
+</fld>
+</fld>
+<fld id="Y3MC-DIRL-INDT-CPTN-FILLER">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-DIRL-INDT-CPTN-FILLER</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="LEN" type="int">70</atom>
+<fld id="Y3MC-DIRL-INDT-CPTN">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-DIRL-INDT-CPTN</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="LEN" type="int">55</atom>
+</fld>
+</fld>
+<fld id="Y3MC-DIRL-NM-ALP-INSTN-FILLER">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-DIRL-NM-ALP-INSTN-FILLER</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="LEN" type="int">70</atom>
+<fld id="Y3MC-DIRL-NM-ALP-INSTN">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-DIRL-NM-ALP-INSTN</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="LEN" type="int">55</atom>
+</fld>
+</fld>
+<fld id="Y3MC-MUNIC-NM-FILLER">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-MUNIC-NM-FILLER</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="LEN" type="int">70</atom>
+<fld id="Y3MC-MUNIC-NM">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-MUNIC-NM</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="LEN" type="int">30</atom>
+</fld>
+</fld>
+<fld id="Y3MC-DSGNTN-DESC-FILLER">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-DSGNTN-DESC-FILLER</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="LEN" type="int">70</atom>
+<fld id="Y3MC-DSGNTN-DESC">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-DSGNTN-DESC</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="LEN" type="int">55</atom>
+</fld>
+</fld>
+<fld id="Y3MC-FOR-LSG-EXCH-NM-FILLER">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-FOR-LSG-EXCH-NM-FILLER</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="LEN" type="int">70</atom>
+<fld id="Y3MC-FOR-LSG-EXCH-NM">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-FOR-LSG-EXCH-NM</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">21</atom>
+<atom name="LEN" type="int">35</atom>
+</fld>
+</fld>
+<fld id="Y3MC-DIRCTORY-LIST-CONVERSN">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="NAME" type="str">Y3MC-DIRCTORY-LIST-CONVERSN</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">22</atom>
+<atom name="LEN" type="int">70</atom>
+<fld id="Y3MC-NCDC-TEL-NPA">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-NCDC-TEL-NPA</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">23</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="Y3MC-NCDC-TEL-NXX">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-NCDC-TEL-NXX</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">7</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">24</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="Y3MC-NCDC-TEL-LN">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-NCDC-TEL-LN</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">10</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">25</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="Y3MC-OP-PRMTR-VAL-A">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">8</atom>
+<atom name="NAME" type="str">Y3MC-OP-PRMTR-VAL-A</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">14</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">26</atom>
+<atom name="LEN" type="int">6</atom>
+</fld>
+</fld>
+</fld>
+</fld>
+</record>

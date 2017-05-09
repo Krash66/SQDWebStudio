@@ -1,0 +1,12 @@
+CREATE TABLE PROC_AUDT_DETLS_REMT_1
+(
+        SEQUENCE_NUMBER     OCINUM
+       ,ORIGIN     VARCHAR(6)
+       ,APPLMNEM     VARCHAR(6)
+       ,CURR_DATE     DATE
+       ,REC_TYP     VARCHAR(6)
+       ,CONCAT_KEY     VARCHAR(16)
+       ,RSRVD_DATA     OCINUM
+       ,LAST_UPDT_DTTM     DATE
+       ,FUNC_RLSE_IND     VARCHAR(3)
+);

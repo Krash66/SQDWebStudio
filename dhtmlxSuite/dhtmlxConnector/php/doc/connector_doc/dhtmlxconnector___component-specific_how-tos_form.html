@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:component-specific_how-tos_form    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="component-specific_how-tos_form" id="component-specific_how-tos_form">Component-specific how-tos (form)</a></h1>
+<div class="level1">
+
+</div>
+
+<h3><a name="how_can_i_populate_select_item_with_data_from_db" id="how_can_i_populate_select_item_with_data_from_db">How can I populate &#039;select&#039; item with data from db?</a></h3>
+<div class="level3">
+
+<p>
+To define options of the <strong><a href="dhtmlxform___form_select.html" class="wikilink1" title="dhtmlxform:form_select">select</a></strong> item you should use <strong>SelectOptionsConnector</strong> on the server-side and specify the <strong><em>connector</em></strong> parameter for the appropriate item on client-side: 
+</p>
+
+<p>
+<em>client-side:</em> 
+</p>
+<pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;select&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Categories&quot;</span><span class="sy0">,</span> connector<span class="sy0">:</span><span class="st0">&quot;selectOptions.php&quot;</span><span class="br0">&#125;</span><span class="br0">&#93;</span>;</pre>
+<p>
+
+<em>server-side:</em> 
+</p>
+<pre class="code javascript"><span class="sy0">&lt;?</span>php 
+require_once<span class="br0">&#40;</span><span class="st0">&quot;../codebase/connector/options_connector.php&quot;</span><span class="br0">&#41;</span>;
+$res<span class="sy0">=</span>mysql_connect<span class="br0">&#40;</span><span class="st0">&quot;localhost&quot;</span><span class="sy0">,</span><span class="st0">&quot;root&quot;</span><span class="sy0">,</span><span class="st0">&quot;&quot;</span><span class="br0">&#41;</span>;
+mysql_select_db<span class="br0">&#40;</span><span class="st0">&quot;myDB&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+$data <span class="sy0">=</span> <span class="kw2">new</span> SelectOptionsConnector<span class="br0">&#40;</span>$res<span class="sy0">,</span> <span class="st0">&quot;MySQL&quot;</span><span class="br0">&#41;</span>;
+$data<span class="sy0">-&gt;</span>render_table<span class="br0">&#40;</span><span class="st0">&quot;categories&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;valueColumn, labelColumn&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="sy0">?&gt;</span></pre>
+<p>
+
+For more information of this topic, see <a href="dhtmlxconnector___selectoptionsconnector.html" class="wikilink1" title="dhtmlxconnector:selectoptionsconnector">&#039;SelectOptionsConnector&#039;</a> article. 
+</p>
+
+</div>
+
+<h3><a name="how_can_i_populate_combo_item_with_data_from_db" id="how_can_i_populate_combo_item_with_data_from_db">How can I populate &#039;combo&#039; item with data from db?</a></h3>
+<div class="level3">
+
+<p>
+To define options of the <strong><a href="dhtmlxform___dhxcombo.html" class="wikilink1" title="dhtmlxform:dhxcombo">&#039;combo&#039;</a></strong> item you should use <strong>ComboConnector</strong> on the server-side and specify the <strong><em>connector</em></strong> parameter for the appropriate item on client-side: 
+</p>
+
+<p>
+<em>client-side</em>: 
+</p>
+<pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;combo&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;myCombo&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Select type&quot;</span><span class="sy0">,</span> connector<span class="sy0">:</span><span class="st0">&quot;comboOptions.php&quot;</span><span class="br0">&#125;</span><span class="br0">&#93;</span>;</pre>
+<p>
+
+<em>server-side</em>: 
+</p>
+<pre class="code javascript"><span class="sy0">&lt;?</span>php 
+require_once<span class="br0">&#40;</span><span class="st0">&quot;../codebase/connector/combo_connector.php&quot;</span><span class="br0">&#41;</span>;
+$res<span class="sy0">=</span>mysql_connect<span class="br0">&#40;</span><span class="st0">&quot;localhost&quot;</span><span class="sy0">,</span><span class="st0">&quot;root&quot;</span><span class="sy0">,</span><span class="st0">&quot;&quot;</span><span class="br0">&#41;</span>;
+mysql_select_db<span class="br0">&#40;</span><span class="st0">&quot;myDB&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+$data <span class="sy0">=</span> <span class="kw2">new</span> ComboConnector<span class="br0">&#40;</span>$res<span class="sy0">,</span> <span class="st0">&quot;MySQL&quot;</span><span class="br0">&#41;</span>;
+$data<span class="sy0">-&gt;</span>render_table<span class="br0">&#40;</span><span class="st0">&quot;categories&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;valueColumn, labelColumn&quot;</span><span class="br0">&#41;</span>;
+<span class="sy0">?&gt;</span></pre><ul>
+<li class="level1"><div class="li"> Names of the fields can have aliases (<strong>value</strong> or <strong>label</strong>) to identify the appropriate attribute.<br/>
+ <br/>
+ <pre class="code javascript">$data<span class="sy0">-&gt;</span>render_sql<span class="br0">&#40;</span><span class="st0">&quot;SELECT *, CONCAT(FirstName, LastName) as label FROM table1&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;id,FirstName(label)&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+ Note, in the filtering mode a combo filters data by the “label” field. 
+</p>
+</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="how_can_i_load_data_from_db" id="how_can_i_load_data_from_db">How can I load data from db?</a></h3>
+<div class="level3">
+
+<p>
+To load data to a form you should use <strong>FormConnector</strong> on server-side and the method <a href="dhtmlxform___api_method_dhtmlxform_load.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_load">load (id)</a> on client_side: 
+</p>
+
+<p>
+<em>client-side</em>
+
+</p>
+<pre class="code javascript">myForm.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">'formdata.php?id=1'</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+where as the parameter must be specified a connector file with the id of loading record.<br/>
+ Values of record&#039;s columns will be used as values of form&#039;s controls.
+</p>
+
+<p>
+<em>server-side</em>
+
+</p>
+<pre class="code php"><span class="kw2">&lt;?php</span> 
+<span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;../codebase/connector/form_connector.php&quot;</span><span class="br0">&#41;</span>;<span class="co1">// includes the appropriate connector </span>
+<span class="re0">$res</span><span class="sy0">=</span><a href="http://www.php.net/mysql_connect"><span class="kw3">mysql_connect</span></a><span class="br0">&#40;</span><span class="st0">&quot;localhost&quot;</span><span class="sy0">,</span><span class="st0">&quot;root&quot;</span><span class="sy0">,</span><span class="st0">&quot;&quot;</span><span class="br0">&#41;</span>;<span class="co1">//connects to a server that contains the desired DB</span>
+<a href="http://www.php.net/mysql_select_db"><span class="kw3">mysql_select_db</span></a><span class="br0">&#40;</span><span class="st0">&quot;tasks&quot;</span><span class="br0">&#41;</span>;<span class="co1">// connects to the DB. 'tasks' is the name of our DB</span>
+<span class="re0">$conn</span> <span class="sy0">=</span> <span class="kw2">new</span> FormConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="sy0">,</span><span class="st0">&quot;MySQL&quot;</span><span class="br0">&#41;</span>;<span class="co1">// connector initialization</span>
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;customers&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;name, address, email&quot;</span><span class="br0">&#41;</span>;<span class="co1">// data configuration </span>
+<span class="kw2">?&gt;</span></pre>
+<p>
+
+For more information of this topic, see <a href="tutorials___dhtmlxform_serverside_standalone_form.html#step_3._loading_data" class="wikilink1" title="tutorials:dhtmlxform_serverside_standalone_form">&#039;dhtmlxForm:easy dealing with server-side&#039;</a> tutorial. 
+</p>
+
+</div>
+
+<h3><a name="how_can_i_save_changes_made_in_a_form_to_db" id="how_can_i_save_changes_made_in_a_form_to_db">How can I save changes made in a form to db?</a></h3>
+<div class="level3">
+
+<p>
+To save form changes to DB, you should use the method <a href="dhtmlxform___api_method_dhtmlxform_save.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_save">save()</a> on client-side.<br/>
+ You can call this method, for example, on clicks of some button.
+
+</p>
+<pre class="code javascript">myForm.<span class="me1">attachEvent</span><span class="br0">&#40;</span><span class="st0">&quot;onButtonClick&quot;</span><span class="sy0">,</span> <span class="kw2">function</span><span class="br0">&#40;</span>id<span class="br0">&#41;</span><span class="br0">&#123;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>id<span class="sy0">==</span><span class="st0">'saveButton'</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+                myForm.<span class="me1">save</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+        <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+For more information of this topic, see <a href="tutorials___dhtmlxform_serverside_standalone_form.html#step_4._saving_changes" class="wikilink1" title="tutorials:dhtmlxform_serverside_standalone_form">&#039;dhtmlxForm:easy dealing with server-side&#039;</a> tutorial. 
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

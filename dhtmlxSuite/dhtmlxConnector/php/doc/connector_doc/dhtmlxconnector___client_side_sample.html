@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:client_side_sample    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="samples_of_client-side_initialization" id="samples_of_client-side_initialization">Samples of client-side initialization</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="grid" id="grid">grid</a></h2>
+<div class="level2">
+<pre class="code javascript">myGrid <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXGridObject<span class="br0">&#40;</span><span class="st0">&quot;myContainer&quot;</span><span class="br0">&#41;</span>;
+<span class="co1">//... grid configuration commands</span>
+myGrid.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;myconnector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="treegrid" id="treegrid">treeGrid</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="static_mode" id="static_mode">static mode</a></h3>
+<div class="level3">
+<pre class="code javascript">myGrid <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXGridObject<span class="br0">&#40;</span><span class="st0">&quot;myContainer&quot;</span><span class="br0">&#41;</span>;
+myGrid.<span class="me1">setColTypes</span><span class="br0">&#40;</span><span class="st0">&quot;tree,...&quot;</span><span class="br0">&#41;</span>;
+<span class="co1">//...grid configuration commands</span>
+myGrid.<span class="me1">loadXML</span><span class="br0">&#40;</span><span class="st0">&quot;myconnector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="dynamic_mode" id="dynamic_mode">dynamic mode</a></h3>
+<div class="level3">
+<pre class="code javascript">myGrid <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXGridObject<span class="br0">&#40;</span><span class="st0">'myContainer'</span><span class="br0">&#41;</span>;
+myGrid.<span class="me1">setColTypes</span><span class="br0">&#40;</span><span class="st0">&quot;tree,...&quot;</span><span class="br0">&#41;</span>;
+<span class="co1">//...</span>
+myGrid.<span class="me1">kidsXmlFile</span><span class="sy0">=</span><span class="st0">&quot;connector.php&quot;</span>;
+myGrid.<span class="me1">loadXML</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="tree" id="tree">tree</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="static_mode1" id="static_mode1">static mode</a></h3>
+<div class="level3">
+<pre class="code javascript">tree<span class="sy0">=</span><span class="kw2">new</span> dhtmlXTreeObject<span class="br0">&#40;</span><span class="st0">&quot;treeboxbox_tree&quot;</span><span class="sy0">,</span><span class="st0">&quot;100%&quot;</span><span class="sy0">,</span><span class="st0">&quot;100%&quot;</span><span class="sy0">,</span>0<span class="br0">&#41;</span>;
+<span class="co1">//...</span>
+tree.<span class="me1">loadXML</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="dynamic_mode1" id="dynamic_mode1">dynamic mode</a></h3>
+<div class="level3">
+<pre class="code javascript">tree<span class="sy0">=</span><span class="kw2">new</span> dhtmlXTreeObject<span class="br0">&#40;</span><span class="st0">&quot;treeboxbox_tree&quot;</span><span class="sy0">,</span><span class="st0">&quot;100%&quot;</span><span class="sy0">,</span><span class="st0">&quot;100%&quot;</span><span class="sy0">,</span>0<span class="br0">&#41;</span>;
+<span class="co1">//...</span>
+tree.<span class="me1">setXMLAutoLoading</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;
+tree.<span class="me1">loadXML</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="combo" id="combo">combo</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="static_mode2" id="static_mode2">static mode</a></h3>
+<div class="level3">
+<pre class="code javascript"><span class="kw2">var</span> combo<span class="sy0">=</span><span class="kw2">new</span> dhtmlXCombo<span class="br0">&#40;</span><span class="st0">&quot;combo_zone2&quot;</span><span class="sy0">,</span><span class="st0">&quot;alfa2&quot;</span><span class="sy0">,</span><span class="nu0">200</span><span class="br0">&#41;</span>;
+combo.<span class="me1">loadXML</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="auto-complete_mode" id="auto-complete_mode">auto-complete mode</a></h3>
+<div class="level3">
+<pre class="code javascript"><span class="kw2">var</span> combo<span class="sy0">=</span><span class="kw2">new</span> dhtmlXCombo<span class="br0">&#40;</span><span class="st0">&quot;combo_zone2&quot;</span><span class="sy0">,</span><span class="st0">&quot;alfa2&quot;</span><span class="sy0">,</span><span class="nu0">200</span><span class="br0">&#41;</span>;
+combo.<span class="me1">enableFilteringMode</span><span class="br0">&#40;</span><span class="kw2">true</span><span class="sy0">,</span><span class="st0">&quot;connector.php&quot;</span><span class="sy0">,</span><span class="kw2">true</span><span class="br0">&#41;</span>;
+combo.<span class="me1">loadXML</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="scheduler" id="scheduler">scheduler</a></h2>
+<div class="level2">
+<pre class="code javascript">scheduler.<span class="me1">init</span><span class="br0">&#40;</span>some_obj<span class="br0">&#41;</span>
+scheduler.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="form" id="form">form</a></h2>
+<div class="level2">
+<pre class="code javascript"><span class="kw2">var</span> form <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXForm<span class="br0">&#40;</span>someId<span class="br0">&#41;</span>;
+form.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="dataview" id="dataview">dataView</a></h2>
+<div class="level2">
+<pre class="code javascript"><span class="kw2">var</span> view <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXDataView<span class="br0">&#40;</span><span class="br0">&#123;</span>...<span class="br0">&#125;</span><span class="br0">&#41;</span>;
+view.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="chart" id="chart">chart</a></h2>
+<div class="level2">
+<pre class="code javascript"><span class="kw2">var</span> mychart <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXChart<span class="br0">&#40;</span><span class="br0">&#123;</span>...<span class="br0">&#125;</span><span class="br0">&#41;</span>;
+mychart.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="datastore" id="datastore">dataStore</a></h2>
+<div class="level2">
+<pre class="code javascript"><span class="kw2">var</span> myDataStore <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXDataStore<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+myDataStore.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;connector.php&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

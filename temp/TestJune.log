@@ -1,0 +1,7 @@
+
+-----------------------Saturday 27th of June 2015 12:26:19 AM CEST------------------------------
+Browser Spec. :Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+error Type: TypeError
+function: function DOmodel( id, tabId )
+file: model.js
+message: Object doesn't support property or method 'getCombo'

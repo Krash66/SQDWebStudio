@@ -1,0 +1,193 @@
+<record id="CATDLVY">
+<atom name="NAME" type="str">CATDLVY</atom>
+<atom name="ALIAS" type="str">CATDLVY</atom>
+<fld id="CADLVY_CACC_NO">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="NAME" type="str">CADLVY_CACC_NO</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEN" type="int">4</atom>
+</fld>
+<fld id="CADLVY_CD">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_CD</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_SEQ">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+<atom name="NAME" type="str">CADLVY_SEQ</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEN" type="int">3</atom>
+</fld>
+<fld id="CADLVY_ID1">
+<atom name="NULL" type="int">1</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_ID1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEN" type="int">9</atom>
+</fld>
+<fld id="CADLVY_ID2">
+<atom name="NULL" type="int">1</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_ID2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="LEN" type="int">50</atom>
+</fld>
+<fld id="CADLVY_UPDT_LOGN">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_UPDT_LOGN</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="LEN" type="int">8</atom>
+</fld>
+<fld id="CADLVY_UPDT_DTM">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">TST</atom>
+<atom name="NAME" type="str">CADLVY_UPDT_DTM</atom>
+<atom name="LEGACY_TYPE" type="str">TIMESTAMP</atom>
+<atom name="PRECISION" type="int">6</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="LEN" type="int">26</atom>
+</fld>
+<fld id="CADLVY_COMP1">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP2">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP3">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP3</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP4">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP4</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP5">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP6">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP6</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP7">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP7</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP8">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP8</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP9">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP9</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP10">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP10</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP11">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP11</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP12">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP12</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP13">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP13</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+<fld id="CADLVY_COMP14">
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">CADLVY_COMP14</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="LEN" type="int">2</atom>
+</fld>
+</record>

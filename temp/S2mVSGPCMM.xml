@@ -1,0 +1,427 @@
+<record id="VSGPCMM">
+<atom name="ALIAS" type="str">VSGPCMM</atom>
+<atom name="NAME" type="str">VSGPCMM</atom>
+<fld id="GV_OCCR_CNT_NO">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_OCCR_CNT_NO</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_AGCY_NO_1">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGCY_NO_1</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_AGNT_NO_1">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGNT_NO_1</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_EFF_DT_1">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_EFF_DT_1</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_GRP_COMM_CD_1">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_GRP_COMM_CD_1</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_COMM_STCD_1">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_STCD_1</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_TERM_DT_1">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_TERM_DT_1</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_DT_PRCS_1">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_DT_PRCS_1</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UNT_NO_1">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_COMM_UNT_NO_1</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UCLOB_CD_1">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_UCLOB_CD_1</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_AGCY_NO_2">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGCY_NO_2</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_AGNT_NO_2">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGNT_NO_2</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_EFF_DT_2">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_EFF_DT_2</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_GRP_COMM_CD_2">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_GRP_COMM_CD_2</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_COMM_STCD_2">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_STCD_2</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_TERM_DT_2">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_TERM_DT_2</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_DT_PRCS_2">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_DT_PRCS_2</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UNT_NO_2">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_COMM_UNT_NO_2</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UCLOB_CD_2">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_UCLOB_CD_2</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_AGCY_NO_3">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGCY_NO_3</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_AGNT_NO_3">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGNT_NO_3</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_EFF_DT_3">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">21</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_EFF_DT_3</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_GRP_COMM_CD_3">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">22</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_GRP_COMM_CD_3</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_COMM_STCD_3">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">23</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_STCD_3</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_TERM_DT_3">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">24</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_TERM_DT_3</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_DT_PRCS_3">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">25</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_DT_PRCS_3</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UNT_NO_3">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">26</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_COMM_UNT_NO_3</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UCLOB_CD_3">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">27</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_UCLOB_CD_3</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_AGCY_NO_4">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">28</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGCY_NO_4</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_AGNT_NO_4">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">29</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGNT_NO_4</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_EFF_DT_4">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">30</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_EFF_DT_4</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_GRP_COMM_CD_4">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">31</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_GRP_COMM_CD_4</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_COMM_STCD_4">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">32</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_STCD_4</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_TERM_DT_4">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">33</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_TERM_DT_4</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_DT_PRCS_4">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">34</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_DT_PRCS_4</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UNT_NO_4">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">35</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_COMM_UNT_NO_4</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UCLOB_CD_4">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">36</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_UCLOB_CD_4</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_AGCY_NO_5">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">37</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGCY_NO_5</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_AGNT_NO_5">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">38</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">GV_AGNT_NO_5</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="GV_EFF_DT_5">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">39</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_EFF_DT_5</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_GRP_COMM_CD_5">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">40</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_GRP_COMM_CD_5</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_COMM_STCD_5">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">41</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_STCD_5</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="GV_TERM_DT_5">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">42</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_TERM_DT_5</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_DT_PRCS_5">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">43</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_DT_PRCS_5</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UNT_NO_5">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">44</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="PRECISION" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="NAME" type="str">GV_COMM_UNT_NO_5</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="GV_COMM_UCLOB_CD_5">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">45</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="NAME" type="str">GV_COMM_UCLOB_CD_5</atom>
+<atom name="TYPE" type="str">SHORT</atom>
+</fld>
+<fld id="PFK_GRUPKEYI">
+<atom name="NULL" type="int">0</atom>
+<atom name="ID" type="int">46</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="NAME" type="str">PFK_GRUPKEYI</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+</record>

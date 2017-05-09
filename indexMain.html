@@ -1,0 +1,3664 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    
+    <title>SQData - Web Studio - beta 2.5</title>
+    <style type="text/css">
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                overflow: hidden;
+                background-color: Gray;
+            }
+	</style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="../Studio/scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/json2.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/prototype.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/xml2array.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/xml2json.js"></script>
+    <!--<script type="text/javascript" src='./scripts/json2.js'></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="http://www.jointjs.com/downloads/joint.css" />-->
+    <!--<script type="text/javascript" src='http://www.jointjs.com/downloads/joint.js'></script>-->
+    <!--<script type="text/javascript" src="../Studio/scripts/addflow/addflow-min.js"></script>-->
+
+    <!--<script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/dhtmlxcommon_debug.js"></script> -->
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxForm/codebase/dhtmlxcommon.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxDataProcessor/codebase/dhtmlxdataprocessor.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxDataStore/codebase/datastore_debug.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css" />
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxLayout/codebase/dhtmlxlayout.css" />
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxLayout/codebase/dhtmlxcontainer.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxLayout/codebase/dhtmlxlayout.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxTree/codebase/dhtmlxtree.css" />
+    <!--<script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/dhtmlxcommon.js"></script>-->
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/dhtmlxtree.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_start.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_json.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_er.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_ed.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_li.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_dragin.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_kn.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_lf.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_sb.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_srnd.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTree/sources/ext/dhtmlxtree_attrs.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxMenu/codebase/skins/dhtmlxmenu_dhx_skyblue.css" />
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxMenu/codebase/skins/dhtmlxmenu_dhx_blue.css" />
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxMenu/codebase/skins/dhtmlxmenu_dhx_black.css" />
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxMenu/codebase/skins/dhtmlxmenu_dhx_web.css" />
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxMenu/codebase/skins/dhtmlxmenu_dhx_terrace.css" />
+    <!--<script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxMenu/codebase/dhtmlxcommon.js"></script>-->
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxMenu/codebase/dhtmlxmenu.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxMenu/sources/ext/dhtmlxmenu_ext.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxMenu/sources/ext/dhtmlxmenu_effects.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxTabbar/codebase/dhtmlxtabbar.css" />
+    <!--<script type="text/javascript"  src="../Studio/dhtmlxSuite/dhtmlxTabbar/codebase/dhtmlxcommon.js"></script>-->
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTabbar/codebase/dhtmlxtabbar.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxTabbar/codebase/dhtmlxtabbar_start.js"></script>
+
+    <!--<script type="text/javascript"  src="../Studio/dhtmlxSuite/dhtmlxTabbar/codebase/dhtmlxcontainer.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxToolbar/codebase/skins/dhtmlxtoolbar_dhx_skyblue.css" />
+    <!--<script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxToolbar/codebase/dhtmlxcommon.js"></script>-->
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxToolbar/codebase/dhtmlxtoolbar.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxForm/codebase/skins/dhtmlxform_dhx_skyblue.css" />
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxForm/codebase/dhtmlxform.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxForm/codebase/ext/dhtmlxform_dyn.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxForm/codebase/ext/dhtmlxform_item_combo.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxForm/codebase/ext/dhtmlxform_item_upload.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxForm/codebase/ext/swfobject.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/dhtmlxgrid.css" />
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css" />
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/excells/dhtmlxgrid_calc.css" />
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/sources/dhtmlxgrid.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/dhtmlxgridcell.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/ext/dhtmlxgrid_drag.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/ext/dhtmlx_extdrag.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/ext/dhtmlxgrid_post.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/ext/dhtmlxgrid_undo.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/ext/dhtmlxgrid_json.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/excells/dhtmlxgrid_excell_calck.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/excells/dhtmlxgrid_excell_acheck.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxGrid/codebase/excells/dhtmlxgrid_excell_clist.js"></script>
+    
+    <link rel="STYLESHEET" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxDataView/codebase/dhtmlxdataview.css" />
+    <link rel="STYLESHEET" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxDataView/codebase/types/ftypes.css" />
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxDataView/codebase/dhtmlxdataview.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxDataView/codebase/types/SQDftypes.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxEditor/codebase/skins/dhtmlxeditor_dhx_skyblue.css" />
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxEditor/codebase/dhtmlxeditor.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxEditor/sources/ext/dhtmlxeditor_ext.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxCombo/codebase/dhtmlxcombo.css" />
+    <!--<link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlx_skin/dhtmlx_custom.css" />-->
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxConnector/php/codebase/connector.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxCombo/codebase/dhtmlxcombo.js"></script>
+    <script type="text/javascript" src="../Studio/dhtmlxSuite/dhtmlxCombo/codebase/ext/dhtmlxcombo_extra.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../Studio/dhtmlxSuite/dhtmlxMessage/codebase/skins/dhtmlxmessage_dhx_skyblue.css" />
+    <style type="text/css">
+			.dhtmlx-error{
+				font-weight:bold;
+				color:white;
+				background-color:red;
+			}
+		</style>
+    <script type="text/javascript" src='../Studio/dhtmlxSuite/dhtmlxMessage/sources/dhtmlxmessage.js'></script>
+
+    <script type="text/javascript" src="../Studio/scripts/UserControls.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/modObject.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/menuFun.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/AddObj.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/MainTree.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/delete.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/generate.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/model.js"></script>
+    <script type="text/javascript" src="../Studio/scripts/Report.js"></script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+
+    //***************************************************************************************
+    // ***** Global Variables
+    var tmpTPid = "";
+    var tmpObjName = "";
+    var tmpObjPid = "";
+    var nextfld = 0;
+    var OS = "w"; 	// use this for windows build
+    // var OS = "u";		// use this for Unix build
+    var IsSaved = true;
+    var previousId;
+    var previousTabId;
+
+    // current user info
+    var CURuid = "";
+    var CURpw = "";
+    var CURdb = "sqdmeta";
+
+    // current project info
+    var CURproj = "";
+    var CURprojNum = "";
+    
+    // User info
+    getUserInfo();
+
+    function afterUserInfo()
+    {
+//        alert( "Welcome to SQData Web Studio, " + CURuid );    //+ '\n' + "PW: " + CURpw 
+        dhtmlx.message( {
+            text: "Welcome to SQData Web Studio, " + CURuid,
+            expire: 3000
+        } );
+    };
+    // sets global path for combo graphics
+    window.dhx_globalImgPath = "../Studio/dhtmlxSuite/dhtmlxCombo/codebase/imgs/";
+
+    //****************************************************************************************
+    // build Main Layout and place it in div MainContent
+    //****************************************************************************************
+    var main_layout = new dhtmlXLayoutObject( document.body, '2U', "dhx_skyblue" );
+    //    main_layout.progressOn();
+    //        main_layout.setEffect("collapse", true);
+    //        main_layout.setEffect("resize", true); 
+    main_layout.setImagePath( '../Studio/dhtmlxSuite/dhtmlxLayout/codebase/imgs/' );
+    //	var Autosizes = main_layout.listAutoSizes();
+    //    	main_layout.setAutoSize("b", "a;b");
+    main_layout.progressOn();
+    //    main_layout.attachEvent( 'onContentLoaded', function ( id )
+    //    {
+    //        //                        alert( "ContentLoaded" );
+    //        main_layout.progressOn();
+    //        MainTree.deleteChildItems( '0' );
+    //        MainTree.deleteItem( '0' );
+    //        MainTree.loadXML( '../Studio/data/mainTree.xml', function ()
+    //        {
+    //            MainTree.openAllItems( '0' );
+    //            //                alert( "Loaded" );
+    //            loadCtlFolder( 'fldProj' );
+
+    //        } );
+    //        main_layout.progressOff();
+    //    } );
+
+    // Attach a Main Menu to the Main Layout
+    //*********************************************
+    var mainMenu = main_layout.attachMenu();
+    //        mainMenu.renderAsContextMenu();
+    //        mainMenu.addContextZone("main_layout");
+    mainMenu.setIconsPath( "../Studio/data/SQDimgs/MenuImgs/" );
+    mainMenu.setSkin( "dhx_skyblue" );
+    mainMenu.loadXML( "../Studio/data/mainMenu.xml", function ()
+    {
+        //	    alert("Loaded");
+    } );
+    mainMenu.attachEvent( 'onClick', function ( id, zoneId, casState )
+    {
+        //         alert( 'Button id: ' + id );
+        switch ( id )
+        {
+            case 'mnuNewProj':
+                menuNewProj();
+                break;
+            case 'mnuOpenProj':
+                menuOpenProj();
+                break;
+            case 'mnuCloseProj':
+                menuCloseProj();
+                break;
+            case 'mnuCloseAllProj':
+                menuCloseAllProj();
+                break;
+            case 'mnuXMLtoDTD':
+                menuXMLtoDTD();
+                break;
+            case 'mnuImportScript':
+                menuImportScript();
+                break;
+            case 'mnuBackupMeta':
+                menuMetaBackup();
+                break;
+            case 'mnuSave':
+                menuSaveAll();
+                break;
+            case 'mnuExit':
+                menudoExit();
+                break;
+            case 'mnuCopy':
+                menudoCopy();
+                break;
+            case 'mnuPaste':
+                menudoPaste();
+                break;
+            case 'mnuDelete':
+                menudoDelete( MainTree.getSelectedItemId() );
+                break;
+            case 'mnuAbout':
+                menudoAbout();
+                break;
+            case 'mnuHelp':
+                menudoHelp();
+                break;
+            case 'mnuBugReporting':
+                menuReportBug();
+                break;
+        };
+    } );
+
+    // Attach a Main Toolbar to the Main Layout
+    //*********************************************
+    var mainToolbar = main_layout.attachToolbar();
+    mainToolbar.setIconsPath( '../Studio/data/SQDimgs/' );
+    mainToolbar.loadXML( '../Studio/data/mainToolbar.xml', function ()
+    {
+        //         alert("Loaded");
+    } );
+    mainToolbar.attachEvent( 'onClick', function ( id )
+    {
+        //         alert( 'Button id: ' + id );
+        var selectedId = MainTree.getSelectedItemId();
+
+        switch ( id )
+        {
+            case 'btnNew':
+                // AddProj( 'fldProj' );
+                tbNewProj( 'fldProj' );
+                break;
+            case 'btnopen':
+                tbOpenProj();
+                break;
+            case 'btnsave':
+                tbSaveAll( selectedId );
+                break;
+            case 'btncopy':
+                tbdoCopy( selectedId );
+                break;
+            case 'btnpaste':
+                tbdoPaste( selectedId );
+                break;
+            case 'btndelete':
+                tbdoDelete( selectedId );
+                break;
+            case 'btnlog':
+                tbdoLog();
+                break;
+            case 'btnhelp':
+                tbdoHelp();
+                break;
+        };
+    } );
+
+    // Attach a Status Bar to the Main Layout
+    //*********************************************
+    var mainStatus = main_layout.attachStatusBar();
+    mainStatus.setText( 'SQData Web Studio' );
+    main_layout.showStatusBar();
+
+
+    // Attach Context Menu to Main Tree
+    //******************************************************************************************
+    var mainTreeMenu = new dhtmlXMenuObject( null, "dhx_skyblue" );
+    //        mainTreeMenu.setImagePath( "../Studio/data/SQDimgs/MenuImgs/" );
+    mainTreeMenu.setIconsPath( "../Studio/data/SQDimgs/" );
+    mainTreeMenu.renderAsContextMenu();
+    //        mainTreeMenu.setOpenMode( "web" );
+    //        mainTreeMenu.setSkin( "dhx_skyblue" );
+    mainTreeMenu.loadXML( "../Studio/data/mainTreeContextMenu.xml", function ()
+    {
+//        	    alert("Loaded");
+    } );
+
+    mainTreeMenu.attachEvent('onClick', function (id, zoneId, casState)
+    {
+        //        alert('id= ' + id + '\n' + 'zoneId= ' + zoneId);
+
+        var selectedid = MainTree.getSelectedItemId();
+        var sqdType = MainTree.getUserData(selectedid, 'sqdType');
+        var Pid = "";
+        var TPid = "";
+
+        //        alert('SQDType: ' + sqdType);
+
+        switch (id)
+        {
+            case 'new_Proj':
+                //                TPid = MainTree.getParentId( zoneId );
+                if (sqdType == 'fldProj' || sqdType == 'objProj')
+                {
+
+                    //                    addNode( 'fldProj',"New Project" );
+                    //                    NewProj( 'fldProj' );
+                    AddProj('fldProj');
+
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_Env':
+                if (sqdType == 'fldEnv')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewEnv(Pid, TPid);
+                }
+                else if (sqdType == 'objEnv')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewEnv(Pid, TPid);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_Conn':
+                if (sqdType == 'fldConn')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewConn(Pid, TPid);
+                }
+                else if (sqdType == 'objConn')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewConn(Pid, TPid);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_Sel':
+                if (sqdType == 'objCOBOL' || sqdType == 'objDBDDesc' || sqdType == 'objDTDDesc' || sqdType == 'objCDesc' || sqdType == 'objDDLDesc' || sqdType == 'objDMLDesc')
+                {
+                    Pid = selectedid;
+                    TPid = selectedid;
+                    NewSelection(Pid, TPid);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_COBOL':
+                if (sqdType == 'fldSrcCOBOL')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    NewCOBOL(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'SrcCOBOL')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewCOBOL(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldSrcDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewCOBOLfolder(Pid, TPid);
+                }
+                else if (sqdType == 'fldTgtCOBOL')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    NewCOBOL(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'TgtCOBOL')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewCOBOL(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'fldTgtDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewCOBOLfolder(Pid, TPid);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_DBD':
+                if (sqdType == 'fldSrcCOBIMS')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    NewDBD(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'SrcCOBIMS')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewDBD(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldSrcDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewDBDfolder(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldTgtCOBIMS')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    NewDBD(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'TgtCOBIMS')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewDBD(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'fldTgtDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewDBDfolder(Pid, TPid, "Tgt");
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_DTD':
+                if (sqdType == 'fldSrcDTDDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    NewDTD(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'SrcDTDDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewDTD(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldSrcDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewDTDfolder(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldTgtDTDDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    NewDTD(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'TgtDTDDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewDTD(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'fldTgtDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewDTDfolder(Pid, TPid, "Tgt");
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+
+            // new_db2       
+            case 'new_db2':
+                if (sqdType == 'fldSrcdb2Desc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    Newdb2(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'Srcdb2Desc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    Newdb2(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldSrcDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    Newdb2folder(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldTgtdb2Desc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    Newdb2(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'Tgtdb2Desc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    Newdb2(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'fldTgtDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    Newdb2folder(Pid, TPid, "Tgt");
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+
+            // new_mssql        
+            case 'new_mssql':
+                if (sqdType == 'fldSrcmssqlDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    Newmssql(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'SrcmssqlDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    Newmssql(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldSrcDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    Newmssqlfolder(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldTgtmssqlDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    Newmssql(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'TgtmssqlDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    Newmssql(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'fldTgtDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    Newmssqlfolder(Pid, TPid, "Tgt");
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+
+            // new_ora       
+            case 'new_ora':
+                if (sqdType == 'fldSrcoraDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    Newora(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'SrcoraDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    Newora(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldSrcDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    Neworafolder(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldTgtoraDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    Newora(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'TgtoraDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    Newora(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'fldTgtDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    Neworafolder(Pid, TPid, "Tgt");
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+
+            // new_sql       
+            //            case 'new_sql':  
+            //                if ( sqdType == 'fldsqlDesc' )  
+            //                {  
+            //                    Pid = MainTree.getParentId( MainTree.getParentId( selectedid ) );  
+            //                    TPid = selectedid;  
+            //                    Newsql( Pid, TPid );  
+            //                }  
+            //                else if ( sqdType == 'objsqlDesc' )  
+            //                {  
+            //                    Pid = MainTree.getParentId( MainTree.getParentId( MainTree.getParentId( selectedid ) ) );  
+            //                    TPid = MainTree.getParentId( selectedid );  
+            //                    Newsql( Pid, TPid );  
+            //                }  
+            //                else if ( sqdType == 'fldDesc' )  
+            //                {  
+            //                    Pid = MainTree.getParentId( selectedid );  
+            //                    TPid = selectedid;  
+            //                    Newsqlfolder( Pid, TPid );  
+            //                }  
+            //                else  
+            //                {  
+            //                    alert( 'Not allowed to create that type here' );  
+            //                }  
+            //                break;  
+
+            // new_udb       
+            case 'new_udb':
+                if (sqdType == 'fldSrcudbDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    Newudb(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'SrcudbDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    Newudb(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldSrcDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    Newudbfolder(Pid, TPid, "Src");
+                }
+                else if (sqdType == 'fldTgtudbDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    Newudb(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'TgtudbDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    Newudb(Pid, TPid, "Tgt");
+                }
+                else if (sqdType == 'fldTgtDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    Newudbfolder(Pid, TPid, "Tgt");
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+
+
+            //            case 'new_C':       
+            //                if ( sqdType == 'fldCDesc' )       
+            //                {       
+            //                    Pid = MainTree.getParentId( MainTree.getParentId( selectedid ) );       
+            //                    TPid = selectedid;       
+            //                    NewC( Pid, TPid );       
+            //                }       
+            //                else if ( sqdType == 'objCDesc' )       
+            //                {       
+            //                    Pid = MainTree.getParentId( MainTree.getParentId( MainTree.getParentId( selectedid ) ) );       
+            //                    TPid = MainTree.getParentId( selectedid );       
+            //                    NewC( Pid, TPid );       
+            //                }       
+            //                else if ( sqdType == 'fldDesc' )       
+            //                {       
+            //                    Pid = MainTree.getParentId( selectedid );       
+            //                    TPid = selectedid;       
+            //                    NewCfolder( Pid, TPid );       
+            //                }       
+            //                else       
+            //                {       
+            //                    alert( 'Not allowed to create that type here' );       
+            //                }       
+            //                break;       
+            //            case 'new_DDL':  
+            //                if ( sqdType == 'fldDDLDesc' )  
+            //                {  
+            //                    Pid = MainTree.getParentId( MainTree.getParentId( selectedid ) );  
+            //                    TPid = selectedid;  
+            //                    NewDDL( Pid, TPid );  
+            //                }  
+            //                else if ( sqdType == 'objDDLDesc' )  
+            //                {  
+            //                    Pid = MainTree.getParentId( MainTree.getParentId( MainTree.getParentId( selectedid ) ) );  
+            //                    TPid = MainTree.getParentId( selectedid );  
+            //                    NewDDL( Pid, TPid );  
+            //                }  
+            //                else if ( sqdType == 'fldDesc' )  
+            //                {  
+            //                    Pid = MainTree.getParentId( selectedid );  
+            //                    TPid = selectedid;  
+            //                    NewDDLfolder( Pid, TPid );  
+            //                }  
+            //                else  
+            //                {  
+            //                    alert( 'Not allowed to create that type here' );  
+            //                }  
+            //                break;  
+            case 'new_BrowseDML':
+                if (sqdType == 'fldDMLDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    NewBrowseDML(Pid, TPid);
+                }
+                else if (sqdType == 'DMLDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewBrowseDML(Pid, TPid);
+                }
+                else if (sqdType == 'fldDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewDMLfolder(Pid, TPid, 'Browse');
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_DMLSQL':
+                if (sqdType == 'fldDMLDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    NewSQLDML(Pid, TPid);
+                }
+                else if (sqdType == 'DMLDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewSQLDML(Pid, TPid);
+                }
+                else if (sqdType == 'fldDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewDMLfolder(Pid, TPid, 'SQL');
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_DMLfile':
+                if (sqdType == 'fldDMLDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = selectedid;
+                    NewFileDML(Pid, TPid);
+                }
+                else if (sqdType == 'DMLDesc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewFileDML(Pid, TPid);
+                }
+                else if (sqdType == 'fldDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewDMLfolder(Pid, TPid, 'File');
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_Var':
+                if (sqdType == 'fldVar' || sqdType == 'fldVarTop')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewVar(Pid, TPid, 'Top');
+                }
+                else if (sqdType == 'objVar')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewVar(Pid, TPid);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_Sys':
+                if (sqdType == 'fldSys')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewSys(Pid, TPid);
+                }
+                else if (sqdType == 'objSys')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewSys(Pid, TPid);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_CDCEng':
+                if (sqdType == 'fldEng')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewEng(Pid, TPid, "CDC");
+                }
+                else if (sqdType == 'objEngCDC')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewEng(Pid, TPid, "CDC");
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_ETLEng':
+                if (sqdType == 'fldEng')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewEng(Pid, TPid, "ETL");
+                }
+                else if (sqdType == 'objEngETL')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewEng(Pid, TPid, "ETL");
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_SDS':
+                var eTyp;
+                if (sqdType == 'fldSDS')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    eTyp = MainTree.getUserData(MainTree.getParentId(selectedid), 'sqdType');
+                    NewSDS(Pid, TPid, eTyp);
+                }
+                else if (sqdType == 'objSDS')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    eTyp = MainTree.getUserData(MainTree.getParentId(MainTree.getParentId(selectedid)), 'sqdType');
+                    NewSDS(Pid, TPid, eTyp);
+                }
+                else if (sqdType == 'objSDSsel')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    eTyp = MainTree.getUserData(MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid))), 'sqdType');
+                    NewSDS(Pid, TPid, eTyp);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_TDS':
+                var eTyp;
+                if (sqdType == 'fldTDS')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    eTyp = MainTree.getUserData(MainTree.getParentId(selectedid), 'sqdType');
+                    NewTDS(Pid, TPid, eTyp);
+                }
+                else if (sqdType == 'objTDS')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    eTyp = MainTree.getUserData(MainTree.getParentId(MainTree.getParentId(selectedid)), 'sqdType');
+                    NewTDS(Pid, TPid, eTyp);
+                }
+                else if (sqdType == 'objTDSsel')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid)));
+                    TPid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    eTyp = MainTree.getUserData(MainTree.getParentId(MainTree.getParentId(MainTree.getParentId(selectedid))), 'sqdType');
+                    NewTDS(Pid, TPid, eTyp);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            //            case 'new_Var':          
+            //                if ( sqdType == 'fldVar' )          
+            //                {          
+            //                    Pid = MainTree.getParentId( selectedid );          
+            //                    TPid = selectedid;          
+            //                    NewVar( Pid, TPid, 'Bottom' );          
+            //                }          
+            //                else if ( sqdType == 'objVar' )          
+            //                {          
+            //                    Pid = MainTree.getParentId( MainTree.getParentId( selectedid ) );          
+            //                    TPid = MainTree.getParentId( selectedid );          
+            //                    NewVar( Pid, TPid, 'Bottom' );          
+            //                }          
+            //                else          
+            //                {          
+            //                    alert( 'Not allowed to create that type here' );          
+            //                }          
+            //                break;          
+            case 'new_MapProc':
+                if (sqdType == 'fldProc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewMapProc(Pid, TPid);
+                }
+                else if (sqdType == 'objLogic' || sqdType == 'objProc' || sqdType == 'objInclProc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewMapProc(Pid, TPid);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_LogicProc':
+                if (sqdType == 'fldProc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewLogicProc(Pid, TPid, 'Proc');
+                }
+                else if (sqdType == 'objLogic' || sqdType == 'objProc' || sqdType == 'objInclProc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewLogicProc(Pid, TPid, 'Proc');
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_InclProc':
+                if (sqdType == 'fldProc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewInclProc(Pid, TPid, 'Proc');
+                }
+                else if (sqdType == 'objLogic' || sqdType == 'objProc' || sqdType == 'objInclProc')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewInclProc(Pid, TPid, 'Proc');
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_MainLogicProc':
+                if (sqdType == 'fldMain')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewLogicProc(Pid, TPid, 'Main');
+                }
+                else if (sqdType == 'objMain' || sqdType == 'objMainIncl')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewLogicProc(Pid, TPid, 'Main');
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'new_MainInclProc':
+                if (sqdType == 'fldMain')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    NewInclProc(Pid, TPid, 'Main');
+                }
+                else if (sqdType == 'objMain' || sqdType == 'objMainIncl')
+                {
+                    Pid = MainTree.getParentId(MainTree.getParentId(selectedid));
+                    TPid = MainTree.getParentId(selectedid);
+                    NewInclProc(Pid, TPid, 'Main');
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'cut':
+                doCut(selectedid);
+                break;
+            case 'copy':
+                doCopy(selectedid);
+                break;
+            case 'paste':
+                doPaste(selectedid);
+                break;
+            case 'delNode':
+                if (sqdType !== 'fldDesc')
+                {
+                    // alert('indexMain delNode selectedid = ' + selectedid);
+                    doDelete(selectedid);
+                }
+                else
+                {
+                    alert('Not allowed to delete this folder');
+                }
+                break;
+            case 'delNodeAll':
+                doDeleteAll(selectedid);
+                break;
+            case 'genScript':
+                if (sqdType == 'objEngETL' || sqdType == 'objEngCDC')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    var tid = MainTree.getUserData(selectedid, 'tabId');
+                    // alert("doGenerate");
+                    doGenerate(selectedid, tid);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+            case 'model':
+                if (sqdType == 'SrcCOBOL' || sqdType == 'TgtCOBOL' || sqdType == 'SrcCOBIMS' || sqdType == 'TgtCOBIMS' || sqdType == 'SrcDTDDesc' || sqdType == 'TgtDTDDesc' || sqdType == 'Srcdb2Desc' || sqdType == 'Tgtdb2Desc' || sqdType == 'SrcmssqlDesc' || sqdType == 'TgtmssqlDesc' || sqdType == 'SrcoraDesc' || sqdType == 'TgtoraDesc' || sqdType == 'SrcudbDesc' || sqdType == 'TgtudbDesc')
+                {
+                    Pid = MainTree.getParentId(selectedid);
+                    TPid = selectedid;
+                    var tid = MainTree.getUserData(selectedid, 'tabId');
+                    // alert("doModel");
+                    doModel(selectedid, tid);
+                }
+                else
+                {
+                    alert('Not allowed to create that type here');
+                }
+                break;
+        };
+    });
+    
+    // Attach Main Tree to Main Layout and put it in Cell 'a'
+    //***************************************************************************************
+    var MainTree = main_layout.cells( "a" ).attachTree();
+    main_layout.cells( "a" ).setText( "SQData Objects" );
+    main_layout.cells( "a" ).setWidth( 300 );
+    MainTree.setSkin( 'dhx_skyblue' );
+    MainTree.setImagePath( '../Studio/data/SQDimgs/' );
+    MainTree.enableDragAndDrop( '1', true );
+    MainTree.enableMercyDrag( '1' );
+    MainTree.enableTreeImages( true );
+    MainTree.enableItemEditor( false );
+    MainTree.enableTreeLines( true );
+    MainTree.openOnItemAdded( true );
+    MainTree.preventIECaching( true );
+    MainTree.enableContextMenu( mainTreeMenu );
+    
+    // This function is to activate the correct context menu items
+    //*******************************************************************
+    MainTree.attachEvent( 'onBeforeContextMenu', function ( zoneId )
+    {
+        //                alert( "Zone id: " + zoneId + '\n' + 'SQD Type: ' + MainTree.getUserData( zoneId, 'sqdType' ) );
+        MainTree.selectItem( zoneId );
+        var typesqd = MainTree.getUserData( zoneId, 'sqdType' );
+//        var prefx;
+
+        switch ( typesqd )
+        {
+            case 'fldProj':
+                mainTreeMenu.showItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objProj':
+                mainTreeMenu.showItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldEnv':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.showItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objEnv':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.showItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldConn':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.showItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objConn':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.showItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+
+                // Src Descriptions
+            case 'fldSrcDesc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.hideItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldSrcCOBOL':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.showItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'SrcCOBOL':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.showItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.showItem( "sep1" );
+                mainTreeMenu.showItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.showItem( "sep6" );
+                mainTreeMenu.showItem( "model" );
+                break;
+            case 'fldSrcCOBIMS':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.showItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'SrcCOBIMS':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.showItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.showItem( "sep1" );
+                mainTreeMenu.showItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.showItem( "sep6" );
+                mainTreeMenu.showItem( "model" );
+                break;
+            case 'fldSrcDTDDesc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.showItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'SrcDTDDesc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.showItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.showItem( "sep1" );
+                mainTreeMenu.showItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.showItem( "sep6" );
+                mainTreeMenu.showItem( "model" );
+                break;
+            case 'fldSrcdb2Desc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.showItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'Srcdb2Desc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.showItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.showItem( "sep1" );
+                mainTreeMenu.showItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.showItem( "sep6" );
+                mainTreeMenu.showItem( "model" );
+                break;
+            case 'fldSrcmssqlDesc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.showItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'SrcmssqlDesc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.showItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.showItem( "sep1" );
+                mainTreeMenu.showItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.showItem( "sep6" );
+                mainTreeMenu.showItem( "model" );
+                break;
+            case 'fldSrcoraDesc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.showItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'SrcoraDesc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.showItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.showItem( "sep1" );
+                mainTreeMenu.showItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.showItem( "sep6" );
+                mainTreeMenu.showItem( "model" );
+                break;
+            case 'fldSrcsqlDesc':
+//                mainTreeMenu.hideItem( "new_Proj" );
+//                mainTreeMenu.hideItem( "new_Env" );
+//                mainTreeMenu.hideItem( "new_Conn" );
+//                mainTreeMenu.hideItem( "new_COBOL" );
+//                mainTreeMenu.hideItem( "new_DBD" );
+//                mainTreeMenu.hideItem( "new_DTD" );
+//                mainTreeMenu.hideItem( "new_db2" );
+//                mainTreeMenu.hideItem( "new_mssql" );
+//                mainTreeMenu.showItem( "new_ora" );
+//                mainTreeMenu.hideItem( "new_udb" );
+//                mainTreeMenu.hideItem( "sep1" );
+//                mainTreeMenu.hideItem( "new_Sel" );
+//                mainTreeMenu.hideItem( "new_Var" );
+//                mainTreeMenu.hideItem( "new_Sys" );
+//                mainTreeMenu.hideItem("new_CDCEng");
+//                mainTreeMenu.hideItem("new_ETLEng");
+//                mainTreeMenu.hideItem( "new_SDS" );
+//                mainTreeMenu.hideItem( "new_TDS" );
+//                mainTreeMenu.hideItem( "new_MapProc" );
+//                mainTreeMenu.hideItem( "new_LogicProc" );
+//                mainTreeMenu.hideItem( "new_InclProc" );
+//                mainTreeMenu.hideItem( "new_MainLogicProc" );
+//                mainTreeMenu.hideItem( "new_MainInclProc" );
+//                mainTreeMenu.showItem( "sep3" );
+//                mainTreeMenu.showItem( "cut" );
+//                mainTreeMenu.showItem( "copy" );
+//                mainTreeMenu.showItem( "paste" );
+//                mainTreeMenu.showItem( "sep4" );
+//                mainTreeMenu.showItem( "delNode" );
+//                mainTreeMenu.showItem( "delNodeAll" );
+//                mainTreeMenu.hideItem( "sep5" );
+//                mainTreeMenu.hideItem( "genScript" );
+//                mainTreeMenu.hideItem( "sep6" );
+//                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'SrcsqlDesc':
+//                mainTreeMenu.hideItem( "new_Proj" );
+//                mainTreeMenu.hideItem( "new_Env" );
+//                mainTreeMenu.hideItem( "new_Conn" );
+//                mainTreeMenu.hideItem( "new_COBOL" );
+//                mainTreeMenu.hideItem( "new_DBD" );
+//                mainTreeMenu.hideItem( "new_DTD" );
+//                mainTreeMenu.hideItem( "new_db2" );
+//                mainTreeMenu.hideItem( "new_mssql" );
+//                mainTreeMenu.showItem( "new_ora" );
+//                mainTreeMenu.hideItem( "new_udb" );
+//                mainTreeMenu.hideItem( "sep1" );
+//                mainTreeMenu.hideItem( "new_Sel" );
+//                mainTreeMenu.hideItem( "new_Var" );
+//                mainTreeMenu.hideItem( "new_Sys" );
+//                mainTreeMenu.hideItem("new_CDCEng");
+//                mainTreeMenu.hideItem("new_ETLEng");
+//                mainTreeMenu.hideItem( "new_SDS" );
+//                mainTreeMenu.hideItem( "new_TDS" );
+//                mainTreeMenu.hideItem( "new_MapProc" );
+//                mainTreeMenu.hideItem( "new_LogicProc" );
+//                mainTreeMenu.hideItem( "new_InclProc" );
+//                mainTreeMenu.hideItem( "new_MainLogicProc" );
+//                mainTreeMenu.hideItem( "new_MainInclProc" );
+//                mainTreeMenu.showItem( "sep3" );
+//                mainTreeMenu.showItem( "cut" );
+//                mainTreeMenu.showItem( "copy" );
+//                mainTreeMenu.showItem( "paste" );
+//                mainTreeMenu.showItem( "sep4" );
+//                mainTreeMenu.showItem( "delNode" );
+//                mainTreeMenu.showItem( "delNodeAll" );
+//                mainTreeMenu.hideItem( "sep5" );
+//                mainTreeMenu.hideItem( "genScript" );
+//                mainTreeMenu.hideItem( "sep6" );
+//                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldSrcudbDesc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.showItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'SrcudbDesc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.showItem( "new_udb" );
+                mainTreeMenu.showItem( "sep1" );
+                mainTreeMenu.showItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.showItem( "sep6" );
+                mainTreeMenu.showItem( "model" );
+                break;
+            case 'fldDDLDesc':
+//                mainTreeMenu.hideItem( "new_Proj" );
+//                mainTreeMenu.hideItem( "new_Env" );
+//                mainTreeMenu.hideItem( "new_Conn" );
+//                mainTreeMenu.hideItem( "new_COBOL" );
+//                mainTreeMenu.hideItem( "new_DBD" );
+//                mainTreeMenu.hideItem( "new_DTD" );
+//                mainTreeMenu.hideItem( "new_db2" );
+//                mainTreeMenu.hideItem( "new_mssql" );
+//                mainTreeMenu.hideItem( "new_ora" );
+//                mainTreeMenu.showItem( "new_udb" );
+//                mainTreeMenu.showItem( "sep1" );
+//                mainTreeMenu.showItem( "new_Sel" );
+//                mainTreeMenu.hideItem( "new_Var" );
+//                mainTreeMenu.hideItem( "new_Sys" );
+//                mainTreeMenu.hideItem( "new_Eng" );
+//                mainTreeMenu.hideItem( "new_SDS" );
+//                mainTreeMenu.hideItem( "new_TDS" );
+//                mainTreeMenu.hideItem( "new_MapProc" );
+//                mainTreeMenu.hideItem( "new_LogicProc" );
+//                mainTreeMenu.hideItem( "new_InclProc" );
+//                mainTreeMenu.hideItem( "new_MainLogicProc" );
+//                mainTreeMenu.hideItem( "new_MainInclProc" );
+//                mainTreeMenu.showItem( "sep3" );
+//                mainTreeMenu.showItem( "cut" );
+//                mainTreeMenu.showItem( "copy" );
+//                mainTreeMenu.showItem( "paste" );
+//                mainTreeMenu.showItem( "sep4" );
+//                mainTreeMenu.showItem( "delNode" );
+//                mainTreeMenu.showItem( "delNodeAll" );
+//                mainTreeMenu.hideItem( "sep5" );
+//                mainTreeMenu.hideItem( "genScript" );
+//                mainTreeMenu.showItem( "sep6" );
+//                mainTreeMenu.showItem( "model" );
+                break;
+            case 'DDLDesc':
+//                mainTreeMenu.hideItem( "new_Proj" );
+//                mainTreeMenu.hideItem( "new_Env" );
+//                mainTreeMenu.hideItem( "new_Conn" );
+//                mainTreeMenu.hideItem( "new_COBOL" );
+//                mainTreeMenu.hideItem( "new_DBD" );
+//                mainTreeMenu.hideItem( "new_DTD" );
+//                mainTreeMenu.hideItem( "new_db2" );
+//                mainTreeMenu.hideItem( "new_mssql" );
+//                mainTreeMenu.hideItem( "new_ora" );
+//                mainTreeMenu.showItem( "new_udb" );
+//                mainTreeMenu.showItem( "sep1" );
+//                mainTreeMenu.showItem( "new_Sel" );
+//                mainTreeMenu.hideItem( "new_Var" );
+//                mainTreeMenu.hideItem( "new_Sys" );
+//                mainTreeMenu.hideItem( "new_Eng" );
+//                mainTreeMenu.hideItem( "new_SDS" );
+//                mainTreeMenu.hideItem( "new_TDS" );
+//                mainTreeMenu.hideItem( "new_MapProc" );
+//                mainTreeMenu.hideItem( "new_LogicProc" );
+//                mainTreeMenu.hideItem( "new_InclProc" );
+//                mainTreeMenu.hideItem( "new_MainLogicProc" );
+//                mainTreeMenu.hideItem( "new_MainInclProc" );
+//                mainTreeMenu.showItem( "sep3" );
+//                mainTreeMenu.showItem( "cut" );
+//                mainTreeMenu.showItem( "copy" );
+//                mainTreeMenu.showItem( "paste" );
+//                mainTreeMenu.showItem( "sep4" );
+//                mainTreeMenu.showItem( "delNode" );
+//                mainTreeMenu.showItem( "delNodeAll" );
+//                mainTreeMenu.hideItem( "sep5" );
+//                mainTreeMenu.hideItem( "genScript" );
+//                mainTreeMenu.showItem( "sep6" );
+//                mainTreeMenu.showItem( "model" );
+                break;
+
+                // Target Descriptions
+            case 'fldTgtDesc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.hideItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'fldTgtCOBOL':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.showItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'TgtCOBOL':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.showItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.showItem("sep1");
+                mainTreeMenu.showItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.showItem("sep6");
+                mainTreeMenu.showItem("model");
+                break;
+            case 'fldTgtCOBIMS':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.showItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'TgtCOBIMS':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.showItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.showItem("sep1");
+                mainTreeMenu.showItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.showItem("sep6");
+                mainTreeMenu.showItem("model");
+                break;
+            case 'fldTgtDTDDesc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.showItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'TgtDTDDesc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.showItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.showItem("sep1");
+                mainTreeMenu.showItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.showItem("sep6");
+                mainTreeMenu.showItem("model");
+                break;
+            case 'fldTgtdb2Desc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.showItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'Tgtdb2Desc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.showItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.showItem("sep1");
+                mainTreeMenu.showItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.showItem("sep6");
+                mainTreeMenu.showItem("model");
+                break;
+            case 'fldTgtmssqlDesc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.showItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'TgtmssqlDesc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.showItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.showItem("sep1");
+                mainTreeMenu.showItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.showItem("sep6");
+                mainTreeMenu.showItem("model");
+                break;
+            case 'fldTgtoraDesc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.showItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'TgtoraDesc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.showItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.showItem("sep1");
+                mainTreeMenu.showItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.showItem("sep6");
+                mainTreeMenu.showItem("model");
+                break;
+            case 'fldTgtsqlDesc':
+                //                mainTreeMenu.hideItem( "new_Proj" );
+                //                mainTreeMenu.hideItem( "new_Env" );
+                //                mainTreeMenu.hideItem( "new_Conn" );
+                //                mainTreeMenu.hideItem( "new_COBOL" );
+                //                mainTreeMenu.hideItem( "new_DBD" );
+                //                mainTreeMenu.hideItem( "new_DTD" );
+                //                mainTreeMenu.hideItem( "new_db2" );
+                //                mainTreeMenu.hideItem( "new_mssql" );
+                //                mainTreeMenu.showItem( "new_ora" );
+                //                mainTreeMenu.hideItem( "new_udb" );
+                //                mainTreeMenu.hideItem( "sep1" );
+                //                mainTreeMenu.hideItem( "new_Sel" );
+                //                mainTreeMenu.hideItem( "new_Var" );
+                //                mainTreeMenu.hideItem( "new_Sys" );
+                //                mainTreeMenu.hideItem( "new_Eng" );
+                //                mainTreeMenu.hideItem( "new_SDS" );
+                //                mainTreeMenu.hideItem( "new_TDS" );
+                //                mainTreeMenu.hideItem( "new_MapProc" );
+                //                mainTreeMenu.hideItem( "new_LogicProc" );
+                //                mainTreeMenu.hideItem( "new_InclProc" );
+                //                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                //                mainTreeMenu.hideItem( "new_MainInclProc" );
+                //                mainTreeMenu.showItem( "sep3" );
+                //                mainTreeMenu.showItem( "cut" );
+                //                mainTreeMenu.showItem( "copy" );
+                //                mainTreeMenu.showItem( "paste" );
+                //                mainTreeMenu.showItem( "sep4" );
+                //                mainTreeMenu.showItem( "delNode" );
+                //                mainTreeMenu.showItem( "delNodeAll" );
+                //                mainTreeMenu.hideItem( "sep5" );
+                //                mainTreeMenu.hideItem( "genScript" );
+                //                mainTreeMenu.hideItem( "sep6" );
+                //                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'TgtsqlDesc':
+                //                mainTreeMenu.hideItem( "new_Proj" );
+                //                mainTreeMenu.hideItem( "new_Env" );
+                //                mainTreeMenu.hideItem( "new_Conn" );
+                //                mainTreeMenu.hideItem( "new_COBOL" );
+                //                mainTreeMenu.hideItem( "new_DBD" );
+                //                mainTreeMenu.hideItem( "new_DTD" );
+                //                mainTreeMenu.hideItem( "new_db2" );
+                //                mainTreeMenu.hideItem( "new_mssql" );
+                //                mainTreeMenu.showItem( "new_ora" );
+                //                mainTreeMenu.hideItem( "new_udb" );
+                //                mainTreeMenu.hideItem( "sep1" );
+                //                mainTreeMenu.hideItem( "new_Sel" );
+                //                mainTreeMenu.hideItem( "new_Var" );
+                //                mainTreeMenu.hideItem( "new_Sys" );
+                //                mainTreeMenu.hideItem( "new_Eng" );
+                //                mainTreeMenu.hideItem( "new_SDS" );
+                //                mainTreeMenu.hideItem( "new_TDS" );
+                //                mainTreeMenu.hideItem( "new_MapProc" );
+                //                mainTreeMenu.hideItem( "new_LogicProc" );
+                //                mainTreeMenu.hideItem( "new_InclProc" );
+                //                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                //                mainTreeMenu.hideItem( "new_MainInclProc" );
+                //                mainTreeMenu.showItem( "sep3" );
+                //                mainTreeMenu.showItem( "cut" );
+                //                mainTreeMenu.showItem( "copy" );
+                //                mainTreeMenu.showItem( "paste" );
+                //                mainTreeMenu.showItem( "sep4" );
+                //                mainTreeMenu.showItem( "delNode" );
+                //                mainTreeMenu.showItem( "delNodeAll" );
+                //                mainTreeMenu.hideItem( "sep5" );
+                //                mainTreeMenu.hideItem( "genScript" );
+                //                mainTreeMenu.hideItem( "sep6" );
+                //                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldTgtudbDesc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.showItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'TgtudbDesc':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.showItem("new_udb");
+                mainTreeMenu.showItem("sep1");
+                mainTreeMenu.showItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.showItem("sep6");
+                mainTreeMenu.showItem("model");
+                break;
+            case 'fldTgtDDLDesc':
+                //                mainTreeMenu.hideItem( "new_Proj" );
+                //                mainTreeMenu.hideItem( "new_Env" );
+                //                mainTreeMenu.hideItem( "new_Conn" );
+                //                mainTreeMenu.hideItem( "new_COBOL" );
+                //                mainTreeMenu.hideItem( "new_DBD" );
+                //                mainTreeMenu.hideItem( "new_DTD" );
+                //                mainTreeMenu.hideItem( "new_db2" );
+                //                mainTreeMenu.hideItem( "new_mssql" );
+                //                mainTreeMenu.hideItem( "new_ora" );
+                //                mainTreeMenu.showItem( "new_udb" );
+                //                mainTreeMenu.showItem( "sep1" );
+                //                mainTreeMenu.showItem( "new_Sel" );
+                //                mainTreeMenu.hideItem( "new_Var" );
+                //                mainTreeMenu.hideItem( "new_Sys" );
+                //                mainTreeMenu.hideItem( "new_Eng" );
+                //                mainTreeMenu.hideItem( "new_SDS" );
+                //                mainTreeMenu.hideItem( "new_TDS" );
+                //                mainTreeMenu.hideItem( "new_MapProc" );
+                //                mainTreeMenu.hideItem( "new_LogicProc" );
+                //                mainTreeMenu.hideItem( "new_InclProc" );
+                //                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                //                mainTreeMenu.hideItem( "new_MainInclProc" );
+                //                mainTreeMenu.showItem( "sep3" );
+                //                mainTreeMenu.showItem( "cut" );
+                //                mainTreeMenu.showItem( "copy" );
+                //                mainTreeMenu.showItem( "paste" );
+                //                mainTreeMenu.showItem( "sep4" );
+                //                mainTreeMenu.showItem( "delNode" );
+                //                mainTreeMenu.showItem( "delNodeAll" );
+                //                mainTreeMenu.hideItem( "sep5" );
+                //                mainTreeMenu.hideItem( "genScript" );
+                //                mainTreeMenu.showItem( "sep6" );
+                //                mainTreeMenu.showItem( "model" );
+                break;
+            case 'TgtDDLDesc':
+                //                mainTreeMenu.hideItem( "new_Proj" );
+                //                mainTreeMenu.hideItem( "new_Env" );
+                //                mainTreeMenu.hideItem( "new_Conn" );
+                //                mainTreeMenu.hideItem( "new_COBOL" );
+                //                mainTreeMenu.hideItem( "new_DBD" );
+                //                mainTreeMenu.hideItem( "new_DTD" );
+                //                mainTreeMenu.hideItem( "new_db2" );
+                //                mainTreeMenu.hideItem( "new_mssql" );
+                //                mainTreeMenu.hideItem( "new_ora" );
+                //                mainTreeMenu.showItem( "new_udb" );
+                //                mainTreeMenu.showItem( "sep1" );
+                //                mainTreeMenu.showItem( "new_Sel" );
+                //                mainTreeMenu.hideItem( "new_Var" );
+                //                mainTreeMenu.hideItem( "new_Sys" );
+                //                mainTreeMenu.hideItem( "new_Eng" );
+                //                mainTreeMenu.hideItem( "new_SDS" );
+                //                mainTreeMenu.hideItem( "new_TDS" );
+                //                mainTreeMenu.hideItem( "new_MapProc" );
+                //                mainTreeMenu.hideItem( "new_LogicProc" );
+                //                mainTreeMenu.hideItem( "new_InclProc" );
+                //                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                //                mainTreeMenu.hideItem( "new_MainInclProc" );
+                //                mainTreeMenu.showItem( "sep3" );
+                //                mainTreeMenu.showItem( "cut" );
+                //                mainTreeMenu.showItem( "copy" );
+                //                mainTreeMenu.showItem( "paste" );
+                //                mainTreeMenu.showItem( "sep4" );
+                //                mainTreeMenu.showItem( "delNode" );
+                //                mainTreeMenu.showItem( "delNodeAll" );
+                //                mainTreeMenu.hideItem( "sep5" );
+                //                mainTreeMenu.hideItem( "genScript" );
+                //                mainTreeMenu.showItem( "sep6" );
+                //                mainTreeMenu.showItem( "model" );
+                break;
+
+            // Variables 
+            case 'fldVar':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.showItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.hideItem("sep5");
+                mainTreeMenu.hideItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'objVar':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.showItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldVarTop':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.showItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldSys':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.showItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objSys':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.showItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldEng':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.showItem("new_CDCEng");
+                mainTreeMenu.showItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objEngCDC':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.showItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.showItem( "sep5" );
+                mainTreeMenu.showItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objEngETL':
+                mainTreeMenu.hideItem("new_Proj");
+                mainTreeMenu.hideItem("new_Env");
+                mainTreeMenu.hideItem("new_Conn");
+                mainTreeMenu.hideItem("new_COBOL");
+                mainTreeMenu.hideItem("new_DBD");
+                mainTreeMenu.hideItem("new_DTD");
+                mainTreeMenu.hideItem("new_db2");
+                mainTreeMenu.hideItem("new_mssql");
+                mainTreeMenu.hideItem("new_ora");
+                mainTreeMenu.hideItem("new_udb");
+                mainTreeMenu.hideItem("sep1");
+                mainTreeMenu.hideItem("new_Sel");
+                mainTreeMenu.hideItem("new_Var");
+                mainTreeMenu.hideItem("new_Sys");
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.showItem("new_ETLEng");
+                mainTreeMenu.hideItem("new_SDS");
+                mainTreeMenu.hideItem("new_TDS");
+                mainTreeMenu.hideItem("new_MapProc");
+                mainTreeMenu.hideItem("new_LogicProc");
+                mainTreeMenu.hideItem("new_InclProc");
+                mainTreeMenu.hideItem("new_MainLogicProc");
+                mainTreeMenu.hideItem("new_MainInclProc");
+                mainTreeMenu.showItem("sep3");
+                mainTreeMenu.showItem("cut");
+                mainTreeMenu.showItem("copy");
+                mainTreeMenu.showItem("paste");
+                mainTreeMenu.showItem("sep4");
+                mainTreeMenu.showItem("delNode");
+                mainTreeMenu.showItem("delNodeAll");
+                mainTreeMenu.showItem("sep5");
+                mainTreeMenu.showItem("genScript");
+                mainTreeMenu.hideItem("sep6");
+                mainTreeMenu.hideItem("model");
+                break;
+            case 'fldSDS':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.showItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objSDS':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.showItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objSDSsel':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.showItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldTDS':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.showItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objTDS':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.showItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objTDSsel':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.showItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldProc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.showItem( "new_MapProc" );
+                mainTreeMenu.showItem( "new_LogicProc" );
+                mainTreeMenu.showItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objLogic':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.showItem( "new_MapProc" );
+                mainTreeMenu.showItem( "new_LogicProc" );
+                mainTreeMenu.showItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objProc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.showItem( "new_MapProc" );
+                mainTreeMenu.showItem( "new_LogicProc" );
+                mainTreeMenu.showItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objInclProc':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.showItem( "new_MapProc" );
+                mainTreeMenu.showItem( "new_LogicProc" );
+                mainTreeMenu.showItem( "new_InclProc" );
+                mainTreeMenu.hideItem( "new_MainLogicProc" );
+                mainTreeMenu.hideItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'fldMain':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.showItem( "new_MainLogicProc" );
+                mainTreeMenu.showItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objMain':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.showItem( "new_MainLogicProc" );
+                mainTreeMenu.showItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            case 'objMainIncl':
+                mainTreeMenu.hideItem( "new_Proj" );
+                mainTreeMenu.hideItem( "new_Env" );
+                mainTreeMenu.hideItem( "new_Conn" );
+                mainTreeMenu.hideItem( "new_COBOL" );
+                mainTreeMenu.hideItem( "new_DBD" );
+                mainTreeMenu.hideItem( "new_DTD" );
+                mainTreeMenu.hideItem( "new_db2" );
+                mainTreeMenu.hideItem( "new_mssql" );
+                mainTreeMenu.hideItem( "new_ora" );
+                mainTreeMenu.hideItem( "new_udb" );
+                mainTreeMenu.hideItem( "sep1" );
+                mainTreeMenu.hideItem( "new_Sel" );
+                mainTreeMenu.hideItem( "new_Var" );
+                mainTreeMenu.hideItem( "new_Sys" );
+                mainTreeMenu.hideItem("new_CDCEng");
+                mainTreeMenu.hideItem("new_ETLEng");
+                mainTreeMenu.hideItem( "new_SDS" );
+                mainTreeMenu.hideItem( "new_TDS" );
+                mainTreeMenu.hideItem( "new_MapProc" );
+                mainTreeMenu.hideItem( "new_LogicProc" );
+                mainTreeMenu.hideItem( "new_InclProc" );
+                mainTreeMenu.showItem( "new_MainLogicProc" );
+                mainTreeMenu.showItem( "new_MainInclProc" );
+                mainTreeMenu.showItem( "sep3" );
+                mainTreeMenu.showItem( "cut" );
+                mainTreeMenu.showItem( "copy" );
+                mainTreeMenu.showItem( "paste" );
+                mainTreeMenu.showItem( "sep4" );
+                mainTreeMenu.showItem( "delNode" );
+                mainTreeMenu.showItem( "delNodeAll" );
+                mainTreeMenu.hideItem( "sep5" );
+                mainTreeMenu.hideItem( "genScript" );
+                mainTreeMenu.hideItem( "sep6" );
+                mainTreeMenu.hideItem( "model" );
+                break;
+            default:
+                
+                break;
+        };
+        return true;
+    } );
+
+    MainTree.attachEvent( 'onDrag', function ( sId, tId, id, sObject, tObject )
+    {
+        // alert( 'onDrag' );
+        return true;
+    } );
+
+    MainTree.attachEvent( 'onDragIn', function ( dId, lId, id, sObject, tObject )
+    {
+        //		alert('onDragIn');
+        return false;
+    } );
+
+    MainTree.attachEvent( 'onDrop', function ( sId, tId, id, sObject, tObject )
+    {
+        // alert( 'onDrop' );
+        return true;
+    } );
+
+    MainTree.attachEvent( 'onEdit', function ( state, id, tree, value )
+    {
+        // alert( 'onEdit' );
+        return false;
+    } );
+
+    MainTree.attachEvent( 'onSelect', function ( id )
+    {
+        //           alert( 'Selected Item id: ' + id + '\n' + 'Node Type: ' + MainTree.getUserData( MainTree.getSelectedItemId(), 'nodeType' ) + '\n' + 'SQD Type: ' + MainTree.getUserData( MainTree.getSelectedItemId(), 'sqdType' ) + '\n' + 'tabId: ' + MainTree.getUserData( MainTree.getSelectedItemId(), 'tabId' ) );
+        var tabId = "";
+        if ( MainTree.getUserData( id, 'tabId' ) )
+        {
+            tabId = MainTree.getUserData( id, 'tabId' );
+        }
+        //        alert( 'Selected Item id: ' + id + '\ntabId: ' + tabId );
+        mainStatus.setText( 'Selected Object id: ' + id );
+        Tabbar_user_control.setTabActive( "tabProp" );
+        LoadCtl( id, tabId );
+    } );
+
+    MainTree.attachEvent( 'onClick', function ( id )
+    {
+        //           alert( 'Selected Item id: ' + id + '\n' + 'Node Type: ' + MainTree.getUserData( MainTree.getSelectedItemId(), 'nodeType' ) + '\n' + 'SQD Type: ' + MainTree.getUserData( MainTree.getSelectedItemId(), 'sqdType' ) + '\n' + 'tabId: ' + MainTree.getUserData( MainTree.getSelectedItemId(), 'tabId' ) );
+        return IsSaved;
+        
+    } );
+
+    // Attach Tab Bar to cell 'b' of Main Layout  
+    //******************************************************************************************
+    var Tabbar_user_control = main_layout.cells( 'b' ).attachTabbar();
+    main_layout.cells( "b" ).setText( "Tabbar" );
+    main_layout.cells( "b" ).dock();
+
+    Tabbar_user_control.setAlign( "top" );
+    Tabbar_user_control.setImagePath( "../Studio/dhtmlxSuite/dhtmlxTabbar/codebase/imgs/" );
+    Tabbar_user_control.setSkin( "dhx_skyblue" );
+    Tabbar_user_control.enableTabCloseButton( false );
+    //        Tabbar_user_control.enableAutoResize(true);
+    Tabbar_user_control.setHrefMode( "iframe" );
+
+    Tabbar_user_control.addTab( "tabProp", "Properties", "200px" );
+    //    var ctlProp = Tabbar_user_control.cells( "tabProp" ).attachForm();
+    //    ctlProp.loadStruct( "../Studio/data/SQDFormProj.json?etc=" + new Date().getTime(), "json" );
+    Tabbar_user_control.addTab( "tabWeb", "Reports", "200px" );
+    //    Tabbar_user_control.setContentHref( "tabProp", "ctlProject.html" );
+//    Tabbar_user_control.setContentHref( "tabWeb", "const.html" );
+
+    Tabbar_user_control.addTab( "tabLog", "Error Log", "200px" );
+
+    //Tabbar_user_control.addTab( "tabJointJS", "JointJS", "200px" );
+    //    Tabbar_user_control.setContentHref( "tabProp", "ctlProject.html" );
+    //Tabbar_user_control.setContentHref( "tabJointJS", "JJS.html" );
+
+    Tabbar_user_control.addTab( "tabAdFlow", "Work Flow", "200px" );
+//    Tabbar_user_control.setContentHref( "tabProp", "ctlProject.html" );
+    Tabbar_user_control.setContentHref( "tabAdFlow", "AdFlow.html" );
+
+    Tabbar_user_control.setTabActive( "tabProp" );
+    //        loadCtlFolder( MainTree.getLevel(0) );
+
+    Tabbar_user_control.attachEvent( 'onTabClick', function ( id, last_id )
+    {
+        //alert( "onTabClick happens" );
+        if ( IsSaved )
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        };
+    } );
+
+    Tabbar_user_control.attachEvent( 'onSelect', function ( id, last_id )
+    {
+        //alert( "onSelect happens" );
+        if ( IsSaved )
+        {
+            if ( id == "tabProp" )
+            {
+                // go to Usercontrol selected on tree
+                var selId = MainTree.getSelectedItemId();
+                var tabId = "";
+                if ( MainTree.getUserData( selId, 'tabId' ) )
+                {
+                    tabId = MainTree.getUserData( selId, 'tabId' );
+                }
+                //            alert( 'Selected Item id: ' + id + '\ntabId: ' + tabId );
+                mainStatus.setText( 'Selected Object id: ' + selId );
+                LoadCtl( selId, tabId );
+            }
+            else if ( id == "tabWeb" )
+            {
+                //  Tabbar goes to Reports
+                mainStatus.setText( 'Reports for Project: ' + CURproj );
+                // Future, add tab for wire diagrams
+//                dhtmlx.message( {
+//                    title: "Under Contruction",
+//                    type: "error",
+//                    text: "Reporting functionality is currently under construction.",
+//                    expires: 5000
+//                } );
+                OpenReports();
+            }
+            else if ( id == "tabLog" )
+            {
+                mainStatus.setText( 'Log File for Project: ' + CURproj );
+                OpenLogFile();
+            }
+            return true;
+        }
+        else
+        {
+            return false;
+        };
+    } );
+
+    Tabbar_user_control.attachEvent( 'onTabClose',function ( id )
+	{
+		return true;
+	} );
+
+    //**************************Load the Main Tree*************************
+    MainTree.deleteChildItems( '0' );
+    MainTree.deleteItem( '0' );
+    MainTree.loadXML( '../Studio/data/mainTree.xml', function ()   //mainTree.xml
+    {
+        MainTree.openAllItems( '0' );
+        //                alert( "Loaded" );
+        loadCtlFolder( 'fldProj' );
+    } );
+    main_layout.progressOff();
+
+    </script>
+</body>
+</html>

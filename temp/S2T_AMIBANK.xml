@@ -1,0 +1,166 @@
+<record id="BCBSDB24.XX1_AMI_CR_BANK">
+<atom name="NAME" type="str">BCBSDB24.XX1_AMI_CR_BANK</atom>
+<atom name="ALIAS" type="str">XX1_AMI_CR_BANK</atom>
+<fld id="CNT_ID_NBR">
+<atom name="ID" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">12</atom>
+<atom name="NAME" type="str">CNT_ID_NBR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="MBR_ID_NBR">
+<atom name="ID" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">12</atom>
+<atom name="NAME" type="str">MBR_ID_NBR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="CTR_BUS_CD">
+<atom name="ID" type="int">2</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">CTR_BUS_CD</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="CTR_PGM_CD">
+<atom name="ID" type="int">3</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">CTR_PGM_CD</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="CTR_CARR_CD">
+<atom name="ID" type="int">4</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="NAME" type="str">CTR_CARR_CD</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="DIV_ID_NBR">
+<atom name="ID" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="NAME" type="str">DIV_ID_NBR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="SVC_ID_NBR">
+<atom name="ID" type="int">6</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">16</atom>
+<atom name="NAME" type="str">SVC_ID_NBR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="APPL_ID_NBR">
+<atom name="ID" type="int">7</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="NAME" type="str">APPL_ID_NBR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="CO_ID_NBR">
+<atom name="ID" type="int">8</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">CO_ID_NBR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="CTR_ADJ_CD">
+<atom name="ID" type="int">9</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="NAME" type="str">CTR_ADJ_CD</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+<fld id="CTR_APPLY_DT">
+<atom name="ID" type="int">10</atom>
+<atom name="LEGACY_TYPE" type="str">DATE</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="NAME" type="str">CTR_APPLY_DT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">DATE</atom>
+</fld>
+<fld id="SVC_COB_ACCUR_AMT">
+<atom name="ID" type="int">11</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="NAME" type="str">SVC_COB_ACCUR_AMT</atom>
+<atom name="PRECISION" type="int">11</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="SVC_COB_REIMB_AMT">
+<atom name="ID" type="int">12</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="NAME" type="str">SVC_COB_REIMB_AMT</atom>
+<atom name="PRECISION" type="int">11</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="CTR_UPDATE_DT">
+<atom name="ID" type="int">13</atom>
+<atom name="LEGACY_TYPE" type="str">DATE</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="NAME" type="str">CTR_UPDATE_DT</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">DATE</atom>
+</fld>
+<fld id="IMAGE_REC_NBR">
+<atom name="ID" type="int">14</atom>
+<atom name="LEGACY_TYPE" type="str">PACKED</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="NAME" type="str">IMAGE_REC_NBR</atom>
+<atom name="PRECISION" type="int">10</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">DECIMAL</atom>
+</fld>
+<fld id="SYS_UPDT_TS">
+<atom name="ID" type="int">15</atom>
+<atom name="LEGACY_TYPE" type="str">TIMESTAMP</atom>
+<atom name="LEN" type="int">26</atom>
+<atom name="NAME" type="str">SYS_UPDT_TS</atom>
+<atom name="PRECISION" type="int">6</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">TST</atom>
+</fld>
+<fld id="SYS_ERROR_CD">
+<atom name="ID" type="int">16</atom>
+<atom name="LEGACY_TYPE" type="str">FULLW</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="NAME" type="str">SYS_ERROR_CD</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">INTEGER</atom>
+</fld>
+<fld id="SQDSTCK">
+<atom name="ID" type="int">17</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">16</atom>
+<atom name="NAME" type="str">SQDSTCK</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+</fld>
+</record>

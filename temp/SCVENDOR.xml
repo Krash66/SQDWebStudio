@@ -1,0 +1,81 @@
+<record id="VENDOR-REC">
+<atom name="NAME" type="str">VENDOR-REC</atom>
+<fld id="VENDOR-REC">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEN" type="int">60</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">VENDOR-REC</atom>
+<fld id="VENDID">
+<atom name="NULL" type="int">1</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">VENDID</atom>
+</fld>
+<fld id="VEND-NAME">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">3</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">VEND-NAME</atom>
+</fld>
+<fld id="VEND-COMPANY">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">13</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">VEND-COMPANY</atom>
+</fld>
+<fld id="VEND-ADDRESS">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">23</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">VEND-ADDRESS</atom>
+</fld>
+<fld id="VEND-CITY">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">43</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">VEND-CITY</atom>
+</fld>
+<fld id="VEND-STATE">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">53</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">VEND-STATE</atom>
+</fld>
+<fld id="VEND-ZIP">
+<atom name="NULL" type="int">1</atom>
+<atom name="POSITION" type="int">55</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="NAME" type="str">VEND-ZIP</atom>
+</fld>
+</fld>
+</record>

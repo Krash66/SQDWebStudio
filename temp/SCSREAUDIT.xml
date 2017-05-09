@@ -1,0 +1,121 @@
+<record id="SREAUDIT">
+<atom name="NAME" type="str">SREAUDIT</atom>
+<fld id="SREAUDIT">
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="LEN" type="int">74</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NAME" type="str">SREAUDIT</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="ORIGIN">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">ORIGIN</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="APPLMNEM">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">4</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">APPLMNEM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CURR_DATE">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">8</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">CURR_DATE</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="REC_TYP">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">16</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">REC_TYP</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CONCAT_KEY">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">20</atom>
+<atom name="LEN" type="int">14</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">CONCAT_KEY</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="RSRVD_DATA">
+<atom name="LEGACY_TYPE" type="str">HALFW</atom>
+<atom name="POSITION" type="int">34</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">RSRVD_DATA</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">4</atom>
+</fld>
+<fld id="LAST_UPDT_DATE">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">36</atom>
+<atom name="LEN" type="int">8</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">LAST_UPDT_DATE</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="LAST_UPDT_TIME">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">44</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">LAST_UPDT_TIME</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="FUNC_CODE">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">50</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">FUNC_CODE</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="FUNC_OPID">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">52</atom>
+<atom name="LEN" type="int">9</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">FUNC_OPID</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="FUNC_RLSE_IND">
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="POSITION" type="int">61</atom>
+<atom name="LEN" type="int">1</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="NAME" type="str">FUNC_RLSE_IND</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+</record>

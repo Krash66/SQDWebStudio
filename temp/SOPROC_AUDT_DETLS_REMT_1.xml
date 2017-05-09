@@ -1,0 +1,103 @@
+<record id="PROC_AUDT_DETLS_REMT_1">
+<atom name="ALIAS" type="str">PROC_AUDT_DETLS_REMT_1</atom>
+<atom name="NAME" type="str">PROC_AUDT_DETLS_REMT_1</atom>
+<fld id="SEQUENCE_NUMBER">
+<atom name="LEGACY_TYPE" type="str">NUMBER</atom>
+<atom name="PRECISION" type="int">12</atom>
+<atom name="TYPE" type="str">OCINUM</atom>
+<atom name="NAME" type="str">SEQUENCE_NUMBER</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="ID" type="int">0</atom>
+</fld>
+<fld id="ORIGIN">
+<atom name="LEGACY_TYPE" type="str">VARCHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="TYPE" type="str">VARCHAR</atom>
+<atom name="NAME" type="str">ORIGIN</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="ID" type="int">1</atom>
+</fld>
+<fld id="APPLMNEM">
+<atom name="LEGACY_TYPE" type="str">VARCHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="TYPE" type="str">VARCHAR</atom>
+<atom name="NAME" type="str">APPLMNEM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="ID" type="int">2</atom>
+</fld>
+<fld id="CURR_DATE">
+<atom name="LEGACY_TYPE" type="str">DATE</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="TYPE" type="str">DATETIME</atom>
+<atom name="NAME" type="str">CURR_DATE</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">19</atom>
+<atom name="ID" type="int">3</atom>
+</fld>
+<fld id="REC_TYP">
+<atom name="LEGACY_TYPE" type="str">VARCHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="TYPE" type="str">VARCHAR</atom>
+<atom name="NAME" type="str">REC_TYP</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">6</atom>
+<atom name="ID" type="int">4</atom>
+</fld>
+<fld id="CONCAT_KEY">
+<atom name="LEGACY_TYPE" type="str">VARCHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="TYPE" type="str">VARCHAR</atom>
+<atom name="NAME" type="str">CONCAT_KEY</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">16</atom>
+<atom name="ID" type="int">5</atom>
+</fld>
+<fld id="RSRVD_DATA">
+<atom name="LEGACY_TYPE" type="str">NUMBER</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="TYPE" type="str">OCINUM</atom>
+<atom name="NAME" type="str">RSRVD_DATA</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="ID" type="int">6</atom>
+</fld>
+<fld id="LAST_UPDT_DTTM">
+<atom name="LEGACY_TYPE" type="str">DATE</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="TYPE" type="str">DATETIME</atom>
+<atom name="NAME" type="str">LAST_UPDT_DTTM</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">19</atom>
+<atom name="ID" type="int">7</atom>
+</fld>
+<fld id="FUNC_CODE">
+<atom name="LEGACY_TYPE" type="str">VARCHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="TYPE" type="str">VARCHAR</atom>
+<atom name="NAME" type="str">FUNC_CODE</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">4</atom>
+<atom name="ID" type="int">8</atom>
+</fld>
+<fld id="FUNC_OPID">
+<atom name="LEGACY_TYPE" type="str">VARCHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="TYPE" type="str">VARCHAR</atom>
+<atom name="NAME" type="str">FUNC_OPID</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">11</atom>
+<atom name="ID" type="int">9</atom>
+</fld>
+<fld id="FUNC_RLSE_IND">
+<atom name="LEGACY_TYPE" type="str">VARCHAR</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="TYPE" type="str">VARCHAR</atom>
+<atom name="NAME" type="str">FUNC_RLSE_IND</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="LEN" type="int">3</atom>
+<atom name="ID" type="int">10</atom>
+</fld>
+</record>

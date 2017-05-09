@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:xml_format_used_by_connector    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+
+
+<h1><a name="xml_format_used_by_connector" id="xml_format_used_by_connector">XML format used by connector</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="grid" id="grid">Grid</a></h2>
+<div class="level2">
+<pre class="code xml">   <span class="sc3"><span class="re1">&lt;rows<span class="re2">&gt;</span></span></span>
+           <span class="sc3"><span class="re1">&lt;row</span> <span class="re0">id</span>=<span class="st0">&quot;some1&quot;</span><span class="re2">&gt;</span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 1,1<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 1,2<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;/row<span class="re2">&gt;</span></span></span>
+           <span class="sc3"><span class="re1">&lt;row</span> <span class="re0">id</span>=<span class="st0">&quot;some2&quot;</span><span class="re2">&gt;</span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 2,1<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 2,2<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;/row<span class="re2">&gt;</span></span></span>
+   <span class="sc3"><span class="re1">&lt;/rows<span class="re2">&gt;</span></span></span></pre><ul>
+<li class="level1"><div class="li"> <strong>row</strong>  - the tag represents row in the grid</div>
+</li>
+<li class="level1"><div class="li"> <strong>cell</strong>  - the tag represents cell in the grid</div>
+</li>
+</ul>
+
+<p>
+
+<strong>row@id</strong> - the mandatory attribute, must be unique for each row; row and cell tags may contain additional attributes which will be processed in default way. 
+</p>
+
+<p>
+In <em>dynamic loading</em> mode 
+
+</p>
+<pre class="code xml">   <span class="sc3"><span class="re1">&lt;rows</span> <span class="re0">total_count</span>=<span class="st0">&quot;50000&quot;</span> <span class="re0">pos</span>=<span class="st0">&quot;1230&quot;</span><span class="re2">&gt;</span></span>
+           <span class="sc3"><span class="re1">&lt;row</span> <span class="re0">id</span>=<span class="st0">&quot;some1230&quot;</span><span class="re2">&gt;</span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 1,1<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 1,2<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;/row<span class="re2">&gt;</span></span></span>
+           <span class="sc3"><span class="re1">&lt;row</span> <span class="re0">id</span>=<span class="st0">&quot;some1231&quot;</span><span class="re2">&gt;</span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 2,1<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 2,2<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;/row<span class="re2">&gt;</span></span></span>
+   <span class="sc3"><span class="re1">&lt;/rows<span class="re2">&gt;</span></span></span></pre><ul>
+<li class="level1"><div class="li"> <strong>rows@total_count</strong> - count of rows in grid, needs to be sent only for the first data request ( when posStart parameter is not defined ) </div>
+</li>
+<li class="level1"><div class="li"> <strong>rows@pos</strong> - equal to posStart parameters, defines where grid data will be added</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="treegrid" id="treegrid">TreeGrid</a></h2>
+<div class="level2">
+<pre class="code xml">   <span class="sc3"><span class="re1">&lt;rows<span class="re2">&gt;</span></span></span>
+           <span class="sc3"><span class="re1">&lt;row</span> <span class="re0">id</span>=<span class="st0">&quot;some1&quot;</span><span class="re2">&gt;</span></span>
+              <span class="sc3"><span class="re1">&lt;cell</span> <span class="re0">image</span>=<span class="st0">&quot;some.gif&quot;</span><span class="re2">&gt;</span></span>value 1,1<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 1,2<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span></span>
+              <span class="sc3"><span class="re1">&lt;row</span> <span class="re0">id</span>=<span class="st0">&quot;some11&quot;</span><span class="re2">&gt;</span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>child value 1<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>child value 2<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;/row<span class="re2">&gt;</span></span></span>
+           <span class="sc3"><span class="re1">&lt;/row<span class="re2">&gt;</span></span></span>
+           <span class="sc3"><span class="re1">&lt;row</span> <span class="re0">id</span>=<span class="st0">&quot;some2&quot;</span><span class="re2">&gt;</span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 2,1<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 2,2<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;/row<span class="re2">&gt;</span></span></span>
+   <span class="sc3"><span class="re1">&lt;/rows<span class="re2">&gt;</span></span></span></pre><ul>
+<li class="level1"><div class="li"> <strong>row</strong>  - the tag represents row in the grid, one row tag can contain other row tags inside ( parent - child relation in the hierarchy ) </div>
+</li>
+<li class="level1"><div class="li"> <strong>cell</strong>  - the tag represents cell in the grid</div>
+</li>
+<li class="level1"><div class="li"> <strong>row@id</strong> - the mandatory attribute, must be unique for each row</div>
+</li>
+<li class="level1"><div class="li"> <strong>cell@image</strong> - can define image for tree cell in grid ( optional )</div>
+</li>
+</ul>
+
+<p>
+Dyn. loading 
+
+</p>
+<pre class="code xml">   <span class="sc3"><span class="re1">&lt;rows</span> <span class="re0">parent</span>=<span class="st0">&quot;id&quot;</span><span class="re2">&gt;</span></span>
+           <span class="sc3"><span class="re1">&lt;row</span> <span class="re0">id</span>=<span class="st0">&quot;some1&quot;</span> <span class="re0">xmlkids</span>=<span class="st0">&quot;1&quot;</span><span class="re2">&gt;</span></span>
+              <span class="sc3"><span class="re1">&lt;cell</span> <span class="re0">image</span>=<span class="st0">&quot;some.gif&quot;</span><span class="re2">&gt;</span></span>value 1,1<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 1,2<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span></span>
+           <span class="sc3"><span class="re1">&lt;/row<span class="re2">&gt;</span></span></span>
+           <span class="sc3"><span class="re1">&lt;row</span> <span class="re0">id</span>=<span class="st0">&quot;some2&quot;</span><span class="re2">&gt;</span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 2,1<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;cell<span class="re2">&gt;</span></span></span>value 2,2<span class="sc3"><span class="re1">&lt;/cell<span class="re2">&gt;</span></span><span class="re1">&lt;/row<span class="re2">&gt;</span></span></span>
+   <span class="sc3"><span class="re1">&lt;/rows<span class="re2">&gt;</span></span></span></pre><ul>
+<li class="level1"><div class="li"> <strong>row@xmlkids</strong> - defines that row can contain child nodes</div>
+</li>
+<li class="level1"><div class="li"> <strong>rows@parent</strong> - the name of parent ID ( equal to incoming “id” parameter ) , ID of virtual root - 0</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="tree" id="tree">Tree</a></h2>
+<div class="level2">
+<pre class="code xml">   <span class="sc3"><span class="re1">&lt;tree<span class="re2">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;item</span> <span class="re0">id</span>=<span class="st0">&quot;some&quot;</span> <span class="re0">text</span>=<span class="st0">&quot;name&quot;</span><span class="re2">&gt;</span></span>
+                 <span class="sc3"><span class="re1">&lt;item</span> <span class="re0">id</span>=<span class="st0">&quot;child1&quot;</span> <span class="re0">text</span>=<span class="st0">&quot;name 1&quot;</span><span class="re2">/&gt;</span></span>
+                 <span class="sc3"><span class="re1">&lt;item</span> <span class="re0">id</span>=<span class="st0">&quot;child2&quot;</span> <span class="re0">text</span>=<span class="st0">&quot;name 2&quot;</span><span class="re2">/&gt;</span></span>
+        <span class="sc3"><span class="re1">&lt;/item<span class="re2">&gt;</span></span></span>
+   <span class="sc3"><span class="re1">&lt;/tree<span class="re2">&gt;</span></span></span></pre><ul>
+<li class="level1"><div class="li"> <strong>item tag</strong> - item in a tree, can nest other item tags to represent parent-child relation</div>
+</li>
+<li class="level1"><div class="li"> <strong>item@id</strong> - ID, unique for each item</div>
+</li>
+<li class="level1"><div class="li"> <strong>item@text</strong> - label</div>
+</li>
+</ul>
+
+<p>
+
+In case of dyn. loading
+</p>
+<pre class="code xml">   <span class="sc3"><span class="re1">&lt;tree</span> <span class="re0">id</span>=<span class="st0">&quot;id&quot;</span><span class="re2">&gt;</span></span>
+        <span class="sc3"><span class="re1">&lt;item</span> <span class="re0">id</span>=<span class="st0">&quot;some&quot;</span> <span class="re0">text</span>=<span class="st0">&quot;name&quot;</span> <span class="re0">childs</span>=<span class="st0">&quot;1&quot;</span><span class="re2">&gt;</span></span>
+        <span class="sc3"><span class="re1">&lt;/item<span class="re2">&gt;</span></span></span>
+   <span class="sc3"><span class="re1">&lt;/tree<span class="re2">&gt;</span></span></span></pre><ul>
+<li class="level1"><div class="li"> <strong>item@childs</strong> - defines that row can contain child nodes</div>
+</li>
+<li class="level1"><div class="li"> <strong>tree@id</strong> - the name of parent ID ( equal to incoming “id” parameter ) , ID of virtual root - 0</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="combo" id="combo">Combo</a></h2>
+<div class="level2">
+<pre class="code xml">    <span class="sc3"><span class="re1">&lt;data<span class="re2">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;option</span> <span class="re0">value</span>=<span class="st0">&quot;some&quot;</span><span class="re2">&gt;</span></span>Some label<span class="sc3"><span class="re1">&lt;/option<span class="re2">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;option</span> <span class="re0">value</span>=<span class="st0">&quot;other&quot;</span><span class="re2">&gt;</span></span>Other label<span class="sc3"><span class="re1">&lt;/option<span class="re2">&gt;</span></span></span>
+    <span class="sc3"><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></pre><ul>
+<li class="level1"><div class="li"> <strong>option</strong> - represents option in combo</div>
+</li>
+</ul>
+
+<p>
+
+In case of dyn. loading:
+</p>
+<pre class="code xml">    <span class="sc3"><span class="re1">&lt;data</span> <span class="re0">add</span>=<span class="st0">&quot;true&quot;</span><span class="re2">&gt;</span></span>
+        <span class="sc3"><span class="re1">&lt;option</span> <span class="re0">value</span>=<span class="st0">&quot;some&quot;</span><span class="re2">&gt;</span></span>Some label<span class="sc3"><span class="re1">&lt;/option<span class="re2">&gt;</span></span></span>
+        <span class="sc3"><span class="re1">&lt;option</span> <span class="re0">value</span>=<span class="st0">&quot;other&quot;</span><span class="re2">&gt;</span></span>Other label<span class="sc3"><span class="re1">&lt;/option<span class="re2">&gt;</span></span></span>
+    <span class="sc3"><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></pre>
+<p>
+
+If “pos” parameter was provided, response must contain data@add attribute , to mark that it is not a new set of values, but addition to existing one. 
+
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

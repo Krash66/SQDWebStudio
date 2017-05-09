@@ -1,0 +1,20 @@
+           04 SPYBOPAR.
+             06 YBOP-YBOPAR-KY.
+               08 YBOP-OFRG-PRMTR-CD
+                                    PIC X(5).
+             06 YBOP-MNDTRY-NT      PIC X.
+             06 YBOP-SOF-OFRG-PRMTR-RTG-IMP
+                                    PIC X.
+             06 YBOP-USG-QUALIF-CD  PIC X.
+             06 YBOP-SOF-PRMTR-CDNLTY
+                                    PIC S9(3)      COMP-3.
+             06 YBOP-SOF-OFRG-PRMTR-RT-SEQ
+                                    PIC S9         COMP-3.
+             06 YBOP-USE-PRMTR-VAL-DESC
+                                    PIC X.
+             06 YBOP-PRMTR-PRTG-SEQ PIC S9(3)      COMP-3.
+             06 YBOP-SOF-OFRG-PRMTR-PROFILE
+                                    PIC 9.
+             06 YBOP-SOF-OFRG-PRMTR-DEFAULT
+                                    PIC X.
+             06 FILLER1             PIC X.

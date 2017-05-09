@@ -1,0 +1,61 @@
+<record id="COMPANY-REC">
+<atom name="NAME" type="str">COMPANY-REC</atom>
+<fld id="COMPANY-REC">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="LEN" type="int">47</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="NAME" type="str">COMPANY-REC</atom>
+<fld id="COMPNAME">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="NAME" type="str">COMPNAME</atom>
+</fld>
+<fld id="COMP-ADDRESS">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">10</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">20</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="NAME" type="str">COMP-ADDRESS</atom>
+</fld>
+<fld id="COMP-CITY">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">30</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">10</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="NAME" type="str">COMP-CITY</atom>
+</fld>
+<fld id="COMP-STATE">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">40</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">2</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="NAME" type="str">COMP-STATE</atom>
+</fld>
+<fld id="COMP-ZIP">
+<atom name="PRECISION" type="int">0</atom>
+<atom name="POSITION" type="int">42</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="LEN" type="int">5</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="NAME" type="str">COMP-ZIP</atom>
+</fld>
+</fld>
+</record>

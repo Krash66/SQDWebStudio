@@ -1,0 +1,238 @@
+<record id="SERVICE_OFFERING">
+<atom name="ALIAS" type="str">SERVICE_OFFERING</atom>
+<atom name="NAME" type="str">SERVICE_OFFERING</atom>
+<fld id="SOF_NO">
+<atom name="LEN" type="int">0</atom>
+<atom name="PRECISION" type="int">5</atom>
+<atom name="LEGACY_TYPE" type="str">NUMBER</atom>
+<atom name="TYPE" type="str">OCINUM</atom>
+<atom name="ID" type="int">0</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">SOF_NO</atom>
+</fld>
+<fld id="FU_TYP_CD_01">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">1</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_01</atom>
+</fld>
+<fld id="FU_TYP_CD_02">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">2</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_02</atom>
+</fld>
+<fld id="FU_TYP_CD_03">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">3</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_03</atom>
+</fld>
+<fld id="FU_TYP_CD_04">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">4</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_04</atom>
+</fld>
+<fld id="FU_TYP_CD_05">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">5</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_05</atom>
+</fld>
+<fld id="FU_TYP_CD_06">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">6</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_06</atom>
+</fld>
+<fld id="FU_TYP_CD_07">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">7</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_07</atom>
+</fld>
+<fld id="FU_TYP_CD_08">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">8</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_08</atom>
+</fld>
+<fld id="FU_TYP_CD_09">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">9</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_09</atom>
+</fld>
+<fld id="FU_TYP_CD_10">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">10</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_10</atom>
+</fld>
+<fld id="FU_TYP_CD_11">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">11</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_11</atom>
+</fld>
+<fld id="FU_TYP_CD_12">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">12</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_12</atom>
+</fld>
+<fld id="FU_TYP_CD_13">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">13</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_13</atom>
+</fld>
+<fld id="FU_TYP_CD_14">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">14</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_14</atom>
+</fld>
+<fld id="FU_TYP_CD_15">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">15</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_15</atom>
+</fld>
+<fld id="FU_TYP_CD_16">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">16</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_16</atom>
+</fld>
+<fld id="FU_TYP_CD_17">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">17</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_17</atom>
+</fld>
+<fld id="FU_TYP_CD_18">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">18</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_18</atom>
+</fld>
+<fld id="FU_TYP_CD_19">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">19</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_19</atom>
+</fld>
+<fld id="FU_TYP_CD_20">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">20</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_20</atom>
+</fld>
+<fld id="FU_TYP_CD_21">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">21</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_21</atom>
+</fld>
+<fld id="FU_TYP_CD_22">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">22</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_22</atom>
+</fld>
+<fld id="FU_TYP_CD_23">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">23</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_23</atom>
+</fld>
+<fld id="FU_TYP_CD_24">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">24</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_24</atom>
+</fld>
+<fld id="FU_TYP_CD_25">
+<atom name="LEN" type="int">6</atom>
+<atom name="PRECISION" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">CHAR</atom>
+<atom name="TYPE" type="str">CHAR</atom>
+<atom name="ID" type="int">25</atom>
+<atom name="NULL" type="int">1</atom>
+<atom name="NAME" type="str">FU_TYP_CD_25</atom>
+</fld>
+</record>

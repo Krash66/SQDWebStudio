@@ -1,0 +1,1117 @@
+<record id="">
+<fld id="TCRMService">
+<atom name="ID" type="int">0</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMService</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="RequestControl">
+<atom name="ID" type="int">1</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">RequestControl</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="requestID">
+<atom name="ID" type="int">3</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">requestID</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="DWLControl">
+<atom name="ID" type="int">4</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">DWLControl</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="requesterName">
+<atom name="ID" type="int">5</atom>
+<atom name="LEVEL" type="int">3</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">requesterName</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="requesterLanguage">
+<atom name="ID" type="int">6</atom>
+<atom name="LEVEL" type="int">3</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">requesterLanguage</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+</fld>
+<fld id="TCRMTx">
+<atom name="ID" type="int">2</atom>
+<atom name="LEVEL" type="int">1</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMTx</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="TCRMTxType">
+<atom name="ID" type="int">7</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">TCRMTxType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="TCRMTxObject">
+<atom name="ID" type="int">8</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">TCRMTxObject</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="TCRMObject">
+<atom name="ID" type="int">9</atom>
+<atom name="LEVEL" type="int">2</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMObject</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="TCRMOrganizationBObj">
+<atom name="ID" type="int">10</atom>
+<atom name="LEVEL" type="int">3</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMOrganizationBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="PartyId">
+<atom name="ID" type="int">11</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PartyId</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="NewPartyIdReference">
+<atom name="ID" type="int">12</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">NewPartyIdReference</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="DisplayName">
+<atom name="ID" type="int">13</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">DisplayName</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PreferredLanguageType">
+<atom name="ID" type="int">14</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PreferredLanguageType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ComputerAccessType">
+<atom name="ID" type="int">15</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ComputerAccessType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PartyType">
+<atom name="ID" type="int">16</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PartyType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CreatedDate">
+<atom name="ID" type="int">17</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">CreatedDate</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="SinceDate">
+<atom name="ID" type="int">18</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">SinceDate</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ClientStatusType">
+<atom name="ID" type="int">19</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ClientStatusType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="SolicitationIndicator">
+<atom name="ID" type="int">20</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">SolicitationIndicator</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ConfidentialIndicator">
+<atom name="ID" type="int">21</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ConfidentialIndicator</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ClientPotentialType">
+<atom name="ID" type="int">22</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ClientPotentialType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ClientImportanceType">
+<atom name="ID" type="int">23</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ClientImportanceType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="MandatorySearchDone">
+<atom name="ID" type="int">24</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">MandatorySearchDone</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="BuySellAgreementType">
+<atom name="ID" type="int">25</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">BuySellAgreementType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ProfitIndicator">
+<atom name="ID" type="int">26</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ProfitIndicator</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="OrganizationType">
+<atom name="ID" type="int">27</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">OrganizationType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="EstablishedDate">
+<atom name="ID" type="int">28</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">EstablishedDate</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="IndustryType">
+<atom name="ID" type="int">29</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IndustryType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PrimaryKeyBObj">
+<atom name="ID" type="int">30</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">PrimaryKeyBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="ObjectReferenceId">
+<atom name="ID" type="int">44</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ObjectReferenceId</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="KeyBObj">
+<atom name="ID" type="int">45</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">KeyBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="KeyName">
+<atom name="ID" type="int">46</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">KeyName</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="KeyValue">
+<atom name="ID" type="int">47</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">KeyValue</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+</fld>
+<fld id="TCRMOrganizationNameBObj">
+<atom name="ID" type="int">31</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMOrganizationNameBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="OrganizationName">
+<atom name="ID" type="int">48</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">OrganizationName</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="NameUsageType">
+<atom name="ID" type="int">49</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">NameUsageType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PreferredOrganizationNameIndicator">
+<atom name="ID" type="int">50</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PreferredOrganizationNameIndicator</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="TCRMOrganizationNameBObj1">
+<atom name="ID" type="int">32</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMOrganizationNameBObj1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="OrganizationName1">
+<atom name="ID" type="int">51</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">OrganizationName1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="NameUsageType1">
+<atom name="ID" type="int">52</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">NameUsageType1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PreferredOrganizationNameIndicator1">
+<atom name="ID" type="int">53</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PreferredOrganizationNameIndicator1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="TCRMPartyAddressBObj">
+<atom name="ID" type="int">33</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyAddressBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="AddressUsageType">
+<atom name="ID" type="int">54</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AddressUsageType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CareOf">
+<atom name="ID" type="int">55</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">CareOf</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="StartDate">
+<atom name="ID" type="int">56</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">StartDate</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PreferredAddressIndicator">
+<atom name="ID" type="int">57</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PreferredAddressIndicator</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="TCRMAddressBObj">
+<atom name="ID" type="int">58</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMAddressBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="ResidenceType">
+<atom name="ID" type="int">59</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ResidenceType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AddressLineOne">
+<atom name="ID" type="int">60</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AddressLineOne</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AddressLineTwo">
+<atom name="ID" type="int">61</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AddressLineTwo</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AddressLineThree">
+<atom name="ID" type="int">62</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AddressLineThree</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="City">
+<atom name="ID" type="int">63</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">City</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ZipPostalCode">
+<atom name="ID" type="int">64</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ZipPostalCode</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ProvinceStateType">
+<atom name="ID" type="int">65</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ProvinceStateType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="CountryType">
+<atom name="ID" type="int">66</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">CountryType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="StandardFormatingIndicator">
+<atom name="ID" type="int">67</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">StandardFormatingIndicator</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="StandardFormatingOverride">
+<atom name="ID" type="int">68</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">StandardFormatingOverride</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AddressLastUpdateDate">
+<atom name="ID" type="int">69</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AddressLastUpdateDate</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AddressLastUpdateUser">
+<atom name="ID" type="int">70</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AddressLastUpdateUser</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+</fld>
+<fld id="TCRMPartyContactMethodBObj">
+<atom name="ID" type="int">34</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyContactMethodBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="ContactMethodUsageType">
+<atom name="ID" type="int">71</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodUsageType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ContactMethodStatusType">
+<atom name="ID" type="int">72</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodStatusType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="StartDate1">
+<atom name="ID" type="int">73</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">StartDate1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="TCRMContactMethodBObj">
+<atom name="ID" type="int">74</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMContactMethodBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="ContactMethodIdPK">
+<atom name="ID" type="int">75</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodIdPK</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ReferenceNumber">
+<atom name="ID" type="int">76</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ReferenceNumber</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ContactMethodType">
+<atom name="ID" type="int">77</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+</fld>
+<fld id="TCRMPartyContactMethodBObj1">
+<atom name="ID" type="int">35</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyContactMethodBObj1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="ContactMethodUsageType1">
+<atom name="ID" type="int">78</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodUsageType1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ContactMethodStatusType1">
+<atom name="ID" type="int">79</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodStatusType1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="EffectStartMonthDay">
+<atom name="ID" type="int">80</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">EffectStartMonthDay</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PreferredContactMethodIndicator">
+<atom name="ID" type="int">81</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PreferredContactMethodIndicator</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="SolicitationIndicator1">
+<atom name="ID" type="int">82</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">SolicitationIndicator1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AllowAttachmentIndicator">
+<atom name="ID" type="int">83</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AllowAttachmentIndicator</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="TextOnlyIndicator">
+<atom name="ID" type="int">84</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">TextOnlyIndicator</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="StartDate2">
+<atom name="ID" type="int">85</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">StartDate2</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="TCRMContactMethodBObj1">
+<atom name="ID" type="int">86</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMContactMethodBObj1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="ContactMethodIdPK1">
+<atom name="ID" type="int">87</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodIdPK1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ReferenceNumber1">
+<atom name="ID" type="int">88</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ReferenceNumber1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ContactMethodType1">
+<atom name="ID" type="int">89</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodType1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ContactMethodLastUpdateDate">
+<atom name="ID" type="int">90</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodLastUpdateDate</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ContactMethodLastUpdateUser">
+<atom name="ID" type="int">91</atom>
+<atom name="LEVEL" type="int">6</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ContactMethodLastUpdateUser</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+</fld>
+<fld id="TCRMPartyIdentificationBObj">
+<atom name="ID" type="int">36</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyIdentificationBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="IdentificationType">
+<atom name="ID" type="int">92</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="IdentificationNumber">
+<atom name="ID" type="int">93</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationNumber</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="IdentificationStatusType">
+<atom name="ID" type="int">94</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationStatusType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="IdentificationExpiryDate">
+<atom name="ID" type="int">95</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationExpiryDate</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="StartDate3">
+<atom name="ID" type="int">96</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">StartDate3</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="TCRMPartyIdentificationBObj1">
+<atom name="ID" type="int">37</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyIdentificationBObj1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="IdentificationType1">
+<atom name="ID" type="int">97</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationType1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="IdentificationNumber1">
+<atom name="ID" type="int">98</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationNumber1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="TCRMPartyIdentificationBObj2">
+<atom name="ID" type="int">38</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyIdentificationBObj2</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="IdentificationType2">
+<atom name="ID" type="int">99</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationType2</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="IdentificationNumber2">
+<atom name="ID" type="int">100</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationNumber2</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="TCRMPartyIdentificationBObj3">
+<atom name="ID" type="int">39</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyIdentificationBObj3</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="IdentificationType3">
+<atom name="ID" type="int">101</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationType3</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="IdentificationNumber3">
+<atom name="ID" type="int">102</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationNumber3</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="TCRMPartyIdentificationBObj4">
+<atom name="ID" type="int">40</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyIdentificationBObj4</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="IdentificationType4">
+<atom name="ID" type="int">103</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationType4</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="IdentificationNumber4">
+<atom name="ID" type="int">104</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">IdentificationNumber4</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="TCRMAdminContEquivBObj">
+<atom name="ID" type="int">41</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMAdminContEquivBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="AdminPartyId">
+<atom name="ID" type="int">105</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AdminPartyId</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AdminSystemType">
+<atom name="ID" type="int">106</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AdminSystemType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="AdminSystemValue">
+<atom name="ID" type="int">107</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">AdminSystemValue</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Description">
+<atom name="ID" type="int">108</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Description</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="TCRMPartyValueBObj">
+<atom name="ID" type="int">42</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyValueBObj</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="PartyId1">
+<atom name="ID" type="int">109</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PartyId1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PartyValueType">
+<atom name="ID" type="int">110</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PartyValueType</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="ValueString">
+<atom name="ID" type="int">111</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">ValueString</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute0Type">
+<atom name="ID" type="int">112</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute0Type</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute0String">
+<atom name="ID" type="int">113</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute0String</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute1Type">
+<atom name="ID" type="int">114</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute1Type</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute1String">
+<atom name="ID" type="int">115</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute1String</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute2Type">
+<atom name="ID" type="int">116</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute2Type</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute2String">
+<atom name="ID" type="int">117</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute2String</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+<fld id="TCRMPartyValueBObj1">
+<atom name="ID" type="int">43</atom>
+<atom name="LEVEL" type="int">4</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">GROUPITEM</atom>
+<atom name="NAME" type="str">TCRMPartyValueBObj1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+<fld id="PartyId2">
+<atom name="ID" type="int">118</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PartyId2</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="PartyValueType1">
+<atom name="ID" type="int">119</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">PartyValueType1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute0Type1">
+<atom name="ID" type="int">120</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute0Type1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute0String1">
+<atom name="ID" type="int">121</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute0String1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute1Type1">
+<atom name="ID" type="int">122</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute1Type1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+<fld id="Attribute1String1">
+<atom name="ID" type="int">123</atom>
+<atom name="LEVEL" type="int">5</atom>
+<atom name="LEN" type="int">0</atom>
+<atom name="LEGACY_TYPE" type="str">XMLPCDATA</atom>
+<atom name="NAME" type="str">Attribute1String1</atom>
+<atom name="NULL" type="int">0</atom>
+<atom name="PRECISION" type="int">0</atom>
+</fld>
+</fld>
+</fld>
+</fld>
+</fld>
+</fld>
+</record>

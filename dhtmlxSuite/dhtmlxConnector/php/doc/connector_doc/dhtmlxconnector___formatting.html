@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:formatting    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="formatting_changing_data_before_loading" id="formatting_changing_data_before_loading">Formatting/changing data before loading</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="base_formatting_methods" id="base_formatting_methods">base formatting methods</a></h2>
+<div class="level2">
+
+<p>
+<strong>APPLICABLE TO:</strong> Grid, TreeGrid, Tree, Combo, Scheduler, DataView, Chart, Form, DataStore, DHTMLX Touch components
+</p>
+
+<p>
+When you need to update values which were returned from database table or set some specific 
+formatting before sending data to client-side, you should use the <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event handler. 
+</p>
+
+</div>
+
+<h2><a name="common_usage" id="common_usage">common usage</a></h2>
+<div class="level2">
+<pre class="code php"><span class="re0">$res</span><span class="sy0">=</span><a href="http://www.php.net/mysql_connect"><span class="kw3">mysql_connect</span></a><span class="br0">&#40;</span><span class="re0">$mysql_server</span><span class="sy0">,</span><span class="re0">$mysql_user</span><span class="sy0">,</span><span class="re0">$mysql_pass</span><span class="br0">&#41;</span>;
+<a href="http://www.php.net/mysql_select_db"><span class="kw3">mysql_select_db</span></a><span class="br0">&#40;</span><span class="re0">$mysql_db</span><span class="br0">&#41;</span>;
+<span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">&quot;../../codebase/grid_connector.php&quot;</span><span class="br0">&#41;</span>;	
+&nbsp;
+<span class="kw2">function</span> color_rows<span class="br0">&#40;</span><span class="re0">$row</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+	<span class="kw1">if</span> <span class="br0">&#40;</span><span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">get_index</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">%</span><span class="nu19">2</span><span class="br0">&#41;</span>
+	<span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_row_color</span><span class="br0">&#40;</span><span class="st0">&quot;red&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeRender&quot;</span><span class="sy0">,</span><span class="st0">&quot;color_rows&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;grid50000&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_nm,item_cd&quot;</span><span class="br0">&#41;</span>;</pre><ul>
+<li class="level1"><div class="li"> <strong><em>color_rows</em></strong> function sets colors for rows subject to their indices</div>
+</li>
+<li class="level1"><div class="li"> during data generation, for each record outputed for client-side <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event will be executed, i.e. <strong><em>color_rows</em></strong> function will be called for each record</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>$row</em></strong> is an instance of GridDataItem object related to the current record</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="date_formatting" id="date_formatting">date formatting</a></h2>
+<div class="level2">
+
+<p>
+<strong>APPLICABLE TO:</strong> Grid, TreeGrid, Tree, Combo, Scheduler, DataView, Chart, Form, DateStore, DHTMLX Touch Components
+</p>
+<pre class="code php"><span class="kw2">function</span> formatting<span class="br0">&#40;</span><span class="re0">$row</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+                  <span class="co1">//render field as details link</span>
+                  <span class="re0">$data</span> <span class="sy0">=</span> <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;some_field&quot;</span><span class="br0">&#41;</span>;
+                  <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="st0">&quot;some_field&quot;</span><span class="sy0">,</span><span class="st0">&quot;&lt;a href='details.php?id={$data}'&gt;Details&lt;/a&gt;&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+                  <span class="co1">//formatting date field</span>
+                  <span class="re0">$data</span> <span class="sy0">=</span> <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;other_field&quot;</span><span class="br0">&#41;</span>;
+                  <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="st0">&quot;other_field&quot;</span><span class="sy0">,</span><a href="http://www.php.net/date"><span class="kw3">date</span></a><span class="br0">&#40;</span><span class="st0">&quot;m-d-Y&quot;</span><span class="sy0">,</span><a href="http://www.php.net/strtotime"><span class="kw3">strtotime</span></a><span class="br0">&#40;</span><span class="re0">$data</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeRender&quot;</span><span class="sy0">,</span><span class="st0">&quot;formatting&quot;</span><span class="br0">&#41;</span>;</pre><ul>
+<li class="level1"><div class="li"> <strong><em>get_value</em></strong> and <strong><em>set_value</em></strong> methods allow you to get or set value of any field related to the record ( it doesn&#039;t affect actual values in DB )</div>
+</li>
+<li class="level1"><div class="li"> If alias was used during data configuration - you need to use it instead of real db field name as the first parameter of get|set command. </div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="using_extra_fields" id="using_extra_fields">using extra fields</a></h2>
+<div class="level2">
+
+<p>
+<strong>APPLICABLE TO:</strong> Grid, TreeGrid, Tree, Combo, Scheduler, DataView, Chart, Form, DataStore, DHTMLX Touch components
+</p>
+
+<p>
+More complex formating rules can be defined by using <a href="dhtmlxconnector___basis.html#extra_data" class="wikilink1" title="dhtmlxconnector:basis">extra fields</a> while configuration.<br/>
+
+
+</p>
+<pre class="code php"><span class="kw2">function</span> formatting<span class="br0">&#40;</span><span class="re0">$row</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+           <span class="co1">//set row color</span>
+           <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_row_color</span><span class="br0">&#40;</span><span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;color&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+           <span class="co1">//save in userdata </span>
+           <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_userdata</span><span class="br0">&#40;</span><span class="st0">&quot;some_data&quot;</span><span class="sy0">,</span><span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;count&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeRender&quot;</span><span class="sy0">,</span><span class="st0">&quot;formatting&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;some_table&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;name,price&quot;</span><span class="sy0">,</span><span class="st0">&quot;color,count&quot;</span><span class="br0">&#41;</span>;</pre><ul>
+<li class="level1"><div class="li"> field color isn&#039;t outputed to client-side but used to define property of row. </div>
+</li>
+<li class="level1"><div class="li"> during update|insert operation only <em>&#039;name&#039;</em> and <em>&#039;price&#039;</em> columns may be changed, <em>&#039;color&#039;</em> will stay untouched. </div>
+</li>
+<li class="level1"><div class="li"> <em>&#039;count&#039;</em> field will be sent to client-side as userdata of the row and it will be possible to access it on client-side through related data. </div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="tree_treegrid_specificity" id="tree_treegrid_specificity">tree/treegrid specificity</a></h2>
+<div class="level2">
+
+<p>
+<strong>APPLICABLE TO:</strong>  Tree, TreeGrid
+</p>
+
+<p>
+treeGrid provides TreeGridDataItem and tree provides TreeDataItem as input parameter of <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event handler. Both of them support base operations and few specific ones.
+
+</p>
+<pre class="code php"><span class="kw2">function</span> custom_format<span class="br0">&#40;</span><span class="re0">$item</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+                <span class="kw1">if</span> <span class="br0">&#40;</span><span class="re0">$item</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;complete&quot;</span><span class="br0">&#41;</span><span class="sy0">&gt;</span><span class="nu0">75</span><span class="br0">&#41;</span> 
+		        <span class="re0">$item</span><span class="sy0">-&gt;</span><span class="me1">set_check_state</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>;
+&nbsp;
+		<span class="kw1">if</span> <span class="br0">&#40;</span><span class="re0">$item</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;duration&quot;</span><span class="br0">&#41;</span><span class="sy0">&gt;</span><span class="nu0">10</span><span class="br0">&#41;</span>
+			<span class="re0">$item</span><span class="sy0">-&gt;</span><span class="me1">set_image</span><span class="br0">&#40;</span><span class="st0">&quot;true.gif&quot;</span><span class="br0">&#41;</span>;
+		<span class="kw1">else</span>
+			<span class="re0">$item</span><span class="sy0">-&gt;</span><span class="me1">set_image</span><span class="br0">&#40;</span><span class="st0">&quot;false.gif&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+<span class="re0">$tree</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeRender&quot;</span><span class="sy0">,</span><span class="st0">&quot;custom_format&quot;</span><span class="br0">&#41;</span>;</pre><ul>
+<li class="level1"><div class="li"> <em><strong>set_image</strong></em> method allows to set image of tree element ( for treegrid it accepts the only parameter, while for tree it can be 3 different images for 3 states of tree&#039;s item)</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>set_check</strong></em> method exists only in TreeDataItem object and allows to set the state of related checkbox ( tree need to have checkboxes enabled in js. configuration code as well) </div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event can be used in dynamic Tree and TreeGrid to define which elements of hierarchy are branches and which are leafs (see details <a href="dhtmlxconnector___dyn_loading.html#tree_treegrid_specific" class="wikilink1" title="dhtmlxconnector:dyn_loading">here</a>).</div>
+</li>
+</ul>
+
+<p>
+
+While deleting items that have children you can face the problem that the parent item is deleted but children are not. In this case you should use the <a href="dhtmlxconnector___beforedelete_event.html" class="wikilink1" title="dhtmlxconnector:beforedelete_event">beforeDelete</a> event:
+
+</p>
+<pre class="code php"><span class="kw2">function</span> beforeDeleteFunc<span class="br0">&#40;</span> <span class="re0">$data</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+   <span class="co1">// custom logic</span>
+<span class="br0">&#125;</span>;
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeDelete&quot;</span><span class="sy0">,</span><span class="st0">&quot;beforeDeleteFunc&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

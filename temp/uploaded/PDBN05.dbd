@@ -1,0 +1,47 @@
+         TITLE   'ASSEMBLE OF DBDNAME=PDBN05   '
+*        DSNAME=IMS2.DBDLIB
+*        VOL=APAK63
+*        DBDGEN DATE            TIME
+       DBD     NAME=PDBN05,ACCESS=(HIDAM,OSAM),PASSWD=NO
+***********************************************************************
+*        DATASET GROUP NUMBER 1                                       *
+***********************************************************************
+DSG001 DATASET DD1=PDBN0501,DEVICE=3380,SIZE=(4096),SCAN=3,FRSPC=(0,5)
+***********************************************************************
+*        SEGMENT NUMBER 1                                             *
+***********************************************************************
+       SEGM    NAME=PSN05101,PARENT=0,BYTES=188,RULES=(LLL,LAST),      C
+               PTR=(TWINBWD,,,,),COMPRTN=(DKMPEX2,DATA)
+       FIELD   NAME=(N05101KY,SEQ,U),START=1,BYTES=38,TYPE=C
+       FIELD   NAME=(SECINDX),START=169,BYTES=20,TYPE=C
+       LCHILD  NAME=(ISN05101,IDBN05),PTR=INDX,RULES=LAST
+       LCHILD  NAME=(XSN05101,XDBN0501),PTR=INDX,RULES=LAST
+       XDFLD   NAME=XN0501L1,SEGMENT=PSN05101,SUBSEQ=(N05101KY),       C
+               SRCH=(SECINDX)
+***********************************************************************
+*        SEGMENT NUMBER 2                                             *
+***********************************************************************
+       SEGM    NAME=PSN05210,PARENT=((PSN05101,DBLE)),BYTES=185,       C
+               RULES=(LLL,LAST),PTR=(TWINBWD,,,,),                     C
+               COMPRTN=(DKMPEX2,DATA)
+       FIELD   NAME=(N05210KY,SEQ,U),START=1,BYTES=35,TYPE=C
+       FIELD   NAME=(/CK038),START=1,BYTES=38
+       LCHILD  NAME=(XSN05102,XDBN0502),PTR=INDX,RULES=LAST
+       XDFLD   NAME=XN0502L1,SEGMENT=PSN05210,SUBSEQ=(/CK038),         C
+               SRCH=(N05210KY)
+***********************************************************************
+*        SEGMENT NUMBER 3                                             *
+***********************************************************************
+       SEGM    NAME=PSN05320,PARENT=((PSN05210,)),BYTES=185,           C
+               RULES=(LLL,LAST),PTR=(TWINBWD,,,,),                     C
+               COMPRTN=(DKMPEX2,DATA)
+       FIELD   NAME=(N05320KY,SEQ,U),START=1,BYTES=35,TYPE=C
+***********************************************************************
+*        SEGMENT NUMBER 4                                             *
+***********************************************************************
+       SEGM    NAME=PSN05430,PARENT=((PSN05320,)),BYTES=150,           C
+               RULES=(LLL,LAST),PTR=(TWINBWD,,,,),                     C
+               COMPRTN=(DKMPEX2,DATA)
+       DBDGEN
+       FINISH
+       END

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:grid_columns    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+<h1><a name="select_combo_box_columns_in_grid" id="select_combo_box_columns_in_grid">SELECT/COMBO BOX COLUMNS IN GRID</a></h1>
+<div class="level1">
+
+<p>
+When on client-side you specify co/coro/combo columns (combo-box/select) in grid, grid will automatically request data for them in the same manner as for <a href="dhtmlxconnector___filtration.html" class="wikilink1" title="dhtmlxconnector:filtration">filtration</a> options.  
+</p>
+
+<p>
+By default, grid will use DISTINCT select against related field, and fetch all possible options.<br/>
+
+If you need to define custom list of options you can use one of 2 ways: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>hardcoded list</strong> </div>
+</li>
+</ul>
+<pre class="code php"><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_options</span><span class="br0">&#40;</span><span class="st0">&quot;item_nm&quot;</span><span class="sy0">,</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&quot;1&quot;</span> <span class="sy0">=&gt;</span> <span class="st0">&quot;one&quot;</span><span class="sy0">,</span> <span class="st0">&quot;2&quot;</span><span class="sy0">=&gt;</span><span class="st0">&quot;two&quot;</span><span class="sy0">,</span><span class="st0">&quot;3&quot;</span> <span class="sy0">=&gt;</span> <span class="st0">&quot;three&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>; <span class="co1">// value =&gt; label</span>
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;grid50&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_nm,item_cd&quot;</span><span class="br0">&#41;</span>;</pre><ul>
+<li class="level1"><div class="li"> <strong>list created on base of different table</strong></div>
+</li>
+</ul>
+<pre class="code php"><span class="re0">$options</span> <span class="sy0">=</span> <span class="kw2">new</span> OptionsConnector<span class="br0">&#40;</span><span class="re0">$res</span><span class="br0">&#41;</span>;
+<span class="re0">$options</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;countries&quot;</span><span class="sy0">,</span><span class="st0">&quot;country_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;country_id(value),country_name(label)&quot;</span><span class="br0">&#41;</span>;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">set_options</span><span class="br0">&#40;</span><span class="st0">&quot;item_nm&quot;</span><span class="sy0">,</span><span class="re0">$options</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;grid50&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_id&quot;</span><span class="sy0">,</span><span class="st0">&quot;item_nm,item_cd&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+<strong>co/combo type</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> when using predefined list of data, both values and labels need to be provided</div>
+</li>
+<li class="level1"><div class="li"> when using connector, there must be two fields selected, one as (value), second as (label)</div>
+</li>
+</ul>
+
+<p>
+
+<strong>coro type:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> only labels need to be provided</div>
+</li>
+<li class="level1"><div class="li"> connector may define only label parameter</div>
+</li>
+</ul>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

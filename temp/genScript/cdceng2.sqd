@@ -1,0 +1,84 @@
+--------------------------------------------------------
+--           PROJECT: TestOct1
+--       ENVIRONMENT: env1
+--            SYSTEM: sys1
+--------------------------------------------------------
+JOBNAME cdceng2;
+COMMIT EVERY ;
+-- ------------------------------------------------------
+--           Data Definition Section
+-- ------------------------------------------------------
+
+DESCRIPTION SrcCOBIMS 'employee.cob'
+              AS employee
+
+              FOR SEGMENT EMPLOYEE
+              IN DATABASE ;
+
+DATASTORE UnknownType
+          OF DB2ZOS
+          AS CDCIN
+          DESCRIBED BY
+                    employee
+;
+
+DESCRIPTION TgtDB2DDL 'EMPLOYEE_DDL.ddl'
+              AS EMPLOYEE_DDL
+DESCRIPTION SrcDB2DDL 'EMPLOYEE_DDL.ddl'
+              AS EMPLOYEE_DDL
+;
+DATASTORE tblName
+          OF Cassandra
+          AS cassout
+          DESCRIBED BY
+                    EMPLOYEE_DDL
+          FOR Change
+;
+
+-- ------------------------------------------------------
+--           Field Specification Section
+-- ------------------------------------------------------
+
+DECLARE var1 23 2;
+
+INITIALIZE CDCIN.employee.EMPL-BONUS &nbsp;;
+
+-- ------------------------------------------------------
+--           Procedure Section
+-- ------------------------------------------------------
+
+CREATE PROC mproc1 AS SELECT
+{
+     cassout  =  CDCIN
+     EMPLOYEE_DDL  =  employee
+     EMPNO  =  EMPLOYEE-REC
+     EMPL_FIRST  =  EMPNO
+     EMPL_MID  =  EMPL-FIRST
+     EMPL_LAST  =  EMPL-MID
+     EMPL_DEPT  =  EMPL-LAST
+     EMPL_PHONE  =  EMPL-DEPT
+     EMPL_HIREDT  =  EMPL-PHONE
+     EMPL_JOB  =  EMPL-HIREDT
+     EMPL_EDLEVEL  =  EMPL-JOB
+     EMPL_SEX  =  EMPL-EDLEVEL
+     EMPL_DOB  =  EMPL-SEX
+     EMPL_SALARY  =  EMPL-DOB
+     EMPL_BONUS  =  EMPL-SALARY
+     EMPL_COMM  =  EMPL-BONUS
+     EMPED  =  EMPL-COMM
+     PFK_DEPTNO  =  PFK_DEPTNO
+     PFK_COMPNAME  =  PFK_COMPNAME
+}
+FROM CDCIN;
+
+
+-- ------------------------------------------------------
+--           Main Section
+-- ------------------------------------------------------
+
+PROCESS INTO
+       cassout
+SELECT
+{
+}
+FROM CDCIN;

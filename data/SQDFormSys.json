@@ -1,0 +1,31 @@
+[
+	{type: "settings", position:"label-left", labelWidth:120, inputWidth:320},
+	{type: "fieldset", label:"System Properties", inputWidth:"auto", list:[
+			{name:"txtSysName",type:"input", label:"System Name", value:"Sys_1"},
+			{name:"selSysType", type:"select", inputWidth:320, label:"System Type", options:[
+					{text:"z/OS", value:"z/OS"},
+					{text:"Unix", value:"Unix"},
+					{text:"Windows", value:"Windows"}
+			]},
+			{type:"fieldset", label:"Description", inputWidth:500, list:[
+				{name:"txtSysDesc",type:"input",rows:"3", inputWidth:460, value:"Any User defined description for this System"}
+			]}
+		]},
+	{type: "fieldset", label: "System Connection Properties", inputWidth: "auto", list:[
+			{name:"txtSysHostName", type: "input", inputWidth:320, label: "Host Name", value: "Host_Sys"},
+			{name:"txtSysPort", type: "input", inputWidth:320, label: "Port", value: "1234"},
+			{name:"txtSysQmgr", type: "input", inputWidth:320, label: "Queue Manager", value: "QMgr_1"}
+		]},
+	{type: "fieldset", label: "Local System Library Paths", inputWidth: "auto", list:[
+			{name:"txtSysDBDLib", type: "input", inputWidth:320, label: "DBD"},
+			{name:"txtSysCopybookLib", type: "input", inputWidth:320, label: "Copybook"},
+			{name:"txtSysDTDLib", type: "input", inputWidth:320, label: "XML/DTD"},
+			{name:"txtSysDDLLib", type: "input", inputWidth:320, label: "DDL"},
+			{name:"txtSysInclude", type: "input", inputWidth:320, label: "Include"}
+		]},
+	{type: "fieldset",  inputWidth: "auto", list:[
+			{name:"btnSysSave", type: "button", value: "Save"},
+			{type: "newcolumn"},
+			{name:"btnSysDelete",type: "button", value: "Delete"}
+		]}
+]

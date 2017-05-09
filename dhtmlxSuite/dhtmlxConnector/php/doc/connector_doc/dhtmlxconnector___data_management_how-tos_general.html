@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:data_management_how-tos_general    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="general_how-tos" id="general_how-tos">General how-tos</a></h1>
+<div class="level1">
+
+</div>
+
+<h3><a name="how_can_i_assign_aliases_to_db_columns" id="how_can_i_assign_aliases_to_db_columns">How can I assign aliases to DB columns?</a></h3>
+<div class="level3">
+
+<p>
+Using <a href="dhtmlxconnector___connector_object_methods.html#render_sql" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_sql()</a> or <a href="dhtmlxconnector___connector_object_methods.html#render_table" class="wikilink1" title="dhtmlxconnector:connector_object_methods">render_table()</a> you can assign aliases to required tables or columns. To do this, in <em class="u">sql statement</em> you should use word &#039;as&#039; (as in any usual sql statement), in other parameters - parentheses.
+
+</p>
+<pre class="code php"><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_table</span><span class="br0">&#40;</span><span class="st0">&quot;tableA&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;name,price(product_price)&quot;</span><span class="br0">&#41;</span>;
+<span class="co1">//or</span>
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render_sql</span><span class="br0">&#40;</span><span class="st0">&quot;Select *,tableA.id as aid from tableA, tableB  where  tableA.id=tableB.id&quot;</span><span class="sy0">,</span> <span class="st0">&quot;tableA.id(aid)&quot;</span><span class="sy0">,</span><span class="st0">&quot;name,price(product_price)&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="how_can_i_attach_event" id="how_can_i_attach_event">How can I attach event?</a></h3>
+<div class="level3">
+
+<p>
+To attach event you should use <strong>event→attach()</strong>. For more details of this topic, see &#039;<a href="dhtmlxconnector___event_handling.html" class="wikilink1" title="dhtmlxconnector:event_handling">Event handling</a>&#039; quide.
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span>event_name<span class="sy0">,</span>handlerFunc<span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="how_can_i_check_value_of_an_item" id="how_can_i_check_value_of_an_item">How can I check value of an item?</a></h3>
+<div class="level3">
+
+<p>
+Using <a href="dhtmlxconnector___dataitem_object_dhtmlxchart.html#get_value" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxchart">get_value()</a> method you can check value of any item.
+
+</p>
+<pre class="code php"><span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="how_can_i_create_custom_database_error_message" id="how_can_i_create_custom_database_error_message">How can I create custom database error message?</a></h3>
+<div class="level3">
+
+<p>
+To add a custom error message you can use the event <a href="dhtmlxconnector___ondberror_event.html" class="wikilink1" title="dhtmlxconnector:ondberror_event">onDBError</a> and write the desired message in the appropriate handler.
+
+</p>
+<pre class="code php"><span class="kw2">function</span> doOnDBError<span class="br0">&#40;</span><span class="re0">$action</span><span class="sy0">,</span> <span class="re0">$exception</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+       <span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">set_response_text</span><span class="br0">&#40;</span><span class="st0">&quot;Some details about error&quot;</span><span class="br0">&#41;</span>
+<span class="br0">&#125;</span>
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;onDBError&quot;</span><span class="sy0">,</span>doOnDBError<span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="how_can_i_deny_access_to_a_certain_operation" id="how_can_i_deny_access_to_a_certain_operation">How can I deny access to a certain operation?</a></h3>
+<div class="level3">
+
+<p>
+By default, connector allows all operations. To deny some operation use <strong><em>deny(name_of_operation)</em></strong> method that can get one of the following:<em>read/update/insert/delete</em>. For more details see &#039;<a href="dhtmlxconnector___security.html" class="wikilink2" title="dhtmlxconnector:security" rel="nofollow">Security</a>&#039; guide.
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">access</span><span class="sy0">-&gt;</span><span class="me1">deny</span><span class="br0">&#40;</span><span class="st0">&quot;update&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="how_can_i_customize_content_of_a_cell" id="how_can_i_customize_content_of_a_cell">How can I customize content of a cell?</a></h3>
+<div class="level3">
+
+<p>
+You can use <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event to define how content of a cell must be formatted. 
+
+</p>
+<pre class="code php"><span class="kw2">function</span> custom_data<span class="br0">&#40;</span><span class="re0">$row</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+      <span class="re0">$data</span> <span class="sy0">=</span> <span class="re0">$row_get_value</span><span class="br0">&#40;</span><span class="st0">&quot;some_column&quot;</span><span class="br0">&#41;</span>;
+      <span class="re0">$row</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="st0">&quot;some_column&quot;</span><span class="sy0">,</span> <span class="st0">&quot;$data &lt;input type='text' /&gt;&quot;</span><span class="br0">&#41;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeRender&quot;</span><span class="sy0">,</span><span class="st0">&quot;custom_data&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+In the sample above, the grid will have custom content - html input &#039;text&#039;.
+</p>
+
+</div>
+
+<h3><a name="how_can_i_filter_data_on_server-side" id="how_can_i_filter_data_on_server-side">How can I filter data on server-side?</a></h3>
+<div class="level3">
+
+<p>
+You have 3 ways to filter data on server backend:
+</p>
+<ul>
+<li class="level1"><div class="li"> by specifying additional parameters in <acronym title="Uniform Resource Locator">URL</acronym> (on client-side)<br/>
+ <br/>
+ <pre class="code javascript">grid.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;some.php?connector=true&amp;dhx_filter[1]=mask&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> by using in-header filter types while component configuration (on client-side)<br/>
+ <br/>
+ <pre class="code javascript">mygrid.<span class="me1">setHeader</span><span class="br0">&#40;</span><span class="st0">&quot;Column A, Column B&quot;</span><span class="br0">&#41;</span>;
+mygrid.<span class="me1">attachHeader</span><span class="br0">&#40;</span><span class="st0">&quot;#connector_text_filter,#connector_select_filter&quot;</span><span class="br0">&#41;</span></pre></div>
+</li>
+<li class="level1"><div class="li"> by means of <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event (on server-side)<br/>
+ <br/>
+ <pre class="code php"><span class="kw2">function</span> custom_filter<span class="br0">&#40;</span><span class="re0">$data</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+  <span class="sy0">...</span>
+<span class="br0">&#125;</span>
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeRender&quot;</span><span class="sy0">,</span><span class="st0">&quot;custom_filter&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+</ul>
+
+<p>
+See the guide &#039;<a href="dhtmlxconnector___filtration.html" class="wikilink1" title="dhtmlxconnector:filtration">Filtration</a>&#039; for more information.
+</p>
+
+</div>
+
+<h3><a name="how_can_i_handle_errors_and_log_them" id="how_can_i_handle_errors_and_log_them">How can I handle errors and log them?</a></h3>
+<div class="level3">
+
+<p>
+You can enable logging using <a href="dhtmlxconnector___connector_object_methods.html#enable_log" class="wikilink1" title="dhtmlxconnector:connector_object_methods">enable_log()</a> method. For more details see &#039;<a href="dhtmlxconnector___errors.html" class="wikilink1" title="dhtmlxconnector:errors">Error handling and logging</a>&#039; guide.
+
+</p>
+<pre class="code php"><span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">enable_log</span><span class="br0">&#40;</span><span class="st0">&quot;path to log file&quot;</span><span class="br0">&#41;</span>;<span class="co1">// to show short info on client-side</span>
+<span class="co1">//or</span>
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">enable_log</span><span class="br0">&#40;</span><span class="st0">&quot;path to log file&quot;</span><span class="sy0">,</span> <span class="kw2">true</span><span class="br0">&#41;</span>;<span class="co1">// to show full info on client-side</span></pre>
+</div>
+
+<h3><a name="how_can_i_set_value_to_an_item" id="how_can_i_set_value_to_an_item">How can I set value to an item?</a></h3>
+<div class="level3">
+
+<p>
+Using <a href="dhtmlxconnector___dataitem_object_dhtmlxchart.html#set_value" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxchart">set_value()</a> method, you can set value to any item of component.
+
+</p>
+<pre class="code php"><span class="re0">$dataItem</span><span class="sy0">-&gt;</span><span class="me1">set_value</span><span class="br0">&#40;</span><span class="re0">$name</span><span class="sy0">,</span><span class="re0">$value</span><span class="br0">&#41;</span></pre>
+</div>
+
+<h3><a name="how_can_i_sort_data_on_server-side" id="how_can_i_sort_data_on_server-side">How can I sort data on server-side?</a></h3>
+<div class="level3">
+
+<p>
+You have 2 ways to sort data on server backend:
+</p>
+<ul>
+<li class="level1"><div class="li"> by specifying additional parameters in <acronym title="Uniform Resource Locator">URL</acronym> (on client-side)<br/>
+ <br/>
+ <pre class="code javascript">grid.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;some.php?connector=true&amp;dhx_sort[2]=asc&quot;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> by using sorting type &#039;connector&#039; while component configuration (on client-side)<br/>
+ <br/>
+ <pre class="code javascript">grid.<span class="me1">setColSorting</span><span class="br0">&#40;</span><span class="st0">&quot;connector,str,na);</span></pre></div>
+</li>
+</ul>
+
+<p>
+
+See the guide &#039;<a href="dhtmlxconnector___sorting.html" class="wikilink2" title="dhtmlxconnector:sorting" rel="nofollow">Sorting</a>&#039; for more information.
+
+</p>
+
+</div>
+
+<h3><a name="how_can_i_validate_data_on_client-side" id="how_can_i_validate_data_on_client-side">How can I validate data on client-side</a></h3>
+<div class="level3">
+
+<p>
+dataProcessor lets you validate data on client-side. Use <em>setVerificator(index,method)</em> method to define the appropriate columns and validators. See details in the <a href="dhtmlxdataprocessor___config_debug.html#validation" class="wikilink1" title="dhtmlxdataprocessor:config_debug">related chapter of dataProcessor&#039; documentation</a>.<br/>
+
+
+</p>
+<pre class="code javascript">dp.<span class="me1">setVerificator</span><span class="br0">&#40;</span>column_index<span class="sy0">,</span>verification_func<span class="br0">&#41;</span></pre>
+</div>
+
+<h3><a name="how_can_i_validate_data_on_server-side" id="how_can_i_validate_data_on_server-side">How can I validate data on server-side</a></h3>
+<div class="level3">
+
+<p>
+To perform server-side validation you should use one of the dhtmlxConnector events stated below and specify the needed validation rules in the appropriate events&#039; handlers functions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___beforeupdate_event.html" class="wikilink1" title="dhtmlxconnector:beforeupdate_event">beforeUpdate</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___beforeinsert_event.html" class="wikilink1" title="dhtmlxconnector:beforeinsert_event">beforeInsert</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___beforedelete_event.html" class="wikilink1" title="dhtmlxconnector:beforedelete_event">beforeDelete</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___beforeprocessing_event.html" class="wikilink1" title="dhtmlxconnector:beforeprocessing_event">beforeProcessing</a></div>
+</li>
+</ul>
+<pre class="code php"><span class="kw2">function</span> validate<span class="br0">&#40;</span><span class="re0">$data</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+<span class="sy0">...</span>
+<span class="br0">&#125;</span>
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeProcessing&quot;</span><span class="sy0">,</span><span class="st0">&quot;validate&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+For more details of server-side validation, see guide &#039;<a href="dhtmlxconnector___validation.html" class="wikilink1" title="dhtmlxconnector:validation">Validation</a>&#039;.
+</p>
+
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

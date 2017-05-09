@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <item id="btn_treeNew" img="new.gif" imgdis="new_dis.gif" text="New" title="New Item" action="showNewItemSelect">
+    <item id="new_Proj" text="Project" img="Project.gif"/>
+    <item id="new_Env" text="Environment" img="85.gif"/>
+    <item id="new_Conn" text="Connection" img="15.gif"/>
+    <item id="new_Desc" text="Description" img="desc.gif"  >
+      <item id="new_Sel" text="New Subset" img="DescSel.gif" />
+      <item id="sepsel" type="separator"/>
+      <item id="new_COBOL" text="COBOL" img="desc.gif" />
+      <item id="new_DBD" text="COBOL w/DBD" img="desc.gif" />
+      <item id="new_DTD" text="XML DTD" img="desc.gif" />
+      <item id="sep1" type="separator"/>
+      <item	id="new_DDL" text="Relational" img="desc.gif" >
+        <item id="new_db2" text="DB2" img="desc.gif" />
+        <item id="new_mssql" text="MSSQL" img="desc.gif" />
+        <item id="new_ora" text="Oracle" img="desc.gif" />
+        <item id="new_udb" text="ISO SQL" img="desc.gif" />
+      </item>
+    </item>
+    <item id="new_Var" text="Variable" img="var.gif" />
+    <item id="new_Sys" text="System" img="1.gif" />
+    <item id="new_Eng" text="Engine" img="gear.gif"/>
+    <item id="new_SDS" text="Source Datastore" img="SDS.gif" />
+    <item	id="new_TDS" text="Target Datastore" img="TDS.gif" />
+    <item id="new_Proc" text="Procedure" img="Proc.gif" >
+      <item id="new_MapProc" text="Mapping Procedure" img="Proc.gif" />
+      <item id="new_LogicProc" text="Logic Procedure" img="Crop.gif" />
+      <item id="new_InclProc" text="IncludeProcedure" img="Proc.gif" />
+    </item>
+    <item id="new_Main" text="Main" img="72.ico">
+      <item id="new_MainLogicProc" text="Main Procedure" img="Crop.gif" />
+      <item id="new_MainInclProc" text="Include Procedure" img="Proc.gif" />
+    </item>
+  </item>
+  <item id="sep3" type="separator"/>
+  <item id="cut"    img="cut.gif"   text="Cut"   imgdis="cut_dis.gif"  title="Cut" />
+  <item id="copy"  img="copy.gif"  text="Copy"  imgdis="copy_dis.gif"  title="Copy" />
+  <item id="paste" img="paste.gif" text="Paste" imgdis="paste_dis.gif"  title="Paste" />
+  <item id="sep4" type="separator"/>
+  <item id="delNode" img="delete.gif"  text="Delete"  title="Delete Item" action="doTreeDelete"/>
+  <item id="delNodeAll" img="delete.gif"  text="Delete All"  title="Delete All" action="doTreeDeleteAll"/>
+  <item id="sep5" type="separator"/>
+  <item id="genScript" img="gear.gif"  text="Generate Script"  title="Generate Script" action="doGenerate"/>
+  <item id="sep6" type="separator"/>
+  <item id="model" img="gear.gif"  text="Model Description"  title="Model Description" action="doModel"/>
+</menu>

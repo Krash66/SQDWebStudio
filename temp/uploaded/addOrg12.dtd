@@ -1,0 +1,319 @@
+<!ELEMENT TCRMService
+(
+     RequestControl
+    ,TCRMTx
+)>
+
+<!ELEMENT RequestControl
+(
+     requestID
+    ,DWLControl
+)>
+
+<!ELEMENT DWLControl
+(
+     requesterName
+    ,requesterLanguage
+)>
+
+<!ELEMENT TCRMTx
+(
+     TCRMTxType
+    ,TCRMTxObject
+    ,TCRMObject
+)>
+
+<!ELEMENT TCRMObject
+(
+     TCRMOrganizationBObj
+)>
+
+<!ELEMENT TCRMOrganizationBObj
+(
+     PartyId
+    ,NewPartyIdReference
+    ,DisplayName
+    ,PreferredLanguageType
+    ,ComputerAccessType
+    ,PartyType
+    ,CreatedDate
+    ,SinceDate
+    ,ClientStatusType
+    ,SolicitationIndicator
+    ,ConfidentialIndicator
+    ,ClientPotentialType
+    ,ClientImportanceType
+    ,MandatorySearchDone
+    ,BuySellAgreementType
+    ,ProfitIndicator
+    ,OrganizationType
+    ,EstablishedDate
+    ,IndustryType
+    ,PrimaryKeyBObj
+    ,TCRMOrganizationNameBObj
+    ,TCRMOrganizationNameBObj1
+    ,TCRMPartyAddressBObj
+    ,TCRMPartyContactMethodBObj
+    ,TCRMPartyContactMethodBObj1
+    ,TCRMPartyIdentificationBObj
+    ,TCRMPartyIdentificationBObj1
+    ,TCRMPartyIdentificationBObj2
+    ,TCRMPartyIdentificationBObj3
+    ,TCRMPartyIdentificationBObj4
+    ,TCRMAdminContEquivBObj
+    ,TCRMPartyValueBObj
+    ,TCRMPartyValueBObj1
+)>
+
+<!ELEMENT PrimaryKeyBObj
+(
+     ObjectReferenceId
+    ,KeyBObj
+)>
+
+<!ELEMENT KeyBObj
+(
+     KeyName
+    ,KeyValue
+)>
+
+<!ELEMENT TCRMOrganizationNameBObj
+(
+     OrganizationName
+    ,NameUsageType
+    ,PreferredOrganizationNameIndicator
+)>
+
+<!ELEMENT TCRMOrganizationNameBObj1
+(
+     OrganizationName1
+    ,NameUsageType1
+    ,PreferredOrganizationNameIndicator1
+)>
+
+<!ELEMENT TCRMPartyAddressBObj
+(
+     AddressUsageType
+    ,CareOf
+    ,StartDate
+    ,PreferredAddressIndicator
+    ,TCRMAddressBObj
+)>
+
+<!ELEMENT TCRMAddressBObj
+(
+     ResidenceType
+    ,AddressLineOne
+    ,AddressLineTwo
+    ,AddressLineThree
+    ,City
+    ,ZipPostalCode
+    ,ProvinceStateType
+    ,CountryType
+    ,StandardFormatingIndicator
+    ,StandardFormatingOverride
+    ,AddressLastUpdateDate
+    ,AddressLastUpdateUser
+)>
+
+<!ELEMENT TCRMPartyContactMethodBObj
+(
+     ContactMethodUsageType
+    ,ContactMethodStatusType
+    ,StartDate1
+    ,TCRMContactMethodBObj
+)>
+
+<!ELEMENT TCRMContactMethodBObj
+(
+     ContactMethodIdPK
+    ,ReferenceNumber
+    ,ContactMethodType
+)>
+
+<!ELEMENT TCRMPartyContactMethodBObj1
+(
+     ContactMethodUsageType1
+    ,ContactMethodStatusType1
+    ,EffectStartMonthDay
+    ,PreferredContactMethodIndicator
+    ,SolicitationIndicator1
+    ,AllowAttachmentIndicator
+    ,TextOnlyIndicator
+    ,StartDate2
+    ,TCRMContactMethodBObj1
+)>
+
+<!ELEMENT TCRMContactMethodBObj1
+(
+     ContactMethodIdPK1
+    ,ReferenceNumber1
+    ,ContactMethodType1
+    ,ContactMethodLastUpdateDate
+    ,ContactMethodLastUpdateUser
+)>
+
+<!ELEMENT TCRMPartyIdentificationBObj
+(
+     IdentificationType
+    ,IdentificationNumber
+    ,IdentificationStatusType
+    ,IdentificationExpiryDate
+    ,StartDate3
+)>
+
+<!ELEMENT TCRMPartyIdentificationBObj1
+(
+     IdentificationType1
+    ,IdentificationNumber1
+)>
+
+<!ELEMENT TCRMPartyIdentificationBObj2
+(
+     IdentificationType2
+    ,IdentificationNumber2
+)>
+
+<!ELEMENT TCRMPartyIdentificationBObj3
+(
+     IdentificationType3
+    ,IdentificationNumber3
+)>
+
+<!ELEMENT TCRMPartyIdentificationBObj4
+(
+     IdentificationType4
+    ,IdentificationNumber4
+)>
+
+<!ELEMENT TCRMAdminContEquivBObj
+(
+     AdminPartyId
+    ,AdminSystemType
+    ,AdminSystemValue
+    ,Description
+)>
+
+<!ELEMENT TCRMPartyValueBObj
+(
+     PartyId1
+    ,PartyValueType
+    ,ValueString
+    ,Attribute0Type
+    ,Attribute0String
+    ,Attribute1Type
+    ,Attribute1String
+    ,Attribute2Type
+    ,Attribute2String
+)>
+
+<!ELEMENT TCRMPartyValueBObj1
+(
+     PartyId2
+    ,PartyValueType1
+    ,Attribute0Type1
+    ,Attribute0String1
+    ,Attribute1Type1
+    ,Attribute1String1
+)>
+
+<!ELEMENT requestID                                (#PCDATA)>
+<!ELEMENT requesterName                            (#PCDATA)>
+<!ELEMENT requesterLanguage                        (#PCDATA)>
+<!ELEMENT TCRMTxType                               (#PCDATA)>
+<!ELEMENT TCRMTxObject                             (#PCDATA)>
+<!ELEMENT PartyId                                  (#PCDATA)>
+<!ELEMENT NewPartyIdReference                      (#PCDATA)>
+<!ELEMENT DisplayName                              (#PCDATA)>
+<!ELEMENT PreferredLanguageType                    (#PCDATA)>
+<!ELEMENT ComputerAccessType                       (#PCDATA)>
+<!ELEMENT PartyType                                (#PCDATA)>
+<!ELEMENT CreatedDate                              (#PCDATA)>
+<!ELEMENT SinceDate                                (#PCDATA)>
+<!ELEMENT ClientStatusType                         (#PCDATA)>
+<!ELEMENT SolicitationIndicator                    (#PCDATA)>
+<!ELEMENT ConfidentialIndicator                    (#PCDATA)>
+<!ELEMENT ClientPotentialType                      (#PCDATA)>
+<!ELEMENT ClientImportanceType                     (#PCDATA)>
+<!ELEMENT MandatorySearchDone                      (#PCDATA)>
+<!ELEMENT BuySellAgreementType                     (#PCDATA)>
+<!ELEMENT ProfitIndicator                          (#PCDATA)>
+<!ELEMENT OrganizationType                         (#PCDATA)>
+<!ELEMENT EstablishedDate                          (#PCDATA)>
+<!ELEMENT IndustryType                             (#PCDATA)>
+<!ELEMENT ObjectReferenceId                        (#PCDATA)>
+<!ELEMENT KeyName                                  (#PCDATA)>
+<!ELEMENT KeyValue                                 (#PCDATA)>
+<!ELEMENT OrganizationName                         (#PCDATA)>
+<!ELEMENT NameUsageType                            (#PCDATA)>
+<!ELEMENT PreferredOrganizationNameIndicator       (#PCDATA)>
+<!ELEMENT OrganizationName1                        (#PCDATA)>
+<!ELEMENT NameUsageType1                           (#PCDATA)>
+<!ELEMENT PreferredOrganizationNameIndicator1      (#PCDATA)>
+<!ELEMENT AddressUsageType                         (#PCDATA)>
+<!ELEMENT CareOf                                   (#PCDATA)>
+<!ELEMENT StartDate                                (#PCDATA)>
+<!ELEMENT PreferredAddressIndicator                (#PCDATA)>
+<!ELEMENT ResidenceType                            (#PCDATA)>
+<!ELEMENT AddressLineOne                           (#PCDATA)>
+<!ELEMENT AddressLineTwo                           (#PCDATA)>
+<!ELEMENT AddressLineThree                         (#PCDATA)>
+<!ELEMENT City                                     (#PCDATA)>
+<!ELEMENT ZipPostalCode                            (#PCDATA)>
+<!ELEMENT ProvinceStateType                        (#PCDATA)>
+<!ELEMENT CountryType                              (#PCDATA)>
+<!ELEMENT StandardFormatingIndicator               (#PCDATA)>
+<!ELEMENT StandardFormatingOverride                (#PCDATA)>
+<!ELEMENT AddressLastUpdateDate                    (#PCDATA)>
+<!ELEMENT AddressLastUpdateUser                    (#PCDATA)>
+<!ELEMENT ContactMethodUsageType                   (#PCDATA)>
+<!ELEMENT ContactMethodStatusType                  (#PCDATA)>
+<!ELEMENT StartDate1                               (#PCDATA)>
+<!ELEMENT ContactMethodIdPK                        (#PCDATA)>
+<!ELEMENT ReferenceNumber                          (#PCDATA)>
+<!ELEMENT ContactMethodType                        (#PCDATA)>
+<!ELEMENT ContactMethodUsageType1                  (#PCDATA)>
+<!ELEMENT ContactMethodStatusType1                 (#PCDATA)>
+<!ELEMENT EffectStartMonthDay                      (#PCDATA)>
+<!ELEMENT PreferredContactMethodIndicator          (#PCDATA)>
+<!ELEMENT SolicitationIndicator1                   (#PCDATA)>
+<!ELEMENT AllowAttachmentIndicator                 (#PCDATA)>
+<!ELEMENT TextOnlyIndicator                        (#PCDATA)>
+<!ELEMENT StartDate2                               (#PCDATA)>
+<!ELEMENT ContactMethodIdPK1                       (#PCDATA)>
+<!ELEMENT ReferenceNumber1                         (#PCDATA)>
+<!ELEMENT ContactMethodType1                       (#PCDATA)>
+<!ELEMENT ContactMethodLastUpdateDate              (#PCDATA)>
+<!ELEMENT ContactMethodLastUpdateUser              (#PCDATA)>
+<!ELEMENT IdentificationType                       (#PCDATA)>
+<!ELEMENT IdentificationNumber                     (#PCDATA)>
+<!ELEMENT IdentificationStatusType                 (#PCDATA)>
+<!ELEMENT IdentificationExpiryDate                 (#PCDATA)>
+<!ELEMENT StartDate3                               (#PCDATA)>
+<!ELEMENT IdentificationType1                      (#PCDATA)>
+<!ELEMENT IdentificationNumber1                    (#PCDATA)>
+<!ELEMENT IdentificationType2                      (#PCDATA)>
+<!ELEMENT IdentificationNumber2                    (#PCDATA)>
+<!ELEMENT IdentificationType3                      (#PCDATA)>
+<!ELEMENT IdentificationNumber3                    (#PCDATA)>
+<!ELEMENT IdentificationType4                      (#PCDATA)>
+<!ELEMENT IdentificationNumber4                    (#PCDATA)>
+<!ELEMENT AdminPartyId                             (#PCDATA)>
+<!ELEMENT AdminSystemType                          (#PCDATA)>
+<!ELEMENT AdminSystemValue                         (#PCDATA)>
+<!ELEMENT Description                              (#PCDATA)>
+<!ELEMENT PartyId1                                 (#PCDATA)>
+<!ELEMENT PartyValueType                           (#PCDATA)>
+<!ELEMENT ValueString                              (#PCDATA)>
+<!ELEMENT Attribute0Type                           (#PCDATA)>
+<!ELEMENT Attribute0String                         (#PCDATA)>
+<!ELEMENT Attribute1Type                           (#PCDATA)>
+<!ELEMENT Attribute1String                         (#PCDATA)>
+<!ELEMENT Attribute2Type                           (#PCDATA)>
+<!ELEMENT Attribute2String                         (#PCDATA)>
+<!ELEMENT PartyId2                                 (#PCDATA)>
+<!ELEMENT PartyValueType1                          (#PCDATA)>
+<!ELEMENT Attribute0Type1                          (#PCDATA)>
+<!ELEMENT Attribute0String1                        (#PCDATA)>
+<!ELEMENT Attribute1Type1                          (#PCDATA)>
+<!ELEMENT Attribute1String1                        (#PCDATA)>

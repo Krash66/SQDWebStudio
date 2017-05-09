@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:release_notes    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="release_notes" id="release_notes">Release notes</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="new_in_version_1.5" id="new_in_version_1.5">new in version 1.5</a></h2>
+<div class="level2">
+
+<p>
+<strong>Security:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___app_security.html#protection_from_cross-site_scripting_xss" class="wikilink1" title="dhtmlxconnector:app_security">Protection from XSS attacks</a>;</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___app_security.html#preventing_csrf_and_xsrf_attacks" class="wikilink1" title="dhtmlxconnector:app_security">Preventing CSRF and XSRF attacks</a>.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>Flexibility:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> New methods for rendering data (<a href="dhtmlxconnector___basis.html#calling_stored_procedures" class="wikilink1" title="dhtmlxconnector:basis">support for stored procedures calls</a>, <a href="dhtmlxconnector___basis.html#loading_from_php_array" class="wikilink1" title="dhtmlxconnector:basis">loading from data arrays</a>);</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___dataitem_object_dhtmlxgrid.html#set_userdata" class="wikilink1" title="dhtmlxconnector:dataitem_object_dhtmlxgrid">The possibility to set userdata with all types of connectors</a>;</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxconnector___dp.html#renaming_the_query_status_parameter" class="wikilink1" title="dhtmlxconnector:dp">The possibility to rename the query status parameter &#039;!nativeeditor_status&#039;</a>; </div>
+</li>
+<li class="level1"><div class="li"> Better OOP support (<a href="dhtmlxconnector___dp.html#changing_default_data_processing_on_server-side" class="wikilink1" title="dhtmlxconnector:dp">support for data model</a> and <a href="dhtmlxconnector___event_handling.html#data_behavior_models" class="wikilink1" title="dhtmlxconnector:event_handling">data behavior classes</a>);</div>
+</li>
+<li class="level1"><div class="li"> Better Touch Support (<a href="dhtmlxconnector___jsondataconnector.html#common" class="wikilink1" title="dhtmlxconnector:jsondataconnector">improved data formats</a>, <a href="dhtmlxconnector___jsondataconnector.html#adding_tags_sections_to_data" class="wikilink1" title="dhtmlxconnector:jsondataconnector">adding extra tags/sections to data</a>);</div>
+</li>
+<li class="level1"><div class="li"> Support for <acronym title="Hypertext Preprocessor">PHP</acronym> frameworks (<a href="dhtmlxconnector___frameworks.html" class="wikilink1" title="dhtmlxconnector:frameworks">CodeIgniter, YII, CakePHP</a>).</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="new_in_version_1.2" id="new_in_version_1.2">new in version 1.2</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> SQLite support</div>
+</li>
+<li class="level1"><div class="li"> DataConnector, JSONDataConnector</div>
+</li>
+<li class="level1"><div class="li"> onDBError event</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="server-side_requirements" id="server-side_requirements">server-side requirements</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Fully supported DataBases: MySQL, PostgreSQL, Oracle, MSSQL, FileSystem</div>
+</li>
+<li class="level2"><div class="li"> Partially supported DataBases: SQLite, any PDO|ODBC compliant ( MSAccess, Excel, SQLLite, DB2, FireBird, etc. )</div>
+</li>
+<li class="level2"><div class="li"> <acronym title="Hypertext Preprocessor">PHP</acronym> version: 5.x</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="supported_functionality" id="supported_functionality">supported functionality</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Data loading for Grid, TreeGrid, Tree, Combo, Scheduler, DataView, Chart, Form</div>
+</li>
+<li class="level2"><div class="li"> Data saving for Grid, TreeGrid, Tree, Scheduler, DataView, Form</div>
+</li>
+<li class="level2"><div class="li"> Server-side sorting and filtering for Grid, Treegrid</div>
+</li>
+<li class="level2"><div class="li"> Dynamic loading (paging) for Grid, Treegrid, Tree, Scheduler, DataView, Combo</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="migration_from_older_versions" id="migration_from_older_versions">migration from older versions</a></h2>
+<div class="level2">
+
+<p>
+<strong>0.9 → 0.96</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>beforeFilter</em> and <em>beforeSorting</em> events provide object as parameter instead of plain data</div>
+</li>
+<li class="level1"><div class="li"> Order of parameters for render_* methods of TreeGrid and Tree connectors was changed.<br/>
+ <br/>
+ <pre class="code php"><span class="co1">//0.9</span>
+render_table<span class="br0">&#40;</span><span class="st0">&quot;table&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;fields&quot;</span><span class="sy0">,</span><span class="st0">&quot;parent id&quot;</span><span class="br0">&#41;</span>
+<span class="co1">//1.0</span>
+render_table<span class="br0">&#40;</span><span class="st0">&quot;table&quot;</span><span class="sy0">,</span><span class="st0">&quot;id&quot;</span><span class="sy0">,</span><span class="st0">&quot;fields&quot;</span><span class="sy0">,</span><span class="st0">&quot;extra fields&quot;</span><span class="sy0">,</span><span class="st0">&quot;parent id&quot;</span><span class="br0">&#41;</span></pre></div>
+</li>
+</ul>
+
+<p>
+
+<strong>0.96 → 1.0</strong> 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>beforeOutput</em> event has different parameters</div>
+</li>
+</ul>
+
+<p>
+
+<strong>1.0 → 1.5</strong>  
+</p>
+<ul>
+<li class="level1"><div class="li"> new version filter out html content before saving, use the next code if you want to revert logic of connector to the previous behavior</div>
+</li>
+</ul>
+<pre class="code php">    ConnectorSecurity<span class="sy0">::</span><span class="re0">$xss</span> <span class="sy0">=</span> DHX_SECURITY_TRUSTED;</pre>
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

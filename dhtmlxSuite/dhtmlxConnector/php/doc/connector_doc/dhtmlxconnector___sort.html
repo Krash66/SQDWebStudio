@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:sort    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="sorting" id="sorting">Sorting</a></h1>
+<div class="level1">
+
+<p>
+There are 2 ways to implement server-side sorting: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___sort.html#url_manipulation" class="wikilink1" title="dhtmlxconnector:sort">by specifying additional parameters in URL</a></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxconnector___sort.html#sorting_type_connector" class="wikilink1" title="dhtmlxconnector:sort">by using sorting type &#039;connector&#039; while component configuration</a></span></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="url_manipulation" id="url_manipulation">URL manipulation</a></h2>
+<div class="level2">
+
+<p>
+<em class="u"><strong>APPLICABLE TO:</strong> </em>Grid, TreeGrid, Tree, Combo, Scheduler, DataView, Chart, Form, DataStore, DHTMXL Touch components
+</p>
+
+<p>
+You can control how data will be sorted inside column by specifying additional parameters in <acronym title="Uniform Resource Locator">URL</acronym>.<br/>
+
+Check article <a href="dhtmlxconnector___extending.html#protocol_details" class="wikilink1" title="dhtmlxconnector:extending">Extending functionality</a> for full url parameters description. 
+</p>
+<pre class="code javascript"><span class="co1">//ORDER by field_2 ASC</span>
+grid.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;some.php?connector=true&amp;dhx_sort[2]=asc&quot;</span><span class="br0">&#41;</span>;
+<span class="co1">//ORDER by field_2 ASC, field_3 DESC</span>
+grid.<span class="me1">load</span><span class="br0">&#40;</span><span class="st0">&quot;some.php?connector=true&amp;dhx_sort[2]=asc&amp;dhx_sort[3]=desc&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h2><a name="sorting_type_connector" id="sorting_type_connector">sorting type &#039;connector&#039;</a></h2>
+<div class="level2">
+
+<p>
+<em class="u"><strong>APPLICABLE TO:</strong> </em>Grid, TreeGrid
+</p>
+
+<p>
+To sort grid/treegrid content with connectors you need to use &#039;<em>connector</em>&#039; as sorting type while grid initialization.
+
+</p>
+<pre class="code javascript">grid.<span class="me1">setColSorting</span><span class="br0">&#40;</span><span class="st0">&quot;connector,str,na&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+In the code snippet above, the first column will be sorted on server-side with connectors, the second as string on client-side, the third column won&#039;t be sortable.
+</p>
+
+<p>
+By assigning to sorting type &#039;connector&#039; you just &#039;say&#039; that sorting will be implemented on server-side.<br/>
+
+To define the way, &#039;behaviour&#039; of sorting  you should use <a href="dhtmlxconnector___beforesort_event.html" class="wikilink1" title="dhtmlxconnector:beforesort_event">beforeSort</a> event.<br/>
+
+Event doesn&#039;t allow to write custom sorting logic, but you can affect SORT BY clause of generated <acronym title="Structured Query Language">SQL</acronym> request.
+</p>
+
+</div>
+
+<h3><a name="default_sorting_by_one_field" id="default_sorting_by_one_field">default sorting by one field</a></h3>
+<div class="level3">
+<pre class="code php"><span class="kw2">function</span> custom_sort<span class="br0">&#40;</span><span class="re0">$sorted_by</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+          <span class="co1">//SORT BY some_field ASC</span>
+          <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span><a href="http://www.php.net/sizeof"><span class="kw3">sizeof</span></a><span class="br0">&#40;</span><span class="re0">$sorted_by</span><span class="sy0">-&gt;</span><span class="me1">rules</span><span class="br0">&#41;</span><span class="br0">&#41;</span> 
+               <span class="re0">$sorted_by</span><span class="sy0">-&gt;</span><span class="me1">add</span><span class="br0">&#40;</span><span class="st0">&quot;some_field&quot;</span><span class="sy0">,</span><span class="st0">&quot;ASC&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeSort&quot;</span><span class="sy0">,</span><span class="st0">&quot;custom_sort&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="default_sorting_by_multiple_fields" id="default_sorting_by_multiple_fields">default sorting by multiple fields</a></h3>
+<div class="level3">
+<pre class="code php"><span class="kw2">function</span> custom_sort<span class="br0">&#40;</span><span class="re0">$sorted_by</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+          <span class="co1">//SORT BY some_field ASC, some_other ASC</span>
+          <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span><a href="http://www.php.net/sizeof"><span class="kw3">sizeof</span></a><span class="br0">&#40;</span><span class="re0">$sorted_by</span><span class="sy0">-&gt;</span><span class="me1">rules</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+               <span class="re0">$sorted_by</span><span class="sy0">-&gt;</span><span class="me1">add</span><span class="br0">&#40;</span><span class="st0">&quot;some_field&quot;</span><span class="sy0">,</span><span class="st0">&quot;ASC&quot;</span><span class="br0">&#41;</span>;
+               <span class="re0">$sorted_by</span><span class="sy0">-&gt;</span><span class="me1">add</span><span class="br0">&#40;</span><span class="st0">&quot;some_other&quot;</span><span class="sy0">,</span><span class="st0">&quot;ASC&quot;</span><span class="br0">&#41;</span>;
+          <span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeSort&quot;</span><span class="sy0">,</span><span class="st0">&quot;custom_sort&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="custom_sorting_rule" id="custom_sorting_rule">custom sorting rule</a></h3>
+<div class="level3">
+<pre class="code php"><span class="kw2">function</span> custom_sort<span class="br0">&#40;</span><span class="re0">$sorted_by</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+          <span class="co1">// SORT BY LENGTH(some_field)</span>
+          <span class="re0">$sorted_by</span><span class="sy0">-&gt;</span><span class="me1">rules</span><span class="br0">&#91;</span><span class="nu19">0</span><span class="br0">&#93;</span><span class="br0">&#91;</span><span class="st0">&quot;name&quot;</span><span class="br0">&#93;</span><span class="sy0">=</span><span class="st0">&quot;LENGTH(some_field)&quot;</span>;
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re0">$conn</span><span class="sy0">-&gt;</span><span class="me1">event</span><span class="sy0">-&gt;</span><span class="me1">attach</span><span class="br0">&#40;</span><span class="st0">&quot;beforeSort&quot;</span><span class="sy0">,</span><span class="st0">&quot;custom_sort&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

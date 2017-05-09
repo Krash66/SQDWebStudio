@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    dhtmlxconnector:frameworks    [DHX documentation]
+  </title><link rel="stylesheet" type="text/css" href="./codebase/css.css" /></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="page">
+    
+    
+
+
+
+<h1><a name="using_dhtmlxconnector_with_codeigniter_yii_cakephp_frameworks" id="using_dhtmlxconnector_with_codeigniter_yii_cakephp_frameworks">Using dhtmlxConnector with CodeIgniter, YII, CakePHP frameworks</a></h1>
+<div class="level1">
+
+<p>
+Starting from version 1.5 dhtmlxConnector can be used with popular <acronym title="Hypertext Preprocessor">PHP</acronym> frameworks. You can built web applications with your favorite frameworks and still use dhtmlxConnector.
+</p>
+
+<p>
+In this article we will give you the brief tips referring to such use-case of dhtmlxConnector. The detail information you can get in the related tutorials:
+
+</p>
+<ol>
+<li class="level1"><div class="li"> <a href="tutorials___dhtmlxconnector_and_codeigniter.html" class="wikilink1" title="tutorials:dhtmlxconnector_and_codeigniter">Using dhtmlxConnector with the CodeIgniter framework</a>;</div>
+</li>
+<li class="level1"><div class="li"> <a href="tutorials___dhtmlxconnector_and_yii.html" class="wikilink1" title="tutorials:dhtmlxconnector_and_yii">Using dhtmlxConnector with the YII framework</a>;</div>
+</li>
+<li class="level1"><div class="li"> <a href="tutorials___dhtmlxconnector_and_cakephp.html" class="wikilink1" title="tutorials:dhtmlxconnector_and_cakephp">Using dhtmlxConnector with the CakePHP framework</a>.</div>
+</li>
+</ol>
+
+<p>
+
+As an example, let&#039;s take creating an app that presents grid loaded data from db. The app is built with one of the frameworks and use dhtmlxConnector to load data in.
+</p>
+
+</div>
+
+<h2><a name="tips_common_for_all_frameworks" id="tips_common_for_all_frameworks">Tips common for all frameworks</a></h2>
+<div class="level2">
+
+<p>
+
+<strong>Model:</strong><br/>
+
+Doesn&#039;t have any specificity and created as usual.
+</p>
+
+<p>
+<strong>View:</strong><br/>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> View contains a standard JavaScript code of the component and defines the client side logic; </div>
+</li>
+<li class="level1"><div class="li"> To load data use standard &#039;loading&#039; methods of the components but as the <strong><acronym title="Uniform Resource Locator">URL</acronym></strong> parameter specify the relative path to an action that answers for loading logic. If you use dataProcessor, specify in its constructor this relative path to the action as well;</div>
+</li>
+</ul>
+<pre class="code javascript">mygrid <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXGridObject<span class="br0">&#40;</span><span class="st0">'grid_here'</span><span class="br0">&#41;</span>; 
+...
+<span class="me1">mygrid</span>.<span class="me1">init</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;                           
+mygrid.<span class="me1">loadXML</span><span class="br0">&#40;</span><span class="st0">&quot;./data&quot;</span><span class="br0">&#41;</span>; <span class="co1">//refers to the 'data' action </span>
+&nbsp;
+<span class="kw2">var</span> dp <span class="sy0">=</span> <span class="kw2">new</span> dataProcessor<span class="br0">&#40;</span><span class="st0">&quot;./data&quot;</span><span class="br0">&#41;</span>; <span class="co1">//refers to the 'data' action as well</span>
+dp.<span class="me1">init</span><span class="br0">&#40;</span>mygrid<span class="br0">&#41;</span>;</pre>
+<p>
+<strong>Controller:</strong><br/>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Controller defines the server side logic and contains at least 2 actions: the one loads the view, the other loads the data;</div>
+</li>
+<li class="level1"><div class="li"> To handle an event, add a function of the corresponding event name (e.g. to handle <a href="dhtmlxconnector___beforerender_event.html" class="wikilink1" title="dhtmlxconnector:beforerender_event">beforeRender</a> event, add  <em>public function beforeRender($action){…}</em>) and define the handling logic as usual. The functions will take the same parameters as the ordinary events do;</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Structured Query Language">SQL</acronym> query to database is configured with the help of <strong>configure()</strong> method that takes as parameters:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>$sql</strong> - any sql code that will be used as the base for data selection (for the <strong>Yii</strong> framework the hard coded value - <strong>&#039;-&#039;</strong>);</div>
+</li>
+<li class="level2"><div class="li"> <strong>$id</strong> - the name of the id field;</div>
+</li>
+<li class="level2"><div class="li"> <strong>$text</strong> - a comma separated list of rendered data fields;</div>
+</li>
+<li class="level2"><div class="li"> <strong>$extra</strong> - (<em>optional</em>) a comma separated list of extra fields;</div>
+</li>
+<li class="level2"><div class="li"> <strong>relation_id</strong> - (<em>optional</em>) used for building hierarchy in case of Tree and TreeGrid.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> GridConnector (or any other connector) takes as parameters: </div>
+<ul>
+<li class="level2"><div class="li"> the DB connection variable that refers to the model used in the app)</div>
+</li>
+<li class="level2"><div class="li"> the hard coded value specified the framework ( “phpCI”, “PHPYii” or “PHPCake”). </div>
+</li>
+</ul>
+</li>
+</ul>
+<pre class="code php">//sample code for the YII framework
+<span class="kw2">&lt;?php</span>
+<span class="kw1">require_once</span><span class="br0">&#40;</span><a href="http://www.php.net/dirname"><span class="kw3">dirname</span></a><span class="br0">&#40;</span><span class="kw2">__FILE__</span><span class="br0">&#41;</span><span class="sy0">.</span><span class="st0">&quot;/../../../dhtmlx/connector/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
+<span class="kw1">require_once</span><span class="br0">&#40;</span><a href="http://www.php.net/dirname"><span class="kw3">dirname</span></a><span class="br0">&#40;</span><span class="kw2">__FILE__</span><span class="br0">&#41;</span><span class="sy0">.</span><span class="st0">&quot;/../../../dhtmlx/connector/db_phpyii.php&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="kw2">class</span> EventController <span class="kw2">extends</span> Controller
+<span class="br0">&#123;</span>
+	<span class="kw2">public</span> <span class="kw2">function</span> actionIndex<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span> <span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">render</span><span class="br0">&#40;</span><span class="st_h">'index'</span><span class="br0">&#41;</span>;<span class="br0">&#125;</span>
+	<span class="kw2">public</span> <span class="kw2">function</span> actionGrid<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">render</span><span class="br0">&#40;</span><span class="st_h">'grid'</span><span class="br0">&#41;</span>; <span class="br0">&#125;</span>
+&nbsp;
+	<span class="kw2">public</span> <span class="kw2">function</span> actionGrid_data<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="br0">&#123;</span>
+		<span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span>Events<span class="sy0">::</span><span class="me2">model</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> <span class="st0">&quot;PHPYii&quot;</span><span class="br0">&#41;</span>;
+		<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">configure</span><span class="br0">&#40;</span><span class="st0">&quot;-&quot;</span><span class="sy0">,</span> <span class="st0">&quot;event_id&quot;</span><span class="sy0">,</span> <span class="st0">&quot;start_date, end_date, event_name&quot;</span><span class="br0">&#41;</span>;
+		<span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+	<span class="br0">&#125;</span>
+&nbsp;
+	<span class="kw2">public</span> <span class="kw2">function</span> beforeProcessing<span class="br0">&#40;</span><span class="re0">$action</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+		<span class="co1">//validation before saving</span>
+		<span class="kw1">if</span> <span class="br0">&#40;</span><span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">get_value</span><span class="br0">&#40;</span><span class="st0">&quot;event_name&quot;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;&quot;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+			<span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">invalid</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;<span class="co1">// if data isn't validate  - call $action-&gt;invalid();</span>
+			<span class="re0">$action</span><span class="sy0">-&gt;</span><span class="me1">set_response_attribute</span><span class="br0">&#40;</span><span class="st0">&quot;details&quot;</span><span class="sy0">,</span> <span class="st0">&quot;Empty data not allowed&quot;</span><span class="br0">&#41;</span>;
+		<span class="br0">&#125;</span>
+	<span class="br0">&#125;</span> 
+<span class="br0">&#125;</span></pre>
+</div>
+
+<h2><a name="framework-specific_tips" id="framework-specific_tips">Framework-specific tips</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="codeigniter" id="codeigniter">CodeIgniter</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="view" id="view">View</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> While working with CodeIgniter you should rename the query status parameter <strong>!nativeeditor_status</strong> cause the default name of the parameter is blocked by the framework. Renaming must be repeated on the server side.</div>
+</li>
+</ul>
+<pre class="code javascript"><span class="kw2">var</span> dp <span class="sy0">=</span> <span class="kw2">new</span> dataProcessor<span class="br0">&#40;</span><span class="st0">&quot;./data&quot;</span><span class="br0">&#41;</span>; <span class="co1">//refers to the 'data' action </span>
+dp.<span class="me1">action_param</span> <span class="sy0">=</span> <span class="st0">&quot;dhx_editor_status&quot;</span>;
+dp.<span class="me1">init</span><span class="br0">&#40;</span>mygrid<span class="br0">&#41;</span>;</pre>
+</div>
+
+<h4><a name="controller" id="controller">Controller</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Required connector file - <strong>db_phpci.php</strong>  ( and of course, you should also include connector files related to components used in the app, e.g. if you use dhtmlxGrid - you also include <strong>grid_connector.php</strong>); </div>
+</li>
+<li class="level1"><div class="li"> The query status parameter <strong>!nativeeditor_status</strong> must be renamed on the server side as well.</div>
+</li>
+</ul>
+<pre class="code php"><span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;./dhtmlx/connector/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
+<span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;./dhtmlx/connector/db_phpci.php&quot;</span><span class="br0">&#41;</span>;
+DataProcessor<span class="sy0">::</span><span class="re0">$action_param</span> <span class="sy0">=</span><span class="st0">&quot;dhx_editor_status&quot;</span>;
+&nbsp;
+<span class="kw2">class</span> Grid <span class="kw2">extends</span> CI_Controller <span class="br0">&#123;</span>
+	<span class="kw2">public</span> <span class="kw2">function</span> index<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="br0">&#123;</span>
+		<span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">load</span><span class="sy0">-&gt;</span><span class="me1">view</span><span class="br0">&#40;</span><span class="st_h">'grid'</span><span class="br0">&#41;</span>; <span class="co1">//grid's view</span>
+	<span class="br0">&#125;</span>
+	<span class="kw2">public</span> <span class="kw2">function</span> data<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="br0">&#123;</span>
+		<span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">load</span><span class="sy0">-&gt;</span><span class="me1">database</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+&nbsp;
+		<span class="re0">$connector</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">db</span><span class="sy0">,</span> <span class="st0">&quot;phpCI&quot;</span><span class="br0">&#41;</span>;
+		<span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">configure</span><span class="br0">&#40;</span><span class="st0">&quot;events&quot;</span><span class="sy0">,</span> <span class="st0">&quot;event_id&quot;</span><span class="sy0">,</span> <span class="st0">&quot;start_date, end_date, event_name&quot;</span><span class="br0">&#41;</span>;
+		<span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">render</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+	<span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+
+<h3><a name="yii" id="yii">YII</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="controller1" id="controller1">Controller</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Required connector file - <strong>db_phpyii.php</strong>. </div>
+</li>
+</ul>
+<pre class="code php"><span class="kw2">&lt;?php</span> 
+    <span class="kw1">require_once</span><span class="br0">&#40;</span><a href="http://www.php.net/dirname"><span class="kw3">dirname</span></a><span class="br0">&#40;</span><span class="kw2">__FILE__</span><span class="br0">&#41;</span><span class="sy0">.</span><span class="st0">&quot;/../../../dhtmlx/connector/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
+    <span class="kw1">require_once</span><span class="br0">&#40;</span><a href="http://www.php.net/dirname"><span class="kw3">dirname</span></a><span class="br0">&#40;</span><span class="kw2">__FILE__</span><span class="br0">&#41;</span><span class="sy0">.</span><span class="st0">&quot;/../../../dhtmlx/connector/db_phpyii.php&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+       <span class="kw2">class</span> EventController <span class="kw2">extends</span> Controller <span class="br0">&#123;</span>
+              <span class="kw2">public</span> <span class="kw2">function</span> actionIndex<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">render</span><span class="br0">&#40;</span><span class="st_h">'index'</span><span class="br0">&#41;</span>; <span class="br0">&#125;</span>
+              <span class="kw2">public</span> <span class="kw2">function</span> actionGrid<span class="br0">&#40;</span><span class="br0">&#41;</span>  <span class="br0">&#123;</span> <span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">render</span><span class="br0">&#40;</span><span class="st_h">'grid'</span><span class="br0">&#41;</span>;  <span class="br0">&#125;</span>
+              <span class="kw2">public</span> <span class="kw2">function</span> actionGrid_data<span class="br0">&#40;</span><span class="br0">&#41;</span> 
+              <span class="br0">&#123;</span>
+	           <span class="re0">$grid</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span>Events<span class="sy0">::</span><span class="me2">model</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> <span class="st0">&quot;PHPYii&quot;</span><span class="br0">&#41;</span>;
+	           <span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">configure</span><span class="br0">&#40;</span><span class="st0">&quot;-&quot;</span><span class="sy0">,</span> <span class="st0">&quot;event_id&quot;</span><span class="sy0">,</span> <span class="st0">&quot;start_date, end_date, event_name&quot;</span><span class="br0">&#41;</span>;
+	           <span class="re0">$grid</span><span class="sy0">-&gt;</span><span class="me1">render</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+              <span class="br0">&#125;</span>
+       <span class="br0">&#125;</span>
+<span class="kw2">?&gt;</span></pre>
+</div>
+
+<h3><a name="cakephp" id="cakephp">CakePHP</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="controller2" id="controller2">Controller</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Required connector file - <strong>db_phpyii.php</strong>. </div>
+</li>
+</ul>
+<pre class="code php"><span class="kw2">&lt;?php</span> 
+<span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;../Vendor/connector/grid_connector.php&quot;</span><span class="br0">&#41;</span>;
+<span class="kw1">require_once</span><span class="br0">&#40;</span><span class="st0">&quot;../Vendor/connector/db_phpcake.php&quot;</span><span class="br0">&#41;</span>;
+&nbsp;
+       <span class="kw2">class</span> EventController <span class="kw2">extends</span> AppController <span class="br0">&#123;</span>
+	      <span class="kw2">public</span> <span class="kw2">function</span> grid<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span><span class="br0">&#125;</span>
+              <span class="kw2">public</span> <span class="kw2">function</span> index<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span><span class="br0">&#125;</span>
+              <span class="kw2">public</span> <span class="kw2">function</span> grid_data<span class="br0">&#40;</span><span class="br0">&#41;</span>
+              <span class="br0">&#123;</span>
+                  <span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">autoRender</span> <span class="sy0">=</span> <span class="kw2">false</span>;
+&nbsp;
+	          <span class="re0">$connector</span> <span class="sy0">=</span> <span class="kw2">new</span> GridConnector<span class="br0">&#40;</span><span class="re0">$this</span><span class="sy0">-&gt;</span><span class="me1">Event</span><span class="sy0">,</span> <span class="st0">&quot;PHPCake&quot;</span><span class="br0">&#41;</span>;
+	          <span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">configure</span><span class="br0">&#40;</span><span class="st0">&quot;events&quot;</span><span class="sy0">,</span> <span class="st0">&quot;event_id&quot;</span><span class="sy0">,</span> <span class="st0">&quot;start_date, end_date, event_name&quot;</span><span class="br0">&#41;</span>;
+	          <span class="re0">$connector</span><span class="sy0">-&gt;</span><span class="me1">render</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+              <span class="br0">&#125;</span>
+       <span class="br0">&#125;</span>
+<span class="kw2">?&gt;</span></pre>
+</div>
+
+    
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     
+
+   
+    
+      
+        
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+      
+      
+    
+
+  </div>
+
+  
+
+</div>
+
+
+
+<div class="no"><img src="./images/" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

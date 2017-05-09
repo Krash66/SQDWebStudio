@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tree id="0">
+    <item id="Proj_1.Env_1.Tgt.comp" text="comp"  im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">DDLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="Proj_1.Env_1.Tgt.dept" text="dept" im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">DDLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="Proj_1.Env_1.Tgt.empl" text="empl"  im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">DDLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+    <item id="Proj_1.Env_1.Tgt.vend" text="vend"  im0="desc.ico" im1="desc.ico" im2="desc.ico">
+      <userdata name="nodeType">DDLDesc</userdata>
+      <userdata name="sqdType">objDesc</userdata>
+      <userdata name="loadFunction">loadCtlDesc</userdata>
+      <userdata name="Icon">desc.ico</userdata>
+    </item>
+</tree>
