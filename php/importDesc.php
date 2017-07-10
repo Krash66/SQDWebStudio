@@ -21,10 +21,10 @@ $dPre = $_POST["dPre"];
 try
 {
 	// new importer  UNIX
-	/*$exeString = $_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/sqduiimp.exe -i ".$_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/temp/uploaded/".$descfile." -o ".$_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/temp/".$dPre.$descname.".xml -t ".$descpre;*/
+	$exeString = $_SERVER["DOCUMENT_ROOT"]."/SQDATA/Studio/sqduiimp -i ".$_SERVER["DOCUMENT_ROOT"]."/SQDATA/Studio/temp/uploaded/".$descfile." -o ".$_SERVER["DOCUMENT_ROOT"]."/SQDATA/Studio/temp/".$dPre.$descname.".xml -t ".$descpre;
 	
 	// new importer  WINDOWS
-	$exeString = $_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/sqduiimpw.exe -i ".$_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/temp/uploaded/".$descfile." -o ".$_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/temp/".$dPre.$descname.".xml -t ".$descpre;
+	/*$exeString = $_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/sqduiimpw.exe -i ".$_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/temp/uploaded/".$descfile." -o ".$_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/temp/".$dPre.$descname.".xml -t ".$descpre;*/
 	
 	// old importer
 	/*$exeString = "C:\\wamp\\www\\SQDATA\\Studio\\sqduiimpo.exe \"C:\\wamp\\www\\SQDATA\\Studio\\temp\\uploaded\\".$descfile."\" ".$desctype."  \"C:\\wamp\\www\\SQDATA\\Studio\\temp\"";*/
@@ -34,7 +34,7 @@ try
 	//echo $ret;
 	if($ret < 8 )
 	{
-		echo "/SQDATA/Studio/temp/".$dPre.$descname.".xml";  //".$descname."
+		echo "SQDATA/Studio/temp/".$dPre.$descname.".xml";  //".$descname."
 	}
 	else
 	{

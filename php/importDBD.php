@@ -33,7 +33,7 @@ try
 	//echo $ret;
 	if($ret < 8 )
 	{
-		echo "/SQDATA/Studio/temp/".$DBDname.".xml";  //".$descname."
+		echo "SQDATA/Studio/temp/".$DBDname.".xml";  //".$descname."
 	}
 	else
 	{

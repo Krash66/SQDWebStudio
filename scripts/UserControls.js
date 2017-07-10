@@ -667,7 +667,7 @@ function loadCtlCOBOLDesc( id, tabId )
 
                         ctlPropSegmentTree.selectItem(segId, true);
 
-                        ctlPropSegmentTree.lockTree( true );
+//                        ctlPropSegmentTree.lockTree( true );
 
                         jQuery.ajax( {
                             type: 'POST',  //type of request  GET or POST

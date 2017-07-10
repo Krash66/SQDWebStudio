@@ -18,7 +18,7 @@ $prec = $_POST["prec"];
 try
 {
 	// generated script path
-	$path = "SQDATA/Studio/temp/genScript/";
+	$path = "/SQDATA/Studio/temp/genScript/";
 	$outPath = $_SERVER["DOCUMENT_ROOT"].$path;
 	$outfile = $outPath.$engName.".sqd";
 	$outINL = $outPath.$engName.".inl";

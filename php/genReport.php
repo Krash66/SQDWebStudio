@@ -12,7 +12,7 @@ $engId = $_POST["engID"];								    //eng id
 try
 {
 	// generated report path
-	$path = "SQDATA/Studio/temp/genScript/";
+	$path = "/SQDATA/Studio/temp/genScript/";
 	$outPath = $_SERVER["DOCUMENT_ROOT"].$path;
 	$outfile = $outPath.$engName.".rpt";
 	$rptfile = fopen($outfile, "w") or die("Unable to open file!");

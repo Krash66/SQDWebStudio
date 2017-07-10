@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <toolbar>
-  <item id="btnNew" type="button" img="Project.gif"  text="" title="New Project" action="doNewProject"/>
+  <item id="btnNew" type="button" img="Project.gif"  text="" title="New Project"/>
   
   <item id="sep1" type="separator"/>   
   
-  <item id="btnopen" type="button"  img="open.gif" imgdis="open_dis.gif" title="Open Project" action="doOpenProject"/>
-  <item id="btnsave" type="button"  img="save.gif" imgdis="save_dis.gif" title="Save" action="doSave"/>
+  <item id="btnopen" type="button"  img="open.gif" imgdis="open_dis.gif" title="Open Project"/>
+  <item id="btnsave" type="button"  img="save.gif" imgdis="save_dis.gif" title="Save"/>
  
   <item id="sep3" type="separator"/>
 
-  <item id="btncopy"  type="button" img="copy.gif"  text=""  imgdis="copy_dis.gif"  title="Copy" action="doEdit">
+  <item id="btncopy"  type="button" img="copy.gif"  text=""  imgdis="copy_dis.gif"  title="Copy">
     <userdata name="linkc"><![CDATA[http://linkC]]></userdata>
   </item>
-  <item id="btnpaste" type="button" img="paste.gif" text="" imgdis="paste_dis.gif" title="Paste" action="doEdit"/>
-  <item id="btndelete"  type="button" img="delete.gif" text=""  title="Delete Item"  action="doDelete"/>
+  <item id="btnpaste" type="button" img="paste.gif" text="" imgdis="paste_dis.gif" title="Paste"/>
+  <item id="btndelete"  type="button" img="delete.gif" text=""  title="Delete Item"/>
   
   <item id="sep4" type="separator"/>
 
-  <item id="btnlog" type="button" img="log.gif"  text="" title="Log" action="doOpenLog"/>
+  <item id="btnlog" type="button" img="log.gif"  text="" title="Log"/>
 
   <item id="sep5" type="separator"/>
 
-  <item id="btnhelp" type="button" img="help.gif"  text="" title="Help" action="doOpenLog"/>
+  <item id="btnhelp" type="button" img="help.gif"  text="" title="Help" />
 
 </toolbar>

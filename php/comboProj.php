@@ -1,6 +1,6 @@
 <?php 
-require($_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/dhtmlxSuite/dhtmlxConnector/php/codebase/combo_connector.php");
-//require($_SERVER["DOCUMENT_ROOT"]."SQDATA/Studio/dhtmlxSuite/dhtmlxConnector/php/codebase/db_mysql.php");
+require($_SERVER["DOCUMENT_ROOT"]."/SQDATA/Studio/dhtmlxSuite/dhtmlxConnector/php/codebase/combo_connector.php");
+//require($_SERVER["DOCUMENT_ROOT"]."/SQDATA/Studio/dhtmlxSuite/dhtmlxConnector/php/codebase/db_mysql.php");
 
 $res=mysql_connect("localhost","id1531632_root","Ad1s0nR44t");  //mysqli_connect('localhost', 'id1531632_root','Ad1s0nR44t','id1531632_sqmeta');
 mysql_select_db("id1531632_sqmeta");

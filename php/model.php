@@ -8,7 +8,7 @@ $modText = $_POST["modText"];		//model body text
 try
 {
 	// generated model path
-	$path = "SQDATA/Studio/temp/genScript/";
+	$path = "/SQDATA/Studio/temp/genScript/";
 	$outPath = $_SERVER["DOCUMENT_ROOT"].$path;
 	$outfile = $outPath.$modName;
 	$modfile = fopen($outfile, "w") or die("Unable to open file!");

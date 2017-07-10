@@ -7,7 +7,7 @@ $projName = $_POST["projName"];		//proj Name
 try
 {
 	// generated script path
-	$path = "SQDATA/Studio/temp/";
+	$path = "/SQDATA/Studio/temp/";
 	$outPath = $_SERVER["DOCUMENT_ROOT"].$path;
 	$outfile = $outPath.$projName.".log";
 	if(file_exists($outfile))
